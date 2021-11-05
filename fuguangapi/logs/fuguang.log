@@ -10,3 +10,7 @@ INFO 2021-11-05 07:38:53,405 autoreload 637 Watching for file changes with StatR
 INFO 2021-11-05 07:40:14,382 autoreload 251 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
 INFO 2021-11-05 07:40:15,306 autoreload 637 Watching for file changes with StatReloader
 INFO 2021-11-05 07:42:57,527 autoreload run_with_reloader 7166 140346901520768 Watching for file changes with StatReloader
+INFO 2021-11-05 07:59:04,829 autoreload trigger_reload 7166 140346901520768 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-05 07:59:06,686 autoreload run_with_reloader 7637 139843630543232 Watching for file changes with StatReloader
+INFO 2021-11-05 08:07:17,420 autoreload trigger_reload 7637 139843630543232 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-05 08:07:18,663 autoreload run_with_reloader 7787 139622564028800 Watching for file changes with StatReloader

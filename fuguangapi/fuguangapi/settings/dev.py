@@ -185,8 +185,15 @@ LOGGING = {
     },
     'loggers': {  # 日志处理的命名空间
         'django': {  # 要在django中调用当前配置项的loging写入日志到文件中，名字必须叫"django"
-            'handlers': ['console','file'],  # 当基于django命名空间写入日志时，调用那几个日志处理流程
+            'handlers': ['console', 'file'],  # 当基于django命名空间写入日志时，调用那几个日志处理流程
             'propagate': True,   # 是否在django命名空间对应的日志处理流程结束以后，冒泡通知其他的日志功能。True表示允许
         },
     }
+}
+
+
+# drf配置
+REST_FRAMEWORK = {
+    # 自定义异常处理
+    'EXCEPTION_HANDLER': 'fuguangapi.utils.exceptions.exception_handler',
 }
