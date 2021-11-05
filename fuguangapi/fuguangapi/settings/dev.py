@@ -80,9 +80,18 @@ WSGI_APPLICATION = 'fuguangapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fuguang',
+        'USER': 'fuguang_user',
+        'PASSWORD': 'fuguang',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'POOL_OPTIONS': {      # 连接池的配置信息
+            'POOL_SIZE': 10,    # 连接池默认创建的链接对象的数量
+            'MAX_OVERFLOW': 10  # 连接池默认创建的链接对象的最大数量
+        }
     }
+
 }
 
 
