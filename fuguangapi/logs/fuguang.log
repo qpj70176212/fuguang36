@@ -17,3 +17,68 @@ INFO 2021-11-05 08:07:18,663 autoreload run_with_reloader 7787 139622564028800 W
 INFO 2021-11-05 09:20:11,205 autoreload run_with_reloader 8964 139704169783680 Watching for file changes with StatReloader
 INFO 2021-11-05 09:29:05,884 autoreload trigger_reload 8964 139704169783680 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
 INFO 2021-11-05 09:29:06,769 autoreload run_with_reloader 9178 139651956908416 Watching for file changes with StatReloader
+INFO 2021-11-07 05:54:34,150 autoreload run_with_reloader 6042 139734165348736 Watching for file changes with StatReloader
+INFO 2021-11-07 13:31:00,851 autoreload run_with_reloader 6680 140297381851520 Watching for file changes with StatReloader
+ERROR 2021-11-07 13:31:15,361 exception response_for_exception 6680 140297242547968 Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+WARNING 2021-11-07 13:31:15,689 log log_response 6680 140297242547968 Bad Request: /
+WARNING 2021-11-07 13:31:15,692 basehttp log_message 6680 140297242547968 "GET / HTTP/1.1" 400 70121
+ERROR 2021-11-07 13:31:19,150 exception response_for_exception 6680 140297234155264 Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+WARNING 2021-11-07 13:31:19,231 log log_response 6680 140297234155264 Bad Request: /favicon.ico
+WARNING 2021-11-07 13:31:19,232 basehttp log_message 6680 140297234155264 "GET /favicon.ico HTTP/1.1" 400 70172
+INFO 2021-11-07 14:04:47,648 autoreload run_with_reloader 6920 140616241648000 Watching for file changes with StatReloader
+INFO 2021-11-07 14:05:46,098 autoreload run_with_reloader 6938 139858349736320 Watching for file changes with StatReloader
+INFO 2021-11-08 07:03:16,704 autoreload run_with_reloader 7758 139706013712768 Watching for file changes with StatReloader
+INFO 2021-11-08 11:21:36,526 autoreload trigger_reload 7758 139706013712768 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-08 11:21:37,825 autoreload run_with_reloader 10981 140154058273152 Watching for file changes with StatReloader
+INFO 2021-11-08 11:22:31,725 autoreload trigger_reload 10981 140154058273152 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-08 11:22:32,643 autoreload run_with_reloader 11035 140215481065856 Watching for file changes with StatReloader
+INFO 2021-11-08 11:23:05,182 autoreload trigger_reload 11035 140215481065856 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-08 11:23:05,752 autoreload run_with_reloader 11059 139774635135360 Watching for file changes with StatReloader
+INFO 2021-11-08 11:24:17,661 autoreload trigger_reload 11059 139774635135360 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-08 11:24:18,195 autoreload run_with_reloader 11097 140578374201728 Watching for file changes with StatReloader
+INFO 2021-11-08 11:27:24,812 autoreload trigger_reload 11097 140578374201728 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-08 11:27:25,520 autoreload run_with_reloader 11160 140118832046464 Watching for file changes with StatReloader
+INFO 2021-11-08 11:28:36,777 autoreload trigger_reload 11160 140118832046464 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-08 11:28:37,437 autoreload run_with_reloader 11259 139662511022464 Watching for file changes with StatReloader
+INFO 2021-11-08 11:29:20,321 autoreload trigger_reload 11259 139662511022464 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-08 11:29:20,971 autoreload run_with_reloader 11285 139669473395072 Watching for file changes with StatReloader
+INFO 2021-11-08 12:45:04,152 autoreload run_with_reloader 11599 139698242191744 Watching for file changes with StatReloader
+INFO 2021-11-08 12:53:08,897 autoreload trigger_reload 11599 139698242191744 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-08 12:53:10,348 autoreload run_with_reloader 11884 139902190334336 Watching for file changes with StatReloader
+INFO 2021-11-08 12:58:40,999 autoreload run_with_reloader 11978 139923862184320 Watching for file changes with StatReloader
+INFO 2021-11-08 13:00:58,328 autoreload run_with_reloader 12011 139928068612480 Watching for file changes with StatReloader
+INFO 2021-11-08 13:33:09,211 autoreload trigger_reload 12011 139928068612480 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-08 13:33:10,401 autoreload run_with_reloader 12166 140337836405120 Watching for file changes with StatReloader
+INFO 2021-11-08 13:53:58,170 autoreload trigger_reload 12166 140337836405120 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/urls.py changed, reloading.
+INFO 2021-11-08 13:53:59,249 autoreload run_with_reloader 12754 139963908108672 Watching for file changes with StatReloader
+INFO 2021-11-08 14:10:45,677 autoreload trigger_reload 12754 139963908108672 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/views.py changed, reloading.
+INFO 2021-11-08 14:10:46,935 autoreload run_with_reloader 16424 140587005731200 Watching for file changes with StatReloader
+INFO 2021-11-08 14:11:43,755 autoreload trigger_reload 16424 140587005731200 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/views.py changed, reloading.
+INFO 2021-11-08 14:11:45,434 autoreload run_with_reloader 16485 140386766852480 Watching for file changes with StatReloader
+INFO 2021-11-08 14:14:52,936 autoreload trigger_reload 16485 140386766852480 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/views.py changed, reloading.
+INFO 2021-11-08 14:14:54,061 autoreload run_with_reloader 16559 139853435134336 Watching for file changes with StatReloader
+INFO 2021-11-08 14:21:40,508 autoreload trigger_reload 16559 139853435134336 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/views.py changed, reloading.
+INFO 2021-11-08 14:21:41,488 autoreload run_with_reloader 18231 140699921400192 Watching for file changes with StatReloader
+INFO 2021-11-08 14:37:37,519 autoreload run_with_reloader 20310 139786425409920 Watching for file changes with StatReloader
+WARNING 2021-11-08 14:37:58,104 log log_response 20310 139786287314688 Not Found: /
+WARNING 2021-11-08 14:37:58,107 basehttp log_message 20310 139786287314688 "GET / HTTP/1.1" 404 2168
+WARNING 2021-11-08 14:37:58,277 log log_response 20310 139786287314688 Not Found: /favicon.ico
+WARNING 2021-11-08 14:37:58,278 basehttp log_message 20310 139786287314688 "GET /favicon.ico HTTP/1.1" 404 2219
+WARNING 2021-11-08 14:38:04,723 log log_response 20310 139786287314688 Not Found: /home
+WARNING 2021-11-08 14:38:04,724 basehttp log_message 20310 139786287314688 "GET /home HTTP/1.1" 404 2198
+WARNING 2021-11-08 14:38:10,710 log log_response 20310 139786278921984 Not Found: /home/
+WARNING 2021-11-08 14:38:10,711 basehttp log_message 20310 139786278921984 "GET /home/ HTTP/1.1" 404 2254
+INFO 2021-11-08 14:38:19,055 basehttp log_message 20310 139786278921984 "GET /home/redis/ HTTP/1.1" 200 5169
+INFO 2021-11-08 14:38:19,118 basehttp log_message 20310 139786270529280 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2021-11-08 14:38:19,119 basehttp log_message 20310 139786262136576 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2021-11-08 14:38:19,134 basehttp log_message 20310 139786287314688 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2021-11-08 14:38:19,142 basehttp log_message 20310 139786278921984 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2021-11-08 14:38:19,156 basehttp log_message 20310 139786270529280 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2021-11-08 14:38:19,166 basehttp log_message 20310 139786245351168 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2021-11-08 14:38:19,215 basehttp log_message 20310 139786287314688 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2021-11-08 14:38:19,223 basehttp log_message 20310 139786262136576 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2021-11-08 14:38:19,227 basehttp log_message 20310 139786253743872 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2021-11-08 14:38:19,233 basehttp log_message 20310 139786278921984 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2021-11-08 14:38:19,242 basehttp log_message 20310 139786245351168 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2021-11-08 14:50:05,987 autoreload trigger_reload 20310 139786425409920 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/views.py changed, reloading.
+INFO 2021-11-08 14:50:06,749 autoreload run_with_reloader 20766 140661622800768 Watching for file changes with StatReloader

@@ -16,6 +16,9 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# BASE_DIR = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(BASE_DIR / "apps"))
+# print(sys.path)
 # path = os.path.join(BASE_DIR, 'fuguangapi', 'apps')
 # sys.path.append(path)
 
@@ -42,6 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'home',
+
 ]
 
 MIDDLEWARE = [
@@ -94,6 +100,36 @@ DATABASES = {
 
 }
 
+# 缓存
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/0",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    # 提供给admin或者session存储
+    "session": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    # 提供存储短信验证码
+    "sms_code": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+}
+
+# 设置admin运营站点用户登录时,登录信息session保持到redis
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "session"  # 指定redis连接配置
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -168,8 +204,8 @@ LOGGING = {
     },
     'handlers': { # 日志处理流程，console或者mail_admins都是自定义的。
         'console': {
-            'level': 'DEBUG', # 设置当前日志处理流程中的日志最低等级
-            'filters': ['require_debug_true'], # 当前日志处理流程的日志过滤
+            'level': 'DEBUG',  # 设置当前日志处理流程中的日志最低等级
+            'filters': ['require_debug_true'],  # 当前日志处理流程的日志过滤
             'class': 'logging.StreamHandler',  # 当前日志处理流程的核心类，StreamHandler可以帮我们把日志信息输出到终端下
             'formatter': 'simple'              # 当前日志处理流程的日志格式
         },
