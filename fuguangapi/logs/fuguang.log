@@ -106,3 +106,63 @@ INFO 2021-11-09 07:32:52,577 basehttp log_message 6511 139704747366144 "GET /sta
 INFO 2021-11-09 07:32:52,580 basehttp log_message 6511 139704729532160 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
 INFO 2021-11-09 07:32:52,604 basehttp log_message 6511 139704721139456 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
 INFO 2021-11-09 07:32:52,644 basehttp log_message 6511 139704721139456 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2021-11-09 09:09:40,436 autoreload run_with_reloader 10310 140349178990976 Watching for file changes with StatReloader
+ERROR 2021-11-09 09:09:44,528 exception response_for_exception 10310 140349113493248 Invalid HTTP_HOST header: 'api.fuguang.cn:8000'. You may need to add 'api.fuguang.cn' to ALLOWED_HOSTS.
+WARNING 2021-11-09 09:09:44,628 log log_response 10310 140349113493248 Bad Request: /
+WARNING 2021-11-09 09:09:44,629 basehttp log_message 10310 140349113493248 "GET / HTTP/1.1" 400 71230
+ERROR 2021-11-09 09:09:45,994 exception response_for_exception 10310 140349104838400 Invalid HTTP_HOST header: 'api.fuguang.cn:8000'. You may need to add 'api.fuguang.cn' to ALLOWED_HOSTS.
+WARNING 2021-11-09 09:09:46,264 log log_response 10310 140349104838400 Bad Request: /favicon.ico
+WARNING 2021-11-09 09:09:46,266 basehttp log_message 10310 140349104838400 "GET /favicon.ico HTTP/1.1" 400 71288
+ERROR 2021-11-09 09:10:25,523 exception response_for_exception 10310 140349104838400 Invalid HTTP_HOST header: 'api.fuguang.cn:8000'. You may need to add 'api.fuguang.cn' to ALLOWED_HOSTS.
+WARNING 2021-11-09 09:10:25,572 log log_response 10310 140349104838400 Bad Request: /home
+WARNING 2021-11-09 09:10:25,573 basehttp log_message 10310 140349104838400 "GET /home HTTP/1.1" 400 71274
+ERROR 2021-11-09 09:10:25,701 exception response_for_exception 10310 140349113493248 Invalid HTTP_HOST header: 'api.fuguang.cn:8000'. You may need to add 'api.fuguang.cn' to ALLOWED_HOSTS.
+WARNING 2021-11-09 09:10:25,770 log log_response 10310 140349113493248 Bad Request: /favicon.ico
+WARNING 2021-11-09 09:10:25,772 basehttp log_message 10310 140349113493248 "GET /favicon.ico HTTP/1.1" 400 71292
+ERROR 2021-11-09 09:10:34,345 exception response_for_exception 10310 140349113493248 Invalid HTTP_HOST header: 'api.fuguang.cn:8000'. You may need to add 'api.fuguang.cn' to ALLOWED_HOSTS.
+WARNING 2021-11-09 09:10:34,392 log log_response 10310 140349113493248 Bad Request: /home/redis
+WARNING 2021-11-09 09:10:34,393 basehttp log_message 10310 140349113493248 "GET /home/redis HTTP/1.1" 400 71340
+ERROR 2021-11-09 09:10:34,554 exception response_for_exception 10310 140349104838400 Invalid HTTP_HOST header: 'api.fuguang.cn:8000'. You may need to add 'api.fuguang.cn' to ALLOWED_HOSTS.
+WARNING 2021-11-09 09:10:34,623 log log_response 10310 140349104838400 Bad Request: /favicon.ico
+WARNING 2021-11-09 09:10:34,625 basehttp log_message 10310 140349104838400 "GET /favicon.ico HTTP/1.1" 400 71298
+INFO 2021-11-09 09:11:26,301 autoreload run_with_reloader 10453 140163526779264 Watching for file changes with StatReloader
+ERROR 2021-11-09 09:11:29,157 exception response_for_exception 10453 140163461281536 Invalid HTTP_HOST header: 'api.fuguang.cn:8000'. You may need to add 'api.fuguang.cn' to ALLOWED_HOSTS.
+WARNING 2021-11-09 09:11:29,224 log log_response 10453 140163461281536 Bad Request: /
+WARNING 2021-11-09 09:11:29,225 basehttp log_message 10453 140163461281536 "GET / HTTP/1.1" 400 71230
+ERROR 2021-11-09 09:11:30,122 exception response_for_exception 10453 140163452888832 Invalid HTTP_HOST header: 'api.fuguang.cn:8000'. You may need to add 'api.fuguang.cn' to ALLOWED_HOSTS.
+WARNING 2021-11-09 09:11:30,177 log log_response 10453 140163452888832 Bad Request: /favicon.ico
+WARNING 2021-11-09 09:11:30,179 basehttp log_message 10453 140163452888832 "GET /favicon.ico HTTP/1.1" 400 71288
+INFO 2021-11-09 09:12:05,282 autoreload run_with_reloader 10576 140447011135872 Watching for file changes with StatReloader
+WARNING 2021-11-09 09:12:09,288 log log_response 10576 140446945638144 Not Found: /
+WARNING 2021-11-09 09:12:09,293 basehttp log_message 10576 140446945638144 "GET / HTTP/1.1" 404 2173
+WARNING 2021-11-09 09:12:09,363 log log_response 10576 140446945638144 Not Found: /favicon.ico
+WARNING 2021-11-09 09:12:09,364 basehttp log_message 10576 140446945638144 "GET /favicon.ico HTTP/1.1" 404 2224
+INFO 2021-11-09 09:12:17,622 basehttp log_message 10576 140446945638144 "GET /home/demo HTTP/1.1" 301 0
+INFO 2021-11-09 09:12:17,826 basehttp log_message 10576 140446945638144 "GET /home/demo/ HTTP/1.1" 200 5151
+INFO 2021-11-09 09:12:17,885 basehttp log_message 10576 140446937245440 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2021-11-09 09:12:17,917 basehttp log_message 10576 140446919411456 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2021-11-09 09:12:17,919 basehttp log_message 10576 140446945638144 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2021-11-09 09:12:17,923 basehttp log_message 10576 140446937245440 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2021-11-09 09:12:17,946 basehttp log_message 10576 140446937245440 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2021-11-09 09:12:17,948 basehttp log_message 10576 140446927804160 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2021-11-09 09:12:17,954 basehttp log_message 10576 140446919411456 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2021-11-09 09:12:17,958 basehttp log_message 10576 140446571427584 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2021-11-09 09:12:17,960 basehttp log_message 10576 140446563034880 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2021-11-09 09:12:17,961 basehttp log_message 10576 140446927804160 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2021-11-09 09:12:18,004 basehttp log_message 10576 140446919411456 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2021-11-09 09:18:03,679 autoreload run_with_reloader 10656 140072345391488 Watching for file changes with StatReloader
+INFO 2021-11-09 09:18:16,654 basehttp log_message 10656 140072279893760 "GET /home/demo/ HTTP/1.1" 200 5227
+INFO 2021-11-09 09:18:17,731 basehttp log_message 10656 140072279893760 "GET /home/demo/ HTTP/1.1" 200 5227
+INFO 2021-11-09 09:27:32,394 autoreload trigger_reload 10656 140072345391488 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-09 09:27:33,044 autoreload run_with_reloader 10810 139907260244352 Watching for file changes with StatReloader
+INFO 2021-11-09 09:33:40,685 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 09:35:05,871 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 09:35:19,077 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 10:05:13,274 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 10:05:16,060 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 10:05:27,695 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 10:06:53,271 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 10:07:23,144 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 10:07:27,242 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 10:10:40,689 basehttp log_message 10810 139907185829632 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 10:11:00,339 basehttp log_message 10810 139907185829632 "GET /home/demo/ HTTP/1.1" 200 32
