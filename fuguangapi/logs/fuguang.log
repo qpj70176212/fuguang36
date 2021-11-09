@@ -166,3 +166,5 @@ INFO 2021-11-09 10:07:23,144 basehttp log_message 10810 139907194746624 "GET /ho
 INFO 2021-11-09 10:07:27,242 basehttp log_message 10810 139907194746624 "GET /home/demo/ HTTP/1.1" 200 32
 INFO 2021-11-09 10:10:40,689 basehttp log_message 10810 139907185829632 "GET /home/demo/ HTTP/1.1" 200 32
 INFO 2021-11-09 10:11:00,339 basehttp log_message 10810 139907185829632 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 10:31:32,602 autoreload run_with_reloader 12384 139814396711296 Watching for file changes with StatReloader
+INFO 2021-11-09 10:32:28,027 basehttp log_message 12384 139814264055552 "GET /home/demo/ HTTP/1.1" 200 32
