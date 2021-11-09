@@ -104,6 +104,7 @@ DATABASES = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
+        # 项目上线时，需要调整这里的路径
         "LOCATION": "redis://127.0.0.1:6379/0",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
@@ -129,6 +130,7 @@ CACHES = {
 
 # 设置admin运营站点用户登录时,登录信息session保持到redis
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# 设置session保持的位置对应的缓存配置项
 SESSION_CACHE_ALIAS = "session"  # 指定redis连接配置
 
 # Password validation
