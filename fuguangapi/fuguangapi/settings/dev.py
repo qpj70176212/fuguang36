@@ -18,7 +18,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR / "apps"))
-# print(sys.path)
+sys.path.insert(0, str(BASE_DIR / "utils"))
+print(sys.path)
 # path = os.path.join(BASE_DIR, 'fuguangapi', 'apps')
 # sys.path.append(path)
 

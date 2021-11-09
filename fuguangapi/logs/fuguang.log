@@ -168,3 +168,17 @@ INFO 2021-11-09 10:10:40,689 basehttp log_message 10810 139907185829632 "GET /ho
 INFO 2021-11-09 10:11:00,339 basehttp log_message 10810 139907185829632 "GET /home/demo/ HTTP/1.1" 200 32
 INFO 2021-11-09 10:31:32,602 autoreload run_with_reloader 12384 139814396711296 Watching for file changes with StatReloader
 INFO 2021-11-09 10:32:28,027 basehttp log_message 12384 139814264055552 "GET /home/demo/ HTTP/1.1" 200 32
+INFO 2021-11-09 14:53:15,033 autoreload run_with_reloader 19076 140378026344832 Watching for file changes with StatReloader
+WARNING 2021-11-09 14:53:36,570 log log_response 19076 140377960584960 Not Found: /
+WARNING 2021-11-09 14:53:36,572 basehttp log_message 19076 140377960584960 "GET / HTTP/1.1" 404 2173
+WARNING 2021-11-09 14:53:37,720 log log_response 19076 140377960584960 Not Found: /favicon.ico
+WARNING 2021-11-09 14:53:37,721 basehttp log_message 19076 140377960584960 "GET /favicon.ico HTTP/1.1" 404 2224
+WARNING 2021-11-09 14:54:01,108 log log_response 19076 140377960584960 Not Found: /home/
+WARNING 2021-11-09 14:54:01,109 basehttp log_message 19076 140377960584960 "GET /home/ HTTP/1.1" 404 2427
+INFO 2021-11-09 14:54:15,292 basehttp log_message 19076 140377960584960 "GET /home/nav/header/ HTTP/1.1" 200 6071
+INFO 2021-11-09 14:54:34,170 basehttp log_message 19076 140377960584960 "GET /home/nav/footer/ HTTP/1.1" 200 6291
+INFO 2021-11-09 14:55:22,766 autoreload run_with_reloader 19400 140178522100096 Watching for file changes with StatReloader
+INFO 2021-11-09 14:58:26,730 autoreload run_with_reloader 19437 140166672707968 Watching for file changes with StatReloader
+INFO 2021-11-09 14:58:35,470 basehttp log_message 19437 140166606948096 "GET /home/nav/footer/ HTTP/1.1" 200 6291
+INFO 2021-11-09 14:58:42,208 basehttp log_message 19437 140166606948096 "GET /home/nav/header HTTP/1.1" 301 0
+INFO 2021-11-09 14:58:42,244 basehttp log_message 19437 140166606948096 "GET /home/nav/header/ HTTP/1.1" 200 6071
