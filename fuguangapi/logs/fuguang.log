@@ -259,3 +259,6 @@ INFO 2021-11-10 07:31:52,811 autoreload trigger_reload 18893 139713509880192 /ho
 INFO 2021-11-10 07:31:54,338 autoreload run_with_reloader 19824 139698301251968 Watching for file changes with StatReloader
 INFO 2021-11-10 07:32:24,868 basehttp log_message 19824 139698162665216 "GET /banner/ HTTP/1.1" 200 6760
 INFO 2021-11-10 07:32:26,027 basehttp log_message 19824 139698162665216 "GET /banner/ HTTP/1.1" 200 6760
+INFO 2021-11-10 07:53:41,722 basehttp log_message 19824 139698162665216 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-10 07:53:41,726 basehttp log_message 19824 139698154272512 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-10 07:53:41,736 basehttp log_message 19824 139698145093376 "GET /banner/ HTTP/1.1" 200 551
