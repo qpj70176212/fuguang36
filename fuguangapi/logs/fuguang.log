@@ -262,3 +262,11 @@ INFO 2021-11-10 07:32:26,027 basehttp log_message 19824 139698162665216 "GET /ba
 INFO 2021-11-10 07:53:41,722 basehttp log_message 19824 139698162665216 "GET /nav/header/ HTTP/1.1" 200 292
 INFO 2021-11-10 07:53:41,726 basehttp log_message 19824 139698154272512 "GET /nav/footer/ HTTP/1.1" 200 386
 INFO 2021-11-10 07:53:41,736 basehttp log_message 19824 139698145093376 "GET /banner/ HTTP/1.1" 200 551
+INFO 2021-11-10 08:40:02,687 autoreload trigger_reload 19824 139698301251968 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-10 08:40:03,343 autoreload run_with_reloader 20972 140584377577856 Watching for file changes with StatReloader
+INFO 2021-11-10 08:46:11,300 autoreload trigger_reload 20972 140584377577856 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/urls.py changed, reloading.
+INFO 2021-11-10 08:46:12,297 autoreload run_with_reloader 21078 140501113139584 Watching for file changes with StatReloader
+INFO 2021-11-10 08:46:32,178 autoreload trigger_reload 21078 140501113139584 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/models.py changed, reloading.
+INFO 2021-11-10 08:46:32,806 autoreload run_with_reloader 21131 140251361788288 Watching for file changes with StatReloader
+INFO 2021-11-10 08:55:37,199 autoreload trigger_reload 21131 140251361788288 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/models.py changed, reloading.
+INFO 2021-11-10 08:55:38,056 autoreload run_with_reloader 21277 140272136323456 Watching for file changes with StatReloader
