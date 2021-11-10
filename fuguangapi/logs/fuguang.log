@@ -255,3 +255,7 @@ INFO 2021-11-10 07:09:16,167 basehttp log_message 18893 139713438414592 "GET /na
 INFO 2021-11-10 07:10:25,951 basehttp log_message 18893 139713438414592 "GET /nav/header/ HTTP/1.1" 200 292
 INFO 2021-11-10 07:10:26,045 basehttp log_message 18893 139713430021888 "GET /banner/ HTTP/1.1" 200 551
 INFO 2021-11-10 07:10:26,054 basehttp log_message 18893 139713420842752 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-10 07:31:52,811 autoreload trigger_reload 18893 139713509880192 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/views.py changed, reloading.
+INFO 2021-11-10 07:31:54,338 autoreload run_with_reloader 19824 139698301251968 Watching for file changes with StatReloader
+INFO 2021-11-10 07:32:24,868 basehttp log_message 19824 139698162665216 "GET /banner/ HTTP/1.1" 200 6760
+INFO 2021-11-10 07:32:26,027 basehttp log_message 19824 139698162665216 "GET /banner/ HTTP/1.1" 200 6760
