@@ -24,3 +24,12 @@ class FooterNavListAPIView(ListAPIView):
                                   position=constants.NAV_FOOTER
                                   ).order_by("orders", "-id")[:constants.NAV_FOOTER_SIZE]
     serializer_class = NavModelSerializer
+
+#
+# from .models import Banner
+# from .serializers import BannerSerializer
+# class BannerAPIView(CacheListAPIView):
+#     """轮播广告列表"""
+#     queryset = Banner.objects.filter(is_delete=False, is_show=True).order_by(
+#         "-orders").all()[:constants.BANNER_SIZE]
+#     serializer_class = BannerModelSerializer

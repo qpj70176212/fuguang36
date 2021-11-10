@@ -182,3 +182,53 @@ INFO 2021-11-09 14:58:26,730 autoreload run_with_reloader 19437 140166672707968 
 INFO 2021-11-09 14:58:35,470 basehttp log_message 19437 140166606948096 "GET /home/nav/footer/ HTTP/1.1" 200 6291
 INFO 2021-11-09 14:58:42,208 basehttp log_message 19437 140166606948096 "GET /home/nav/header HTTP/1.1" 301 0
 INFO 2021-11-09 14:58:42,244 basehttp log_message 19437 140166606948096 "GET /home/nav/header/ HTTP/1.1" 200 6071
+INFO 2021-11-09 15:23:46,321 autoreload trigger_reload 19437 140166672707968 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/constants.py changed, reloading.
+INFO 2021-11-09 15:23:47,166 autoreload run_with_reloader 20462 140343852700032 Watching for file changes with StatReloader
+INFO 2021-11-09 15:25:58,502 autoreload trigger_reload 20462 140343852700032 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/views.py changed, reloading.
+INFO 2021-11-09 15:25:59,281 autoreload run_with_reloader 20522 140179031101824 Watching for file changes with StatReloader
+INFO 2021-11-09 15:35:17,832 autoreload run_with_reloader 20915 139689713205632 Watching for file changes with StatReloader
+INFO 2021-11-09 16:01:46,980 autoreload trigger_reload 20915 139689713205632 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/models.py changed, reloading.
+INFO 2021-11-09 16:01:47,807 autoreload run_with_reloader 21802 139691298189696 Watching for file changes with StatReloader
+INFO 2021-11-09 16:06:24,570 autoreload trigger_reload 21802 139691298189696 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/models.py changed, reloading.
+INFO 2021-11-09 16:06:25,547 autoreload run_with_reloader 21955 140033387618688 Watching for file changes with StatReloader
+INFO 2021-11-10 05:54:32,590 autoreload run_with_reloader 17589 140004011864448 Watching for file changes with StatReloader
+INFO 2021-11-10 05:54:49,383 autoreload run_with_reloader 17615 139661743182208 Watching for file changes with StatReloader
+WARNING 2021-11-10 05:54:54,706 log log_response 17615 139661599045376 Not Found: /
+WARNING 2021-11-10 05:54:54,707 basehttp log_message 17615 139661599045376 "GET / HTTP/1.1" 404 2173
+WARNING 2021-11-10 05:54:55,896 log log_response 17615 139661599045376 Not Found: /favicon.ico
+WARNING 2021-11-10 05:54:55,896 basehttp log_message 17615 139661599045376 "GET /favicon.ico HTTP/1.1" 404 2224
+WARNING 2021-11-10 05:55:04,217 log log_response 17615 139661599045376 Not Found: /home
+WARNING 2021-11-10 05:55:04,224 basehttp log_message 17615 139661599045376 "GET /home HTTP/1.1" 404 2203
+WARNING 2021-11-10 05:55:11,299 log log_response 17615 139661599045376 Not Found: /home/
+WARNING 2021-11-10 05:55:11,300 basehttp log_message 17615 139661599045376 "GET /home/ HTTP/1.1" 404 2427
+INFO 2021-11-10 05:55:22,610 basehttp log_message 17615 139661599045376 "GET /home/nav/header/ HTTP/1.1" 200 6071
+INFO 2021-11-10 05:55:22,652 basehttp log_message 17615 139661599045376 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,657 basehttp log_message 17615 139661599045376 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,669 basehttp log_message 17615 139661599045376 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,676 basehttp log_message 17615 139661599045376 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,683 basehttp log_message 17615 139661590652672 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,685 basehttp log_message 17615 139661599045376 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,714 basehttp log_message 17615 139661599045376 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,722 basehttp log_message 17615 139661590652672 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,728 basehttp log_message 17615 139661590652672 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,735 basehttp log_message 17615 139661590652672 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-11-10 05:55:22,744 basehttp log_message 17615 139661590652672 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2021-11-10 05:55:34,971 log log_response 17615 139661573867264 Not Found: /nav/footer/
+WARNING 2021-11-10 05:55:34,972 basehttp log_message 17615 139661573867264 "GET /nav/footer/ HTTP/1.1" 404 2224
+WARNING 2021-11-10 05:55:34,984 log log_response 17615 139661582259968 Not Found: /nav/header/
+WARNING 2021-11-10 05:55:34,985 basehttp log_message 17615 139661582259968 "GET /nav/header/ HTTP/1.1" 404 2224
+WARNING 2021-11-10 05:55:36,738 log log_response 17615 139661582259968 Not Found: /nav/header/
+WARNING 2021-11-10 05:55:36,749 basehttp log_message 17615 139661582259968 "GET /nav/header/ HTTP/1.1" 404 2224
+WARNING 2021-11-10 05:55:36,747 log log_response 17615 139661573867264 Not Found: /nav/footer/
+WARNING 2021-11-10 05:55:36,752 basehttp log_message 17615 139661573867264 "GET /nav/footer/ HTTP/1.1" 404 2224
+WARNING 2021-11-10 05:55:38,293 log log_response 17615 139661573867264 Not Found: /nav/header/
+WARNING 2021-11-10 05:55:38,296 basehttp log_message 17615 139661573867264 "GET /nav/header/ HTTP/1.1" 404 2224
+WARNING 2021-11-10 05:55:38,295 log log_response 17615 139661582259968 Not Found: /nav/footer/
+WARNING 2021-11-10 05:55:38,296 basehttp log_message 17615 139661582259968 "GET /nav/footer/ HTTP/1.1" 404 2224
+INFO 2021-11-10 06:01:14,885 autoreload trigger_reload 17615 139661743182208 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/urls.py changed, reloading.
+INFO 2021-11-10 06:01:16,123 autoreload run_with_reloader 17802 140500993270144 Watching for file changes with StatReloader
+INFO 2021-11-10 06:01:17,397 basehttp log_message 17802 140500855166720 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-10 06:01:17,422 basehttp log_message 17802 140500846774016 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-10 06:01:38,833 basehttp log_message 17802 140500837594880 "GET /nav/header/ HTTP/1.1" 200 6041
+INFO 2021-11-10 06:02:41,329 basehttp log_message 17802 140500846774016 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-10 06:02:41,337 basehttp log_message 17802 140500855166720 "GET /nav/footer/ HTTP/1.1" 200 386

@@ -6,3 +6,6 @@ NAV_FOOTER = 1
 # 头部导航的显示数量
 NAV_HEADER_SIZE = 7
 NAV_FOOTER_SIZE = 7
+
+# 通用列表的缓存时间，单位：秒
+LIST_PAGE_CACHE_TIME = 60 * 60 * 24
