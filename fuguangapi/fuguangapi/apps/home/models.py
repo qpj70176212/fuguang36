@@ -1,6 +1,8 @@
 from django.db import models
 from fuguangapi.utils.models import BaseModel, models
 # Create your models here.
+from models import BaseModel, models
+
 
 class Nav(BaseModel):
     """导航菜单"""
@@ -23,8 +25,6 @@ class Nav(BaseModel):
         verbose_name = "导航菜单"
         verbose_name_plural = verbose_name
 
-
-from models import BaseModel, models
 
 class Banner(BaseModel):
     image = models.ImageField(upload_to="banner/%Y/", verbose_name="图片地址")

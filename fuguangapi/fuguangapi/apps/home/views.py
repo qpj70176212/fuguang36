@@ -1,8 +1,7 @@
-# from fuguangapi.utils import constants
 import constants
 from rest_framework.generics import ListAPIView
-from .models import Nav
-from .serializers import NavModelSerializer
+from .models import Nav, Banner
+from .serializers import NavModelSerializer, BannerModelSerializer
 
 
 class HeaderNavListAPIView(ListAPIView):
@@ -25,11 +24,9 @@ class FooterNavListAPIView(ListAPIView):
                                   ).order_by("orders", "-id")[:constants.NAV_FOOTER_SIZE]
     serializer_class = NavModelSerializer
 
-#
-# from .models import Banner
-# from .serializers import BannerSerializer
-# class BannerAPIView(CacheListAPIView):
-#     """轮播广告列表"""
-#     queryset = Banner.objects.filter(is_delete=False, is_show=True).order_by(
-#         "-orders").all()[:constants.BANNER_SIZE]
-#     serializer_class = BannerModelSerializer
+
+class BannerListAPIView(ListAPIView):
+    """轮播广告列表"""
+    queryset = Banner.objects.filter(is_delete=False, is_show=True).order_by(
+        "orders", "-id").all()[:constants.BANNER_SIZE]
+    serializer_class = BannerModelSerializer

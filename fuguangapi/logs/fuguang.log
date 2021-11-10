@@ -232,3 +232,11 @@ INFO 2021-11-10 06:01:17,422 basehttp log_message 17802 140500846774016 "GET /na
 INFO 2021-11-10 06:01:38,833 basehttp log_message 17802 140500837594880 "GET /nav/header/ HTTP/1.1" 200 6041
 INFO 2021-11-10 06:02:41,329 basehttp log_message 17802 140500846774016 "GET /nav/header/ HTTP/1.1" 200 292
 INFO 2021-11-10 06:02:41,337 basehttp log_message 17802 140500855166720 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-10 06:28:50,434 autoreload trigger_reload 17802 140500993270144 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-10 06:28:51,689 autoreload run_with_reloader 18593 140105733521792 Watching for file changes with StatReloader
+INFO 2021-11-10 06:42:30,836 autoreload trigger_reload 18593 140105733521792 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/home/serializers.py changed, reloading.
+INFO 2021-11-10 06:42:31,455 autoreload run_with_reloader 18845 139870245966208 Watching for file changes with StatReloader
+INFO 2021-11-10 06:45:05,410 autoreload run_with_reloader 18893 139713509880192 Watching for file changes with StatReloader
+INFO 2021-11-10 06:45:27,263 basehttp log_message 18893 139713438414592 "GET /banner HTTP/1.1" 301 0
+INFO 2021-11-10 06:45:27,349 basehttp log_message 18893 139713438414592 "GET /banner/ HTTP/1.1" 200 5200
+INFO 2021-11-10 06:52:29,723 basehttp log_message 18893 139713438414592 "GET /banner/ HTTP/1.1" 200 6760
