@@ -14,7 +14,8 @@
       </label>
       <p>忘记密码</p>
     </div>
-    <button class="login_btn" @click="loginhandler">登录</button>
+<!--    <button class="login_btn" @click="loginhandler">登录</button>-->
+    <button class="login_btn" @click="show_captcha">登录</button>
     <p class="go_login" >没有账号 <span>立即注册</span></p>
   </div>
   <div class="inp" v-show="user.login_type===1">
@@ -29,12 +30,30 @@
 <script setup>
 import user from "../api/user"
 import { ElMessage } from 'element-plus'
+import "../utils/TCaptcha"
 const emit = defineEmits(["login_success"])
 
 import {useStore} from "vuex"
 const store = useStore()
 
-const loginhandler = ()=>{
+// 显示登录验证码
+const show_captcha = ()=>{
+  // 直接生成一个验证码对象
+  // new TencentCaptcha("验证码应用ID", 验证码通过验证以后的回调方法)
+  let captcha1 = new TencentCaptcha('2071744404', (res)=>{
+    // 验证码通过验证以后的回调方法，res就是验证码服务器返回的验证结果
+    // ret	Int	验证结果，0：验证成功。2：用户主动关闭验证码。
+    if (res && res.ret === 0) {
+      // 验证码通过，发送登录请求并附带验证码的回调结果res
+      loginhandler(res)
+    }
+  });
+
+  // 显示验证码
+  captcha1.show()
+}
+
+const loginhandler = (res)=>{
   // 登录处理
   if (user.account.length < 1 || user.password.length < 1) {
     // 错误提示
@@ -49,7 +68,11 @@ const loginhandler = ()=>{
   // 发送请求
   user.user_login({
     username: user.account,
-    password: user.password
+    password: user.password,
+    // ticket	String	验证成功的票据，当且仅当 ret = 0 时 ticket 有值。
+    ticket: res.ticket,
+    // randstr	String	本次验证的随机串，请求后台接口时需带上。
+    randstr: res.randstr,
   }).then(response=>{
     // console.log(response.data.token)
     // 保存token，并根据用户的选择，是否记住密码
