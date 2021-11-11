@@ -26,7 +26,8 @@
             </div>
             <div class="showhide-search" data-show="no"><img class="imv2-search2" src="../assets/search.svg" /></div>
           </div>
-          <div class="login-bar logined-bar" v-if="state.is_login">
+<!--          <div class="login-bar logined-bar" v-if="state.is_login">-->
+          <div class="login-bar logined-bar" v-if="store.state.user.user_id">
             <div class="shop-cart ">
               <img src="../assets/cart.svg" alt="" />
               <span><router-link to="/cart">购物车</router-link></span>
@@ -42,7 +43,7 @@
                     <el-dropdown-item icon="el-icon-user">学习中心</el-dropdown-item>
                     <el-dropdown-item icon="el-icon-edit-outline">订单列表</el-dropdown-item>
                     <el-dropdown-item icon="el-icon-setting">个人设置</el-dropdown-item>
-                    <el-dropdown-item icon="el-icon-position">注销登录</el-dropdown-item>
+                    <el-dropdown-item icon="el-icon-position" @click="logout">注销登录</el-dropdown-item>
                   </el-dropdown-menu>
                 </template>
               </el-dropdown>
@@ -72,10 +73,12 @@
 import nav from "../api/nav";
 import {reactive, ref} from "vue";
 import Login from "./Login.vue"
+import {useStore} from "vuex"
+const store = useStore()
 
 const state = reactive({
   show_login: false,
-  is_login: true  // 登录状态
+  // is_login: true  // 登录状态
 })
 
 // 获取头部导航
@@ -91,6 +94,10 @@ const login_success = (token)=>{
   state.show_login = false
 }
 
+// 登录注销的处理
+const logout = () =>{
+  store.commit("logout")
+}
 </script>
 
 <style scoped>
@@ -364,6 +371,7 @@ const login_success = (token)=>{
   float: left;
   height: 28px;
   line-height: 30px;
+  /*position: relative;*/
 }
 .header .login-bar .login-box span{
   color: #4a4a4a;
@@ -371,5 +379,36 @@ const login_success = (token)=>{
 }
 .header .login-bar .login-box span:hover{
   color: #000000;
+}
+
+.logined-bar{
+  margin-top: 0;
+  height: 72px;
+  line-height: 72px;
+}
+.header .logined-bar .shop-cart{
+  height: 32px;
+  line-height: 32px;
+}
+.logined-bar .login-box{
+  height: 72px;
+  line-height: 72px;
+  position: relative;
+}
+.logined-bar .el-avatar{
+  float: right;
+  position: absolute;
+  /*top: -24px;*/
+  top: -54px;
+  /*left: 20px;*/
+  right: 40px;
+  transition: transform .5s ease-in .1s
+}
+.logined-bar .el-avatar:hover{
+  transform: scale(1.3);
+}
+.logined-bar .el-dropdown{
+  left: 100px;
+  top: 30px;
 }
 </style>

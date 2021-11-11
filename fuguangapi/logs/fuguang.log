@@ -470,3 +470,24 @@ INFO 2021-11-11 07:55:55,391 basehttp log_message 7582 139987672622848 "GET /ban
 WARNING 2021-11-11 07:58:02,879 log log_response 7582 139987672622848 Bad Request: /users/login/
 WARNING 2021-11-11 07:58:02,880 basehttp log_message 7582 139987672622848 "POST /users/login/ HTTP/1.1" 400 68
 INFO 2021-11-11 08:00:24,297 autoreload run_with_reloader 7995 140396940812672 Watching for file changes with StatReloader
+INFO 2021-11-11 08:32:36,981 basehttp log_message 7995 140396869347072 "OPTIONS /users/login/ HTTP/1.1" 200 0
+WARNING 2021-11-11 08:32:37,178 log log_response 7995 140396869347072 Bad Request: /users/login/
+WARNING 2021-11-11 08:32:37,179 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 400 68
+WARNING 2021-11-11 08:32:38,915 log log_response 7995 140396869347072 Bad Request: /users/login/
+WARNING 2021-11-11 08:32:38,916 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 400 68
+INFO 2021-11-11 08:32:55,732 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 08:33:37,929 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 08:34:08,967 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 08:35:46,669 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 08:36:04,571 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 09:33:20,897 basehttp log_message 7995 140396869347072 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-11 09:33:21,213 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 10:19:01,524 basehttp log_message 7995 140396869347072 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-11 10:19:01,788 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 10:29:29,406 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 10:31:29,195 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 10:33:38,270 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 10:34:07,836 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 11:44:19,072 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 12:07:41,659 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 12:10:23,757 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219

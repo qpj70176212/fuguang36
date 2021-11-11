@@ -3,7 +3,7 @@ import {reactive, ref} from "vue";
 
 const user = reactive({
     login_type: 0,  // 登录类型
-    username: "",  // 用户名
+    account: "",  // 用户名
     password: "",  // 密码
     mobile: "",  // 手机号
     code: "",  // 验证码
