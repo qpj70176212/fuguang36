@@ -247,6 +247,20 @@ LOGGING = {
 REST_FRAMEWORK = {
     # 自定义异常处理
     'EXCEPTION_HANDLER': 'fuguangapi.utils.exceptions.exception_handler',
+    # 自定义认证
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+
+import datetime
+JWT_AUTH = {
+    # 设置jwt的有效期 默认300秒
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(weeks=1),  # 一周有效
+    # 自定义载荷
+    'JWT_PAYLOAD_HANDLER': 'fuguangapi.utils.authenticate.jwt_payload_handler'
 }
 
 # CORS 跨域资源共享
@@ -268,3 +282,6 @@ MEDIA_URL = "/uploads/"
 # 自定义认证用户使用的模型对象
 # AUTH_USER_MODEL 参数的设置以点.来分隔，表示应用名.模型类名。
 AUTH_USER_MODEL = 'users.User'
+
+# django自定义认证
+AUTHENTICATION_BACKENDS = ['fuguangapi.utils.authenticate.CustomAuthBackend']

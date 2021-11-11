@@ -1,25 +1,25 @@
 <template>
   <div class="title">
-    <span :class="{active:state.login_type===0}" @click="state.login_type=0">密码登录</span>
-    <span :class="{active:state.login_type===1}" @click="state.login_type=1">短信登录</span>
+    <span :class="{active:user.login_type===0}" @click="user.login_type=0">密码登录</span>
+    <span :class="{active:user.login_type===1}" @click="user.login_type=1">短信登录</span>
   </div>
-  <div class="inp" v-if="state.login_type===0">
-    <input v-model="state.username" type="text" placeholder="用户名 / 手机号码" class="user">
-    <input v-model="state.password" type="password" class="pwd" placeholder="密码">
+  <div class="inp" v-if="user.login_type===0">
+    <input v-model="user.username" type="text" placeholder="用户名 / 手机号码" class="user">
+    <input v-model="user.password" type="password" class="pwd" placeholder="密码">
     <div id="geetest1"></div>
     <div class="rember">
       <label>
-        <input type="checkbox" class="no" name="a"/>
+        <input type="checkbox" class="no" name="a" v-model="user.remember"/>
         <span>记住密码</span>
       </label>
       <p>忘记密码</p>
     </div>
-    <button class="login_btn">登录</button>
+    <button class="login_btn" @click="loginhandler">登录</button>
     <p class="go_login" >没有账号 <span>立即注册</span></p>
   </div>
-  <div class="inp" v-show="state.login_type===1">
-    <input v-model="state.username" type="text" placeholder="手机号码" class="user">
-    <input v-model="state.password"  type="text" class="code" placeholder="短信验证码">
+  <div class="inp" v-show="user.login_type===1">
+    <input v-model="user.username" type="text" placeholder="手机号码" class="user">
+    <input v-model="user.password"  type="text" class="code" placeholder="短信验证码">
     <el-button id="get_code" type="primary">获取验证码</el-button>
     <button class="login_btn">登录</button>
     <p class="go_login" >没有账号 <span>立即注册</span></p>
@@ -27,13 +27,61 @@
 </template>
 
 <script setup>
-import {reactive} from "vue";
+import user from "../api/user"
+import { ElMessage } from 'element-plus'
+const emit = defineEmits(["login_success"])
 
-const state = reactive({
-  login_type: 0,
-  username:"",
-  password:"",
-})
+const loginhandler = ()=>{
+  // 登录处理
+  if (user.username.length < 1 || user.password.length < 1) {
+    // 错误提示
+    // ElMessage({
+    //     message: '错了哦，用户名或密码不能为空！',
+    //     type: 'warning',
+    //   })
+    ElMessage.error('错了哦，用户名或密码不能为空！')
+    return false  // 在函数/方法中，可以阻止代码继续往下执行
+  }
+
+  // 发送请求
+  user.user_login({
+    username: user.username,
+    password: user.password
+  }).then(response=>{
+    console.log(response.data.token)
+    // 保存token，并根据用户的选择，是否记住密码
+    localStorage.removeItem("token")
+    sessionStorage.removeItem("token")
+    console.log(response.data.token)
+    // 判断是否记住登录状态
+    if (user.remember){
+      // 记住登录
+      localStorage.token = response.data.token
+    } else {
+      // 不记住登录，关闭浏览器以后就删除状态
+      sessionStorage.token = response.data.token
+    }
+    // 成功提示
+    ElMessage.success("登录成功！")
+    // 关闭登录弹窗，对外发送一个登录成功的信息
+    user.username = ""
+    user.password = ""
+    user.mobile = ""
+    user.code = ""
+    user.remember = false
+    emit("login_success")
+  }).catch(error=>{
+    ElMessage.error("登录异常！")
+    console.log(error)
+  })
+}
+// import {reactive} from "vue";
+
+// const state = reactive({
+//   login_type: 0,
+//   username:"",
+//   password:"",
+// })
 </script>
 
 <style scoped>
