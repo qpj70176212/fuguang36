@@ -285,3 +285,21 @@ AUTH_USER_MODEL = 'users.User'
 
 # django自定义认证
 AUTHENTICATION_BACKENDS = ['fuguangapi.utils.authenticate.CustomAuthBackend']
+
+# 腾讯云API接口配置
+TENCENTCLOUD = {
+    # 腾讯云访问秘钥ID
+    "SecretId": "AKIDvf9MIyMTKuDF0TjjSt4ybw2sQhqiJceQ",
+    # 腾讯云访问秘钥key
+    "SecretKey": "XmkSt4ycy3rOedKlvpSnreAPN5WfX9TW",
+    # 验证码API配置
+    "Captcha": {
+        # 验证码校验服务端域名
+        "endpoint": "captcha.tencentcloudapi.com",
+        # 固定填值：9。可在控制台配置不同验证码类型。
+        "CaptchaType": 9,
+        "CaptchaAppId": 2071744404,  # 验证码应用ID
+        # 用于服务器端校验验证码票据的验证密钥，请妥善保密，请勿泄露给第三方
+        "AppSecretKey": "02DN3yBANi1xeXI-BQitJug** "
+    }
+}

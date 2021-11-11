@@ -493,3 +493,114 @@ INFO 2021-11-11 12:07:41,659 basehttp log_message 7995 140396869347072 "POST /us
 INFO 2021-11-11 12:10:23,757 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
 INFO 2021-11-11 13:24:07,816 basehttp log_message 7995 140396869347072 "OPTIONS /users/login/ HTTP/1.1" 200 0
 INFO 2021-11-11 13:24:08,223 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 13:48:43,376 basehttp log_message 7995 140396869347072 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-11 15:26:50,616 autoreload run_with_reloader 21172 139832308109696 Watching for file changes with StatReloader
+INFO 2021-11-11 15:28:12,980 basehttp log_message 21172 139832236119808 "OPTIONS /users/login/ HTTP/1.1" 200 0
+ERROR 2021-11-11 15:28:14,232 log log_response 21172 139832236119808 Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 14, in post
+    api = TencentCloudAPI()
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/tencentcloudapi.py", line 13, in __init__
+    self.cred = credential.Credential(settings.TENCENTCLOUD["SecretID"], settings.TENCENTCLOUD["SecretKey"])
+KeyError: 'SecretID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-11 15:28:14,248 basehttp log_message 21172 139832236119808 "POST /users/login/ HTTP/1.1" 500 3994315
+ERROR 2021-11-11 15:28:26,824 log log_response 21172 139832236119808 Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 14, in post
+    api = TencentCloudAPI()
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/tencentcloudapi.py", line 13, in __init__
+    self.cred = credential.Credential(settings.TENCENTCLOUD["SecretID"], settings.TENCENTCLOUD["SecretKey"])
+KeyError: 'SecretID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-11 15:28:26,832 basehttp log_message 21172 139832236119808 "POST /users/login/ HTTP/1.1" 500 3994315
+ERROR 2021-11-11 15:29:49,703 log log_response 21172 139832236119808 Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 14, in post
+    api = TencentCloudAPI()
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/tencentcloudapi.py", line 13, in __init__
+    self.cred = credential.Credential(settings.TENCENTCLOUD["SecretID"], settings.TENCENTCLOUD["SecretKey"])
+KeyError: 'SecretID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-11 15:29:49,711 basehttp log_message 21172 139832236119808 "POST /users/login/ HTTP/1.1" 500 3994315
+INFO 2021-11-11 15:31:53,878 autoreload run_with_reloader 21470 140688914018688 Watching for file changes with StatReloader
+WARNING 2021-11-11 15:32:28,983 log log_response 21470 140688767317760 Bad Request: /users/login/
+WARNING 2021-11-11 15:32:28,984 basehttp log_message 21470 140688767317760 "POST /users/login/ HTTP/1.1" 400 37
+INFO 2021-11-11 15:43:59,067 autoreload run_with_reloader 21630 139745209840000 Watching for file changes with StatReloader
+INFO 2021-11-11 15:44:44,770 basehttp log_message 21630 139745070728960 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-11 15:44:45,416 basehttp log_message 21630 139745070728960 "POST /users/login/ HTTP/1.1" 200 219
