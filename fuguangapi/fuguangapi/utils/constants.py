@@ -12,3 +12,6 @@ BANNER_SIZE = 10
 
 # 通用列表的缓存时间，单位：秒
 LIST_PAGE_CACHE_TIME = 60 * 60 * 24
+# 默认头像
+DEFAULT_USER_AVATAR = "avatar/2021/avatar.jpg"
+

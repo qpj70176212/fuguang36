@@ -1193,3 +1193,259 @@ WARNING 2021-11-12 08:41:11,682 log log_response 10056 140438071842560 Bad Reque
 WARNING 2021-11-12 08:41:11,682 basehttp log_message 10056 140438071842560 "GET /users/mobile/13772923138/ HTTP/1.1" 400 37
 INFO 2021-11-12 08:43:26,857 basehttp log_message 10056 140438071842560 "GET /users/mobile/13345678978/ HTTP/1.1" 200 15
 INFO 2021-11-12 08:44:33,199 basehttp log_message 10056 140438071842560 "GET /users/mobile/13885764321/ HTTP/1.1" 200 15
+INFO 2021-11-12 09:31:05,436 autoreload run_with_reloader 11697 140049688412544 Watching for file changes with StatReloader
+INFO 2021-11-12 09:33:58,652 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 201 269
+ERROR 2021-11-12 09:34:29,140 log log_response 11697 140049549276928 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'mobile': [ErrorDetail(string='用户信息 with this 手机号 already exists.', code='unique')], 'password': [ErrorDetail(string='Ensure this field has at least 6 characters.', code='min_length')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 09:34:29,158 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 500 4238191
+ERROR 2021-11-12 09:35:18,034 log log_response 11697 140049549276928 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'mobile': [ErrorDetail(string='用户信息 with this 手机号 already exists.', code='unique')], 'password': [ErrorDetail(string='Ensure this field has at least 6 characters.', code='min_length')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 09:35:18,043 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 500 4238199
+ERROR 2021-11-12 09:36:04,239 log log_response 11697 140049549276928 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'mobile': [ErrorDetail(string='用户信息 with this 手机号 already exists.', code='unique')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 09:36:04,247 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 500 4112705
+INFO 2021-11-12 09:36:25,900 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 201 269
+ERROR 2021-11-12 09:36:46,712 log log_response 11697 140049549276928 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'password': [ErrorDetail(string='Ensure this field has at least 6 characters.', code='min_length')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 09:36:46,721 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 500 4114617
+ERROR 2021-11-12 09:38:03,514 log log_response 11697 140049549276928 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'password': [ErrorDetail(string='Ensure this field has at least 6 characters.', code='min_length')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 09:38:03,522 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 500 4114609
+ERROR 2021-11-12 09:39:59,394 log log_response 11697 140049549276928 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'password': [ErrorDetail(string='Ensure this field has at least 6 characters.', code='min_length')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 09:39:59,401 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 500 4114609
+ERROR 2021-11-12 09:40:25,517 log log_response 11697 140049549276928 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'password': [ErrorDetail(string='Ensure this field has at least 6 characters.', code='min_length')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 09:40:25,525 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 500 4114609
+INFO 2021-11-12 09:41:05,663 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 201 269
