@@ -27,7 +27,8 @@
             <div class="showhide-search" data-show="no"><img class="imv2-search2" src="../assets/search.svg" /></div>
           </div>
 <!--          <div class="login-bar logined-bar" v-if="state.is_login">-->
-          <div class="login-bar logined-bar" v-if="store.state.user.user_id">
+<!--          <div class="login-bar logined-bar" v-if="store.state.user.user_id">-->
+          <div class="login-bar logined-bar" v-if="store.getters.getUserInfo">
             <div class="shop-cart ">
               <img src="../assets/cart.svg" alt="" />
               <span><router-link to="/cart">购物车</router-link></span>
