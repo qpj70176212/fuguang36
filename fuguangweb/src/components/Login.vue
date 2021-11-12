@@ -68,7 +68,8 @@ const loginhandler = (res)=>{
   }
 
   // 发送请求
-  user.user_login({
+  // user.user_login({
+  user.login({
     username: user.account,
     password: user.password,
     // ticket	String	验证成功的票据，当且仅当 ret = 0 时 ticket 有值。

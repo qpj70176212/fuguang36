@@ -11,7 +11,8 @@
             <span class="active">用户注册</span>
           </div>
           <div class="inp">
-            <input v-model="state.mobile" type="text" placeholder="手机号码" class="user">
+<!--            <input v-model="state.mobile" type="text" placeholder="手机号码" class="user">-->
+            <input v-model.lazy="user.mobile" type="text" placeholder="手机号码" class="user">
             <input v-model="state.password" type="password" placeholder="登录密码" class="user">
             <input v-model="state.re_password" type="password" placeholder="确认密码" class="user">
             <input v-model="state.code"  type="text" class="code" placeholder="短信验证码">
@@ -25,7 +26,8 @@
 </template>
 
 <script setup>
-import {reactive, defineEmits} from "vue"
+import {reactive, watch} from "vue"
+import user from "../api/user";
 import { ElMessage } from 'element-plus'
 import {useStore} from "vuex"
 import "../utils/TCaptcha"
@@ -37,6 +39,29 @@ const state = reactive({
   re_password: "",// 确认密码
   mobile: "",     // 手机号
   code: "",       // 验证码
+})
+
+watch(
+    () => user.mobile,
+    () => {
+      if (!/^1[3-9]\d{9}$/.test(user.mobile)) {
+        ElMessage.error("手机号码格式不正确！")
+        // ElMessage({
+        //   showClose: true,
+        //   message: "手机号码格式不正确！",
+        //   type: 'error',
+        // })
+      } else {
+        // 请求服务端验证手机号是否被注册
+        user.check_mobile(user.mobile).catch(error=>{
+          ElMessage.error(error.response.data.errmsg)
+        //   ElMessage({
+        //   showClose: true,
+        //   message: (error.response.data.errmsg),
+        //   type: 'error',
+        // })
+        })
+      }
 })
 </script>
 
