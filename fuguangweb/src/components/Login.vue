@@ -33,6 +33,7 @@
 import user from "../api/user"
 import { ElMessage } from 'element-plus'
 import "../utils/TCaptcha"
+import settings from "../settings";
 const emit = defineEmits(["login_success"])
 
 import {useStore} from "vuex"
@@ -42,7 +43,8 @@ const store = useStore()
 const show_captcha = ()=>{
   // 直接生成一个验证码对象
   // new TencentCaptcha("验证码应用ID", 验证码通过验证以后的回调方法)
-  let captcha1 = new TencentCaptcha('2071744404', (res)=>{
+  // let captcha1 = new TencentCaptcha('2071744404', (res)=>{
+  let captcha1 = new TencentCaptcha(settings.captcha_app_id, (res)=>{
     // 验证码通过验证以后的回调方法，res就是验证码服务器返回的验证结果
     // ret	Int	验证结果，0：验证成功。2：用户主动关闭验证码。
     if (res && res.ret === 0) {

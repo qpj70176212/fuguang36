@@ -1449,3 +1449,30 @@ Traceback (most recent call last):
 RecursionError: maximum recursion depth exceeded
 ERROR 2021-11-12 09:40:25,525 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 500 4114609
 INFO 2021-11-12 09:41:05,663 basehttp log_message 11697 140049549276928 "POST /users/register/ HTTP/1.1" 201 269
+INFO 2021-11-12 10:39:22,965 autoreload run_with_reloader 12784 139717952639360 Watching for file changes with StatReloader
+INFO 2021-11-12 10:39:55,697 basehttp log_message 12784 139717880649472 "GET /users/mobile/18791425678/ HTTP/1.1" 200 15
+INFO 2021-11-12 10:40:10,172 basehttp log_message 12784 139717880649472 "OPTIONS /users/register/ HTTP/1.1" 200 0
+INFO 2021-11-12 10:40:10,540 basehttp log_message 12784 139717880649472 "POST /users/register/ HTTP/1.1" 201 269
+INFO 2021-11-12 10:44:16,430 basehttp log_message 12784 139717880649472 "GET /users/mobile/15809887766/ HTTP/1.1" 200 15
+INFO 2021-11-12 10:44:31,052 basehttp log_message 12784 139717880649472 "POST /users/register/ HTTP/1.1" 201 269
+INFO 2021-11-12 11:18:29,007 autoreload run_with_reloader 13208 139797880742272 Watching for file changes with StatReloader
+INFO 2021-11-12 11:21:32,505 basehttp log_message 13208 139797808752384 "GET /users/mobile/13772923158/ HTTP/1.1" 200 15
+INFO 2021-11-12 11:21:51,730 basehttp log_message 13208 139797808752384 "POST /users/register/ HTTP/1.1" 201 269
+INFO 2021-11-12 11:27:22,373 basehttp log_message 13208 139797808752384 "GET /users/mobile/13772923166/ HTTP/1.1" 200 15
+INFO 2021-11-12 11:27:38,630 basehttp log_message 13208 139797808752384 "POST /users/register/ HTTP/1.1" 201 269
+INFO 2021-11-12 11:32:20,654 basehttp log_message 13208 139797808752384 "GET /users/mobile/13772925188/ HTTP/1.1" 200 15
+INFO 2021-11-12 11:32:38,583 basehttp log_message 13208 139797808752384 "POST /users/register/ HTTP/1.1" 201 269
+INFO 2021-11-12 11:44:50,788 autoreload trigger_reload 13208 139797880742272 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/serializers.py changed, reloading.
+INFO 2021-11-12 11:44:51,415 autoreload run_with_reloader 13786 140307656864128 Watching for file changes with StatReloader
+INFO 2021-11-12 11:46:18,987 autoreload run_with_reloader 13821 140327822950784 Watching for file changes with StatReloader
+INFO 2021-11-12 11:46:53,239 basehttp log_message 13821 140327750960896 "GET /users/mobile/13772725125/ HTTP/1.1" 200 15
+INFO 2021-11-12 11:48:03,457 basehttp log_message 13821 140327750960896 "OPTIONS /users/register/ HTTP/1.1" 200 0
+INFO 2021-11-12 11:48:04,094 basehttp log_message 13821 140327750960896 "POST /users/register/ HTTP/1.1" 201 271
+INFO 2021-11-12 11:48:04,479 basehttp log_message 13821 140327742007040 "GET /banner/ HTTP/1.1" 200 551
+INFO 2021-11-12 11:48:04,484 basehttp log_message 13821 140327733614336 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-12 11:48:04,488 basehttp log_message 13821 140327520302848 "GET /uploads/banner/2021/5.jpg HTTP/1.1" 200 158646
+INFO 2021-11-12 11:48:04,492 basehttp log_message 13821 140327750960896 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-12 11:48:04,509 basehttp log_message 13821 140327503517440 "GET /uploads/banner/2021/3.jpg HTTP/1.1" 200 443034
+INFO 2021-11-12 11:48:04,551 basehttp log_message 13821 140327511910144 "GET /uploads/banner/2021/4.jpg HTTP/1.1" 200 1312893
+INFO 2021-11-12 11:48:04,564 basehttp log_message 13821 140327486732032 "GET /uploads/banner/2021/1.jpg HTTP/1.1" 200 171972
+INFO 2021-11-12 11:48:04,573 basehttp log_message 13821 140327495124736 "GET /uploads/banner/2021/2.jpg HTTP/1.1" 200 176325
