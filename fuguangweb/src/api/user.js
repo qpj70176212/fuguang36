@@ -28,6 +28,7 @@ const user = reactive({
         return http.post("/users/register/", data)
     },
     get_sms_code() {
+        // 发送短信
         return http.get(`/users/sms/${this.mobile}`)
     }
 })

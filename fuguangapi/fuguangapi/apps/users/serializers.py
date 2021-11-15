@@ -48,7 +48,7 @@ class UserRegisterModelSerializer(serializers.ModelSerializer):
         # 手机号是否已注册
         try:
             User.objects.get(mobile=mobile)
-            raise serializers.ValidationError(detail="手机号码已注册！")
+            raise serializers.ValidationError(detail="手机号码已注册！", code="mobile")
         except User.DoesNotExist:
             pass
 
@@ -61,19 +61,19 @@ class UserRegisterModelSerializer(serializers.ModelSerializer):
             attrs.get("randstr"),
         )
         if not result:
-            raise serializers.ValidationError(detail="滑动验证码校验失败！")
+            raise serializers.ValidationError(detail="滑动验证码校验失败！", code="verify")
 
         # todo 验证短信验证码
         redis = get_redis_connection("sms_code")
         sms_code = redis.get(f"sms_{mobile}")
-        print(sms_code)
+        # print(sms_code)
         if sms_code is None:
             # 获取不到验证码，则表示验证码已经过期了
-            raise serializers.ValidationError(detail="验证码失效或已过期！")
+            raise serializers.ValidationError(detail="验证码失效或已过期！", code="sms_code")
         # 从redis提取的数据，字符串都是bytes类型，所以decode
         # if code.decode() != attrs.get("code"):
         if sms_code.decode() != attrs.get("sms_code"):
-            raise serializers.ValidationError(detail="验证码错误！")
+            raise serializers.ValidationError(detail="验证码错误！", code="sms_code")
         # 删除redis中的短信，后续不管用户是否注册成功，至少当前这条短信验证码已经没有用了
         redis.delete(f"sms_{mobile}")
 

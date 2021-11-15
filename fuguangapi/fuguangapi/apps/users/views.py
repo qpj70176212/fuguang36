@@ -67,7 +67,8 @@ class SMSAPIView(APIView):
         interval = redis.ttl(f"interval_{mobile}")
         # 如果不等于-2 没有过期  参数问题
         if interval != -2:
-            return Response({"errmsg": f"短信发送过于频繁，请{interval}秒后再次点击获取！"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"errmsg": f"短信发送过于频繁，请{interval}秒后再次点击获取！", "time": interval},
+                            status=status.HTTP_400_BAD_REQUEST)
         # %06d :  整数输出,整数的宽度是6位,若不足6位,左边补数字"0"
         # %是格式化输入接受参数的标记
         # 0格式化命令：结果将用零来填充
