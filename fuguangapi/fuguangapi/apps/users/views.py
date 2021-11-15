@@ -11,6 +11,7 @@ from rest_framework.generics import CreateAPIView
 from .serializers import UserRegisterModelSerializer
 from fuguangapi.utils.ronglianyunapi import send_sms
 from django_redis import get_redis_connection
+from mycelery.sms.tasks import send_sms
 # Create your views here.
 
 
@@ -79,7 +80,10 @@ class SMSAPIView(APIView):
         # 时间 短信有效期
         time = settings.RONGLIANYUN.get("sms_expire")
         # 发送短信
-        send_sms(settings.RONGLIANYUN.get("reg_tid"), mobile, datas=(code, time // 60))
+        # 同步任务
+        # send_sms(settings.RONGLIANYUN.get("reg_tid"), mobile, datas=(code, time // 60))
+        # 异步任务
+        send_sms.delay(settings.RONGLIANYUN.get("reg_tid"), mobile, datas=(code, time // 60))
         # 记录code到redis中
         # 使用redis提供的管道对象pipeline来优化redis的写入操作【添加、修改、删除】
         pipe = redis.pipeline()
