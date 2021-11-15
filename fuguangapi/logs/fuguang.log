@@ -1476,3 +1476,816 @@ INFO 2021-11-12 11:48:04,509 basehttp log_message 13821 140327503517440 "GET /up
 INFO 2021-11-12 11:48:04,551 basehttp log_message 13821 140327511910144 "GET /uploads/banner/2021/4.jpg HTTP/1.1" 200 1312893
 INFO 2021-11-12 11:48:04,564 basehttp log_message 13821 140327486732032 "GET /uploads/banner/2021/1.jpg HTTP/1.1" 200 171972
 INFO 2021-11-12 11:48:04,573 basehttp log_message 13821 140327495124736 "GET /uploads/banner/2021/2.jpg HTTP/1.1" 200 176325
+INFO 2021-11-12 11:52:34,081 autoreload run_with_reloader 14043 139856206389632 Watching for file changes with StatReloader
+INFO 2021-11-12 11:52:54,975 basehttp log_message 14043 139856067254016 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-12 11:52:54,977 basehttp log_message 14043 139856058861312 "GET /banner/ HTTP/1.1" 200 551
+INFO 2021-11-12 11:52:54,978 basehttp log_message 14043 139856050468608 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-12 11:52:55,491 basehttp log_message 14043 139856041551616 "GET /uploads/banner/2021/5.jpg HTTP/1.1" 200 158646
+INFO 2021-11-12 11:52:55,493 basehttp log_message 14043 139855677880064 "GET /uploads/banner/2021/2.jpg HTTP/1.1" 200 176325
+INFO 2021-11-12 11:52:55,524 basehttp log_message 14043 139856024766208 "GET /uploads/banner/2021/3.jpg HTTP/1.1" 200 443034
+INFO 2021-11-12 11:52:55,529 basehttp log_message 14043 139855669487360 "GET /uploads/banner/2021/1.jpg HTTP/1.1" 200 171972
+INFO 2021-11-12 11:52:55,545 basehttp log_message 14043 139856033158912 "GET /uploads/banner/2021/4.jpg HTTP/1.1" 200 1312893
+INFO 2021-11-12 11:53:32,874 basehttp log_message 14043 139856050468608 "GET /users/mobile/14429281355/ HTTP/1.1" 200 15
+INFO 2021-11-12 11:54:22,393 basehttp log_message 14043 139856050468608 "OPTIONS /users/register/ HTTP/1.1" 200 0
+INFO 2021-11-12 11:54:23,100 basehttp log_message 14043 139856050468608 "POST /users/register/ HTTP/1.1" 201 271
+INFO 2021-11-12 11:54:23,246 basehttp log_message 14043 139856033158912 "GET /uploads/banner/2021/5.jpg HTTP/1.1" 200 158646
+INFO 2021-11-12 11:54:23,260 basehttp log_message 14043 139855669487360 "GET /uploads/banner/2021/4.jpg HTTP/1.1" 200 1312893
+INFO 2021-11-12 11:54:23,273 basehttp log_message 14043 139856024766208 "GET /uploads/banner/2021/2.jpg HTTP/1.1" 200 176325
+INFO 2021-11-12 11:54:23,291 basehttp log_message 14043 139856033158912 "GET /uploads/banner/2021/3.jpg HTTP/1.1" 200 443034
+INFO 2021-11-12 11:54:23,305 basehttp log_message 14043 139856024766208 "GET /uploads/banner/2021/1.jpg HTTP/1.1" 200 171972
+INFO 2021-11-12 11:54:23,358 basehttp log_message 14043 139856050468608 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-12 11:54:23,360 basehttp log_message 14043 139856058861312 "GET /banner/ HTTP/1.1" 200 551
+INFO 2021-11-12 11:54:23,363 basehttp log_message 14043 139856067254016 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-12 11:57:06,253 autoreload run_with_reloader 14224 139785568178560 Watching for file changes with StatReloader
+INFO 2021-11-12 11:57:58,313 basehttp log_message 14224 139785414899456 "GET /banner/ HTTP/1.1" 200 551
+INFO 2021-11-12 11:57:58,315 basehttp log_message 14224 139785406506752 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-12 11:57:58,320 basehttp log_message 14224 139785496188672 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-12 11:57:58,514 basehttp log_message 14224 139785398114048 "GET /uploads/banner/2021/5.jpg HTTP/1.1" 200 158646
+INFO 2021-11-12 11:57:58,558 basehttp log_message 14224 139785381328640 "GET /uploads/banner/2021/3.jpg HTTP/1.1" 200 443034
+INFO 2021-11-12 11:57:58,580 basehttp log_message 14224 139785372935936 "GET /uploads/banner/2021/2.jpg HTTP/1.1" 200 176325
+INFO 2021-11-12 11:57:58,612 basehttp log_message 14224 139785364543232 "GET /uploads/banner/2021/1.jpg HTTP/1.1" 200 171972
+INFO 2021-11-12 11:57:58,619 basehttp log_message 14224 139785389721344 "GET /uploads/banner/2021/4.jpg HTTP/1.1" 200 1312893
+INFO 2021-11-12 11:58:11,715 basehttp log_message 14224 139785496188672 "GET /users/mobile/14455667788/ HTTP/1.1" 200 15
+INFO 2021-11-12 11:58:49,038 basehttp log_message 14224 139785496188672 "OPTIONS /users/register/ HTTP/1.1" 200 0
+ERROR 2021-11-12 11:58:50,182 log log_response 14224 139785496188672 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'non_field_errors': [ErrorDetail(string='滑动验证码校验失败！', code='invalid')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 11:58:50,189 basehttp log_message 14224 139785496188672 "POST /users/register/ HTTP/1.1" 500 4107250
+INFO 2021-11-12 11:59:28,320 basehttp log_message 14224 139785496188672 "OPTIONS /users/register/ HTTP/1.1" 200 0
+ERROR 2021-11-12 11:59:29,550 log log_response 14224 139785496188672 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'non_field_errors': [ErrorDetail(string='滑动验证码校验失败！', code='invalid')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 11:59:29,560 basehttp log_message 14224 139785496188672 "POST /users/register/ HTTP/1.1" 500 4107250
+INFO 2021-11-12 12:00:35,103 autoreload run_with_reloader 14334 139955714728320 Watching for file changes with StatReloader
+INFO 2021-11-12 12:00:55,247 basehttp log_message 14334 139955642738432 "GET /users/mobile/18891234567/ HTTP/1.1" 200 15
+INFO 2021-11-12 12:01:27,406 basehttp log_message 14334 139955642738432 "OPTIONS /users/register/ HTTP/1.1" 200 0
+INFO 2021-11-12 12:01:27,971 basehttp log_message 14334 139955642738432 "POST /users/register/ HTTP/1.1" 201 271
+INFO 2021-11-12 12:01:28,538 basehttp log_message 14334 139955642738432 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-12 12:01:28,574 basehttp log_message 14334 139955642738432 "GET /banner/ HTTP/1.1" 200 551
+INFO 2021-11-12 12:01:28,580 basehttp log_message 14334 139955633784576 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-12 12:01:28,687 basehttp log_message 14334 139955625391872 "GET /uploads/banner/2021/5.jpg HTTP/1.1" 200 158646
+INFO 2021-11-12 12:01:28,710 basehttp log_message 14334 139955625391872 "GET /uploads/banner/2021/4.jpg HTTP/1.1" 200 1312893
+INFO 2021-11-12 12:01:28,724 basehttp log_message 14334 139955616999168 "GET /uploads/banner/2021/3.jpg HTTP/1.1" 200 443034
+INFO 2021-11-12 12:01:28,737 basehttp log_message 14334 139955267434240 "GET /uploads/banner/2021/2.jpg HTTP/1.1" 200 176325
+INFO 2021-11-12 12:01:28,751 basehttp log_message 14334 139955259041536 "GET /uploads/banner/2021/1.jpg HTTP/1.1" 200 171972
+INFO 2021-11-12 14:15:55,380 basehttp log_message 14334 139955642738432 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-12 14:15:55,388 basehttp log_message 14334 139955625391872 "GET /banner/ HTTP/1.1" 200 551
+INFO 2021-11-12 14:15:55,395 basehttp log_message 14334 139955267434240 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-12 14:15:55,608 basehttp log_message 14334 139955259041536 "GET /uploads/banner/2021/5.jpg HTTP/1.1" 200 158646
+INFO 2021-11-12 14:15:55,609 basehttp log_message 14334 139955233863424 "GET /uploads/banner/2021/1.jpg HTTP/1.1" 200 171972
+INFO 2021-11-12 14:15:55,610 basehttp log_message 14334 139955242256128 "GET /uploads/banner/2021/2.jpg HTTP/1.1" 200 176325
+INFO 2021-11-12 14:15:55,631 basehttp log_message 14334 139955616999168 "GET /uploads/banner/2021/4.jpg HTTP/1.1" 200 1312893
+INFO 2021-11-12 14:15:55,635 basehttp log_message 14334 139955250648832 "GET /uploads/banner/2021/3.jpg HTTP/1.1" 200 443034
+INFO 2021-11-12 14:16:11,963 basehttp log_message 14334 139955267434240 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-12 14:16:12,900 basehttp log_message 14334 139955267434240 "POST /users/login/ HTTP/1.1" 200 219
+INFO 2021-11-12 15:06:44,009 autoreload trigger_reload 14334 139955714728320 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py changed, reloading.
+INFO 2021-11-12 15:06:45,445 autoreload run_with_reloader 20135 139644385325440 Watching for file changes with StatReloader
+INFO 2021-11-12 15:21:14,712 autoreload trigger_reload 20135 139644385325440 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py changed, reloading.
+INFO 2021-11-12 15:21:15,565 autoreload run_with_reloader 20407 140288445800832 Watching for file changes with StatReloader
+INFO 2021-11-12 15:28:19,517 autoreload trigger_reload 20407 140288445800832 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py changed, reloading.
+INFO 2021-11-12 15:28:20,332 autoreload run_with_reloader 20508 139811639267712 Watching for file changes with StatReloader
+INFO 2021-11-12 15:53:35,187 autoreload run_with_reloader 21046 139841061687680 Watching for file changes with StatReloader
+WARNING 2021-11-12 15:53:53,359 log log_response 21046 139840913929984 Not Found: /
+WARNING 2021-11-12 15:53:53,360 basehttp log_message 21046 139840913929984 "GET / HTTP/1.1" 404 2770
+ERROR 2021-11-12 15:54:34,186 log log_response 21046 139840913929984 Internal Server Error: /users/sms/17260808696/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 84, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 15:54:34,200 basehttp log_message 21046 139840913929984 "GET /users/sms/17260808696/ HTTP/1.1" 500 4098134
+INFO 2021-11-12 15:57:35,297 basehttp log_message 21046 139840913929984 "GET /users/sms/17260808696 HTTP/1.1" 301 0
+ERROR 2021-11-12 15:57:36,894 log log_response 21046 139840913929984 Internal Server Error: /users/sms/17260808696/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 84, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 15:57:36,911 basehttp log_message 21046 139840913929984 "GET /users/sms/17260808696/ HTTP/1.1" 500 4098134
+INFO 2021-11-12 16:01:24,701 autoreload run_with_reloader 21434 139737008079232 Watching for file changes with StatReloader
+WARNING 2021-11-12 16:01:31,308 log log_response 21434 139736934438656 Not Found: /
+WARNING 2021-11-12 16:01:31,309 basehttp log_message 21434 139736934438656 "GET / HTTP/1.1" 404 2770
+WARNING 2021-11-12 16:01:31,509 log log_response 21434 139736934438656 Not Found: /favicon.ico
+WARNING 2021-11-12 16:01:31,510 basehttp log_message 21434 139736934438656 "GET /favicon.ico HTTP/1.1" 404 2821
+ERROR 2021-11-12 16:01:48,570 log log_response 21434 139736934438656 Internal Server Error: /users/sms/17260808696/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 84, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-12 16:01:48,582 basehttp log_message 21434 139736934438656 "GET /users/sms/17260808696/ HTTP/1.1" 500 4098430
+INFO 2021-11-12 16:05:10,432 autoreload run_with_reloader 21744 140231346258304 Watching for file changes with StatReloader
+INFO 2021-11-12 16:06:23,238 autoreload run_with_reloader 21867 140259127775616 Watching for file changes with StatReloader
+WARNING 2021-11-12 16:06:44,485 log log_response 21867 140258987017984 Not Found: /users
+WARNING 2021-11-12 16:06:44,486 basehttp log_message 21867 140258987017984 "GET /users HTTP/1.1" 404 2803
+WARNING 2021-11-12 16:06:44,593 log log_response 21867 140258987017984 Not Found: /favicon.ico
+WARNING 2021-11-12 16:06:44,594 basehttp log_message 21867 140258987017984 "GET /favicon.ico HTTP/1.1" 404 2821
+WARNING 2021-11-12 16:06:50,079 log log_response 21867 140258987017984 Not Found: /users/
+WARNING 2021-11-12 16:06:50,080 basehttp log_message 21867 140258987017984 "GET /users/ HTTP/1.1" 404 3416
+WARNING 2021-11-12 16:07:10,662 log log_response 21867 140258987017984 Not Found: /users/17260808696
+WARNING 2021-11-12 16:07:10,664 basehttp log_message 21867 140258987017984 "GET /users/17260808696 HTTP/1.1" 404 3449
+INFO 2021-11-13 04:42:58,738 autoreload run_with_reloader 3589 140202160386432 Watching for file changes with StatReloader
+WARNING 2021-11-13 04:43:19,684 log log_response 3589 140202007123712 Not Found: /
+WARNING 2021-11-13 04:43:19,687 basehttp log_message 3589 140202007123712 "GET / HTTP/1.1" 404 2770
+WARNING 2021-11-13 04:43:20,933 log log_response 3589 140202007123712 Not Found: /favicon.ico
+WARNING 2021-11-13 04:43:20,934 basehttp log_message 3589 140202007123712 "GET /favicon.ico HTTP/1.1" 404 2821
+INFO 2021-11-13 05:45:46,184 autoreload run_with_reloader 4476 139949471752576 Watching for file changes with StatReloader
+INFO 2021-11-13 05:52:38,997 autoreload run_with_reloader 4518 140212415566208 Watching for file changes with StatReloader
+ERROR 2021-11-13 05:53:43,270 log log_response 4518 140212341925632 Internal Server Error: /users/sms/17260808696/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 86, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 05:53:43,286 basehttp log_message 4518 140212341925632 "GET /users/sms/17260808696/ HTTP/1.1" 500 4098311
+INFO 2021-11-13 06:06:56,535 autoreload run_with_reloader 4668 140473798025600 Watching for file changes with StatReloader
+INFO 2021-11-13 06:08:53,670 autoreload run_with_reloader 4695 140096016368000 Watching for file changes with StatReloader
+WARNING 2021-11-13 06:10:15,676 log log_response 4695 140095942727424 Not Found: /users/sms/17260808696/
+WARNING 2021-11-13 06:10:15,678 basehttp log_message 4695 140095942727424 "GET /users/sms/17260808696/ HTTP/1.1" 404 3463
+WARNING 2021-11-13 06:10:15,793 log log_response 4695 140095942727424 Not Found: /favicon.ico
+WARNING 2021-11-13 06:10:15,794 basehttp log_message 4695 140095942727424 "GET /favicon.ico HTTP/1.1" 404 2821
+WARNING 2021-11-13 06:10:49,513 log log_response 4695 140095942727424 Not Found: /
+WARNING 2021-11-13 06:10:49,514 basehttp log_message 4695 140095942727424 "GET / HTTP/1.1" 404 2770
+WARNING 2021-11-13 06:11:07,337 log log_response 4695 140095942727424 Not Found: /users/sms/17260808696/
+WARNING 2021-11-13 06:11:07,339 basehttp log_message 4695 140095942727424 "GET /users/sms/17260808696/ HTTP/1.1" 404 3463
+INFO 2021-11-13 06:11:21,249 autoreload run_with_reloader 5032 139913647165824 Watching for file changes with StatReloader
+WARNING 2021-11-13 06:11:45,968 log log_response 5032 139913573525248 Not Found: /
+WARNING 2021-11-13 06:11:45,969 basehttp log_message 5032 139913573525248 "GET / HTTP/1.1" 404 2770
+WARNING 2021-11-13 06:11:46,756 log log_response 5032 139913573525248 Not Found: /
+WARNING 2021-11-13 06:11:46,761 basehttp log_message 5032 139913573525248 "GET / HTTP/1.1" 404 2770
+WARNING 2021-11-13 06:11:53,990 log log_response 5032 139913573525248 Not Found: /users/
+WARNING 2021-11-13 06:11:53,991 basehttp log_message 5032 139913573525248 "GET /users/ HTTP/1.1" 404 3415
+WARNING 2021-11-13 06:12:38,413 log log_response 5032 139913573525248 Not Found: /users/sms/17260808696/
+WARNING 2021-11-13 06:12:38,417 basehttp log_message 5032 139913573525248 "GET /users/sms/17260808696/ HTTP/1.1" 404 3463
+WARNING 2021-11-13 06:13:35,405 log log_response 5032 139913564870400 Not Found: /users/sms/17260808696/
+WARNING 2021-11-13 06:13:35,406 basehttp log_message 5032 139913564870400 "POST /users/sms/17260808696/ HTTP/1.1" 404 3464
+WARNING 2021-11-13 06:13:44,872 log log_response 5032 139913564870400 Not Found: /users/sms/17260808696/
+WARNING 2021-11-13 06:13:44,874 basehttp log_message 5032 139913564870400 "GET /users/sms/17260808696/ HTTP/1.1" 404 3463
+INFO 2021-11-13 06:14:34,224 basehttp log_message 5032 139913564870400 "GET /banner HTTP/1.1" 301 0
+INFO 2021-11-13 06:14:34,470 basehttp log_message 5032 139913564870400 "GET /banner/ HTTP/1.1" 200 551
+WARNING 2021-11-13 06:14:45,663 log log_response 5032 139913564870400 Not Found: /users
+WARNING 2021-11-13 06:14:45,664 basehttp log_message 5032 139913564870400 "GET /users HTTP/1.1" 404 2803
+WARNING 2021-11-13 06:14:48,896 log log_response 5032 139913564870400 Not Found: /users/
+WARNING 2021-11-13 06:14:48,896 basehttp log_message 5032 139913564870400 "GET /users/ HTTP/1.1" 404 3415
+INFO 2021-11-13 06:15:47,642 basehttp log_message 5032 139913564870400 "GET /users/register HTTP/1.1" 301 0
+ERROR 2021-11-13 06:15:49,244 log log_response 5032 139913564870400 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 06:15:49,257 basehttp log_message 5032 139913564870400 "GET /users/register/ HTTP/1.1" 500 3994375
+ERROR 2021-11-13 06:15:57,744 log log_response 5032 139913564870400 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 06:15:57,821 basehttp log_message 5032 139913564870400 "GET /users/register/ HTTP/1.1" 500 3994221
+INFO 2021-11-13 06:18:23,220 autoreload run_with_reloader 5507 140042527408512 Watching for file changes with StatReloader
+WARNING 2021-11-13 06:18:27,689 log log_response 5507 140042453767936 Not Found: /users/sms/17260808696/
+WARNING 2021-11-13 06:18:27,690 basehttp log_message 5507 140042453767936 "GET /users/sms/17260808696/ HTTP/1.1" 404 3463
+WARNING 2021-11-13 06:18:29,623 log log_response 5507 140042453767936 Not Found: /users/sms/17260808696/
+WARNING 2021-11-13 06:18:29,625 basehttp log_message 5507 140042453767936 "GET /users/sms/17260808696/ HTTP/1.1" 404 3463
+WARNING 2021-11-13 06:18:31,835 log log_response 5507 140042453767936 Not Found: /
+WARNING 2021-11-13 06:18:31,836 basehttp log_message 5507 140042453767936 "GET / HTTP/1.1" 404 2770
+WARNING 2021-11-13 06:18:33,910 log log_response 5507 140042453767936 Not Found: /users/sms/17260808696/
+WARNING 2021-11-13 06:18:33,911 basehttp log_message 5507 140042453767936 "GET /users/sms/17260808696/ HTTP/1.1" 404 3463
+ERROR 2021-11-13 06:18:41,439 log log_response 5507 140042366347008 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 06:18:41,459 basehttp log_message 5507 140042366347008 "GET /users/register/ HTTP/1.1" 500 3994221
+INFO 2021-11-13 06:20:41,410 autoreload run_with_reloader 5587 140317014409600 Watching for file changes with StatReloader
+INFO 2021-11-13 06:58:55,315 basehttp log_message 5587 140316940769024 "GET /users/mobile/17260808696/ HTTP/1.1" 200 15
+ERROR 2021-11-13 06:59:04,417 log log_response 5587 140316940769024 Internal Server Error: /users/sms/17260808696
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 90, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 06:59:04,427 basehttp log_message 5587 140316940769024 "GET /users/sms/17260808696 HTTP/1.1" 500 4096526
+ERROR 2021-11-13 06:59:11,330 log log_response 5587 140316940769024 Internal Server Error: /users/sms/17260808696
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 90, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 06:59:11,337 basehttp log_message 5587 140316940769024 "GET /users/sms/17260808696 HTTP/1.1" 500 4096526
+INFO 2021-11-13 06:59:29,692 autoreload run_with_reloader 6299 139784290419072 Watching for file changes with StatReloader
+INFO 2021-11-13 06:59:56,470 basehttp log_message 6299 139784216778496 "GET /users/mobile/17260808696/ HTTP/1.1" 200 15
+ERROR 2021-11-13 07:00:01,610 log log_response 6299 139784216778496 Internal Server Error: /users/sms/17260808696
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 90, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 07:00:01,620 basehttp log_message 6299 139784216778496 "GET /users/sms/17260808696 HTTP/1.1" 500 4096526
+ERROR 2021-11-13 07:00:19,785 log log_response 6299 139784135898880 Internal Server Error: /users/sms/17260808696
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 90, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 07:00:19,796 basehttp log_message 6299 139784135898880 "GET /users/sms/17260808696 HTTP/1.1" 500 4097204
+WARNING 2021-11-13 07:00:26,089 log log_response 6299 139784135898880 Not Found: /favicon.ico
+WARNING 2021-11-13 07:00:26,090 basehttp log_message 6299 139784135898880 "GET /favicon.ico HTTP/1.1" 404 2821
+INFO 2021-11-13 08:25:34,703 autoreload run_with_reloader 6931 139691762172288 Watching for file changes with StatReloader
+INFO 2021-11-13 08:53:24,122 autoreload run_with_reloader 7194 140066193691008 Watching for file changes with StatReloader
+WARNING 2021-11-13 10:09:16,739 log log_response 7194 140066052884224 Not Found: /
+WARNING 2021-11-13 10:09:16,745 basehttp log_message 7194 140066052884224 "GET / HTTP/1.1" 404 2770
+ERROR 2021-11-13 10:09:31,921 log log_response 7194 140066052884224 Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 10:09:31,980 basehttp log_message 7194 140066052884224 "GET /users/login/ HTTP/1.1" 500 3993363
+INFO 2021-11-13 10:11:22,524 basehttp log_message 7194 140066052884224 "GET /banner/ HTTP/1.1" 200 6760
+INFO 2021-11-13 10:11:22,727 basehttp log_message 7194 140065787340544 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,733 basehttp log_message 7194 140066022725376 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,735 basehttp log_message 7194 140066044491520 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,738 basehttp log_message 7194 140066031118080 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,741 basehttp log_message 7194 140065795733248 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,744 basehttp log_message 7194 140066022725376 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,745 basehttp log_message 7194 140066052884224 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,751 basehttp log_message 7194 140065787340544 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,752 basehttp log_message 7194 140066044491520 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,753 basehttp log_message 7194 140066031118080 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-11-13 10:11:22,959 basehttp log_message 7194 140066031118080 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2021-11-13 10:11:31,347 log log_response 7194 140066031118080 Not Found: /
+WARNING 2021-11-13 10:11:31,349 basehttp log_message 7194 140066031118080 "GET / HTTP/1.1" 404 2770
+WARNING 2021-11-13 10:11:45,323 log log_response 7194 140066031118080 Not Found: /users
+WARNING 2021-11-13 10:11:45,324 basehttp log_message 7194 140066031118080 "GET /users HTTP/1.1" 404 2803
+WARNING 2021-11-13 10:11:54,154 log log_response 7194 140066031118080 Not Found: /users/
+WARNING 2021-11-13 10:11:54,155 basehttp log_message 7194 140066031118080 "GET /users/ HTTP/1.1" 404 3415
+ERROR 2021-11-13 10:12:18,091 log log_response 7194 140066031118080 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 10:12:18,103 basehttp log_message 7194 140066031118080 "GET /users/register/ HTTP/1.1" 500 3995306
+INFO 2021-11-13 10:15:18,760 autoreload run_with_reloader 7635 140281551790464 Watching for file changes with StatReloader
+ERROR 2021-11-13 10:15:40,625 log log_response 7635 140281411008256 Internal Server Error: /users/sms/17260808696
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 91, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 10:15:40,645 basehttp log_message 7635 140281411008256 "GET /users/sms/17260808696 HTTP/1.1" 500 4097334
+WARNING 2021-11-13 10:15:51,244 log log_response 7635 140281411008256 Not Found: /users/sms/17260808696/
+WARNING 2021-11-13 10:15:51,245 basehttp log_message 7635 140281411008256 "GET /users/sms/17260808696/ HTTP/1.1" 404 3463
+ERROR 2021-11-13 10:16:02,128 log log_response 7635 140281411008256 Internal Server Error: /users/sms/17260808696
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 91, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/exceptions.py", line 19, in exception_handler
+    response = exception_handler(exc, context)
+  [Previous line repeated 952 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2021-11-13 10:16:02,139 basehttp log_message 7635 140281411008256 "GET /users/sms/17260808696 HTTP/1.1" 500 4097204
+INFO 2021-11-13 10:24:51,945 autoreload run_with_reloader 7760 140276498133376 Watching for file changes with StatReloader
+WARNING 2021-11-13 10:25:08,349 log log_response 7760 140276424492800 Method Not Allowed: /users/login/
+WARNING 2021-11-13 10:25:08,350 basehttp log_message 7760 140276424492800 "GET /users/login/ HTTP/1.1" 405 7482
+ERROR 2021-11-13 10:25:24,873 log log_response 7760 140276424492800 Internal Server Error: /users/sms/17260808696
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 91, in get
+    pipe.excute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
+AttributeError: 'Pipeline' object has no attribute 'excute'
+ERROR 2021-11-13 10:25:24,876 basehttp log_message 7760 140276424492800 "GET /users/sms/17260808696 HTTP/1.1" 500 97600
+INFO 2021-11-13 10:36:33,250 autoreload run_with_reloader 7840 140668285247872 Watching for file changes with StatReloader
+INFO 2021-11-13 10:36:52,326 basehttp log_message 7840 140668211607296 "GET /users/sms/17260808696 HTTP/1.1" 200 5243
+INFO 2021-11-13 10:39:41,997 basehttp log_message 7840 140668203214592 "GET /banner/ HTTP/1.1" 200 551
+INFO 2021-11-13 10:40:34,936 basehttp log_message 7840 140668203214592 "GET /users/mobile/17260808696/ HTTP/1.1" 200 15
+INFO 2021-11-13 10:42:54,886 basehttp log_message 7840 140668203214592 "GET /users/sms/17260808696 HTTP/1.1" 200 15
+INFO 2021-11-13 10:43:24,263 basehttp log_message 7840 140668203214592 "OPTIONS /users/register/ HTTP/1.1" 200 0
+WARNING 2021-11-13 10:43:24,796 log log_response 7840 140668203214592 Bad Request: /users/register/
+WARNING 2021-11-13 10:43:24,797 basehttp log_message 7840 140668203214592 "POST /users/register/ HTTP/1.1" 400 43
+WARNING 2021-11-13 10:43:54,154 log log_response 7840 140668203214592 Bad Request: /users/register/
+WARNING 2021-11-13 10:43:54,154 basehttp log_message 7840 140668203214592 "POST /users/register/ HTTP/1.1" 400 43
+INFO 2021-11-13 10:44:20,769 autoreload run_with_reloader 8053 139866796601728 Watching for file changes with StatReloader
+INFO 2021-11-13 10:48:58,432 basehttp log_message 8053 139866722961152 "GET /users/mobile/17260808696/ HTTP/1.1" 200 15
+INFO 2021-11-13 10:49:08,002 basehttp log_message 8053 139866722961152 "GET /users/sms/17260808696 HTTP/1.1" 200 15
+INFO 2021-11-13 10:49:27,034 basehttp log_message 8053 139866722961152 "OPTIONS /users/register/ HTTP/1.1" 200 0
+WARNING 2021-11-13 10:49:27,345 log log_response 8053 139866722961152 Bad Request: /users/register/
+WARNING 2021-11-13 10:49:27,352 basehttp log_message 8053 139866722961152 "POST /users/register/ HTTP/1.1" 400 43
+INFO 2021-11-13 10:57:23,920 autoreload run_with_reloader 8238 139853139640704 Watching for file changes with StatReloader
+INFO 2021-11-13 10:58:40,279 basehttp log_message 8238 139852993525504 "GET /users/mobile/17260808696/ HTTP/1.1" 200 15
+INFO 2021-11-13 10:58:47,322 basehttp log_message 8238 139852993525504 "GET /users/sms/17260808696 HTTP/1.1" 200 15
+INFO 2021-11-13 10:59:13,815 basehttp log_message 8238 139852993525504 "OPTIONS /users/register/ HTTP/1.1" 200 0
+ERROR 2021-11-13 10:59:14,286 log log_response 8238 139852993525504 Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 422, in run_validation
+    value = self.validate(value)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/serializers.py", line 80, in validate
+    attrs.pop("code")
+KeyError: 'code'
+ERROR 2021-11-13 10:59:14,288 basehttp log_message 8238 139852993525504 "POST /users/register/ HTTP/1.1" 500 119485
+INFO 2021-11-13 10:59:24,131 basehttp log_message 8238 139852993525504 "OPTIONS /users/register/ HTTP/1.1" 200 0
+WARNING 2021-11-13 10:59:24,431 log log_response 8238 139852993525504 Bad Request: /users/register/
+WARNING 2021-11-13 10:59:24,431 basehttp log_message 8238 139852993525504 "POST /users/register/ HTTP/1.1" 400 55
+INFO 2021-11-13 10:59:47,681 basehttp log_message 8238 139852993525504 "OPTIONS /users/register/ HTTP/1.1" 200 0
+WARNING 2021-11-13 10:59:48,009 log log_response 8238 139852993525504 Bad Request: /users/register/
+WARNING 2021-11-13 10:59:48,010 basehttp log_message 8238 139852993525504 "POST /users/register/ HTTP/1.1" 400 55
+INFO 2021-11-13 12:31:01,450 autoreload trigger_reload 8238 139853139640704 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/serializers.py changed, reloading.
+INFO 2021-11-13 12:31:02,381 autoreload run_with_reloader 8751 140349873947008 Watching for file changes with StatReloader
+INFO 2021-11-13 12:34:12,533 autoreload run_with_reloader 8806 139857558495616 Watching for file changes with StatReloader
+INFO 2021-11-13 12:36:50,087 basehttp log_message 8806 139857417729792 "GET /users/mobile/17260808696/ HTTP/1.1" 200 15
+INFO 2021-11-13 12:36:55,915 basehttp log_message 8806 139857417729792 "GET /users/sms/17260808696 HTTP/1.1" 200 15
+INFO 2021-11-13 12:37:18,467 basehttp log_message 8806 139857417729792 "POST /users/register/ HTTP/1.1" 201 271
+INFO 2021-11-15 02:44:28,644 autoreload run_with_reloader 5277 140197370712448 Watching for file changes with StatReloader
+INFO 2021-11-15 06:54:13,770 autoreload run_with_reloader 5999 140381540680064 Watching for file changes with StatReloader
+WARNING 2021-11-15 06:54:20,670 log log_response 5999 140381399906048 Not Found: /
+WARNING 2021-11-15 06:54:20,674 basehttp log_message 5999 140381399906048 "GET / HTTP/1.1" 404 2770
+WARNING 2021-11-15 06:54:20,918 log log_response 5999 140381399906048 Not Found: /favicon.ico
+WARNING 2021-11-15 06:54:20,919 basehttp log_message 5999 140381399906048 "GET /favicon.ico HTTP/1.1" 404 2821
+INFO 2021-11-15 06:54:34,213 basehttp log_message 5999 140381399906048 "GET /users/sms/17260808696 HTTP/1.1" 200 5243
+INFO 2021-11-15 06:54:34,339 basehttp log_message 5999 140381399906048 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,341 basehttp log_message 5999 140381356332800 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,345 basehttp log_message 5999 140381391513344 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,348 basehttp log_message 5999 140381399906048 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,349 basehttp log_message 5999 140381373118208 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,351 basehttp log_message 5999 140381391513344 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,355 basehttp log_message 5999 140381364725504 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,359 basehttp log_message 5999 140381399906048 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,367 basehttp log_message 5999 140381356332800 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,373 basehttp log_message 5999 140381381510912 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-11-15 06:54:34,468 basehttp log_message 5999 140381381510912 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0

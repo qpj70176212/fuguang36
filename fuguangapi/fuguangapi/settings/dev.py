@@ -304,3 +304,18 @@ TENCENTCLOUD = {
         "AppSecretKey": "02DN3yBANi1xeXI-BQitJug** "
     }
 }
+
+
+# 容联云短信
+RONGLIANYUN = {
+    # accId	String	开发者主账号,登陆云通讯网站后,可在控制台首页看到开发者主账号ACCOUNT SID
+    "accId": "8aaf07087ce03b67017d141ad4380ba6",
+    # accToken	String	主账号令牌 TOKEN,登陆云通讯网站后,可在控制台首页看到主账号令牌AUTH TOKEN
+    "accToken": "b3f15b8095b34862b4e9f82c234ae477",
+    # appId	String	请使用管理控制台中已创建应用的APPID
+    "appId": "8aaf07087ce03b67017d141ad5610bad",
+    # tid	String	短信模板 ID
+    "reg_tid": 1,  # 注册短信验证码的模板ID
+    "sms_expire": 300,  # 短信有效期，单位：秒（s）
+    "sms_interval": 60,  # 短信发送的冷却时间，单位：秒（s）
+}

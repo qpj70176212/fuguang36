@@ -1,9 +1,11 @@
 import re, constants
 from rest_framework import serializers
-from rest_framework_jwt.settings import api_settings
+# from rest_framework_jwt.settings import api_settings
 
 from tencentcloudapi import TencentCloudAPI
 from .models import User
+from django_redis import get_redis_connection
+from fuguangapi.utils.authenticate import generate_jwt_token
 
 
 class UserRegisterModelSerializer(serializers.ModelSerializer):
@@ -56,13 +58,27 @@ class UserRegisterModelSerializer(serializers.ModelSerializer):
         result = api.captcha(
             attrs.get("ticket"),
             self.context["request"]._request.META.get("REMOTE_ADDR"),
-            attrs.get("randstr")
+            attrs.get("randstr"),
         )
         if not result:
             raise serializers.ValidationError(detail="滑动验证码校验失败！")
 
         # todo 验证短信验证码
+        redis = get_redis_connection("sms_code")
+        sms_code = redis.get(f"sms_{mobile}")
+        print(sms_code)
+        if sms_code is None:
+            # 获取不到验证码，则表示验证码已经过期了
+            raise serializers.ValidationError(detail="验证码失效或已过期！")
+        # 从redis提取的数据，字符串都是bytes类型，所以decode
+        # if code.decode() != attrs.get("code"):
+        if sms_code.decode() != attrs.get("sms_code"):
+            raise serializers.ValidationError(detail="验证码错误！")
+        # 删除redis中的短信，后续不管用户是否注册成功，至少当前这条短信验证码已经没有用了
+        redis.delete(f"sms_{mobile}")
 
+        attrs.pop("re_password")
+        attrs.pop("sms_code")
         return attrs
 
     def create(self, validated_data):
@@ -78,9 +94,10 @@ class UserRegisterModelSerializer(serializers.ModelSerializer):
         )
 
         # 注册成功以后免登陆
-        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
-        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
-        payload = jwt_payload_handler(user)
-        user.token = jwt_encode_handler(payload)
+        # jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        # jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        # payload = jwt_payload_handler(user)
+        # user.token = jwt_encode_handler(payload)
+        user.token = generate_jwt_token(user)
 
         return user
