@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-import os
 import sys
 from pathlib import Path
 
@@ -159,9 +158,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -318,4 +319,36 @@ RONGLIANYUN = {
     "reg_tid": 1,  # 注册短信验证码的模板ID
     "sms_expire": 300,  # 短信有效期，单位：秒（s）
     "sms_interval": 60,  # 短信发送的冷却时间，单位：秒（s）
+}
+
+
+# Celery异步任务队列框架的配置项【注意：django的配置项必须大写所以这里的所有配置项必须全部大写】
+# 任务队列
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379/14'
+# 结果队列
+CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379/15'
+# 时区，于django的时区同步
+CELERY_TIMEZONE = TIME_ZONE
+# 防止死锁
+CELERY_FORCE_EXECV = True
+# 设置并发的worker数量
+CELERYD_CONCURRENCY = 20
+# 设置失败允许重试【这个慎用，如果失败任务无法再次执行成功，会产出指数级别的失败记录】
+CELERY_ACKS_LATE = True
+# 每个worker工作进程最多执行500个任务被销毁，可以防止内存泄漏，500是举例，根据自己的服务器的性能可以调整数值
+CELERYD_MAX_TASKS_PER_CHILD = 500
+# 单个任务的最大运行时间，超时会被杀死
+CELERYD_TIME_LIMIT = 10 * 60
+# 任务发出后，经过一段时间还未收到acknowledge，就将任务重新交给其他worker执行
+CELERY_DISABLE_RATE_LIMITS = True
+# celery的任务结果内容格式
+CELERY_ACCERT_CONTENT = ['json', 'pickle']
+# 设置定时任务的调用列表，需要单独运行SCHEDULE命令才能让celery执行定时任务: celery -A mycelery.main beat，当然worker还是要启动的
+# https://docs.celeryproject.org/en/stable/userguide/periodic-tasks.html
+CELERY_BEAT_SCHEDULE = {
+    "user-add": {  # 定时任务的注册标记符【必须唯一的】
+        "task": "add",  # 定时任务的任务名称
+        "schedule": 10,  # 定时任务的调用时间，10表示每隔10秒调用一次add任务
+        # "schedule": crontab(hour=7, minute=30, day_of_week=1),  # 定时任务的调用时间，每周一早上7点30分调用一次add任务
+    }
 }

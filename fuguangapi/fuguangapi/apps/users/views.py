@@ -11,7 +11,8 @@ from rest_framework.generics import CreateAPIView
 from .serializers import UserRegisterModelSerializer
 from fuguangapi.utils.ronglianyunapi import send_sms
 from django_redis import get_redis_connection
-from mycelery.sms.tasks import send_sms
+# from mycelery.sms.tasks import send_sms
+from .tasks import send_sms
 # Create your views here.
 
 

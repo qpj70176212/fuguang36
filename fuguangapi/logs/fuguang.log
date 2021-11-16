@@ -2368,3 +2368,15 @@ INFO 2021-11-15 14:35:13,371 basehttp log_message 12379 140092446897920 "OPTIONS
 INFO 2021-11-15 14:35:14,268 basehttp log_message 12379 140092446897920 "POST /users/register/ HTTP/1.1" 201 271
 WARNING 2021-11-15 14:35:56,709 log log_response 12379 140092446897920 Bad Request: /users/mobile/17260808696/
 WARNING 2021-11-15 14:35:56,710 basehttp log_message 12379 140092446897920 "GET /users/mobile/17260808696/ HTTP/1.1" 400 37
+INFO 2021-11-15 15:39:47,935 autoreload trigger_reload 12379 140092524089728 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py changed, reloading.
+INFO 2021-11-15 15:39:50,021 autoreload run_with_reloader 13903 140073999573376 Watching for file changes with StatReloader
+INFO 2021-11-15 16:10:10,473 autoreload trigger_reload 13903 140073999573376 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-16 09:42:01,344 autoreload run_with_reloader 6247 140160669995392 Watching for file changes with StatReloader
+INFO 2021-11-16 15:01:51,240 autoreload run_with_reloader 6795 139665968730496 Watching for file changes with StatReloader
+INFO 2021-11-16 15:03:25,928 basehttp log_message 6795 139665824384768 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-16 15:03:25,936 basehttp log_message 6795 139665807599360 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-16 15:03:25,940 basehttp log_message 6795 139665815992064 "GET /banner/ HTTP/1.1" 200 551
+INFO 2021-11-16 15:03:47,442 basehttp log_message 6795 139665815992064 "GET /users/mobile/17260808696/ HTTP/1.1" 200 15
+INFO 2021-11-16 15:04:13,985 basehttp log_message 6795 139665815992064 "GET /users/sms/17260808696 HTTP/1.1" 200 15
+INFO 2021-11-16 15:04:31,483 basehttp log_message 6795 139665815992064 "OPTIONS /users/register/ HTTP/1.1" 200 0
+INFO 2021-11-16 15:04:32,154 basehttp log_message 6795 139665815992064 "POST /users/register/ HTTP/1.1" 201 271
