@@ -33,7 +33,7 @@ DEBUG = True
 # DEBUG = False
 
 # 是否处于测试环境下
-IS_TEST = False
+IS_TEST = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ["*"]
@@ -94,8 +94,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'fuguang',
-        'USER': 'fuguang_user',
-        'PASSWORD': 'fuguang',
+        'USER': 'root',
+        'PASSWORD': '123',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'POOL_OPTIONS': {      # 连接池的配置信息

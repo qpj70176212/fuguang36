@@ -1,7 +1,7 @@
 import re, constants
 from rest_framework import serializers
 # from rest_framework_jwt.settings import api_settings
-
+from django.conf import settings
 from tencentcloudapi import TencentCloudAPI
 from .models import User
 from django_redis import get_redis_connection
@@ -64,21 +64,22 @@ class UserRegisterModelSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(detail="滑动验证码校验失败！", code="verify")
 
         # todo 验证短信验证码
-        redis = get_redis_connection("sms_code")
-        sms_code = redis.get(f"sms_{mobile}")
-        # print(sms_code)
-        if sms_code is None:
-            # 获取不到验证码，则表示验证码已经过期了
-            raise serializers.ValidationError(detail="验证码失效或已过期！", code="sms_code")
-        # 从redis提取的数据，字符串都是bytes类型，所以decode
-        # if code.decode() != attrs.get("code"):
-        if sms_code.decode() != attrs.get("sms_code"):
-            raise serializers.ValidationError(detail="验证码错误！", code="sms_code")
-        # 删除redis中的短信，后续不管用户是否注册成功，至少当前这条短信验证码已经没有用了
-        redis.delete(f"sms_{mobile}")
+        if not settings.IS_TEST:
+            redis = get_redis_connection("sms_code")
+            sms_code = redis.get(f"sms_{mobile}")
+            # print(sms_code)
+            if sms_code is None:
+                # 获取不到验证码，则表示验证码已经过期了
+                raise serializers.ValidationError(detail="验证码失效或已过期！", code="sms_code")
+            # 从redis提取的数据，字符串都是bytes类型，所以decode
+            # if code.decode() != attrs.get("code"):
+            if sms_code.decode() != attrs.get("sms_code"):
+                raise serializers.ValidationError(detail="验证码错误！", code="sms_code")
+            # 删除redis中的短信，后续不管用户是否注册成功，至少当前这条短信验证码已经没有用了
+            redis.delete(f"sms_{mobile}")
 
-        attrs.pop("re_password")
-        attrs.pop("sms_code")
+            attrs.pop("re_password")
+            attrs.pop("sms_code")
         return attrs
 
     def create(self, validated_data):
