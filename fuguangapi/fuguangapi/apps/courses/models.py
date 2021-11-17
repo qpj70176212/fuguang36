@@ -4,6 +4,8 @@ from fuguangapi.utils.models import models, BaseModel
 from ckeditor.fields import RichTextField
 # 支持上传文件
 from ckeditor_uploader.fields import RichTextUploadingField
+# from stdimage import S
+from django.utils.safestring import mark_safe
 
 # Create your models here.
 
@@ -56,6 +58,8 @@ class Course(BaseModel):
         (1, '下线'),
         (2, '预上线')
     )
+    # course_cover = models.ImageField(upload_to="course/cover", max_length=255, verbose_name="封面图片", blank=True,
+    #                                  null=True)
     course_cover = models.ImageField(upload_to="course/cover", max_length=255, verbose_name="封面图片", blank=True,
                                      null=True)
     course_video = models.FileField(upload_to="course/video", max_length=255, verbose_name="封面视频", blank=True,
@@ -79,7 +83,8 @@ class Course(BaseModel):
                                   blank=True, db_constraint=False, verbose_name="学习方向")
     category = models.ForeignKey("CourseCategory", related_name="course_list", on_delete=models.DO_NOTHING, null=True,
                                  blank=True, db_constraint=False, verbose_name="课程分类")
-    teacher = models.ForeignKey("Teacher", related_name="course_list", on_delete=models.DO_NOTHING)
+    teacher = models.ForeignKey("Teacher", related_name="course_list", on_delete=models.DO_NOTHING, null=True,
+                                blank=True,db_constraint=False, verbose_name="授课老师")
 
     class Meta:
         db_table = "fg_course_info"
@@ -129,6 +134,14 @@ class CourseChapter(BaseModel):
     def __str__(self):
         return "%-第%s章-%s" % (self.course.name, self.orders, self.name)
 
+    # 自定义字段
+    def text(self):
+        return self.__str__()
+    # admin站点配置排序规则和显示的字段文本提示
+    text.short_description = "章节名称"
+    text.allow_tags = True
+    text.admin_order_field = "orders"
+
 
 class CourseLesson(BaseModel):
     """课程课时"""
@@ -150,14 +163,19 @@ class CourseLesson(BaseModel):
     course = models.ForeignKey("Course", related_name="lesson_list", on_delete=models.DO_NOTHING, db_constraint=False,
                                verbose_name="课程")
 
+    class Meta:
+        db_table = "fg_course_lesson"
+        # db_table = "fg_course_lesson"
+        verbose_name = "课程课时"
+        verbose_name_plural = verbose_name
 
-class Meta:
-    db_table = "fg_course_lesson"
-    verbose_name = "课程课时"
-    verbose_name_plural = verbose_name
+    def __str__(self):
+        # return "%s-%s" % (self.chapter, self.name)
+        return "%s-第%s章-%s-第%s课时-%s" % (self.course.name, self.chapter.orders, self.chapter.name, self.orders, self.name)
 
+    def text2(self):
+        return self.__str__()
 
-def __str__(self):
-    # return "%s-%s" % (self.chapter, self.name)
-    return "%s-第%s章-%s-第%s课时-%s" % (self.course.name, self.chapter.orders, self.chapter.name, self.orders, self.name)
-
+    text2.short_description = "课时名称"
+    text2.allow_tags = True
+    text2.admin_order_field = "order"
