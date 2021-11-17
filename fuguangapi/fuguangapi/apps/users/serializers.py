@@ -53,15 +53,16 @@ class UserRegisterModelSerializer(serializers.ModelSerializer):
             pass
 
         # 验证腾讯云的滑动验证码
-        api = TencentCloudAPI()
-        # 视图中的request对象，在序列化器中使用self.context["request"]
-        result = api.captcha(
-            attrs.get("ticket"),
-            self.context["request"]._request.META.get("REMOTE_ADDR"),
-            attrs.get("randstr"),
-        )
-        if not result:
-            raise serializers.ValidationError(detail="滑动验证码校验失败！", code="verify")
+        if not settings.IS_TEST:
+            api = TencentCloudAPI()
+            # 视图中的request对象，在序列化器中使用self.context["request"]
+            result = api.captcha(
+                attrs.get("ticket"),
+                self.context["request"]._request.META.get("REMOTE_ADDR"),
+                attrs.get("randstr"),
+            )
+            if not result:
+                raise serializers.ValidationError(detail="滑动验证码校验失败！", code="verify")
 
         # todo 验证短信验证码
         if not settings.IS_TEST:

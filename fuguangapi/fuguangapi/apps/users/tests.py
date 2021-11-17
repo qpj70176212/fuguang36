@@ -108,3 +108,108 @@ class UserTestCase(TestCase):
         self.assertNotIn('token', res.data)
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
 
+
+class UserRegisterTestCase(TestCase):
+    """用户注册相关接口的测试集"""
+    def setUp(self) -> None:
+        self.client = APIClient()
+
+    # 1.提交不存在的手机号测试是否通过
+    def test_mobile_register_by_does_not_exist_mobile(self):
+        data = {
+            "mobile": "27260808696",
+            "password": "123444",
+            "sms_code": "55555",
+            "re_password": "123444",
+            "randstr": "@9ob",
+            "ticket": "t03CDv0Df55l1Mh2tC5R01hefd4knbz-sJscxz7wzgNFX_rPClu4ecQCsJTAzxuXA-qP1L1z9g98UCaAAcAeoSMG1o4KeY13zrePr0AQei97H8HuWD2VfN36g**"
+        }
+        res = self.client.post(REGISTER_URL, data)
+        self.assertIn("non_field_errors", res.data)
+        self.assertIn("手机号格式不正确！", res.data["non_field_errors"])
+        # self.assertEqual('mobile', res.data['code'])
+
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
+
+    # 2.提交已注册的手机号测试是否通过
+    def test_mobile_register_by_registered_mobile(self):
+        data = {
+            "mobile": "17260808696",
+            "password": "123444",
+            "sms_code": "55555",
+            "re_password": "123444",
+            "randstr": "@9ob",
+            "ticket": "t03CDv0Df55l1Mh2tC5R01hefd4knbz-sJscxz7wzgNFX_rPClu4ecQCsJTAzxuXA-qP1L1z9g98UCaAAcAeoSMG1o4KeY13zrePr0AQei97H8HuWD2VfN36g**"
+        }
+        res = self.client.post(REGISTER_URL, data)
+        self.assertIn("token", res.data)
+        # self.assertEqual("手机号码已注册！", res.data["non_field_errors"])
+        # self.assertIn('non_field_errors', res.data["手机号码已注册！"])
+        # self.assertEqual('mobile', res.data['code'])
+
+        self.assertEqual(res.status_code, status.HTTP_201_CREATED)
+
+    # 3.提交无效的手机号测试是否通过
+    def test_mobile_register_by_invalid_mobile(self):
+        data = {
+            "mobile": "133123456",
+            "password": "123444",
+            "sms_code": "55555",
+            "re_password": "123444",
+            "randstr": "@9ob",
+            "ticket": "t03CDv0Df55l1Mh2tC5R01hefd4knbz-sJscxz7wzgNFX_rPClu4ecQCsJTAzxuXA-qP1L1z9g98UCaAAcAeoSMG1o4KeY13zrePr0AQei97H8HuWD2VfN36g**"
+        }
+        res = self.client.post(REGISTER_URL, data)
+        self.assertIn("non_field_errors", res.data)
+        # self.assertEqual("手机号格式不正确！", res.data["non_field_errors"])
+        # self.assertEqual('mobile', res.data['code'])
+
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
+
+    # 4.提交长度过短的密码是否测试通过
+    def test_password_register_by_short_password(self):
+        data = {
+            "mobile": "15709282073",
+            "password": "1234",
+            "sms_code": "55555",
+            "re_password": "1234",
+            "randstr": "@9ob",
+            "ticket": "t03CDv0Df55l1Mh2tC5R01hefd4knbz-sJscxz7wzgNFX_rPClu4ecQCsJTAzxuXA-qP1L1z9g98UCaAAcAeoSMG1o4KeY13zrePr0AQei97H8HuWD2VfN36g**"
+        }
+        res = self.client.post(REGISTER_URL, data)
+        self.assertIn("password", res.data)
+        # self.assertEqual("请确保这个字段至少包含 6 个字符。", res.data["password"])
+        self.assertIn("请确保这个字段至少包含 6 个字符。", res.data["password"])
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
+
+    # 5.提交长度过长的密码是否测试通过
+    def test_password_register_by_long_password(self):
+        data = {
+            "mobile": "15709282073",
+            "password": "123456789",
+            "sms_code": "55555",
+            "re_password": "123456789",
+            "randstr": "@9ob",
+            "ticket": "t03CDv0Df55l1Mh2tC5R01hefd4knbz-sJscxz7wzgNFX_rPClu4ecQCsJTAzxuXA-qP1L1z9g98UCaAAcAeoSMG1o4KeY13zrePr0AQei97H8HuWD2VfN36g**"
+        }
+        res = self.client.post(REGISTER_URL, data)
+        self.assertIn("token", res.data)
+
+        self.assertEqual(res.status_code, status.HTTP_201_CREATED)
+
+    # 6.提交空密码是否测试通过
+    def test_password_register_by_null_password(self):
+        data = {
+            "mobile": "15709282073",
+            "password": "",
+            "sms_code": "55555",
+            "re_password": "",
+            "randstr": "@9ob",
+            "ticket": "t03CDv0Df55l1Mh2tC5R01hefd4knbz-sJscxz7wzgNFX_rPClu4ecQCsJTAzxuXA-qP1L1z9g98UCaAAcAeoSMG1o4KeY13zrePr0AQei97H8HuWD2VfN36g**"
+        }
+        res = self.client.post(REGISTER_URL, data)
+        self.assertIn("password", res.data)
+        self.assertIn("该字段不能为空。", res.data["password"])
+        # self.assertEqual("该字段不能为空。", res.data["password"])
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
+

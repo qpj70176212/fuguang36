@@ -24,4 +24,6 @@ urlpatterns = [
     path('', include("home.urls")),
     re_path(r'uploads/(?P<path>.*)', serve, {"document_root": settings.MEDIA_ROOT}),
     path('users/', include("users.urls")),
+    path('courses/', include("courses.urls")),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 ]

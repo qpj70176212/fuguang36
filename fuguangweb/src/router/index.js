@@ -22,12 +22,21 @@ const routes = [
     },
     {
         meta: {
-            title: "注册",
+            title: "浮光在线教育-用户注册",
             keepalive: true
         },
         path: "/register",
         name: "Register",  // 路由名称
         component: () => import("../views/Register.vue")
+    },
+    {
+        meta: {
+            title: "浮光在线教育-项目课",
+            keepalive: true
+        },
+        path: '/project',
+        name: 'Course',
+        component: () => import("../views/Course.vue")
     }
 
 ]
