@@ -33,7 +33,7 @@ DEBUG = True
 # DEBUG = False
 
 # 是否处于测试环境下
-IS_TEST = False
+IS_TEST = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ["*"]
@@ -42,7 +42,6 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
-    'simpleui',  # admin界面美化，必须写在admin上面
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,12 +49,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders',  # cors跨域子应用
-    'ckeditor',  # 富文本插件核心应用
-    'ckeditor_uploader',  # 用于支持富文本插件上传文件使用的
+    'corsheaders', # cors跨域子应用
     'home',
-    'users',
-    "courses",
+    'users'
 
 ]
 
@@ -98,8 +94,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'fuguang',
-        'USER': 'fuguang_user',
-        'PASSWORD': 'fuguang',
+        'USER': 'root',
+        'PASSWORD': '123',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'POOL_OPTIONS': {      # 连接池的配置信息
@@ -357,26 +353,5 @@ CELERY_BEAT_SCHEDULE = {
         "task": "add",  # 定时任务的任务名称
         "schedule": 10,  # 定时任务的调用时间，10表示每隔10秒调用一次add任务
         # "schedule": crontab(hour=7, minute=30, day_of_week=1),  # 定时任务的调用时间，每周一早上7点30分调用一次add任务
-    }
-}
-
-
-# ckeditor富文本编辑器配置
-# 上传文件的存储路径
-CKEDITOR_UPLOAD_PATH = "ckeditor/"
-# 工具条配置
-CKEDITOR_CONFIGS = {
-    'default': {
-        # 'toolbar': 'full',  # full显示全部工具 Basic显示基本工具
-        'toolbar': 'Custom',  # 自定义工具条的显示数量
-        'toolbar_Custom': [
-            ['Bold', 'Italic', 'Underline', 'Image', 'Styles', 'Format', 'Font', 'Fontsize'],
-            ['NumberedList', 'BulletedList', '_', 'Outdent', 'Indent', '_', 'JustifyLeft',
-             'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
-            ['Link', 'Unlink'],
-            ['RemoveFormat', 'Source']
-        ],
-        # 设置编辑器的高度
-        'height': 300,
     }
 }
