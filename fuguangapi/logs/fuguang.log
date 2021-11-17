@@ -3203,3 +3203,31 @@ INFO 2021-11-17 20:37:31,698 basehttp log_message 11388 140323552487168 "GET /ad
 INFO 2021-11-17 20:37:36,602 basehttp log_message 11388 140323552487168 "GET /admin/courses/courselesson/ HTTP/1.1" 200 26354
 INFO 2021-11-17 20:37:36,674 basehttp log_message 11388 140323552487168 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
 INFO 2021-11-17 20:37:48,530 autoreload run_with_reloader 11443 140488430432640 Watching for file changes with StatReloader
+INFO 2021-11-17 20:44:08,352 basehttp log_message 11443 140488352409344 "GET /admin/ HTTP/1.1" 200 19623
+WARNING 2021-11-17 20:44:08,492 log log_response 11443 140488352409344 Not Found: /uploads/logo.png
+WARNING 2021-11-17 20:44:08,495 basehttp log_message 11443 140488352409344 "GET /uploads/logo.png HTTP/1.1" 404 2943
+WARNING 2021-11-17 20:44:08,867 log log_response 11443 140488352409344 Not Found: /uploads/logo.png
+WARNING 2021-11-17 20:44:08,869 basehttp log_message 11443 140488352409344 "GET /uploads/logo.png HTTP/1.1" 404 2943
+INFO 2021-11-17 20:44:17,136 basehttp log_message 11443 140488352409344 "GET /admin/logout/ HTTP/1.1" 200 161
+INFO 2021-11-17 20:44:17,212 basehttp log_message 11443 140488352409344 "GET /admin/login/ HTTP/1.1" 200 4071
+WARNING 2021-11-17 20:44:17,261 log log_response 11443 140488352409344 Not Found: /uploads/logo.png
+INFO 2021-11-17 20:44:17,264 basehttp log_message 11443 140488344016640 "GET /static/admin/simpleui-x/css/login.css?_=2.1 HTTP/1.1" 304 0
+WARNING 2021-11-17 20:44:17,267 basehttp log_message 11443 140488352409344 "GET /uploads/logo.png HTTP/1.1" 404 2943
+INFO 2021-11-17 20:44:17,278 basehttp log_message 11443 140488352409344 "GET /static/admin/simpleui-x/js/login.js?_=3.3 HTTP/1.1" 304 0
+INFO 2021-11-17 20:44:17,282 basehttp log_message 11443 140488344016640 "GET /static/admin/simpleui-x/particles/particles.js HTTP/1.1" 304 0
+INFO 2021-11-17 20:44:17,285 basehttp log_message 11443 140488334051072 "GET /static/admin/simpleui-x/particles/app.js HTTP/1.1" 304 0
+INFO 2021-11-17 20:44:17,339 basehttp log_message 11443 140488334051072 "GET /static/admin/simpleui-x/img/bg.svg HTTP/1.1" 304 0
+WARNING 2021-11-17 20:44:17,393 log log_response 11443 140488334051072 Not Found: /uploads/logo.png
+WARNING 2021-11-17 20:44:17,394 basehttp log_message 11443 140488334051072 "GET /uploads/logo.png HTTP/1.1" 404 2943
+INFO 2021-11-17 20:48:01,134 basehttp log_message 11443 140488334051072 "GET /admin/login/ HTTP/1.1" 200 4071
+INFO 2021-11-17 20:48:01,201 basehttp log_message 11443 140488334051072 "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO 2021-11-17 20:49:24,160 basehttp log_message 11443 140488334051072 "POST /admin/login/ HTTP/1.1" 302 0
+INFO 2021-11-17 20:49:24,215 basehttp log_message 11443 140488334051072 "GET /admin/ HTTP/1.1" 200 19623
+INFO 2021-11-17 20:55:55,396 autoreload trigger_reload 11443 140488430432640 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-17 20:55:56,754 autoreload run_with_reloader 11823 139962841584000 Watching for file changes with StatReloader
+INFO 2021-11-17 21:24:28,208 basehttp log_message 11823 139962763560704 "GET /admin/courses/coursedirection/ HTTP/1.1" 200 32401
+INFO 2021-11-17 21:24:28,347 basehttp log_message 11823 139962763560704 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 21:24:31,296 basehttp log_message 11823 139962763560704 "GET /admin/courses/coursedirection/add/ HTTP/1.1" 200 59690
+INFO 2021-11-17 21:24:31,403 basehttp log_message 11823 139962763560704 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 21:38:05,512 autoreload trigger_reload 11823 139962841584000 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-17 21:38:06,676 autoreload run_with_reloader 12392 140625570730368 Watching for file changes with StatReloader

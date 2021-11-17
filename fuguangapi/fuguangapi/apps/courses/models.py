@@ -4,7 +4,7 @@ from fuguangapi.utils.models import models, BaseModel
 from ckeditor.fields import RichTextField
 # 支持上传文件
 from ckeditor_uploader.fields import RichTextUploadingField
-# from stdimage import S
+from stdimage import StdImageField
 from django.utils.safestring import mark_safe
 
 # Create your models here.
@@ -60,7 +60,11 @@ class Course(BaseModel):
     )
     # course_cover = models.ImageField(upload_to="course/cover", max_length=255, verbose_name="封面图片", blank=True,
     #                                  null=True)
-    course_cover = models.ImageField(upload_to="course/cover", max_length=255, verbose_name="封面图片", blank=True,
+    course_cover = StdImageField(validators={
+        'thumb_1080x608': (1080, 608),  # 高清图
+        'thumb_504x304': (540, 304),  # 中等比例
+        'thumb_108x61': (108, 61, True),  # 小图（第三个参数表示保持图片质量）
+    }, upload_to="course/cover", max_length=255, verbose_name="封面图片", blank=True,
                                      null=True)
     course_video = models.FileField(upload_to="course/video", max_length=255, verbose_name="封面视频", blank=True,
                                     null=True)
@@ -93,6 +97,33 @@ class Course(BaseModel):
 
     def __str__(self):
         return "%s" % self.name
+
+    def course_cover_small(self):
+        if self.course_cover:
+            return mark_safe(f'<img style="border-radius: 0%;" src="{self.course_cover.thumb_108x61.url}">')
+        return ""
+
+    course_cover_small.short_description = "封面图片(108x61)"
+    course_cover_small.allow_tags = True
+    course_cover_small.admin_order_field = "course_cover"
+
+    def course_cover_medium(self):
+        if self.course_cover:
+            return mark_safe(f'<img style="border-radius: 0%;" src="{self.course_cover.thumb_540x304.url}">')
+        return ""
+
+    course_cover_medium.short_description = "封面图片(540x304)"
+    course_cover_medium.allow_tags = True
+    course_cover_medium.admin_order_field = "course_cover"
+
+    def course_cover_large(self):
+        if self.course_cover:
+            return mark_safe(f'<img style="border-radius: 0%;" src="{self.course_cover.thumb_1080x608.url}">')
+        return ""
+
+    course_cover_large.short_description = "封面图片(1080x608)"
+    course_cover_large.allow_tags = True
+    course_cover_large.admin_order_field = "course_cover"
 
 
 class Teacher(BaseModel):

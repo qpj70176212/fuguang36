@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'corsheaders',  # cors跨域子应用
     'ckeditor',  # 富文本插件核心应用
     'ckeditor_uploader',  # 用于支持富文本插件上传文件使用的
+    'stdimage',  # 生成缩略图
     'home',
     'users',
     "courses",
@@ -393,6 +394,10 @@ SIMPLEUI_LOGO = '/uploads/logo.png'
 SIMPLEUI_HOME_QUICK = True
 # 服务器信息
 SIMPLEUI_HOME_INFO = True
+# 最新动作
+SIMPLEUI_HOME_ACTION = False
+# 关闭登录页面的离子动画
+SIMPLEUI_LOGIN_PARTICLES = False
 
 # 关闭simpleui内置的使用分析
 SIMPLEUI_ANALYSIS = False
