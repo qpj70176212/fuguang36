@@ -3231,3 +3231,712 @@ INFO 2021-11-17 21:24:31,296 basehttp log_message 11823 139962763560704 "GET /ad
 INFO 2021-11-17 21:24:31,403 basehttp log_message 11823 139962763560704 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
 INFO 2021-11-17 21:38:05,512 autoreload trigger_reload 11823 139962841584000 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
 INFO 2021-11-17 21:38:06,676 autoreload run_with_reloader 12392 140625570730368 Watching for file changes with StatReloader
+INFO 2021-11-17 21:49:09,800 autoreload trigger_reload 12392 140625570730368 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-17 21:49:10,547 autoreload run_with_reloader 12651 140026578305408 Watching for file changes with StatReloader
+INFO 2021-11-17 21:51:11,408 autoreload run_with_reloader 12683 139705752105344 Watching for file changes with StatReloader
+INFO 2021-11-17 21:58:33,962 autoreload run_with_reloader 12733 140412323172736 Watching for file changes with StatReloader
+INFO 2021-11-17 22:02:39,432 autoreload run_with_reloader 12809 140275854455168 Watching for file changes with StatReloader
+INFO 2021-11-17 22:07:14,534 autoreload run_with_reloader 14064 140057488167296 Watching for file changes with StatReloader
+INFO 2021-11-17 22:21:49,406 autoreload run_with_reloader 18153 139872002986368 Watching for file changes with StatReloader
+INFO 2021-11-17 22:29:02,218 autoreload trigger_reload 18153 139872002986368 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-17 22:29:03,417 autoreload run_with_reloader 18216 140571554206080 Watching for file changes with StatReloader
+INFO 2021-11-17 22:30:30,603 autoreload run_with_reloader 18254 140549291471232 Watching for file changes with StatReloader
+INFO 2021-11-17 22:30:50,111 autoreload run_with_reloader 18268 140278720999808 Watching for file changes with StatReloader
+INFO 2021-11-17 22:31:05,613 autoreload run_with_reloader 18280 139792847372672 Watching for file changes with StatReloader
+INFO 2021-11-17 22:33:16,168 autoreload run_with_reloader 18313 140535104639360 Watching for file changes with StatReloader
+WARNING 2021-11-17 22:35:45,621 log log_response 18313 140534953801472 Not Found: /
+WARNING 2021-11-17 22:35:45,622 basehttp log_message 18313 140534953801472 "GET / HTTP/1.1" 404 2987
+INFO 2021-11-17 22:35:56,616 basehttp log_message 18313 140534953801472 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 22:35:56,753 basehttp log_message 18313 140534945408768 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,756 basehttp log_message 18313 140534953801472 "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,760 basehttp log_message 18313 140534937016064 "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,775 basehttp log_message 18313 140534928623360 "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,798 basehttp log_message 18313 140534945408768 "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,798 basehttp log_message 18313 140534920230656 "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,810 basehttp log_message 18313 140534953801472 "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,811 basehttp log_message 18313 140534928623360 "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,811 basehttp log_message 18313 140534937016064 "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,819 basehttp log_message 18313 140534911837952 "GET /static/admin/simpleui-x/elementui/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,847 basehttp log_message 18313 140534928623360 "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,849 basehttp log_message 18313 140534945408768 "GET /static/admin/simpleui-x/js/menu.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,850 basehttp log_message 18313 140534937016064 "GET /static/admin/simpleui-x/theme/theme.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,856 basehttp log_message 18313 140534920230656 "GET /static/admin/simpleui-x/js/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:56,866 basehttp log_message 18313 140534911837952 "GET /static/admin/simpleui-x/js/cookie.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,285 basehttp log_message 18313 140534920230656 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,298 basehttp log_message 18313 140534920230656 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,304 basehttp log_message 18313 140534937016064 "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,709 basehttp log_message 18313 140534911837952 "GET /admin/courses/teacher/ HTTP/1.1" 200 30198
+INFO 2021-11-17 22:35:58,817 basehttp log_message 18313 140534953801472 "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,821 basehttp log_message 18313 140534928623360 "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,826 basehttp log_message 18313 140534945408768 "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,829 basehttp log_message 18313 140534937016064 "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,829 basehttp log_message 18313 140534920230656 "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,860 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:35:58,866 basehttp log_message 18313 140534953801472 "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,868 basehttp log_message 18313 140534937016064 "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,871 basehttp log_message 18313 140534945408768 "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 304 0
+INFO 2021-11-17 22:35:58,872 basehttp log_message 18313 140534928623360 "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 304 0
+INFO 2021-11-17 22:36:11,154 basehttp log_message 18313 140534911837952 "GET /admin/courses/teacher/?o=3 HTTP/1.1" 200 30876
+INFO 2021-11-17 22:36:11,252 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:36:13,544 basehttp log_message 18313 140534911837952 "GET /admin/courses/teacher/add/?_changelist_filters=o%3D3 HTTP/1.1" 200 22726
+INFO 2021-11-17 22:36:13,659 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:38:05,687 basehttp log_message 18313 140534911837952 "POST /admin/courses/teacher/add/?_changelist_filters=o%3D3 HTTP/1.1" 200 23064
+INFO 2021-11-17 22:38:05,784 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:38:26,713 basehttp log_message 18313 140534911837952 "POST /admin/courses/teacher/add/?_changelist_filters=o%3D3 HTTP/1.1" 200 23064
+INFO 2021-11-17 22:38:26,783 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:38:52,885 basehttp log_message 18313 140534911837952 "POST /admin/courses/teacher/add/?_changelist_filters=o%3D3 HTTP/1.1" 200 23064
+INFO 2021-11-17 22:38:52,959 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:39:04,886 basehttp log_message 18313 140534911837952 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 304 0
+INFO 2021-11-17 22:40:02,718 basehttp log_message 18313 140534911837952 "GET /admin/courses/teacher/ HTTP/1.1" 200 30198
+INFO 2021-11-17 22:40:02,779 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:40:04,634 basehttp log_message 18313 140534911837952 "GET /admin/courses/teacher/add/ HTTP/1.1" 200 22692
+INFO 2021-11-17 22:40:04,687 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:40:43,321 basehttp log_message 18313 140534911837952 "POST /admin/courses/teacher/add/ HTTP/1.1" 200 23070
+INFO 2021-11-17 22:40:43,371 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:41:56,074 basehttp log_message 18313 140534911837952 "GET /admin/courses/course/ HTTP/1.1" 200 24477
+INFO 2021-11-17 22:41:56,176 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:41:58,022 basehttp log_message 18313 140534911837952 "GET /admin/courses/course/add/ HTTP/1.1" 200 31950
+INFO 2021-11-17 22:41:58,283 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:43:45,543 basehttp log_message 18313 140534911837952 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:43:45,585 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 22:43:47,311 log log_response 18313 140534911837952 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 22:43:47,320 basehttp log_message 18313 140534911837952 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 22:43:59,780 basehttp log_message 18313 140534911837952 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:43:59,850 basehttp log_message 18313 140534911837952 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 22:44:01,639 log log_response 18313 140534911837952 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 22:44:01,641 basehttp log_message 18313 140534911837952 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 22:44:50,039 autoreload trigger_reload 18313 140535104639360 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-17 22:44:51,879 autoreload run_with_reloader 18717 139637025411456 Watching for file changes with StatReloader
+INFO 2021-11-17 22:44:52,807 basehttp log_message 18717 139636947912448 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 22:44:53,304 basehttp log_message 18717 139636947912448 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:44:53,638 basehttp log_message 18717 139636947912448 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 22:44:55,536 log log_response 18717 139636947912448 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1573, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py", line 66, in get_fieldsets
+    return self.add_fieldsets
+AttributeError: 'CourseCategoryModelAdmin' object has no attribute 'add_fieldsets'
+ERROR 2021-11-17 22:44:55,541 basehttp log_message 18717 139636947912448 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118696
+INFO 2021-11-17 22:46:17,866 autoreload run_with_reloader 18767 140709294117248 Watching for file changes with StatReloader
+INFO 2021-11-17 22:46:22,791 basehttp log_message 18767 140709215831808 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 22:46:23,165 basehttp log_message 18767 140709215831808 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:46:23,416 basehttp log_message 18767 140709215831808 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 22:46:29,530 log log_response 18767 140709215831808 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 22:46:29,533 basehttp log_message 18767 140709215831808 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 22:48:17,179 autoreload trigger_reload 18767 140709294117248 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-17 22:48:18,101 autoreload run_with_reloader 18792 140412002324864 Watching for file changes with StatReloader
+INFO 2021-11-17 22:48:19,329 basehttp log_message 18792 140411924825856 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 22:48:19,929 basehttp log_message 18792 140411924825856 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:48:20,081 basehttp log_message 18792 140411924825856 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 22:48:21,544 log log_response 18792 140411924825856 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 22:48:21,546 basehttp log_message 18792 140411924825856 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 22:50:37,431 autoreload run_with_reloader 18850 140057709773184 Watching for file changes with StatReloader
+INFO 2021-11-17 22:50:41,547 basehttp log_message 18850 140057631487744 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 22:50:41,917 basehttp log_message 18850 140057631487744 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:50:42,017 basehttp log_message 18850 140057631487744 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 22:50:44,000 log log_response 18850 140057631487744 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 22:50:44,002 basehttp log_message 18850 140057631487744 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 22:51:45,276 autoreload run_with_reloader 18876 139937556492672 Watching for file changes with StatReloader
+INFO 2021-11-17 22:51:50,700 basehttp log_message 18876 139937411073792 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 22:51:51,468 basehttp log_message 18876 139937411073792 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:51:51,516 basehttp log_message 18876 139937411073792 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 22:51:53,272 log log_response 18876 139937411073792 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 22:51:53,277 basehttp log_message 18876 139937411073792 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 22:56:21,575 autoreload trigger_reload 18876 139937556492672 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-17 22:56:22,596 autoreload run_with_reloader 18928 139778780848512 Watching for file changes with StatReloader
+INFO 2021-11-17 22:56:24,071 basehttp log_message 18928 139778636220160 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 22:56:24,554 basehttp log_message 18928 139778636220160 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:56:24,794 basehttp log_message 18928 139778636220160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:56:29,353 basehttp log_message 18928 139778636220160 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:56:29,486 basehttp log_message 18928 139778636220160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 22:56:31,436 log log_response 18928 139778636220160 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 22:56:31,438 basehttp log_message 18928 139778636220160 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 22:56:34,641 basehttp log_message 18928 139778636220160 "GET /admin/courses/coursedirection/ HTTP/1.1" 200 32401
+INFO 2021-11-17 22:56:34,687 basehttp log_message 18928 139778636220160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:56:35,930 basehttp log_message 18928 139778636220160 "GET /admin/courses/coursedirection/add/ HTTP/1.1" 200 59690
+INFO 2021-11-17 22:56:35,987 basehttp log_message 18928 139778627827456 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:35,995 basehttp log_message 18928 139778616289024 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,012 basehttp log_message 18928 139778636220160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:56:36,435 basehttp log_message 18928 139778636220160 "GET /static/ckeditor/ckeditor/config.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,469 basehttp log_message 18928 139778636220160 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,472 basehttp log_message 18928 139778616289024 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,486 basehttp log_message 18928 139778616289024 "GET /static/ckeditor/ckeditor/styles.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,511 basehttp log_message 18928 139778616289024 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,514 basehttp log_message 18928 139778627827456 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,516 basehttp log_message 18928 139778607634176 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,522 basehttp log_message 18928 139778607634176 "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,532 basehttp log_message 18928 139778607634176 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,595 basehttp log_message 18928 139778607634176 "GET /static/ckeditor/ckeditor/plugins/icons.png?t=L4KA HTTP/1.1" 200 12533
+INFO 2021-11-17 22:56:36,700 basehttp log_message 18928 139778607634176 "GET /static/ckeditor/ckeditor/contents.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:36,722 basehttp log_message 18928 139778607634176 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=cae20318d4 HTTP/1.1" 304 0
+INFO 2021-11-17 22:56:40,559 basehttp log_message 18928 139778607634176 "GET /admin/courses/course/ HTTP/1.1" 200 24477
+INFO 2021-11-17 22:56:40,625 basehttp log_message 18928 139778607634176 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:56:41,879 basehttp log_message 18928 139778607634176 "GET /admin/courses/course/add/ HTTP/1.1" 200 31950
+INFO 2021-11-17 22:56:41,950 basehttp log_message 18928 139778607634176 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:56:45,885 basehttp log_message 18928 139778607634176 "GET /admin/courses/coursechapter/ HTTP/1.1" 200 25139
+INFO 2021-11-17 22:56:45,965 basehttp log_message 18928 139778607634176 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:56:47,123 basehttp log_message 18928 139778607634176 "GET /admin/courses/coursechapter/add/ HTTP/1.1" 200 21788
+INFO 2021-11-17 22:56:47,174 basehttp log_message 18928 139778607634176 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:56:53,903 basehttp log_message 18928 139778607634176 "GET /admin/courses/courselesson/ HTTP/1.1" 200 26354
+INFO 2021-11-17 22:56:53,974 basehttp log_message 18928 139778607634176 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:56:55,090 basehttp log_message 18928 139778607634176 "GET /admin/courses/courselesson/add/ HTTP/1.1" 200 23358
+INFO 2021-11-17 22:56:55,158 basehttp log_message 18928 139778607634176 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 22:58:24,593 basehttp log_message 18928 139778607634176 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 22:58:24,640 basehttp log_message 18928 139778607634176 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:06:37,014 autoreload run_with_reloader 19067 139657102537088 Watching for file changes with StatReloader
+INFO 2021-11-17 23:06:41,069 basehttp log_message 19067 139657024251648 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:06:41,542 basehttp log_message 19067 139657024251648 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:06:41,744 basehttp log_message 19067 139657024251648 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 23:06:45,534 log log_response 19067 139657024251648 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 23:06:45,537 basehttp log_message 19067 139657024251648 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 23:07:08,021 autoreload trigger_reload 19067 139657102537088 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-17 23:07:09,190 autoreload run_with_reloader 19088 140074974130560 Watching for file changes with StatReloader
+INFO 2021-11-17 23:07:10,882 basehttp log_message 19088 140074896631552 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:07:11,339 basehttp log_message 19088 140074896631552 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:07:11,656 basehttp log_message 19088 140074896631552 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 23:07:13,192 log log_response 19088 140074896631552 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/forms/models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (id_show) specified for CourseCategory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1574, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 712, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (id_show) specified for CourseCategory. Check fields/fieldsets/exclude attributes of class CourseCategoryModelAdmin.
+ERROR 2021-11-17 23:07:13,194 basehttp log_message 19088 140074896631552 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 142406
+INFO 2021-11-17 23:08:05,882 autoreload run_with_reloader 19141 140537735545216 Watching for file changes with StatReloader
+INFO 2021-11-17 23:08:07,211 basehttp log_message 19141 140537658046208 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:08:07,711 basehttp log_message 19141 140537658046208 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:08:08,022 basehttp log_message 19141 140537658046208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:08:09,467 basehttp log_message 19141 140537658046208 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 200 29150
+INFO 2021-11-17 23:08:09,523 basehttp log_message 19141 140537658046208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:08:09,547 basehttp log_message 19141 140537649391360 "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO 2021-11-17 23:08:38,112 autoreload trigger_reload 19141 140537735545216 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-17 23:08:38,975 autoreload run_with_reloader 19198 140319515074944 Watching for file changes with StatReloader
+INFO 2021-11-17 23:08:40,406 basehttp log_message 19198 140319437575936 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:08:41,162 basehttp log_message 19198 140319437575936 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:08:41,317 basehttp log_message 19198 140319437575936 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 23:08:42,878 log log_response 19198 140319437575936 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 23:08:42,880 basehttp log_message 19198 140319437575936 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 23:08:46,069 basehttp log_message 19198 140319437575936 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:08:46,387 basehttp log_message 19198 140319437575936 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:08:46,510 basehttp log_message 19198 140319437575936 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 23:08:48,363 log log_response 19198 140319437575936 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 23:08:48,365 basehttp log_message 19198 140319437575936 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 23:13:32,311 basehttp log_message 19198 140319437575936 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:13:32,713 basehttp log_message 19198 140319437575936 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:13:32,912 basehttp log_message 19198 140319437575936 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 23:13:34,226 log log_response 19198 140319437575936 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 23:13:34,229 basehttp log_message 19198 140319437575936 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 23:13:46,562 autoreload trigger_reload 19198 140319515074944 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-17 23:13:47,689 autoreload run_with_reloader 19400 139923401699712 Watching for file changes with StatReloader
+INFO 2021-11-17 23:13:48,419 basehttp log_message 19400 139923256506112 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:13:48,895 basehttp log_message 19400 139923256506112 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:13:49,124 basehttp log_message 19400 139923256506112 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:13:51,156 basehttp log_message 19400 139923256506112 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 200 29150
+INFO 2021-11-17 23:13:51,230 basehttp log_message 19400 139923256506112 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:15:30,579 autoreload trigger_reload 19400 139923401699712 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-17 23:15:31,497 autoreload run_with_reloader 19466 140578931835264 Watching for file changes with StatReloader
+INFO 2021-11-17 23:15:32,853 basehttp log_message 19466 140578854336256 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:15:33,811 basehttp log_message 19466 140578854336256 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:15:33,900 basehttp log_message 19466 140578854336256 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 23:15:35,539 log log_response 19466 140578854336256 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 23:15:35,541 basehttp log_message 19466 140578854336256 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 23:17:33,132 autoreload run_with_reloader 19508 140044637761920 Watching for file changes with StatReloader
+INFO 2021-11-17 23:17:38,359 basehttp log_message 19508 140044559476480 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:17:38,759 basehttp log_message 19508 140044559476480 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:17:38,823 basehttp log_message 19508 140044559476480 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 23:17:40,482 log log_response 19508 140044559476480 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 23:17:40,491 basehttp log_message 19508 140044559476480 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 23:18:57,675 basehttp log_message 19508 140044559476480 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:18:57,728 basehttp log_message 19508 140044559476480 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 23:19:00,577 log log_response 19508 140044559476480 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 23:19:00,579 basehttp log_message 19508 140044559476480 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 23:24:32,616 autoreload trigger_reload 19508 140044637761920 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-17 23:24:33,737 autoreload run_with_reloader 19583 140371277791616 Watching for file changes with StatReloader
+INFO 2021-11-17 23:24:34,838 basehttp log_message 19583 140371133179648 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:24:35,345 basehttp log_message 19583 140371133179648 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:24:35,689 basehttp log_message 19583 140371133179648 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:24:37,686 basehttp log_message 19583 140371133179648 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 200 29150
+INFO 2021-11-17 23:24:37,747 basehttp log_message 19583 140371133179648 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:28:46,757 autoreload run_with_reloader 19661 140620262584704 Watching for file changes with StatReloader
+INFO 2021-11-17 23:28:53,262 basehttp log_message 19661 140620114949888 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:28:53,882 basehttp log_message 19661 140620114949888 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:28:53,926 basehttp log_message 19661 140620114949888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+ERROR 2021-11-17 23:28:55,651 log log_response 19661 140620114949888 Internal Server Error: /admin/courses/coursecategory/add/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 97, in flatten_fieldsets
+    for name, opts in fieldsets:
+TypeError: cannot unpack non-iterable NoneType object
+ERROR 2021-11-17 23:28:55,654 basehttp log_message 19661 140620114949888 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 500 118419
+INFO 2021-11-17 23:34:08,835 autoreload run_with_reloader 19738 139748388819328 Watching for file changes with StatReloader
+INFO 2021-11-17 23:34:12,248 basehttp log_message 19738 139748236588800 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-17 23:34:13,024 basehttp log_message 19738 139748236588800 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:34:13,111 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:34:15,286 basehttp log_message 19738 139748236588800 "GET /admin/courses/coursecategory/add/ HTTP/1.1" 200 20690
+INFO 2021-11-17 23:34:15,376 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:37:26,591 basehttp log_message 19738 139748236588800 "GET /admin/courses/coursedirection/ HTTP/1.1" 200 32401
+INFO 2021-11-17 23:37:26,650 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:37:30,747 basehttp log_message 19738 139748236588800 "GET /admin/auth/group/ HTTP/1.1" 200 28546
+INFO 2021-11-17 23:37:30,875 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:37:33,652 basehttp log_message 19738 139748236588800 "GET /admin/users/user/ HTTP/1.1" 200 43291
+INFO 2021-11-17 23:37:33,751 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:37:36,947 basehttp log_message 19738 139748236588800 "GET /admin/courses/teacher/ HTTP/1.1" 200 30198
+INFO 2021-11-17 23:37:37,073 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:37:39,852 basehttp log_message 19738 139748236588800 "GET /admin/courses/course/ HTTP/1.1" 200 24477
+INFO 2021-11-17 23:37:39,985 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:37:42,693 basehttp log_message 19738 139748236588800 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 29719
+INFO 2021-11-17 23:37:42,799 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:37:45,039 basehttp log_message 19738 139748236588800 "GET /admin/courses/coursechapter/ HTTP/1.1" 200 25139
+INFO 2021-11-17 23:37:45,187 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:37:47,151 basehttp log_message 19738 139748236588800 "GET /admin/courses/courselesson/ HTTP/1.1" 200 26354
+INFO 2021-11-17 23:37:47,241 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:46:08,654 basehttp log_message 19738 139748236588800 "GET /admin/courses/coursedirection/ HTTP/1.1" 200 40136
+INFO 2021-11-17 23:46:08,709 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:46:18,326 basehttp log_message 19738 139748236588800 "GET /admin/courses/coursedirection/?p=2 HTTP/1.1" 200 36072
+INFO 2021-11-17 23:46:18,391 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:46:54,947 basehttp log_message 19738 139748236588800 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 38580
+INFO 2021-11-17 23:46:55,023 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:47:06,241 basehttp log_message 19738 139748236588800 "GET /admin/courses/coursecategory/?p=7 HTTP/1.1" 200 38329
+INFO 2021-11-17 23:47:06,289 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:47:14,181 basehttp log_message 19738 139748236588800 "GET /admin/courses/teacher/ HTTP/1.1" 200 30198
+INFO 2021-11-17 23:47:14,241 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:52:24,400 basehttp log_message 19738 139748236588800 "GET /admin/courses/teacher/ HTTP/1.1" 200 33478
+INFO 2021-11-17 23:52:24,453 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-17 23:52:24,467 basehttp log_message 19738 139748236588800 "GET /uploads/teacher/avatar.thumb_50x50.jpg HTTP/1.1" 200 1449

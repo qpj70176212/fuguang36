@@ -31,7 +31,7 @@ admin.site.register(CourseDirection, CourseDirectionModelAdmin)
 
 class CourseCategoryModelAdmin(admin.ModelAdmin):
     """课程分类的模型管理器"""
-    list_display = ["id", 'name', "direction"]
+    list_display = ["id", "name", "direction"]
     ordering = ["id"]
     list_filter = ["direction"]
     search_fields = ["name"]
@@ -42,7 +42,7 @@ class CourseCategoryModelAdmin(admin.ModelAdmin):
         ("必填", {"fields": ('name', 'direction', 'remark')}),
         ("选填", {
             'classes': ('collapse',),
-            'fields': ('id_show', 'orders')
+            'fields': ('is_show', 'orders')
         })
     )
 
@@ -51,20 +51,26 @@ class CourseCategoryModelAdmin(admin.ModelAdmin):
         (None, {
             'classes': ('wide',),
             'fields': ('name', 'direction', 'remark')
-        })
+        }),
     )
 
     # 当前方法会在显示表单的时候，自动执行，返回值就是表单配置项
+    # def get_fieldsets(self, request, obj=None):
+    #     """
+    #     获取表单配置项
+    #     :param request: 客户端的http请求对象
+    #     :param obj: 本次修改的模型对象，如果时添加数据操作，则obj为None
+    #     :return:
+    #     """
+    #     if not obj:
+    #         return self.add_fieldsets
+    #     # return super(CourseCategoryModelAdmin, self).get_fieldsets(request, obj)
+    #     return super().get_fieldsets(request, obj)
+
     def get_fieldsets(self, request, obj=None):
-        """
-        获取表单配置项
-        :param request: 客户端的http请求对象
-        :param obj: 本次修改的模型对象，如果时添加数据操作，则obj为None
-        :return:
-        """
         if not obj:
             return self.add_fieldsets
-        return super(CourseCategoryModelAdmin, self).get_fieldsets(request, obj)
+        return super().get_fieldsets(request, obj)
 
 
 admin.site.register(CourseCategory, CourseCategoryModelAdmin)
@@ -72,7 +78,8 @@ admin.site.register(CourseCategory, CourseCategoryModelAdmin)
 
 class CourseModelAdmin(admin.ModelAdmin):
     """课程信息的模型管理器"""
-    # list_display = ["id", 'name', "course_cover_small", "course_type", "level", "pub_date", "students", "lessons","price"]
+    # list_display = ["id", 'name', "course_cover_small", "course_type", "level", "pub_date", "students", "lessons",
+    #                 "price"]
     # 分页配置 一页数据量
     list_per_page = 10
 
@@ -82,7 +89,7 @@ admin.site.register(Course, CourseModelAdmin)
 
 class TeacherModelAdmin(admin.ModelAdmin):
     """讲师信息的模型管理器"""
-    # list_display = ["id", "name", "avatar_small", "title", "role", "signature"]
+    list_display = ["id", "name", "avatar_small", "title", "role", "signature"]
     # 分页配置 一页数据量
     list_per_page = 10
     # 搜索字段
