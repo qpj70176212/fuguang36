@@ -373,10 +373,30 @@ CKEDITOR_CONFIGS = {
             ['Bold', 'Italic', 'Underline', 'Image', 'Styles', 'Format', 'Font', 'Fontsize'],
             ['NumberedList', 'BulletedList', '_', 'Outdent', 'Indent', '_', 'JustifyLeft',
              'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
-            ['Link', 'Unlink'],
+            ['Link', 'Unlink', 'Table'],
             ['RemoveFormat', 'Source']
         ],
         # 设置编辑器的高度
         'height': 300,
     }
 }
+
+
+# admin站点公共配置
+from django.contrib import admin
+admin.AdminSite.site_header = '浮光在线'
+admin.AdminSite.site_title = '浮光在线教育站点管理'
+
+# 登录界面logo
+SIMPLEUI_LOGO = '/uploads/logo.png'
+# 快速操作
+SIMPLEUI_HOME_QUICK = True
+# 服务器信息
+SIMPLEUI_HOME_INFO = True
+
+# 关闭simpleui内置的使用分析
+SIMPLEUI_ANALYSIS = False
+# 离线模型
+SIMPLEUI_STATIC_OFFLINE = True
+# 首页图标地址
+SIMPLEUI_INDEX = 'http://www.fuguang.cn:3000'
