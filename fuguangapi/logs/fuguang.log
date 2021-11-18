@@ -5504,3 +5504,11 @@ WARNING 2021-11-18 19:39:03,610 basehttp log_message 13197 139775501387520 "GET 
 INFO 2021-11-18 19:39:33,497 autoreload trigger_reload 13197 139775579672960 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/urls.py changed, reloading.
 INFO 2021-11-18 19:39:34,661 autoreload run_with_reloader 13302 140284266279296 Watching for file changes with StatReloader
 INFO 2021-11-18 19:39:41,868 basehttp log_message 13302 140284187993856 "GET /courses/directions/ HTTP/1.1" 200 6617
+INFO 2021-11-18 19:54:02,708 autoreload trigger_reload 13302 140284266279296 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/urls.py changed, reloading.
+INFO 2021-11-18 19:54:03,786 autoreload run_with_reloader 13533 140402686488960 Watching for file changes with StatReloader
+INFO 2021-11-18 19:54:09,629 basehttp log_message 13533 140402541037312 "GET /courses/categories HTTP/1.1" 301 0
+INFO 2021-11-18 19:54:09,720 basehttp log_message 13533 140402541037312 "GET /courses/categories/ HTTP/1.1" 200 11447
+INFO 2021-11-18 19:54:23,615 basehttp log_message 13533 140402541037312 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 38580
+INFO 2021-11-18 19:54:23,667 basehttp log_message 13533 140402541037312 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 19:54:27,671 basehttp log_message 13533 140402541037312 "GET /admin/courses/coursecategory/?p=3 HTTP/1.1" 200 38856
+INFO 2021-11-18 19:54:27,727 basehttp log_message 13533 140402541037312 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
