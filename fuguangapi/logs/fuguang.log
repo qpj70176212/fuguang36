@@ -3940,3 +3940,175 @@ INFO 2021-11-17 23:47:14,241 basehttp log_message 19738 139748236588800 "GET /ad
 INFO 2021-11-17 23:52:24,400 basehttp log_message 19738 139748236588800 "GET /admin/courses/teacher/ HTTP/1.1" 200 33478
 INFO 2021-11-17 23:52:24,453 basehttp log_message 19738 139748236588800 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
 INFO 2021-11-17 23:52:24,467 basehttp log_message 19738 139748236588800 "GET /uploads/teacher/avatar.thumb_50x50.jpg HTTP/1.1" 200 1449
+INFO 2021-11-18 08:56:25,903 autoreload run_with_reloader 3862 140157619188096 Watching for file changes with StatReloader
+WARNING 2021-11-18 08:56:49,902 log log_response 3862 140157461436160 Not Found: /
+WARNING 2021-11-18 08:56:49,903 basehttp log_message 3862 140157461436160 "GET / HTTP/1.1" 404 2987
+WARNING 2021-11-18 08:56:51,248 log log_response 3862 140157461436160 Not Found: /favicon.ico
+WARNING 2021-11-18 08:56:51,249 basehttp log_message 3862 140157461436160 "GET /favicon.ico HTTP/1.1" 404 3038
+INFO 2021-11-18 08:57:11,059 basehttp log_message 3862 140157461436160 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-18 08:57:11,151 basehttp log_message 3862 140157461436160 "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,156 basehttp log_message 3862 140157461436160 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,158 basehttp log_message 3862 140157453043456 "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,210 basehttp log_message 3862 140157453043456 "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,216 basehttp log_message 3862 140157461436160 "GET /static/admin/simpleui-x/elementui/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,218 basehttp log_message 3862 140157453043456 "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,230 basehttp log_message 3862 140157461436160 "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,231 basehttp log_message 3862 140157453043456 "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,256 basehttp log_message 3862 140157461436160 "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,264 basehttp log_message 3862 140157453043456 "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,266 basehttp log_message 3862 140157443077888 "GET /static/admin/simpleui-x/js/cookie.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,269 basehttp log_message 3862 140157434685184 "GET /static/admin/simpleui-x/theme/theme.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,280 basehttp log_message 3862 140157434685184 "GET /static/admin/simpleui-x/js/menu.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,292 basehttp log_message 3862 140157434685184 "GET /static/admin/simpleui-x/js/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:11,372 basehttp log_message 3862 140157453043456 "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:12,541 basehttp log_message 3862 140157434685184 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:12,543 basehttp log_message 3862 140157443077888 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:12,548 basehttp log_message 3862 140157453043456 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:12,547 basehttp log_message 3862 140157461436160 "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:18,635 basehttp log_message 3862 140157461436160 "GET /admin/courses/coursedirection/ HTTP/1.1" 200 40136
+INFO 2021-11-18 08:57:18,737 basehttp log_message 3862 140157443077888 "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:18,739 basehttp log_message 3862 140157453043456 "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:18,743 basehttp log_message 3862 140157434685184 "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:18,754 basehttp log_message 3862 140157417375488 "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:18,755 basehttp log_message 3862 140157425768192 "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:18,770 basehttp log_message 3862 140157461436160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 08:57:18,811 basehttp log_message 3862 140157417375488 "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:18,844 basehttp log_message 3862 140157461436160 "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:18,845 basehttp log_message 3862 140157417375488 "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:18,869 basehttp log_message 3862 140157417375488 "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:33,255 basehttp log_message 3862 140157417375488 "GET /admin/courses/teacher/ HTTP/1.1" 200 33478
+INFO 2021-11-18 08:57:33,307 basehttp log_message 3862 140157417375488 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 08:57:33,322 basehttp log_message 3862 140157461436160 "GET /uploads/teacher/avatar.thumb_50x50.jpg HTTP/1.1" 304 0
+INFO 2021-11-18 08:57:38,321 basehttp log_message 3862 140157417375488 "GET /admin/courses/course/ HTTP/1.1" 200 24477
+INFO 2021-11-18 08:57:38,362 basehttp log_message 3862 140157417375488 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 09:46:28,935 basehttp log_message 3862 140157461436160 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-18 09:46:29,557 basehttp log_message 3862 140157461436160 "GET /admin/courses/teacher/ HTTP/1.1" 200 34303
+INFO 2021-11-18 09:46:29,617 basehttp log_message 3862 140157461436160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 09:48:57,187 autoreload trigger_reload 3862 140157619188096 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-18 09:48:58,252 autoreload run_with_reloader 4658 139971065966976 Watching for file changes with StatReloader
+INFO 2021-11-18 09:49:06,558 basehttp log_message 4658 139970987681536 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-18 09:49:06,996 basehttp log_message 4658 139970987681536 "GET /admin/courses/teacher/ HTTP/1.1" 200 34776
+INFO 2021-11-18 09:49:07,053 basehttp log_message 4658 139970987681536 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 09:49:13,473 basehttp log_message 4658 139970987681536 "GET /admin/courses/teacher/?o=-1 HTTP/1.1" 200 35123
+INFO 2021-11-18 09:49:13,515 basehttp log_message 4658 139970987681536 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 09:49:15,267 basehttp log_message 4658 139970987681536 "GET /admin/courses/teacher/?o=1 HTTP/1.1" 200 35111
+INFO 2021-11-18 09:49:15,317 basehttp log_message 4658 139970987681536 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 15:11:34,262 autoreload trigger_reload 4658 139971065966976 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/admin.py changed, reloading.
+INFO 2021-11-18 15:11:35,768 autoreload run_with_reloader 6045 140255771918720 Watching for file changes with StatReloader
+INFO 2021-11-18 15:41:34,304 autoreload run_with_reloader 6453 140024053150080 Watching for file changes with StatReloader
+INFO 2021-11-18 15:48:22,611 basehttp log_message 6453 140023974864640 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-18 15:48:22,751 basehttp log_message 6453 140023974864640 "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,752 basehttp log_message 6453 140023966471936 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,760 basehttp log_message 6453 140023957292800 "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,769 basehttp log_message 6453 140023974864640 "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,798 basehttp log_message 6453 140023966471936 "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,800 basehttp log_message 6453 140023974864640 "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,807 basehttp log_message 6453 140023957292800 "GET /static/admin/simpleui-x/elementui/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,809 basehttp log_message 6453 140023948900096 "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,812 basehttp log_message 6453 140023940507392 "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,822 basehttp log_message 6453 140023932114688 "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,843 basehttp log_message 6453 140023932114688 "GET /static/admin/simpleui-x/js/cookie.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,848 basehttp log_message 6453 140023940507392 "GET /static/admin/simpleui-x/theme/theme.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,851 basehttp log_message 6453 140023957292800 "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,853 basehttp log_message 6453 140023948900096 "GET /static/admin/simpleui-x/js/menu.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:22,855 basehttp log_message 6453 140023932114688 "GET /static/admin/simpleui-x/js/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,266 basehttp log_message 6453 140023948900096 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,268 basehttp log_message 6453 140023957292800 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,269 basehttp log_message 6453 140023940507392 "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,711 basehttp log_message 6453 140023932114688 "GET /admin/courses/teacher/ HTTP/1.1" 200 39644
+INFO 2021-11-18 15:48:23,769 basehttp log_message 6453 140023932114688 "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,772 basehttp log_message 6453 140023957292800 "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,780 basehttp log_message 6453 140023940507392 "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,800 basehttp log_message 6453 140023932114688 "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,807 basehttp log_message 6453 140023948900096 "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,810 basehttp log_message 6453 140023974864640 "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,814 basehttp log_message 6453 140023966471936 "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,815 basehttp log_message 6453 140023957292800 "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,821 basehttp log_message 6453 140023948900096 "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:23,891 basehttp log_message 6453 140023940507392 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 15:48:23,927 basehttp log_message 6453 140023940507392 "GET /uploads/teacher/avatar.thumb_50x50.jpg HTTP/1.1" 304 0
+INFO 2021-11-18 15:48:32,122 basehttp log_message 6453 140023940507392 "GET /admin/courses/teacher/?p=2 HTTP/1.1" 200 35693
+INFO 2021-11-18 15:48:32,169 basehttp log_message 6453 140023940507392 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 15:49:29,786 basehttp log_message 6453 140023940507392 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-18 15:49:30,283 basehttp log_message 6453 140023940507392 "GET /admin/courses/teacher/ HTTP/1.1" 200 39644
+INFO 2021-11-18 15:49:30,395 basehttp log_message 6453 140023940507392 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:03:50,425 basehttp log_message 6453 140023450040064 "GET /admin/courses/course/ HTTP/1.1" 200 25604
+INFO 2021-11-18 17:03:50,500 basehttp log_message 6453 140023450040064 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:03:54,439 basehttp log_message 6453 140023450040064 "GET /admin/courses/coursedirection/ HTTP/1.1" 200 40136
+INFO 2021-11-18 17:03:54,504 basehttp log_message 6453 140023450040064 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:03:56,065 basehttp log_message 6453 140023450040064 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 304 0
+INFO 2021-11-18 17:04:04,247 basehttp log_message 6453 140023450040064 "GET /admin/courses/course/ HTTP/1.1" 200 25604
+INFO 2021-11-18 17:04:04,289 basehttp log_message 6453 140023450040064 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:05:19,240 autoreload trigger_reload 6453 140024053150080 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-18 17:05:21,088 autoreload run_with_reloader 8195 139768722862464 Watching for file changes with StatReloader
+INFO 2021-11-18 17:05:22,380 basehttp log_message 8195 139768570574592 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-18 17:05:22,959 basehttp log_message 8195 139768570574592 "GET /admin/courses/course/ HTTP/1.1" 200 30162
+INFO 2021-11-18 17:05:23,261 basehttp log_message 8195 139768570574592 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+WARNING 2021-11-18 17:05:23,435 log log_response 8195 139768570574592 Not Found: /uploads/course/cover/course-8.thumb_108x61.png
+WARNING 2021-11-18 17:05:23,435 basehttp log_message 8195 139768570574592 "GET /uploads/course/cover/course-8.thumb_108x61.png HTTP/1.1" 404 3063
+WARNING 2021-11-18 17:05:23,452 log log_response 8195 139768570574592 Not Found: /uploads/course/cover/course-9.thumb_108x61.png
+WARNING 2021-11-18 17:05:23,453 basehttp log_message 8195 139768570574592 "GET /uploads/course/cover/course-9.thumb_108x61.png HTTP/1.1" 404 3063
+WARNING 2021-11-18 17:05:23,479 log log_response 8195 139768570574592 Not Found: /uploads/course/cover/course-10.thumb_108x61.png
+WARNING 2021-11-18 17:05:23,480 basehttp log_message 8195 139768570574592 "GET /uploads/course/cover/course-10.thumb_108x61.png HTTP/1.1" 404 3067
+INFO 2021-11-18 17:07:11,939 basehttp log_message 8195 139768570574592 "GET /admin/courses/course/3/change/ HTTP/1.1" 200 37583
+INFO 2021-11-18 17:07:12,020 basehttp log_message 8195 139768570574592 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:07:12,043 basehttp log_message 8195 139768570574592 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:12,047 basehttp log_message 8195 139768562181888 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+WARNING 2021-11-18 17:07:12,621 log log_response 8195 139768570574592 Not Found: /uploads/course/cover/course-8.png
+WARNING 2021-11-18 17:07:12,623 basehttp log_message 8195 139768570574592 "GET /uploads/course/cover/course-8.png HTTP/1.1" 404 3011
+INFO 2021-11-18 17:07:12,796 basehttp log_message 8195 139768570574592 "GET /static/ckeditor/ckeditor/config.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:12,879 basehttp log_message 8195 139768570574592 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:12,904 basehttp log_message 8195 139768570574592 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:12,921 basehttp log_message 8195 139768570574592 "GET /static/ckeditor/ckeditor/styles.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:12,941 basehttp log_message 8195 139768570574592 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:12,950 basehttp log_message 8195 139768570574592 "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:12,953 basehttp log_message 8195 139768562181888 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:12,959 basehttp log_message 8195 139768553789184 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:12,971 basehttp log_message 8195 139768553789184 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:13,018 basehttp log_message 8195 139768553789184 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=cae20318d4 HTTP/1.1" 304 0
+INFO 2021-11-18 17:07:13,116 basehttp log_message 8195 139768553789184 "GET /static/ckeditor/ckeditor/contents.css?t=L4KA HTTP/1.1" 304 0
+WARNING 2021-11-18 17:07:17,590 log log_response 8195 139768553789184 Not Found: /uploads/course/cover/course-8.png
+WARNING 2021-11-18 17:07:17,593 basehttp log_message 8195 139768553789184 "GET /uploads/course/cover/course-8.png HTTP/1.1" 404 3011
+INFO 2021-11-18 17:08:21,723 basehttp log_message 8195 139768553789184 "POST /admin/courses/course/3/change/ HTTP/1.1" 302 0
+INFO 2021-11-18 17:08:21,874 basehttp log_message 8195 139768553789184 "GET /admin/courses/course/ HTTP/1.1" 200 30347
+INFO 2021-11-18 17:08:21,946 basehttp log_message 8195 139768553789184 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:08:21,964 basehttp log_message 8195 139768553789184 "GET /uploads/course/cover/course-10.thumb_108x61.png HTTP/1.1" 200 2569
+WARNING 2021-11-18 17:08:22,030 log log_response 8195 139768562181888 Not Found: /uploads/course/cover/course-9.thumb_108x61.png
+WARNING 2021-11-18 17:08:22,040 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-9.thumb_108x61.png HTTP/1.1" 404 3063
+INFO 2021-11-18 17:08:44,664 basehttp log_message 8195 139768562181888 "GET /admin/courses/course/1/change/ HTTP/1.1" 200 37611
+INFO 2021-11-18 17:08:44,720 basehttp log_message 8195 139768562181888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:08:44,963 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-10.png HTTP/1.1" 200 30879
+INFO 2021-11-18 17:09:21,531 basehttp log_message 8195 139768562181888 "POST /admin/courses/course/1/change/ HTTP/1.1" 302 0
+INFO 2021-11-18 17:09:21,690 basehttp log_message 8195 139768562181888 "GET /admin/courses/course/ HTTP/1.1" 200 30374
+INFO 2021-11-18 17:09:21,760 basehttp log_message 8195 139768562181888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:09:21,842 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-10.thumb_108x61.png HTTP/1.1" 304 0
+WARNING 2021-11-18 17:09:21,868 log log_response 8195 139768562181888 Not Found: /uploads/course/cover/course-9.thumb_108x61.png
+WARNING 2021-11-18 17:09:21,872 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-9.thumb_108x61.png HTTP/1.1" 404 3063
+INFO 2021-11-18 17:09:21,893 basehttp log_message 8195 139768553789184 "GET /uploads/course/cover/course-10_dZSyPn4.thumb_108x61.png HTTP/1.1" 200 2569
+INFO 2021-11-18 17:09:25,471 basehttp log_message 8195 139768562181888 "GET /admin/courses/course/2/change/ HTTP/1.1" 200 37585
+INFO 2021-11-18 17:09:25,520 basehttp log_message 8195 139768562181888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+WARNING 2021-11-18 17:09:25,715 log log_response 8195 139768562181888 Not Found: /uploads/course/cover/course-9.png
+WARNING 2021-11-18 17:09:25,717 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-9.png HTTP/1.1" 404 3011
+INFO 2021-11-18 17:09:41,638 basehttp log_message 8195 139768562181888 "POST /admin/courses/course/2/change/ HTTP/1.1" 302 0
+INFO 2021-11-18 17:09:41,753 basehttp log_message 8195 139768562181888 "GET /admin/courses/course/ HTTP/1.1" 200 30350
+INFO 2021-11-18 17:09:41,820 basehttp log_message 8195 139768562181888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:09:41,875 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-10.thumb_108x61.png HTTP/1.1" 304 0
+INFO 2021-11-18 17:09:41,899 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-9.thumb_108x61.png HTTP/1.1" 200 3285
+INFO 2021-11-18 17:09:41,900 basehttp log_message 8195 139768553789184 "GET /uploads/course/cover/course-10_dZSyPn4.thumb_108x61.png HTTP/1.1" 304 0
+INFO 2021-11-18 17:09:45,336 basehttp log_message 8195 139768562181888 "GET /admin/courses/course/3/change/ HTTP/1.1" 200 37585
+INFO 2021-11-18 17:09:45,396 basehttp log_message 8195 139768562181888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:09:45,650 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-10.png HTTP/1.1" 304 0
+INFO 2021-11-18 17:09:54,188 basehttp log_message 8195 139768562181888 "POST /admin/courses/course/3/change/ HTTP/1.1" 302 0
+INFO 2021-11-18 17:09:54,344 basehttp log_message 8195 139768562181888 "GET /admin/courses/course/ HTTP/1.1" 200 30354
+INFO 2021-11-18 17:09:54,411 basehttp log_message 8195 139768562181888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:09:54,470 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-8.thumb_108x61.png HTTP/1.1" 200 2199
+INFO 2021-11-18 17:09:54,491 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-9.thumb_108x61.png HTTP/1.1" 304 0
+INFO 2021-11-18 17:09:54,588 basehttp log_message 8195 139768562181888 "GET /uploads/course/cover/course-10_dZSyPn4.thumb_108x61.png HTTP/1.1" 304 0
+INFO 2021-11-18 17:10:30,757 autoreload trigger_reload 8195 139768722862464 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-18 17:10:32,312 autoreload run_with_reloader 8375 139649804530048 Watching for file changes with StatReloader
+INFO 2021-11-18 17:10:34,417 basehttp log_message 8375 139649653667584 "GET /admin/ HTTP/1.1" 200 19224
+INFO 2021-11-18 17:10:34,937 basehttp log_message 8375 139649653667584 "GET /admin/courses/course/ HTTP/1.1" 200 30649
+INFO 2021-11-18 17:10:35,159 basehttp log_message 8375 139649653667584 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 17:10:35,579 basehttp log_message 8375 139649645274880 "GET /uploads/course/cover/course-9.thumb_108x61.png HTTP/1.1" 304 0
+INFO 2021-11-18 17:10:35,583 basehttp log_message 8375 139649653667584 "GET /uploads/course/cover/course-10_dZSyPn4.thumb_108x61.png HTTP/1.1" 304 0
+INFO 2021-11-18 17:10:35,632 basehttp log_message 8375 139649653667584 "GET /uploads/course/cover/course-8.thumb_108x61.png HTTP/1.1" 304 0
