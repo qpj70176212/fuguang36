@@ -5495,3 +5495,12 @@ INFO 2021-11-18 19:28:48,442 basehttp log_message 12326 139955885106944 "GET /ad
 INFO 2021-11-18 19:29:04,414 basehttp log_message 12326 139955885106944 "POST /admin/users/user/4/change/ HTTP/1.1" 302 0
 INFO 2021-11-18 19:29:04,561 basehttp log_message 12326 139955885106944 "GET /admin/users/user/ HTTP/1.1" 200 43318
 INFO 2021-11-18 19:29:04,627 basehttp log_message 12326 139955885106944 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 19:38:38,314 autoreload trigger_reload 12326 139955963392384 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py changed, reloading.
+INFO 2021-11-18 19:38:43,353 autoreload run_with_reloader 13197 139775579672960 Watching for file changes with StatReloader
+WARNING 2021-11-18 19:38:46,760 log log_response 13197 139775501387520 Not Found: /
+WARNING 2021-11-18 19:38:46,761 basehttp log_message 13197 139775501387520 "GET / HTTP/1.1" 404 2987
+WARNING 2021-11-18 19:39:03,607 log log_response 13197 139775501387520 Not Found: /courses/
+WARNING 2021-11-18 19:39:03,610 basehttp log_message 13197 139775501387520 "GET /courses/ HTTP/1.1" 404 3088
+INFO 2021-11-18 19:39:33,497 autoreload trigger_reload 13197 139775579672960 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/urls.py changed, reloading.
+INFO 2021-11-18 19:39:34,661 autoreload run_with_reloader 13302 140284266279296 Watching for file changes with StatReloader
+INFO 2021-11-18 19:39:41,868 basehttp log_message 13302 140284187993856 "GET /courses/directions/ HTTP/1.1" 200 6617
