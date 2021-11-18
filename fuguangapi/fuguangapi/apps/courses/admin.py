@@ -83,6 +83,8 @@ class CourseModelAdmin(admin.ModelAdmin):
     # 分页配置 一页数据量
     list_per_page = 10
     ordering = ["id"]
+    # 设置过滤器的字段条件
+    list_filter = ["direction", "category"]  # 过滤器,按指定字段的不同值来进行展示
 
 
 admin.site.register(Course, CourseModelAdmin)

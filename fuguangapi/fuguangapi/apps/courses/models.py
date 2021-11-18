@@ -68,7 +68,10 @@ class Course(BaseModel):
                                      null=True)
     course_video = models.FileField(upload_to="course/video", max_length=255, verbose_name="封面视频", blank=True,
                                     null=True)
-    course_type = models.SmallIntegerField(choices=level_choices, default=1, verbose_name="付费类型")
+    course_type = models.SmallIntegerField(choices=course_type, default=0, verbose_name="付费类型")
+    # choices提供了一个get_字段_display用于获取选项对应的文本
+    # course.level获取的是字段值，
+    # course.get_level_display 获取的是字段值在选项中对应的文本
     level = models.SmallIntegerField(choices=level_choices, default=1, verbose_name="难度等级")
     # description = models.TextField(null=True, blank=True, verbose_name="详情介绍")
     description = RichTextUploadingField(null=True, blank=True, verbose_name="详情介绍")
@@ -88,7 +91,7 @@ class Course(BaseModel):
     category = models.ForeignKey("CourseCategory", related_name="course_list", on_delete=models.DO_NOTHING, null=True,
                                  blank=True, db_constraint=False, verbose_name="课程分类")
     teacher = models.ForeignKey("Teacher", related_name="course_list", on_delete=models.DO_NOTHING, null=True,
-                                blank=True,db_constraint=False, verbose_name="授课老师")
+                                blank=True, db_constraint=False, verbose_name="授课老师")
 
     class Meta:
         db_table = "fg_course_info"
@@ -124,6 +127,14 @@ class Course(BaseModel):
     course_cover_large.short_description = "封面图片(1080x608)"
     course_cover_large.allow_tags = True
     course_cover_large.admin_order_field = "course_cover"
+
+    def discount(self):
+        # todo 通过计算获取折扣优惠相关的信息
+        return {
+            "type": "限时优惠",
+            "expire": 636050,
+            "price": 1488.00
+        }
 
 
 class Teacher(BaseModel):
