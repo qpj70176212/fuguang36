@@ -5512,3 +5512,16 @@ INFO 2021-11-18 19:54:23,615 basehttp log_message 13533 140402541037312 "GET /ad
 INFO 2021-11-18 19:54:23,667 basehttp log_message 13533 140402541037312 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
 INFO 2021-11-18 19:54:27,671 basehttp log_message 13533 140402541037312 "GET /admin/courses/coursecategory/?p=3 HTTP/1.1" 200 38856
 INFO 2021-11-18 19:54:27,727 basehttp log_message 13533 140402541037312 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 20:22:58,804 basehttp log_message 13533 140402541037312 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-18 20:22:58,817 basehttp log_message 13533 140402522154752 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-18 20:23:00,241 basehttp log_message 13533 140402532644608 "GET /banner/ HTTP/1.1" 200 666
+INFO 2021-11-18 20:23:17,949 basehttp log_message 13533 140402532644608 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-18 20:23:18,050 basehttp log_message 13533 140402522154752 "GET /courses/categories/ HTTP/1.1" 200 1942
+INFO 2021-11-18 20:23:28,257 basehttp log_message 13533 140402522154752 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-18 20:23:28,272 basehttp log_message 13533 140402532644608 "GET /courses/categories/ HTTP/1.1" 200 1942
+INFO 2021-11-18 20:34:53,796 basehttp log_message 13533 140402532644608 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-18 20:34:53,824 basehttp log_message 13533 140402522154752 "GET /courses/categories/ HTTP/1.1" 200 1942
+INFO 2021-11-18 20:40:42,825 basehttp log_message 13533 140402262292224 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-18 20:40:42,840 basehttp log_message 13533 140402541037312 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-18 20:40:42,876 basehttp log_message 13533 140402522154752 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-18 20:40:42,879 basehttp log_message 13533 140402532644608 "GET /courses/categories/ HTTP/1.1" 200 1942
