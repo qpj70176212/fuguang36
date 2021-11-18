@@ -1,5 +1,6 @@
 from django.db import models
 from fuguangapi.utils.models import BaseModel, models
+from django.utils.safestring import mark_safe
 # Create your models here.
 from models import BaseModel, models
 
@@ -37,3 +38,13 @@ class Banner(BaseModel):
         db_table = "fg_banner"
         verbose_name = "轮播广告"
         verbose_name_plural = verbose_name
+
+    def image_html(self):
+        if self.image:
+            return mark_safe(
+                f'<img style="border-radius: 0%;max-height: 60px; max-width: 200px;" src="{self.image.url}">')
+        return ""
+
+    image_html.short_description = "广告图片"
+    image_html.allow_tags = True
+    image_html.admin_order_field = "image"
