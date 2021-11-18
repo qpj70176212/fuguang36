@@ -5525,3 +5525,38 @@ INFO 2021-11-18 20:40:42,825 basehttp log_message 13533 140402262292224 "GET /na
 INFO 2021-11-18 20:40:42,840 basehttp log_message 13533 140402541037312 "GET /nav/header/ HTTP/1.1" 200 292
 INFO 2021-11-18 20:40:42,876 basehttp log_message 13533 140402522154752 "GET /courses/directions/ HTTP/1.1" 200 409
 INFO 2021-11-18 20:40:42,879 basehttp log_message 13533 140402532644608 "GET /courses/categories/ HTTP/1.1" 200 1942
+INFO 2021-11-18 20:58:02,603 autoreload trigger_reload 13533 140402686488960 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/urls.py changed, reloading.
+INFO 2021-11-18 20:58:04,908 autoreload run_with_reloader 14667 139968289800576 Watching for file changes with StatReloader
+INFO 2021-11-18 21:04:43,009 autoreload trigger_reload 14667 139968289800576 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py changed, reloading.
+INFO 2021-11-18 21:04:43,895 autoreload run_with_reloader 14803 140590759055744 Watching for file changes with StatReloader
+INFO 2021-11-18 21:09:51,541 basehttp log_message 14803 140590680770304 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-18 21:09:51,577 basehttp log_message 14803 140590672377600 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-18 21:09:51,775 basehttp log_message 14803 140590680770304 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-18 21:09:51,780 basehttp log_message 14803 140590672377600 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-18 21:10:00,587 basehttp log_message 14803 140590672377600 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-18 21:10:00,597 basehttp log_message 14803 140590680770304 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-18 21:10:24,482 basehttp log_message 14803 140590672377600 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-18 21:10:24,488 basehttp log_message 14803 140590680770304 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-18 21:10:26,616 basehttp log_message 14803 140590663198464 "GET /admin/ HTTP/1.1" 200 19878
+INFO 2021-11-18 21:10:28,274 basehttp log_message 14803 140590663198464 "GET /admin/courses/coursecategory/ HTTP/1.1" 200 38580
+INFO 2021-11-18 21:10:28,373 basehttp log_message 14803 140590663198464 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 21:10:38,535 basehttp log_message 14803 140590663198464 "GET /admin/courses/coursecategory/?p=4 HTTP/1.1" 200 38966
+INFO 2021-11-18 21:10:38,604 basehttp log_message 14803 140590663198464 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-18 21:10:48,533 basehttp log_message 14803 140590680770304 "GET /courses/categories/1/ HTTP/1.1" 200 348
+INFO 2021-11-18 21:10:52,167 basehttp log_message 14803 140590680770304 "GET /courses/categories/3/ HTTP/1.1" 200 110
+INFO 2021-11-18 21:10:53,927 basehttp log_message 14803 140590680770304 "GET /courses/categories/1/ HTTP/1.1" 200 348
+INFO 2021-11-18 21:10:55,367 basehttp log_message 14803 140590680770304 "GET /courses/categories/2/ HTTP/1.1" 200 348
+INFO 2021-11-18 21:10:56,824 basehttp log_message 14803 140590680770304 "GET /courses/categories/3/ HTTP/1.1" 200 110
+INFO 2021-11-18 21:10:57,731 basehttp log_message 14803 140590680770304 "GET /courses/categories/4/ HTTP/1.1" 200 103
+INFO 2021-11-18 21:10:58,500 basehttp log_message 14803 140590680770304 "GET /courses/categories/5/ HTTP/1.1" 200 206
+INFO 2021-11-18 21:11:00,383 basehttp log_message 14803 140590680770304 "GET /courses/categories/6/ HTTP/1.1" 200 156
+INFO 2021-11-18 21:11:01,062 basehttp log_message 14803 140590680770304 "GET /courses/categories/7/ HTTP/1.1" 200 112
+INFO 2021-11-18 21:11:01,809 basehttp log_message 14803 140590680770304 "GET /courses/categories/8/ HTTP/1.1" 200 116
+INFO 2021-11-18 21:11:04,565 basehttp log_message 14803 140590680770304 "GET /courses/categories/11/ HTTP/1.1" 200 96
+INFO 2021-11-18 21:11:05,491 basehttp log_message 14803 140590680770304 "GET /courses/categories/12/ HTTP/1.1" 200 2
+INFO 2021-11-18 21:11:07,007 basehttp log_message 14803 140590680770304 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-18 21:11:08,842 basehttp log_message 14803 140590680770304 "GET /courses/categories/14/ HTTP/1.1" 200 61
+INFO 2021-11-18 21:11:10,946 basehttp log_message 14803 140590680770304 "GET /courses/categories/13/ HTTP/1.1" 200 62
+INFO 2021-11-18 21:11:12,725 basehttp log_message 14803 140590680770304 "GET /courses/categories/10/ HTTP/1.1" 200 78
+INFO 2021-11-18 21:11:14,641 basehttp log_message 14803 140590680770304 "GET /courses/categories/5/ HTTP/1.1" 200 206
+INFO 2021-11-18 21:11:15,906 basehttp log_message 14803 140590680770304 "GET /courses/categories/6/ HTTP/1.1" 200 156

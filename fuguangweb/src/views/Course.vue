@@ -177,6 +177,7 @@
 import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
 import course from "../api/course";
+import {watch} from "vue";
 
 // 获取课程学习方向
 course.get_course_direction().then(response=>{
@@ -188,6 +189,17 @@ course.get_course_category().then(response=>{
   course.category_list = response.data
 })
 
+// 监听切换不同的学习方向
+watch(
+    ()=>course.current_direction,
+    ()=>{
+      // 重置当前默认选中的课程分类
+      course.current_category = 0
+      course.get_course_category().then(response=>{
+        course.category_list = response.data
+      })
+    }
+)
 </script>
 
 <style scoped>

@@ -12,7 +12,8 @@ const course = reactive({
     },
     // 获取课程分类信息
     get_course_category () {
-      return http.get('/courses/categories/',)
+      // return http.get('/courses/categories/',)
+        return http.get(`/courses/categories/${this.current_direction}/`)
     }
 })
 
