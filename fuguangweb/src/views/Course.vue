@@ -87,73 +87,91 @@
                 <div class="other r clearfix"><a class="course-line l" href="" target="_blank">学习路线</a></div>
             </div>
             <ul class="course-list clearfix">
-              <li class="course-card">
+<!--              <li class="course-card">-->
+              <li class="course-card" v-for="course_info in course.course_list">
                 <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-1.png" alt=""></div>
-                    <p class="title ellipsis2">全面的Docker 系统性入门+进阶实践（2021最新版）</p>
+                    <div class="img"><img :src="course_info.course_cover" alt=""></div>
+<!--                    <div class="img"><img src="../assets/course-1.png" alt=""></div>-->
+                    <p class="title ellipsis2">{{ course_info.name }}</p>
+<!--                    <p class="title ellipsis2">全面的Docker 系统性入门+进阶实践（2021最新版）</p>-->
                     <p class="one">
-                        <span>进阶 · 611人报名</span>
-                        <span class="discount r"><i class="name">优惠价</i></span>
+                        <span>{{ course_info.get_level_display }} · {{ course_info.students }}人报名</span>
+<!--                        <span>进阶 · 611人报名</span>-->
+<!--                        <span class="discount r"><i class="name">优惠价</i></span>-->
+                        <span class="discount r">
+                          <i class="name" v-if="course_info.discount.type">{{ course_info.discount.type }}</i>
+                          <i class="countdown" v-if="course_info.discount.expire">
+                            {{parseInt(course_info.discount.expire/86400)}}<span class="day">天</span>
+                            {{fil10(parseInt(course_info.discount.expire/3600%24))}}}:
+                            {{fil10(parseInt(course_info.discount.expire/60%60))}}:
+                            {{fil10(parseInt(course_info.discount.expire%60))}}
+                          </i>
+                        </span>
                     </p>
                     <p class="two clearfix">
-                        <span class="price l red bold">￥428.00</span>
-                        <span class="origin-price l delete-line">￥488.00</span>
+                        <span class="price l red bold" v-if="course_info.discount.price">￥
+                          {{parseFloat(course_info.discount.price).toFixed(2)}}</span>
+                        <span class="price l red bold" v-else>￥{{ parseFloat(course_info.price).toFixed(2) }}</span>
+<!--                        <span class="price l red bold">￥428.00</span>-->
+<!--                        <span class="origin-price l delete-line">￥488.00</span>-->
+                        <span class="origin-price l delete-line" v-if="course_info.discount.price">￥
+                          {{parseFloat(course_info.price).toFixed(2)}}</span>
                         <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
                     </p>
                 </a>
               </li>
-              <li class="course-card">
-                <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-2.png" alt=""></div>
-                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>
-                    <p class="one">
-                        <span>进阶 · 246人报名</span>
-                        <span class="discount r"><i class="name">限时优惠</i><i class="countdown">6<span class="day">天</span>01:39:21</i></span>
-                    </p>
-                    <p class="two clearfix">
-                        <span class="price l red bold">￥328.00</span>
-                        <span class="origin-price l delete-line">￥368.00</span>
-                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
-                    </p>
-                </a>
-              </li>
-              <li class="course-card">
-                <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-3.png" alt=""></div>
-                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>
-                    <p class="one">
-                        <span>进阶 · 246人报名</span>
-                        <span class="discount r"><i class="name">限时优惠</i><i class="countdown">16<span class="day">天</span>01:39:21</i></span>
-                    </p>
-                    <p class="two clearfix">
-                        <span class="price l red bold">￥328.00</span>
-                        <span class="origin-price l delete-line">￥368.00</span>
-                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
-                    </p>
-                </a>
-              </li>
-              <li class="course-card">
-                <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-4.png" alt=""></div>
-                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>
-                    <p class="one"><span>进阶 · 246人报名</span></p>
-                    <p class="two clearfix">
-                        <span class="price l red bold">￥399.00</span>
-                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
-                    </p>
-                </a>
-              </li>
-              <li class="course-card">
-                <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-5.png" alt=""></div>
-                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>
-                    <p class="one"><span>进阶 · 246人报名</span></p>
-                    <p class="two clearfix">
-                        <span class="price l red bold">￥399.00</span>
-                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
-                    </p>
-                </a>
-              </li>
+<!--              <li class="course-card">-->
+<!--                <a target="_blank" href="">-->
+<!--                    <div class="img"><img src="../assets/course-2.png" alt=""></div>-->
+<!--                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>-->
+<!--                    <p class="one">-->
+<!--                        <span>进阶 · 246人报名</span>-->
+<!--                        <span class="discount r"><i class="name">限时优惠</i><i class="countdown">6<span class="day">天</span>01:39:21</i></span>-->
+<!--                    </p>-->
+<!--                    <p class="two clearfix">-->
+<!--                        <span class="price l red bold">￥328.00</span>-->
+<!--                        <span class="origin-price l delete-line">￥368.00</span>-->
+<!--                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="course-card">-->
+<!--                <a target="_blank" href="">-->
+<!--                    <div class="img"><img src="../assets/course-3.png" alt=""></div>-->
+<!--                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>-->
+<!--                    <p class="one">-->
+<!--                        <span>进阶 · 246人报名</span>-->
+<!--                        <span class="discount r"><i class="name">限时优惠</i><i class="countdown">16<span class="day">天</span>01:39:21</i></span>-->
+<!--                    </p>-->
+<!--                    <p class="two clearfix">-->
+<!--                        <span class="price l red bold">￥328.00</span>-->
+<!--                        <span class="origin-price l delete-line">￥368.00</span>-->
+<!--                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="course-card">-->
+<!--                <a target="_blank" href="">-->
+<!--                    <div class="img"><img src="../assets/course-4.png" alt=""></div>-->
+<!--                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>-->
+<!--                    <p class="one"><span>进阶 · 246人报名</span></p>-->
+<!--                    <p class="two clearfix">-->
+<!--                        <span class="price l red bold">￥399.00</span>-->
+<!--                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="course-card">-->
+<!--                <a target="_blank" href="">-->
+<!--                    <div class="img"><img src="../assets/course-5.png" alt=""></div>-->
+<!--                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>-->
+<!--                    <p class="one"><span>进阶 · 246人报名</span></p>-->
+<!--                    <p class="two clearfix">-->
+<!--                        <span class="price l red bold">￥399.00</span>-->
+<!--                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--              </li>-->
 
             </ul>
             <div class="page">
@@ -189,14 +207,38 @@ course.get_course_category().then(response=>{
   course.category_list = response.data
 })
 
+// 获取课程信息
+course.get_course_list().then(response=>{
+  course.course_list = response.data
+})
+
+// 给小于10的数字左边补0
+const fil10 = (num) => num <10?"0" + num:num
+
 // 监听切换不同的学习方向
 watch(
     ()=>course.current_direction,
     ()=>{
       // 重置当前默认选中的课程分类
       course.current_category = 0
+      // 重新获取课程分类
       course.get_course_category().then(response=>{
         course.category_list = response.data
+      })
+      // 重新获取课程信息
+      course.get_course_list().then(response=>{
+        course.course_list = response.data
+      })
+    }
+)
+
+// 监听切换不同的课程分类
+watch(
+    ()=> course.current_category,
+    ()=> {
+      // 重新获取课程信息
+      course.get_course_list().then(response=>{
+        course.course_list = response.data
       })
     }
 )

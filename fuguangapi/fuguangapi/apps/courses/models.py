@@ -128,6 +128,7 @@ class Course(BaseModel):
     course_cover_large.allow_tags = True
     course_cover_large.admin_order_field = "course_cover"
 
+    @property
     def discount(self):
         # todo 通过计算获取折扣优惠相关的信息
         return {
