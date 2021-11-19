@@ -180,15 +180,27 @@
 <!--              </li>-->
 
             </ul>
-            <div class="page">
-                <span class="disabled_page">首页</span>
-                <span class="disabled_page">上一页</span>
-                <a href="" class="active">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <a href="">4</a>
-                <a href="">下一页</a>
-                <a href="">尾页</a>
+<!--            <div class="page">-->
+            <div class="page" v-if="course.count > course.size">
+              <a href="" v-if="course.has_perv" @click.prevent.stop="course.page=1">首页</a>
+              <span v-else>首页</span>
+              <a href="" v-if="course.has_perv" @click.prevent.stop="course.page--">上一页</a>
+              <span v-else>上一页</span>
+              <a href="" v-if="course.has_perv" @click.prevent.stop="course.page--">{{course.page - 1}}</a>
+              <a  class="active">{{course.page}}</a>
+              <a href="" v-if="course.has_next" @click.prevent.stop="course.page++">{{ course.page + 1 }}</a>
+              <a href="" v-if="course.has_next" @click.prevent.stop="course.page++">下一页</a>
+              <span v-else>下一页</span>
+              <a href="" v-if="course.has_next" @click.prevent.stop="course.page=Math.ceil(course.count/course.size)">尾页</a>
+              <span v-else>尾页</span>
+<!--                <span class="disabled_page">首页</span>-->
+<!--                <span class="disabled_page">上一页</span>-->
+<!--                <a href="" class="active">1</a>-->
+<!--                <a href="">2</a>-->
+<!--                <a href="">3</a>-->
+<!--                <a href="">4</a>-->
+<!--                <a href="">下一页</a>-->
+<!--                <a href="">尾页</a>-->
             </div>
         </div>
     </div>
@@ -223,8 +235,13 @@ get_category()
 
 // 获取课程信息
 const get_course_list = () => {
-  course.get_course_list().then(response=>{
-  course.course_list = response.data
+  course.get_course_list().then(response => {
+    // course.course_list = response.data
+    course.course_list = response.data.results
+    // 总数据量
+    course.count = response.data.count
+    course.has_perv = !!response.data.previous;  // !!2个非表示把数据转换成布尔值
+    course.has_next = !!response.data.next
 })
 }
 
@@ -237,6 +254,8 @@ get_course_list()
 watch(
     ()=>course.current_direction,
     ()=>{
+      // 重置页码
+      course.page = 1
       // 重置当前默认选中的课程分类
       // course.current_category = 0
       // 重置排序条件
@@ -258,6 +277,8 @@ watch(
 watch(
     ()=> course.current_category,
     ()=> {
+      // 重置页码
+      course.page = 1
        // 重置排序条件
       course.ordering = "-id"
       // 重新获取课程信息
@@ -272,9 +293,21 @@ watch(
     // 监听课程切换不同的排序条件
     () => course.ordering,
     () => {
+      // 重置页码
+      course.page = 1
       get_course_list()
     }
 )
+
+// 监听页码
+watch(
+    ()=>course.page,
+    ()=>{
+       // 重新获取课程信息
+      get_course_list()
+    }
+)
+
 </script>
 
 <style scoped>

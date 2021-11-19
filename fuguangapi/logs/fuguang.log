@@ -5915,3 +5915,32 @@ INFO 2021-11-19 17:01:15,708 basehttp log_message 7820 140480654337792 "GET /cou
 INFO 2021-11-19 17:01:17,968 basehttp log_message 7820 140480654337792 "GET /courses/1/0/?ordering=-students HTTP/1.1" 200 1426
 INFO 2021-11-19 17:01:19,041 basehttp log_message 7820 140480654337792 "GET /courses/1/0/?ordering=-orders HTTP/1.1" 200 1426
 INFO 2021-11-19 17:01:20,226 basehttp log_message 7820 140480654337792 "GET /courses/1/0/?ordering=-id HTTP/1.1" 200 1426
+INFO 2021-11-19 17:07:01,504 autoreload trigger_reload 7820 140480814829952 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py changed, reloading.
+INFO 2021-11-19 17:07:03,457 autoreload run_with_reloader 8260 139923488379264 Watching for file changes with StatReloader
+INFO 2021-11-19 18:12:47,834 basehttp log_message 8260 139923409831680 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-19 18:12:47,844 basehttp log_message 8260 139923401438976 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-19 18:12:48,694 basehttp log_message 8260 139923189397248 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1896
+INFO 2021-11-19 18:15:11,546 basehttp log_message 8260 139923189397248 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-19 18:15:11,554 basehttp log_message 8260 139923401438976 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-19 18:15:11,562 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1896
+INFO 2021-11-19 18:15:23,023 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1959
+INFO 2021-11-19 18:15:31,081 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1924
+INFO 2021-11-19 18:15:33,099 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=4&size=5 HTTP/1.1" 200 1869
+INFO 2021-11-19 18:15:35,895 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1924
+INFO 2021-11-19 18:15:38,211 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1959
+INFO 2021-11-19 18:15:39,120 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1896
+INFO 2021-11-19 18:15:41,305 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1959
+INFO 2021-11-19 18:15:42,715 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1896
+INFO 2021-11-19 18:15:44,287 basehttp log_message 8260 139923409831680 "GET /courses/0/0/?page=4&size=5 HTTP/1.1" 200 1869
+INFO 2021-11-19 18:15:47,460 basehttp log_message 8260 139923409831680 "GET /courses/categories/1/ HTTP/1.1" 200 348
+INFO 2021-11-19 18:15:47,474 basehttp log_message 8260 139923401438976 "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1476
+INFO 2021-11-19 18:15:47,507 basehttp log_message 8260 139923401438976 "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1476
+INFO 2021-11-19 18:15:47,533 basehttp log_message 8260 139923401438976 "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1476
+INFO 2021-11-19 18:15:50,683 basehttp log_message 8260 139923401438976 "GET /courses/categories/2/ HTTP/1.1" 200 348
+INFO 2021-11-19 18:15:50,685 basehttp log_message 8260 139923409831680 "GET /courses/2/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 763
+INFO 2021-11-19 18:15:53,454 basehttp log_message 8260 139923401438976 "GET /courses/3/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 782
+INFO 2021-11-19 18:15:53,457 basehttp log_message 8260 139923409831680 "GET /courses/categories/3/ HTTP/1.1" 200 110
+INFO 2021-11-19 18:15:57,284 basehttp log_message 8260 139923409831680 "GET /courses/categories/5/ HTTP/1.1" 200 206
+INFO 2021-11-19 18:15:57,302 basehttp log_message 8260 139923401438976 "GET /courses/5/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1833
+INFO 2021-11-19 18:16:00,513 basehttp log_message 8260 139923401438976 "GET /courses/categories/7/ HTTP/1.1" 200 112
+INFO 2021-11-19 18:16:00,525 basehttp log_message 8260 139923409831680 "GET /courses/7/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 420
