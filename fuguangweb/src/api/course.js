@@ -35,6 +35,19 @@ const course = reactive({
         return http.get(`/courses/${this.current_direction}/${this.current_category}/`, {
             params,  // params:params的简写
         })
+    },
+    // 课程相关的优惠活动倒计时
+    start_timer() {
+        clearInterval(this.timer)
+        this.timer = setInterval(()=> {
+            this.course_list.forEach((course)=> {
+                // js的对象和Python里面的字典/列表一样，是属于引用类型的，所以修改了成员的值也会影响自身的
+                if (course.discount.expire && course.discount.expire > 0) {
+                    // 时间不断自减
+                    course.discount.expire--
+                }
+            })
+        }, 1000)
     }
 })
 

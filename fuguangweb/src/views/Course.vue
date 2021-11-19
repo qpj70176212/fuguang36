@@ -242,6 +242,9 @@ const get_course_list = () => {
     course.count = response.data.count
     course.has_perv = !!response.data.previous;  // !!2个非表示把数据转换成布尔值
     course.has_next = !!response.data.next
+
+    // 优惠活动的倒计时
+    course.start_timer()
 })
 }
 

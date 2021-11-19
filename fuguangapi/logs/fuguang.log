@@ -5944,3 +5944,55 @@ INFO 2021-11-19 18:15:57,284 basehttp log_message 8260 139923409831680 "GET /cou
 INFO 2021-11-19 18:15:57,302 basehttp log_message 8260 139923401438976 "GET /courses/5/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1833
 INFO 2021-11-19 18:16:00,513 basehttp log_message 8260 139923401438976 "GET /courses/categories/7/ HTTP/1.1" 200 112
 INFO 2021-11-19 18:16:00,525 basehttp log_message 8260 139923409831680 "GET /courses/7/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 420
+INFO 2021-11-19 18:31:50,812 basehttp log_message 8260 139923189397248 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-19 18:31:50,825 basehttp log_message 8260 139923409831680 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-19 18:31:50,895 basehttp log_message 8260 139923401438976 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1896
+INFO 2021-11-19 18:31:51,366 basehttp log_message 8260 139923401438976 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-19 18:31:51,387 basehttp log_message 8260 139923409831680 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-19 18:31:52,699 basehttp log_message 8260 139923409831680 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-19 18:31:52,785 basehttp log_message 8260 139923189397248 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1896
+INFO 2021-11-19 18:31:52,788 basehttp log_message 8260 139923401438976 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-19 18:32:11,302 basehttp log_message 8260 139923189397248 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1959
+INFO 2021-11-19 18:34:50,305 autoreload trigger_reload 8260 139923488379264 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-19 18:34:52,449 autoreload run_with_reloader 9183 140159322935680 Watching for file changes with StatReloader
+INFO 2021-11-19 18:35:11,317 basehttp log_message 9183 140159244388096 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-19 18:35:11,332 basehttp log_message 9183 140159235995392 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-19 18:35:12,283 basehttp log_message 9183 140159227602688 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1896
+INFO 2021-11-19 18:35:29,530 basehttp log_message 9183 140159235995392 "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1477
+INFO 2021-11-19 18:35:29,536 basehttp log_message 9183 140159227602688 "GET /courses/categories/1/ HTTP/1.1" 200 348
+INFO 2021-11-19 18:35:29,574 basehttp log_message 9183 140159235995392 "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1479
+INFO 2021-11-19 18:35:30,652 basehttp log_message 9183 140159227602688 "GET /courses/2/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 763
+INFO 2021-11-19 18:35:30,652 basehttp log_message 9183 140159235995392 "GET /courses/categories/2/ HTTP/1.1" 200 348
+INFO 2021-11-19 18:35:31,314 basehttp log_message 9183 140159235995392 "GET /courses/categories/3/ HTTP/1.1" 200 110
+INFO 2021-11-19 18:35:31,315 basehttp log_message 9183 140159227602688 "GET /courses/3/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 782
+INFO 2021-11-19 18:35:31,928 basehttp log_message 9183 140159227602688 "GET /courses/categories/4/ HTTP/1.1" 200 103
+INFO 2021-11-19 18:35:31,946 basehttp log_message 9183 140159235995392 "GET /courses/4/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 419
+INFO 2021-11-19 18:35:32,612 basehttp log_message 9183 140159235995392 "GET /courses/categories/6/ HTTP/1.1" 200 156
+INFO 2021-11-19 18:35:32,613 basehttp log_message 9183 140159227602688 "GET /courses/6/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO 2021-11-19 18:35:35,425 basehttp log_message 9183 140159235995392 "GET /courses/13/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO 2021-11-19 18:35:35,425 basehttp log_message 9183 140159227602688 "GET /courses/categories/13/ HTTP/1.1" 200 62
+INFO 2021-11-19 18:35:36,009 basehttp log_message 9183 140159227602688 "GET /courses/categories/14/ HTTP/1.1" 200 61
+INFO 2021-11-19 18:35:36,010 basehttp log_message 9183 140159235995392 "GET /courses/14/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO 2021-11-19 18:35:37,956 basehttp log_message 9183 140159235995392 "GET /courses/categories/10/ HTTP/1.1" 200 78
+INFO 2021-11-19 18:35:37,968 basehttp log_message 9183 140159227602688 "GET /courses/10/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1459
+INFO 2021-11-19 18:35:42,425 basehttp log_message 9183 140159227602688 "GET /courses/10/0/?page=1&size=5&ordering=-students HTTP/1.1" 200 1459
+INFO 2021-11-19 18:35:43,235 basehttp log_message 9183 140159227602688 "GET /courses/10/0/?page=1&size=5&ordering=-orders HTTP/1.1" 200 1460
+INFO 2021-11-19 18:35:44,126 basehttp log_message 9183 140159227602688 "GET /courses/10/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1460
+INFO 2021-11-19 18:35:45,011 basehttp log_message 9183 140159227602688 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-19 18:35:45,026 basehttp log_message 9183 140159235995392 "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1883
+INFO 2021-11-19 18:36:00,286 basehttp log_message 9183 140159235995392 "GET /courses/0/0/?page=2&size=5&ordering=-id HTTP/1.1" 200 1944
+INFO 2021-11-19 18:36:04,249 basehttp log_message 9183 140159235995392 "GET /courses/0/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1992
+INFO 2021-11-19 18:36:10,467 basehttp log_message 9183 140159235995392 "GET /courses/0/0/?page=4&size=5&ordering=-id HTTP/1.1" 200 1910
+INFO 2021-11-19 18:36:14,486 basehttp log_message 9183 140159235995392 "GET /courses/0/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1993
+INFO 2021-11-19 18:36:19,040 basehttp log_message 9183 140159235995392 "GET /courses/0/0/?page=2&size=5&ordering=-id HTTP/1.1" 200 1943
+INFO 2021-11-19 18:45:07,685 autoreload trigger_reload 9183 140159322935680 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-19 18:45:09,034 autoreload run_with_reloader 9332 139703420375424 Watching for file changes with StatReloader
+INFO 2021-11-19 18:48:22,764 autoreload trigger_reload 9332 139703420375424 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-19 18:48:23,732 autoreload run_with_reloader 9398 140572263043456 Watching for file changes with StatReloader
+INFO 2021-11-19 18:48:24,879 basehttp log_message 9398 140572185282304 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-19 18:48:24,924 basehttp log_message 9398 140572176889600 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-19 18:48:25,654 basehttp log_message 9398 140572168496896 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1891
+INFO 2021-11-19 18:48:35,920 basehttp log_message 9398 140572168496896 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1955
+INFO 2021-11-19 18:48:41,792 basehttp log_message 9398 140572168496896 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1919
+INFO 2021-11-19 18:48:45,469 basehttp log_message 9398 140572168496896 "GET /courses/0/0/?page=4&size=5 HTTP/1.1" 200 1868
+INFO 2021-11-19 18:48:50,764 basehttp log_message 9398 140572168496896 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1920

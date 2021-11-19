@@ -1,3 +1,5 @@
+import random
+from random import choice
 from django.db import models
 from fuguangapi.utils.models import models, BaseModel
 # 不支持上传文件
@@ -132,9 +134,9 @@ class Course(BaseModel):
     def discount(self):
         # todo 通过计算获取折扣优惠相关的信息
         return {
-            "type": "限时优惠",
-            "expire": 636050,
-            "price": 1488.00
+            "type": choice(["限时优惠", "限时减免"]),  # 优惠类型
+            "expire": random.randint(100000, 1200000),  # 优惠倒计时 636050
+            "price": self.price - random.randint(1, 10) * 10,  # 优惠价格 1488.00
         }
 
 
