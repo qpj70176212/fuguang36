@@ -2,6 +2,7 @@ from django.shortcuts import render
 from rest_framework.generics import ListAPIView
 from .models import CourseDirection, CourseCategory, Course
 from .serializers import CourseDirectionModelSerializer, CourseCategoryModelSerializer, CourseModelSerializer
+from rest_framework.filters import OrderingFilter
 # Create your views here.
 
 
@@ -34,13 +35,15 @@ class CourseCategoryListAPIView(ListAPIView):
 class CourseListAPIView(ListAPIView):
     """课程列表接口"""
     serializer_class = CourseModelSerializer
+    filter_backends = [OrderingFilter, ]
+    ordering_fields = ['id', 'students', 'orders']
 
     def get_queryset(self):
         """列表页数据"""
         direction = int(self.kwargs.get("direction", 0))
         category = int(self.kwargs.get("category", 0))
 
-        queryset = Course.objects.filter(is_delete=False, is_show=True).order_by("-orders", "-id")
+        queryset = Course.objects.filter(is_delete=False, is_show=True).order_by("orders", "id")
         # 只有在学习方向大于0的情况下才进行学习方向的过滤
         if direction > 0:
             queryset = queryset.filter(direction=direction)

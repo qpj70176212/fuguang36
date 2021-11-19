@@ -80,9 +80,15 @@
         <div class="main-wrap">
             <div class="filter clearfix">
                 <div class="sort l">
-                  <a href="" class="on">最新</a>
-                  <a href="">销量</a>
-                  <a href="">升级</a>
+<!--                  <a href="" class="on">最新</a>-->
+                  <a href="" :class="{on:course.ordering==='-id'}"
+                  @click.prevent.stop="course.ordering=(course.ordering==='-id'?'':'-id')">最新</a>
+<!--                  <a href="">销量</a>-->
+                  <a href="" :class="{on:course.ordering==='-students'}"
+                  @click.prevent.stop="course.ordering=(course.ordering==='-students'?'':'-students')">销量</a>
+<!--                  <a href="">升级</a>-->
+                  <a href="" :class="{on:course.ordering==='-orders'}"
+                  @click.prevent.stop="course.ordering=(course.ordering==='-orders'?'':'-orders')">推荐</a>
                 </div>
                 <div class="other r clearfix"><a class="course-line l" href="" target="_blank">学习路线</a></div>
             </div>
@@ -196,6 +202,7 @@ import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
 import course from "../api/course";
 import {watch} from "vue";
+import {fil10} from "../utils/func";
 
 // 获取课程学习方向
 course.get_course_direction().then(response=>{
@@ -203,32 +210,47 @@ course.get_course_direction().then(response=>{
 })
 
 // 获取课程分类
-course.get_course_category().then(response=>{
+const get_category = () => {
+   // 重置当前默认选中的课程分类
+  course.current_category = 0
+
+  course.get_course_category().then(response=>{
   course.category_list = response.data
 })
+}
+
+get_category()
 
 // 获取课程信息
-course.get_course_list().then(response=>{
+const get_course_list = () => {
+  course.get_course_list().then(response=>{
   course.course_list = response.data
 })
+}
+
+get_course_list()
 
 // 给小于10的数字左边补0
-const fil10 = (num) => num <10?"0" + num:num
+// const fil10 = (num) => num <10?"0" + num:num
 
 // 监听切换不同的学习方向
 watch(
     ()=>course.current_direction,
     ()=>{
       // 重置当前默认选中的课程分类
-      course.current_category = 0
+      // course.current_category = 0
+      // 重置排序条件
+      course.ordering = "-id"
       // 重新获取课程分类
-      course.get_course_category().then(response=>{
-        course.category_list = response.data
-      })
+      get_category()
+      // course.get_course_category().then(response=>{
+        // course.category_list = response.data
+      // })
       // 重新获取课程信息
-      course.get_course_list().then(response=>{
-        course.course_list = response.data
-      })
+      get_course_list()
+      // course.get_course_list().then(response=>{
+      //   course.course_list = response.data
+      // })
     }
 )
 
@@ -236,10 +258,21 @@ watch(
 watch(
     ()=> course.current_category,
     ()=> {
+       // 重置排序条件
+      course.ordering = "-id"
       // 重新获取课程信息
-      course.get_course_list().then(response=>{
-        course.course_list = response.data
-      })
+      get_course_list()
+      // course.get_course_list().then(response=>{
+      //   course.course_list = response.data
+      // })
+    }
+)
+
+watch(
+    // 监听课程切换不同的排序条件
+    () => course.ordering,
+    () => {
+      get_course_list()
     }
 )
 </script>

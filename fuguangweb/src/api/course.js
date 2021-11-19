@@ -7,6 +7,7 @@ const course = reactive({
     direction_list: [],    // 学习方向列表
     category_list: [],    // 课程分类列表
     course_list: [],  // 课程列表数据
+    ordering: "-id",  // 课程排序条件
     // 获取学习方向信息
     get_course_direction(){
         return http.get("/courses/directions/")
@@ -18,7 +19,13 @@ const course = reactive({
     },
     // 获取课程列表信息
     get_course_list () {
-        return http.get(`/courses/${this.current_direction}/${this.current_category}`)
+        let params = {}
+        if (this.ordering) {
+            params.ordering = this.ordering
+        }
+        return http.get(`/courses/${this.current_direction}/${this.current_category}/`, {
+            params,  // params:params的简写
+        })
     }
 })
 
