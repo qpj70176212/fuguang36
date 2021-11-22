@@ -1,9 +1,12 @@
 from django.shortcuts import render
+from drf_haystack.viewsets import HaystackViewSet
+from drf_haystack.filters import HaystackFilter
 from rest_framework.generics import ListAPIView
 from .models import CourseDirection, CourseCategory, Course
-from .serializers import CourseDirectionModelSerializer, CourseCategoryModelSerializer, CourseModelSerializer
+from .serializers import CourseDirectionModelSerializer, CourseCategoryModelSerializer, CourseModelSerializer, CourseIndexHaystackSerializer
 from rest_framework.filters import OrderingFilter
 from .paginations import CourseListPageNumberPagination
+
 # Create your views here.
 
 
@@ -54,3 +57,15 @@ class CourseListAPIView(ListAPIView):
             queryset = queryset.filter(category=category)
 
         return queryset.all()
+
+
+class CourseSearchViewSet(HaystackViewSet):
+    # 指定本次搜索的最终真实数据的保存模型
+    index_models = [Course]
+    serializer_class = CourseIndexHaystackSerializer
+    # 过滤
+    filter_backends = [OrderingFilter, HaystackFilter]
+    # 排序
+    ordering_fields = ("id", "students", "orders")
+    # 分页
+    pagination_class = CourseListPageNumberPagination

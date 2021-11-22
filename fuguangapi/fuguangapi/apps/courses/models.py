@@ -1,4 +1,5 @@
 import random
+import json
 from random import choice
 from django.db import models
 from fuguangapi.utils.models import models, BaseModel
@@ -85,7 +86,7 @@ class Course(BaseModel):
     students = models.IntegerField(default=0, verbose_name="学习人数")
     lessons = models.IntegerField(default=0, verbose_name="总课时数量")
     pub_lessons = models.IntegerField(default=0, verbose_name="已更新课时数量")
-    price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="课程原件", default=0)
+    price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="课程原价", default=0)
     recommend_home_hot = models.BooleanField(default=False, verbose_name="是否推荐到首页新课栏目")
     recommend_home_top = models.BooleanField(default=False, verbose_name="是否推荐到首页必学栏目")
     direction = models.ForeignKey("CourseDirection", related_name="course_list", on_delete=models.DO_NOTHING, null=True,
@@ -136,8 +137,12 @@ class Course(BaseModel):
         return {
             "type": choice(["限时优惠", "限时减免"]),  # 优惠类型
             "expire": random.randint(100000, 1200000),  # 优惠倒计时 636050
-            "price": self.price - random.randint(1, 10) * 10,  # 优惠价格 1488.00
+            "price": float(self.price) - random.randint(1, 10) * 10,  # 优惠价格 1488.00
         }
+
+    def discount_json(self):
+        # 必须转成字符串才能保存到es中。所以该方法提供给es使用的。
+        return json.dumps(self.discount)
 
 
 class Teacher(BaseModel):

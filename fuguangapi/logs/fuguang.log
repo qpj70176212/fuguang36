@@ -5996,3 +5996,91 @@ INFO 2021-11-19 18:48:35,920 basehttp log_message 9398 140572168496896 "GET /cou
 INFO 2021-11-19 18:48:41,792 basehttp log_message 9398 140572168496896 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1919
 INFO 2021-11-19 18:48:45,469 basehttp log_message 9398 140572168496896 "GET /courses/0/0/?page=4&size=5 HTTP/1.1" 200 1868
 INFO 2021-11-19 18:48:50,764 basehttp log_message 9398 140572168496896 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1920
+INFO 2021-11-22 12:02:54,107 autoreload run_with_reloader 7396 140516212195712 Watching for file changes with StatReloader
+INFO 2021-11-22 12:03:37,283 autoreload run_with_reloader 7411 140634494472576 Watching for file changes with StatReloader
+INFO 2021-11-22 12:30:23,827 autoreload trigger_reload 7411 140634494472576 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py changed, reloading.
+INFO 2021-11-22 12:30:25,615 autoreload run_with_reloader 7655 140675015336320 Watching for file changes with StatReloader
+INFO 2021-11-22 12:30:34,271 autoreload run_with_reloader 7669 139703003591040 Watching for file changes with StatReloader
+INFO 2021-11-22 12:36:43,917 autoreload trigger_reload 7669 139703003591040 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/serializers.py changed, reloading.
+INFO 2021-11-22 12:36:44,724 autoreload run_with_reloader 7735 139894816977280 Watching for file changes with StatReloader
+INFO 2021-11-22 12:39:12,371 autoreload trigger_reload 7735 139894816977280 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-22 12:39:14,344 autoreload run_with_reloader 7773 140550546112896 Watching for file changes with StatReloader
+INFO 2021-11-22 14:05:51,355 autoreload trigger_reload 7773 140550546112896 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-22 14:05:53,111 autoreload run_with_reloader 8655 140036306727296 Watching for file changes with StatReloader
+INFO 2021-11-22 14:12:12,835 autoreload run_with_reloader 8749 140472829931904 Watching for file changes with StatReloader
+INFO 2021-11-22 14:16:38,471 autoreload trigger_reload 8749 140472829931904 /home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/haystack/templatetags/more_like_this.py changed, reloading.
+INFO 2021-11-22 14:16:39,540 autoreload run_with_reloader 8823 140272080109952 Watching for file changes with StatReloader
+INFO 2021-11-22 14:17:03,940 autoreload trigger_reload 8823 140272080109952 /home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/haystack/fields.py changed, reloading.
+INFO 2021-11-22 14:17:04,841 autoreload run_with_reloader 8859 140399243522432 Watching for file changes with StatReloader
+INFO 2021-11-22 14:28:58,284 autoreload trigger_reload 8859 140399243522432 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-22 14:28:59,190 autoreload run_with_reloader 9024 139680411279744 Watching for file changes with StatReloader
+ERROR 2021-11-22 14:36:37,378 log log_response 9024 139680255309568 Internal Server Error: /courses/search/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/drf_haystack/generics.py", line 56, in get_queryset
+    queryset = queryset.models(*self.index_models)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/haystack/query.py", line 376, in models
+    not in connections[self.query._using]
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/haystack/utils/loading.py", line 332, in get_indexed_models
+    return list(self.get_indexes().keys())
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/haystack/utils/loading.py", line 326, in get_indexes
+    self.build()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/haystack/utils/loading.py", line 246, in build
+    if model in self._indexes:
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/db/models/base.py", line 538, in __hash__
+    raise TypeError("Model instances without primary key value are unhashable")
+TypeError: Model instances without primary key value are unhashable
+ERROR 2021-11-22 14:36:37,383 basehttp log_message 9024 139680255309568 "GET /courses/search/?text=%E6%9D%8E%E8%80%81%E5%B8%88 HTTP/1.1" 500 128470
+WARNING 2021-11-22 14:36:39,067 log log_response 9024 139680255309568 Not Found: /favicon.ico
+WARNING 2021-11-22 14:36:39,067 basehttp log_message 9024 139680255309568 "GET /favicon.ico HTTP/1.1" 404 3038
+INFO 2021-11-22 15:31:20,106 basehttp log_message 9024 139680255309568 "GET /courses/ HTTP/1.1" 200 5369
+INFO 2021-11-22 15:31:20,320 basehttp log_message 9024 139680255309568 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,335 basehttp log_message 9024 139680255309568 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,344 basehttp log_message 9024 139680255309568 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,348 basehttp log_message 9024 139680246916864 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,353 basehttp log_message 9024 139680255309568 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,358 basehttp log_message 9024 139680255309568 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,361 basehttp log_message 9024 139680246916864 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,383 basehttp log_message 9024 139680246916864 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,386 basehttp log_message 9024 139680255309568 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,397 basehttp log_message 9024 139680255309568 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-11-22 15:31:20,473 basehttp log_message 9024 139680255309568 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2021-11-22 15:31:36,026 log log_response 9024 139680255309568 Not Found: /courses/course
+WARNING 2021-11-22 15:31:36,027 basehttp log_message 9024 139680255309568 "GET /courses/course HTTP/1.1" 404 4753
+INFO 2021-11-22 15:36:37,796 autoreload trigger_reload 9024 139680411279744 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/search_indexes.py changed, reloading.
+INFO 2021-11-22 15:36:39,656 autoreload run_with_reloader 10003 140543627698560 Watching for file changes with StatReloader
+INFO 2021-11-22 16:36:02,028 autoreload run_with_reloader 10567 140210685706624 Watching for file changes with StatReloader
+INFO 2021-11-22 16:54:44,926 autoreload trigger_reload 10567 140210685706624 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-22 16:54:46,168 autoreload run_with_reloader 10972 140051186811264 Watching for file changes with StatReloader
+INFO 2021-11-22 16:56:36,068 autoreload trigger_reload 10972 140051186811264 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/search_indexes.py changed, reloading.
+INFO 2021-11-22 16:56:37,304 autoreload run_with_reloader 11013 140386177401216 Watching for file changes with StatReloader
+INFO 2021-11-22 16:56:51,732 autoreload trigger_reload 11013 140386177401216 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/search_indexes.py changed, reloading.
+INFO 2021-11-22 16:56:52,665 autoreload run_with_reloader 11026 140376429846912 Watching for file changes with StatReloader
+INFO 2021-11-22 16:57:43,326 basehttp log_message 11026 140376347870976 "GET /courses/search/?text=%E6%9D%8E%E8%80%81%E5%B8%88 HTTP/1.1" 200 7494
+INFO 2021-11-22 16:57:43,583 basehttp log_message 11026 140376347870976 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+INFO 2021-11-22 17:00:20,805 basehttp log_message 11026 140376347870976 "GET /courses/search/?text=%E6%9D%8E%E8%80%81%E5%B8%88 HTTP/1.1" 200 11729
+INFO 2021-11-22 17:02:34,935 autoreload trigger_reload 11026 140376429846912 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/search_indexes.py changed, reloading.
+INFO 2021-11-22 17:02:36,639 autoreload run_with_reloader 11118 140601695863168 Watching for file changes with StatReloader
+INFO 2021-11-22 17:02:40,523 basehttp log_message 11118 140601613887232 "GET /courses/search/?text=%E6%9D%8E%E8%80%81%E5%B8%88 HTTP/1.1" 200 11729
+INFO 2021-11-22 17:02:51,995 basehttp log_message 11118 140601613887232 "GET /courses/search/?text=python HTTP/1.1" 200 8112
+INFO 2021-11-22 17:03:13,810 basehttp log_message 11118 140601613887232 "GET /courses/search/?text=%E6%9D%8E%E8%80%81%E5%B8%88 HTTP/1.1" 200 11729
+INFO 2021-11-22 17:12:21,347 autoreload trigger_reload 11118 140601695863168 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/search_indexes.py changed, reloading.
+INFO 2021-11-22 17:12:22,418 autoreload run_with_reloader 11236 140271049113984 Watching for file changes with StatReloader
+INFO 2021-11-22 17:12:27,557 basehttp log_message 11236 140270967138048 "GET /courses/search/?text=%E5%85%A5%E9%97%A8 HTTP/1.1" 200 12700

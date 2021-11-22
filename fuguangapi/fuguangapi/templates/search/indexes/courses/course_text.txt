@@ -1,0 +1,6 @@
+{{ object.name }}
+{{ object.description }}
+{{ object.teacher.name }}
+{{ object.category.name }}
+{{ object.direction.name }}
+

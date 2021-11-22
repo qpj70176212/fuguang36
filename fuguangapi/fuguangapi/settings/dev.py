@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'ckeditor',  # 富文本插件核心应用
     'ckeditor_uploader',  # 用于支持富文本插件上传文件使用的
     'stdimage',  # 生成缩略图
+    'haystack',  # 必须在自己创建的子应用前面
     'home',
     'users',
     "courses",
@@ -76,7 +77,9 @@ ROOT_URLCONF = 'fuguangapi.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / "templates",  # BASE_DIR 是apps的父级目录，是主应用目录，templates需要手动创建
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -418,3 +421,18 @@ OSS_BUCKET_NAME = "fuguangonline"    # oss 创建的 BUCKET 名称
 DEFAULT_FILE_STORAGE = 'django_oss_storage.backends.OssMediaStorage'
 
 
+# haystack连接elasticsearch的配置信息
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        # haystack操作es的核心模块
+        'ENGINE': 'haystack.backends.elasticsearch7_backend.Elasticsearch7SearchEngine',
+        # es服务端地址
+        'URL': 'http://127.0.0.1:9200/',
+        # es索引仓库
+        'INDEX_NAME': 'haystack',
+    },
+}
+
+# 当数据库改变时，自动更新索引，非常方便
+# 当ORM操作数据库改变时，自动更新es的索引，否则es的索引会找不到新增的数据
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
