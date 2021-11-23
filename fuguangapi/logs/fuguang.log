@@ -10598,3 +10598,17 @@ INFO 2021-11-23 17:03:08,457 basehttp log_message 8703 140140112537344 "GET /cou
 INFO 2021-11-23 17:03:08,459 basehttp log_message 8703 140140392355584 "GET /courses/categories/0/ HTTP/1.1" 200 1942
 INFO 2021-11-23 17:03:08,471 basehttp log_message 8703 140140375570176 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1890
 INFO 2021-11-23 17:03:08,677 basehttp log_message 8703 140140392355584 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 17:23:56,442 autoreload run_with_reloader 9862 140309985264000 Watching for file changes with StatReloader
+INFO 2021-11-23 17:24:17,347 basehttp log_message 9862 140309888542464 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-23 17:24:17,391 basehttp log_message 9862 140309896935168 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-23 17:24:17,560 basehttp log_message 9862 140309896935168 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 17:24:18,363 basehttp log_message 9862 140309880149760 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1892
+INFO 2021-11-23 17:24:49,510 basehttp log_message 9862 140309617116928 "GET /courses/1/ HTTP/1.1" 200 7448
+INFO 2021-11-23 17:25:16,565 basehttp log_message 9862 140309617116928 "GET /courses/3/ HTTP/1.1" 200 7382
+INFO 2021-11-23 17:25:25,217 basehttp log_message 9862 140309896935168 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 17:25:25,247 basehttp log_message 9862 140309880149760 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1956
+INFO 2021-11-23 17:25:27,066 basehttp log_message 9862 140309896935168 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 17:25:27,102 basehttp log_message 9862 140309880149760 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1919
+INFO 2021-11-23 17:25:29,176 basehttp log_message 9862 140309896935168 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 17:25:29,231 basehttp log_message 9862 140309880149760 "GET /courses/0/0/?page=4&size=5 HTTP/1.1" 200 1866
+INFO 2021-11-23 17:25:46,931 basehttp log_message 9862 140309617116928 "GET /courses/20/ HTTP/1.1" 200 7371
