@@ -37,13 +37,24 @@ const routes = [
         path: '/project',
         name: 'Course',
         component: () => import("../views/Course.vue")
+    },
+    {
+      meta:{
+        title: "浮光在线教育-项目课详情",
+        keepAlive: true
+      },
+      path: '/project/:id',     // :id vue的路径参数，代表了课程的ID
+      name: "Info",
+      component: ()=> import("../views/Info.vue"),
     }
 
 ]
 
 // 路由对象实例化
 const router = createRouter({
+    // history, 指定路由的模式
     history: createWebHistory(),
+    // 路由列表
     routes,
 })
 
