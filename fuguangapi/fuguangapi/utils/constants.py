@@ -15,3 +15,9 @@ LIST_PAGE_CACHE_TIME = 60 * 60 * 24
 # 默认头像
 DEFAULT_USER_AVATAR = "avatar/2021/avatar.jpg"
 
+# 设置热门搜索关键字在redis中的key前缀名称
+DEFAULT_HOT_WORD = "hot_word"
+# 设置返回的热门搜索关键字的数量
+HOT_WORD_LENGTH = 5
+# 设置热门搜索关键字的有效期时间[单位：天]
+HOT_WORD_EXPIRE = 7

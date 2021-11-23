@@ -115,8 +115,9 @@ DATABASES = {
 
 }
 
-# 缓存
+# 设置redis缓存
 CACHES = {
+    # 默认缓存
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
         # 项目上线时，需要调整这里的路径
@@ -137,6 +138,14 @@ CACHES = {
     "sms_code": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    # 提供存储搜索热门关键字
+    "hot_word": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/3",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }

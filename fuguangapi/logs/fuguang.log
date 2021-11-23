@@ -10510,3 +10510,63 @@ INFO 2021-11-23 15:23:24,788 basehttp log_message 7429 139953103165184 "GET /cou
 INFO 2021-11-23 15:23:28,832 basehttp log_message 7429 139953103165184 "GET /courses/search?page=2&size=5&text=%E5%85%A5%E9%97%A8 HTTP/1.1" 301 0
 INFO 2021-11-23 15:23:28,895 basehttp log_message 7429 139953103165184 "GET /courses/search/?page=2&size=5&text=%E5%85%A5%E9%97%A8 HTTP/1.1" 200 1094
 INFO 2021-11-23 15:23:35,833 basehttp log_message 7429 139953103165184 "GET /courses/search/?page=1&size=5&text=%E5%85%A5%E9%97%A8 HTTP/1.1" 200 2485
+INFO 2021-11-23 15:33:03,632 autoreload trigger_reload 7429 139953278292352 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/constants.py changed, reloading.
+INFO 2021-11-23 15:33:05,477 autoreload run_with_reloader 7830 140319790387584 Watching for file changes with StatReloader
+INFO 2021-11-23 15:54:55,421 autoreload run_with_reloader 8101 140069829833088 Watching for file changes with StatReloader
+INFO 2021-11-23 15:56:06,186 basehttp log_message 8101 140069674350336 "GET /courses/search/?text=%E6%9D%8E%E8%80%81%E5%B8%88 HTTP/1.1" 200 12100
+INFO 2021-11-23 15:57:43,695 basehttp log_message 8101 140069674350336 "GET /courses/search/?text=%E5%89%8D%E7%AB%AF HTTP/1.1" 200 11177
+INFO 2021-11-23 15:58:10,396 basehttp log_message 8101 140069674350336 "GET /courses/search/?text=%E5%89%8D%E7%AB%AF HTTP/1.1" 200 11177
+INFO 2021-11-23 16:31:07,848 autoreload trigger_reload 8101 140069829833088 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py changed, reloading.
+INFO 2021-11-23 16:31:09,132 autoreload run_with_reloader 8465 140154814513536 Watching for file changes with StatReloader
+INFO 2021-11-23 16:31:14,910 basehttp log_message 8465 140154726184704 "GET /courses/search/?text=%E5%85%A5%E9%97%A8 HTTP/1.1" 200 13071
+INFO 2021-11-23 16:31:22,305 basehttp log_message 8465 140154726184704 "GET /courses/search/?text=Vue HTTP/1.1" 200 8365
+INFO 2021-11-23 16:31:27,764 basehttp log_message 8465 140154726184704 "GET /courses/search/ HTTP/1.1" 200 12941
+INFO 2021-11-23 16:32:11,051 basehttp log_message 8465 140154726184704 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-11-23 16:32:11,184 basehttp log_message 8465 140154726184704 "GET /courses/hot_word/ HTTP/1.1" 200 5726
+INFO 2021-11-23 16:32:21,296 basehttp log_message 8465 140154726184704 "GET /courses/search/?text=%E6%9D%8E%E8%80%81%E5%B8%88 HTTP/1.1" 200 12100
+INFO 2021-11-23 16:32:34,489 basehttp log_message 8465 140154726184704 "GET /courses/search/?text=%E5%9F%BA%E7%A1%80 HTTP/1.1" 200 11182
+INFO 2021-11-23 16:32:40,993 basehttp log_message 8465 140154726184704 "GET /courses/search/?text=%E5%9F%BA%E7%A1%80 HTTP/1.1" 200 11182
+INFO 2021-11-23 16:32:46,300 basehttp log_message 8465 140154726184704 "GET /courses/search/?text=Python HTTP/1.1" 200 8395
+INFO 2021-11-23 16:33:03,565 basehttp log_message 8465 140154726184704 "GET /courses/hot_word/ HTTP/1.1" 200 5750
+INFO 2021-11-23 16:41:39,422 basehttp log_message 8465 140154726184704 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-23 16:41:39,423 basehttp log_message 8465 140154647869184 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-23 16:41:40,362 basehttp log_message 8465 140154639476480 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1890
+INFO 2021-11-23 16:41:46,699 autoreload run_with_reloader 8703 140140480684416 Watching for file changes with StatReloader
+INFO 2021-11-23 16:42:00,418 basehttp log_message 8703 140140392355584 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-23 16:42:00,443 basehttp log_message 8703 140140383962880 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-23 16:42:01,317 basehttp log_message 8703 140140375570176 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1890
+INFO 2021-11-23 16:44:08,692 basehttp log_message 8703 140140112537344 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-11-23 16:44:08,825 basehttp log_message 8703 140140375570176 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-23 16:44:08,833 basehttp log_message 8703 140140383962880 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-23 16:44:08,854 basehttp log_message 8703 140140392355584 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1891
+INFO 2021-11-23 16:44:08,961 basehttp log_message 8703 140140392355584 "GET /courses/hot_word/ HTTP/1.1" 200 46
+INFO 2021-11-23 16:44:13,522 basehttp log_message 8703 140140392355584 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-23 16:44:13,543 basehttp log_message 8703 140140392355584 "GET /courses/hot_word/ HTTP/1.1" 200 46
+INFO 2021-11-23 16:44:13,604 basehttp log_message 8703 140140383962880 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-23 16:44:13,613 basehttp log_message 8703 140140375570176 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1891
+INFO 2021-11-23 16:44:24,981 basehttp log_message 8703 140140375570176 "GET /courses/search?page=1&size=5&text=%E7%AE%97%E6%B3%95 HTTP/1.1" 301 0
+INFO 2021-11-23 16:44:24,991 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 16:44:25,632 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=1&size=5&text=%E7%AE%97%E6%B3%95 HTTP/1.1" 200 565
+INFO 2021-11-23 16:44:47,241 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 16:44:47,272 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=1&size=5&text=%E5%9F%BA%E7%A1%80 HTTP/1.1" 200 1941
+INFO 2021-11-23 16:44:48,881 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 16:44:48,908 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=1&size=5&text=%E5%9F%BA%E7%A1%80 HTTP/1.1" 200 1941
+INFO 2021-11-23 16:44:50,335 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 16:44:50,366 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=1&size=5&text=%E5%9F%BA%E7%A1%80 HTTP/1.1" 200 1941
+INFO 2021-11-23 16:44:55,158 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 16:44:55,192 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=1&size=5&text=%E5%85%A5%E9%97%A8 HTTP/1.1" 200 2485
+INFO 2021-11-23 16:44:57,983 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 16:44:58,014 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=2&size=5&text=%E5%85%A5%E9%97%A8 HTTP/1.1" 200 1094
+INFO 2021-11-23 16:45:01,706 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 16:45:01,727 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=2&size=5&text=%E5%85%A5%E9%97%A8 HTTP/1.1" 200 1094
+INFO 2021-11-23 16:45:03,052 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 16:45:03,076 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=2&size=5&text=%E5%85%A5%E9%97%A8 HTTP/1.1" 200 1094
+INFO 2021-11-23 16:45:04,124 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-23 16:45:04,156 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=2&size=5&text=%E5%85%A5%E9%97%A8 HTTP/1.1" 200 1094
+INFO 2021-11-23 16:45:34,187 basehttp log_message 8703 140140375570176 "GET /courses/search?page=2&size=5&text=%E7%AE%97%E6%B3%95 HTTP/1.1" 301 0
+INFO 2021-11-23 16:45:34,193 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+WARNING 2021-11-23 16:45:34,227 log log_response 8703 140140375570176 Not Found: /courses/search/
+WARNING 2021-11-23 16:45:34,227 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=2&size=5&text=%E7%AE%97%E6%B3%95 HTTP/1.1" 404 28
+INFO 2021-11-23 16:45:34,828 basehttp log_message 8703 140140383962880 "GET /courses/hot_word/ HTTP/1.1" 200 49
+WARNING 2021-11-23 16:45:34,843 log log_response 8703 140140375570176 Not Found: /courses/search/
+WARNING 2021-11-23 16:45:34,846 basehttp log_message 8703 140140375570176 "GET /courses/search/?page=2&size=5&text=%E7%AE%97%E6%B3%95 HTTP/1.1" 404 28
