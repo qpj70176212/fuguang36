@@ -19,8 +19,15 @@ from django.urls import path, include, re_path
 from django.conf import settings
 from django.views.static import serve  # 静态文件代理访问模块
 
+from rest_framework.schemas import get_schema_view
+from rest_framework_swagger.renderers import SwaggerUIRenderer, OpenAPIRenderer
+
+schema_view = get_schema_view(title='API', renderer_classes=[OpenAPIRenderer, SwaggerUIRenderer])
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
+    path('docs/', schema_view, name='docs'),
     path('', include("home.urls")),
     re_path(r'uploads/(?P<path>.*)', serve, {"document_root": settings.MEDIA_ROOT}),
     path('users/', include("users.urls")),

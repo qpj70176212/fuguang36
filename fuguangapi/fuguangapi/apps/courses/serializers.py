@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import CourseDirection, CourseCategory, Course
 from drf_haystack.serializers import HaystackSerializer
 from .search_indexes import CourseIndex
-
+from django.conf import settings
 
 class CourseDirectionModelSerializer(serializers.ModelSerializer):
     """学习方向的序列化器"""
@@ -52,5 +52,7 @@ class CourseIndexHaystackSerializer(HaystackSerializer):
         # 课程的图片，在这里通过elasticsearch提供的
         # 所以不会提供图片地址左边的域名的
         # 因此在这里手动拼接
-        instance.course_cover = f'//{self.context["request"]._request.META["HTTP_HOST"]}/uploads/{instance.course_cover}'
+        # instance.course_cover = f'//{self.context["request"]._request.META["HTTP_HOST"]}/uploads/{instance.course_cover}'
+        instance.course_cover = f'//{settings.OSS_BUCKET_NAME}.{settings.OSS_ENDPOINT}/uploads/{instance.course_cover}'
         return super().to_representation(instance)
+

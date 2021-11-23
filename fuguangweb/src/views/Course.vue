@@ -10,8 +10,9 @@
                 </div>
                 <div class="actual-header-search">
                     <div class="search-inner">
-                        <input class="actual-search-input" placeholder="搜索感兴趣的实战课程内容" type="text" autocomplete="off">
-                        <img class="actual-search-button" src="../assets/search.svg" />
+                        <input class="actual-search-input" placeholder="搜索感兴趣的实战课程内容" type="text" autocomplete="off"  v-model="course.text">
+<!--                        <img class="actual-search-button" src="../assets/search.svg" @click.prevent.stop="get_search_course"/>-->
+                        <img class="actual-search-button" src="../assets/search.svg" @click.prevent.stop="get_course_list"/>
                     </div>
                     <div class="actual-searchtags">
                     </div>
@@ -235,7 +236,14 @@ get_category()
 
 // 获取课程信息
 const get_course_list = () => {
-  course.get_course_list().then(response => {
+  let ret  = null // 预设一个用于保存服务端返回的数据
+  if (course.text) {
+    ret = course.search_course()
+  }else{
+    ret = course.get_course_list()
+  }
+  // course.get_course_list().then(response => {
+  ret.then(response => {
     // course.course_list = response.data
     course.course_list = response.data.results
     // 总数据量
@@ -250,6 +258,18 @@ const get_course_list = () => {
 
 get_course_list()
 
+// const get_search_course = () => {
+//   get_course_list()
+  //  course.course_list = response.data.results
+  //   // 总数据量
+  //   course.count = response.data.count
+  //   course.has_perv = !!response.data.previous;  // !!2个非表示把数据转换成布尔值
+  //   course.has_next = !!response.data.next
+  //
+  //   // 优惠活动的倒计时
+  //   course.start_timer()
+// }
+
 // 给小于10的数字左边补0
 // const fil10 = (num) => num <10?"0" + num:num
 
@@ -257,6 +277,8 @@ get_course_list()
 watch(
     ()=>course.current_direction,
     ()=>{
+      // 重置搜索文本框
+      course.text = ""
       // 重置页码
       course.page = 1
       // 重置当前默认选中的课程分类
@@ -265,14 +287,8 @@ watch(
       course.ordering = "-id"
       // 重新获取课程分类
       get_category()
-      // course.get_course_category().then(response=>{
-        // course.category_list = response.data
-      // })
       // 重新获取课程信息
       get_course_list()
-      // course.get_course_list().then(response=>{
-      //   course.course_list = response.data
-      // })
     }
 )
 
@@ -280,15 +296,14 @@ watch(
 watch(
     ()=> course.current_category,
     ()=> {
+      // 重置搜索文本框
+      course.text = ""
       // 重置页码
       course.page = 1
        // 重置排序条件
       course.ordering = "-id"
       // 重新获取课程信息
       get_course_list()
-      // course.get_course_list().then(response=>{
-      //   course.course_list = response.data
-      // })
     }
 )
 

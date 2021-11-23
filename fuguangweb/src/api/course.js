@@ -14,6 +14,7 @@ const course = reactive({
     has_perv: false,  // 是否有上一页
     has_next: false,  // 是否有下一页
     timer: null,  // 课程相关数据的定时器
+    text: "", // 搜索字段 搜索文本框内容
     // 获取学习方向信息
     get_course_direction(){
         return http.get("/courses/directions/")
@@ -24,15 +25,20 @@ const course = reactive({
         return http.get(`/courses/categories/${this.current_direction}/`)
     },
     // 获取课程列表信息
+    // get_course_list (direction, category, ordering, page) {
     get_course_list () {
         let params = {
+            // page,
             page: this.page,
             size: this.size,
         }
         if (this.ordering) {
+        // if (ordering) {
             params.ordering = this.ordering
+            // params["ordering"] = ordering
         }
         return http.get(`/courses/${this.current_direction}/${this.current_category}/`, {
+        // return http.get(`/courses/${direction}/${category}/`, {
             params,  // params:params的简写
         })
     },
@@ -48,6 +54,21 @@ const course = reactive({
                 }
             })
         }, 1000)
+    },
+    // 搜索课程信息列表
+    search_course() {
+        let params = {
+            page: this.page,
+            size: this.size,
+            text: this.text,
+        }
+        if (this.ordering) {
+            params["ordering"] = this.ordering
+            // params.ordering = this.ordering
+        }
+        return http.get(`/courses/search`, {
+            params,
+        })
     }
 })
 
