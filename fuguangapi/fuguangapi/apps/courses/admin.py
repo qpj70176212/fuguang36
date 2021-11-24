@@ -109,6 +109,7 @@ class CourseChapterModelAdmin(admin.ModelAdmin):
     list_display = ["id", "text", "pub_date"]
     # 分页配置 一页数据量
     list_per_page = 10
+    ordering = ["id"]
 
 
 admin.site.register(CourseChapter, CourseChapterModelAdmin)

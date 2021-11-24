@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import CourseDirection, CourseCategory, Course, Teacher
+from .models import CourseDirection, CourseCategory, Course, Teacher, CourseChapter, CourseLesson
 from drf_haystack.serializers import HaystackSerializer
 from .search_indexes import CourseIndex
 from django.conf import settings
@@ -66,12 +66,31 @@ class CourseTeachModelSerializer(serializers.ModelSerializer):
         fields = ["id", "name", "avatar", "role", "get_role_display", "title", "signature", "brief"]
 
 
+class CourseLessonModelSerializer(serializers.ModelSerializer):
+    """课程课时的序列化器"""
+    class Meta:
+        model = CourseLesson
+        fields = ["id", "name", "orders", "duration", "lesson_type", "lesson_link", "free_trail"]
+
+
+class CourseChapterModelSerializer(serializers.ModelSerializer):
+    """课程章节的序列化器"""
+    lesson_list = CourseLessonModelSerializer(many=True)
+
+    class Meta:
+        model = CourseChapter
+        # 实际开发中，肯定不需要返回2次课时列表，所以lesson_list 和 get_lesson_list 二选一即可。
+        fields = ["id", "orders", "name", "summary", "lesson_list", "get_lesson_list"]
+
+
 class CourseRetrieveModelSerializer(serializers.ModelSerializer):
     """课程详情的序列化器"""
     direction_name = serializers.CharField(source="direction.name")
     category_name = serializers.CharField(source="category.name")
     # 序列化器嵌套
     teacher = CourseTeachModelSerializer()
+    # 章节列表
+    chapter_list = CourseChapterModelSerializer(many=True)
 
     class Meta:
         model = Course
@@ -79,5 +98,6 @@ class CourseRetrieveModelSerializer(serializers.ModelSerializer):
             'name', 'course_cover', 'course_video', 'level',
             'get_level_display', 'description', 'pub_date', 'status',
             'get_status_display', 'students', 'discount', 'lessons', 'pub_lessons',
-            'price', 'direction', 'direction_name', 'category', 'category_name', 'teacher'
+            'price', 'direction', 'direction_name', 'category', 'category_name', 'teacher',
+            "chapter_list"
         ]

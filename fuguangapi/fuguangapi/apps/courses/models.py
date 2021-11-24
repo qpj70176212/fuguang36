@@ -216,7 +216,8 @@ class CourseChapter(BaseModel):
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return "%-第%s章-%s" % (self.course.name, self.orders, self.name)
+        # return "%s-第%s章-%s" % (self.course.name, self.orders, self.name)
+        return "%s-第%s章-%s" % (self.course.name, self.orders, self.name)
 
     # 自定义字段
     def text(self):
@@ -225,6 +226,20 @@ class CourseChapter(BaseModel):
     text.short_description = "章节名称"
     text.allow_tags = True
     text.admin_order_field = "orders"
+
+    @property
+    def get_lesson_list(self):
+        """获取课时列表的自定义字段"""
+        lesson_list = self.lesson_list.filter(is_delete=False, is_show=True).order_by("orders").all()
+        return [{
+            "id": lesson.id,
+            "name": lesson.name,
+            "orders": lesson.orders,
+            "duration": lesson.duration,
+            "lesson_type": lesson.lesson_type,
+            "lesson_link": lesson.lesson_link,
+            "free_trail": lesson.free_trail
+        } for lesson in lesson_list]
 
 
 class CourseLesson(BaseModel):
@@ -237,7 +252,7 @@ class CourseLesson(BaseModel):
     orders = models.SmallIntegerField(default=1, verbose_name="第几节")
     lesson_type = models.SmallIntegerField(default=2, choices=lesson_type_choices, verbose_name="课时种类")
     lesson_link = models.CharField(max_length=255, blank=True, help_text="若是video，填视频地址或者视频id，若是文档，填文档地址",
-                                   verbose_name="课程链接")
+                                   null=True,verbose_name="课程链接")
     duration = models.CharField(blank=True, null=True, max_length=32, verbose_name="课时时长")  # 仅在前端展示使用
     pub_date = models.DateTimeField(auto_now_add=True, verbose_name="发布时间")
     free_trail = models.BooleanField(default=False, verbose_name="是否可试看")
