@@ -11299,3 +11299,220 @@ INFO 2021-11-24 16:52:33,470 basehttp log_message 6126 139756960741120 "GET /cou
 INFO 2021-11-24 16:53:03,391 basehttp log_message 6126 139756826523392 "GET /users/sms/17260808696 HTTP/1.1" 200 5543
 INFO 2021-11-24 16:53:07,223 basehttp log_message 6126 139756826523392 "GET /courses/1/ HTTP/1.1" 200 10156
 INFO 2021-11-24 16:54:26,911 basehttp log_message 6126 139756960741120 "GET /courses/1/ HTTP/1.1" 200 1850
+INFO 2021-11-24 17:01:31,063 autoreload trigger_reload 6126 139757118042496 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-24 17:01:32,458 autoreload run_with_reloader 6501 140432002732416 Watching for file changes with StatReloader
+INFO 2021-11-24 17:26:43,714 autoreload trigger_reload 6501 140432002732416 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-24 17:26:45,603 autoreload run_with_reloader 6899 140569544552832 Watching for file changes with StatReloader
+INFO 2021-11-24 18:20:00,602 autoreload trigger_reload 6899 140569544552832 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-24 18:20:03,432 autoreload run_with_reloader 7400 140293037056384 Watching for file changes with StatReloader
+INFO 2021-11-24 18:20:05,914 basehttp log_message 7400 140292881860352 "GET /admin/ HTTP/1.1" 200 21164
+INFO 2021-11-24 18:20:07,490 basehttp log_message 7400 140292881860352 "GET /admin/courses/courselesson/ HTTP/1.1" 200 28972
+INFO 2021-11-24 18:20:07,586 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:20:15,693 basehttp log_message 7400 140292881860352 "GET /admin/courses/coursechapter/ HTTP/1.1" 200 26763
+INFO 2021-11-24 18:20:15,800 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:20:30,595 basehttp log_message 7400 140292881860352 "GET /admin/courses/discount/ HTTP/1.1" 200 25753
+INFO 2021-11-24 18:20:30,669 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:20:32,597 basehttp log_message 7400 140292881860352 "GET /admin/courses/activity/ HTTP/1.1" 200 25736
+INFO 2021-11-24 18:20:32,636 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:20:34,276 basehttp log_message 7400 140292881860352 "GET /admin/courses/discounttype/ HTTP/1.1" 200 25136
+INFO 2021-11-24 18:20:34,325 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:20:35,806 basehttp log_message 7400 140292881860352 "GET /admin/courses/coursedirection/ HTTP/1.1" 200 40136
+INFO 2021-11-24 18:20:35,853 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:20:39,048 basehttp log_message 7400 140292881860352 "GET /admin/courses/courseactivityprice/ HTTP/1.1" 200 25474
+INFO 2021-11-24 18:20:39,108 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:37:01,015 basehttp log_message 7400 140292881860352 "GET /admin/ HTTP/1.1" 200 21164
+INFO 2021-11-24 18:37:01,655 basehttp log_message 7400 140292881860352 "GET /admin/courses/discounttype/ HTTP/1.1" 200 28124
+INFO 2021-11-24 18:37:01,870 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:37:11,305 basehttp log_message 7400 140292881860352 "GET /admin/courses/courseactivityprice/ HTTP/1.1" 200 27557
+INFO 2021-11-24 18:37:11,398 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:37:17,087 basehttp log_message 7400 140292881860352 "GET /admin/courses/activity/ HTTP/1.1" 200 26474
+INFO 2021-11-24 18:37:17,134 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:37:18,981 basehttp log_message 7400 140292881860352 "GET /admin/courses/discount/ HTTP/1.1" 200 27735
+INFO 2021-11-24 18:37:19,027 basehttp log_message 7400 140292881860352 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:38:11,009 autoreload trigger_reload 7400 140293037056384 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/admin.py changed, reloading.
+INFO 2021-11-24 18:38:12,961 autoreload run_with_reloader 7753 140534556152192 Watching for file changes with StatReloader
+INFO 2021-11-24 18:38:14,945 basehttp log_message 7753 140534401238784 "GET /admin/ HTTP/1.1" 200 21164
+INFO 2021-11-24 18:38:15,610 basehttp log_message 7753 140534401238784 "GET /admin/courses/courseactivityprice/ HTTP/1.1" 200 28026
+INFO 2021-11-24 18:38:16,147 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:38:19,131 basehttp log_message 7753 140534401238784 "GET /admin/courses/discounttype/ HTTP/1.1" 200 28591
+INFO 2021-11-24 18:38:19,168 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:38:22,920 basehttp log_message 7753 140534401238784 "GET /admin/courses/activity/ HTTP/1.1" 200 26945
+INFO 2021-11-24 18:38:22,966 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:38:24,510 basehttp log_message 7753 140534401238784 "GET /admin/courses/discount/ HTTP/1.1" 200 28206
+INFO 2021-11-24 18:38:24,558 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:39:00,173 basehttp log_message 7753 140534401238784 "GET /admin/courses/activity/add/ HTTP/1.1" 200 22639
+INFO 2021-11-24 18:39:00,478 basehttp log_message 7753 140534392846080 "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2021-11-24 18:39:00,482 basehttp log_message 7753 140534380521216 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2021-11-24 18:39:00,577 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:39:01,838 basehttp log_message 7753 140534401238784 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2021-11-24 18:39:01,863 basehttp log_message 7753 140534401238784 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2021-11-24 18:43:19,239 basehttp log_message 7753 140534401238784 "POST /admin/courses/activity/add/ HTTP/1.1" 302 0
+INFO 2021-11-24 18:43:19,370 basehttp log_message 7753 140534401238784 "GET /admin/courses/activity/ HTTP/1.1" 200 27905
+INFO 2021-11-24 18:43:19,463 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:43:52,668 basehttp log_message 7753 140534401238784 "GET /admin/courses/courseactivityprice/add/ HTTP/1.1" 200 23265
+INFO 2021-11-24 18:43:52,726 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:45:16,216 basehttp log_message 7753 140534401238784 "POST /admin/courses/courseactivityprice/add/ HTTP/1.1" 302 0
+INFO 2021-11-24 18:45:16,419 basehttp log_message 7753 140534401238784 "GET /admin/courses/courseactivityprice/ HTTP/1.1" 200 29070
+INFO 2021-11-24 18:45:16,497 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:45:46,990 basehttp log_message 7753 140534401238784 "GET /admin/courses/activity/1/change/ HTTP/1.1" 200 23472
+INFO 2021-11-24 18:45:47,049 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+WARNING 2021-11-24 18:45:47,613 log log_response 7753 140534401238784 Not Found: /uploads/ckeditor/2021/07/29/d2c059da6e09b35a.gif
+WARNING 2021-11-24 18:45:47,614 basehttp log_message 7753 140534401238784 "GET /uploads/ckeditor/2021/07/29/d2c059da6e09b35a.gif HTTP/1.1" 404 3297
+INFO 2021-11-24 18:47:47,234 basehttp log_message 7753 140534401238784 "POST /admin/courses/activity/1/change/ HTTP/1.1" 302 0
+INFO 2021-11-24 18:47:47,406 basehttp log_message 7753 140534401238784 "GET /admin/courses/activity/ HTTP/1.1" 200 27914
+INFO 2021-11-24 18:47:47,537 basehttp log_message 7753 140534401238784 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-24 18:52:40,620 autoreload trigger_reload 7753 140534556152192 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-24 18:52:42,082 autoreload run_with_reloader 8043 140045981041024 Watching for file changes with StatReloader
+INFO 2021-11-24 19:23:29,084 autoreload trigger_reload 8043 140045981041024 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-11-24 19:23:31,942 autoreload run_with_reloader 8425 140684664926592 Watching for file changes with StatReloader
+INFO 2021-11-24 19:23:52,340 autoreload run_with_reloader 8504 140618197234048 Watching for file changes with StatReloader
+INFO 2021-11-24 19:24:48,578 autoreload run_with_reloader 8532 140154733404544 Watching for file changes with StatReloader
+ERROR 2021-11-24 19:24:54,874 log log_response 8532 140154577614592 Internal Server Error: /courses/1/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 1561, in to_representation
+    url = value.url
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/db/models/fields/files.py", line 64, in url
+    return self.storage.url(self.name)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/files/storage.py", line 371, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django_oss_storage/backends.py", line 234, in __init__
+    super(OssMediaStorage, self).__init__()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django_oss_storage/backends.py", line 72, in __init__
+    self.bucket_acl = self.bucket.get_bucket_acl().acl
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 1601, in get_bucket_acl
+    resp = self.__do_bucket('GET', params={Bucket.ACL: ''})
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 2532, in __do_bucket
+    return self._do(method, self.bucket_name, '', **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 231, in _do
+    raise e
+oss2.exceptions.ServerError: {'status': 403, 'x-oss-request-id': '619E2106A645AE313860F7BE', 'details': {'Code': 'UserDisable', 'Message': 'UserDisable', 'RequestId': '619E2106A645AE313860F7BE', 'HostId': 'fuguangonline.oss-cn-beijing.aliyuncs.com'}}
+ERROR 2021-11-24 19:24:54,879 basehttp log_message 8532 140154577614592 "GET /courses/1/ HTTP/1.1" 500 184488
+ERROR 2021-11-24 19:38:03,979 log log_response 8532 140154577614592 Internal Server Error: /courses/1/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 1561, in to_representation
+    url = value.url
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/db/models/fields/files.py", line 64, in url
+    return self.storage.url(self.name)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/files/storage.py", line 371, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django_oss_storage/backends.py", line 234, in __init__
+    super(OssMediaStorage, self).__init__()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django_oss_storage/backends.py", line 72, in __init__
+    self.bucket_acl = self.bucket.get_bucket_acl().acl
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 1601, in get_bucket_acl
+    resp = self.__do_bucket('GET', params={Bucket.ACL: ''})
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 2532, in __do_bucket
+    return self._do(method, self.bucket_name, '', **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 231, in _do
+    raise e
+oss2.exceptions.ServerError: {'status': 403, 'x-oss-request-id': '619E241BED63F035385E22DD', 'details': {'Code': 'UserDisable', 'Message': 'UserDisable', 'RequestId': '619E241BED63F035385E22DD', 'HostId': 'fuguangonline.oss-cn-beijing.aliyuncs.com'}}
+ERROR 2021-11-24 19:38:03,980 basehttp log_message 8532 140154577614592 "GET /courses/1/ HTTP/1.1" 500 184487
+INFO 2021-11-24 19:39:21,252 autoreload run_with_reloader 8671 139757777379712 Watching for file changes with StatReloader
+ERROR 2021-11-24 19:39:59,717 log log_response 8671 139757621663488 Internal Server Error: /courses/1/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 1561, in to_representation
+    url = value.url
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/db/models/fields/files.py", line 64, in url
+    return self.storage.url(self.name)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/files/storage.py", line 371, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django_oss_storage/backends.py", line 234, in __init__
+    super(OssMediaStorage, self).__init__()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django_oss_storage/backends.py", line 72, in __init__
+    self.bucket_acl = self.bucket.get_bucket_acl().acl
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 1601, in get_bucket_acl
+    resp = self.__do_bucket('GET', params={Bucket.ACL: ''})
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 2532, in __do_bucket
+    return self._do(method, self.bucket_name, '', **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 231, in _do
+    raise e
+oss2.exceptions.ServerError: {'status': 403, 'x-oss-request-id': '619E248FF326DB3433CFF0A2', 'details': {'Code': 'UserDisable', 'Message': 'UserDisable', 'RequestId': '619E248FF326DB3433CFF0A2', 'HostId': 'fuguangonline.oss-cn-beijing.aliyuncs.com'}}
+ERROR 2021-11-24 19:39:59,723 basehttp log_message 8671 139757621663488 "GET /courses/1/ HTTP/1.1" 500 184487
+INFO 2021-11-24 19:44:32,706 basehttp log_message 8671 139757621663488 "GET /courses/1/ HTTP/1.1" 200 10166
+INFO 2021-11-24 19:46:24,251 basehttp log_message 8671 139757621663488 "GET /courses/0/0 HTTP/1.1" 301 0
+INFO 2021-11-24 19:46:24,526 basehttp log_message 8671 139757621663488 "GET /courses/0/0/ HTTP/1.1" 200 12951
+INFO 2021-11-24 19:46:24,745 basehttp log_message 8671 139757621663488 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028

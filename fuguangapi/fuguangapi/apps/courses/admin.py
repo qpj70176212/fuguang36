@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Course, CourseChapter, CourseDirection, CourseLesson, CourseCategory, Teacher
+from .models import Course, CourseChapter, CourseDirection, CourseLesson, CourseCategory, Teacher, Activity, Discount, DiscountType, CourseActivityPrice
 
 
 # Register your models here.
@@ -130,3 +130,39 @@ class CourseLessonModelAdmin(admin.ModelAdmin):
 
 
 admin.site.register(CourseLesson, CourseLessonModelAdmin)
+
+
+class ActivityModelAdmin(admin.ModelAdmin):
+    """优惠活动的模型管理器"""
+    list_display = ["id", "name", "start_time", "end_time", "remark"]
+    ordering = ["id"]
+
+
+admin.site.register(Activity, ActivityModelAdmin)
+
+
+class DiscountTypeModelAdmin(admin.ModelAdmin):
+    """优惠类型的模型管理器"""
+    list_display = ["id", "name", "remark"]
+    ordering = ["id"]
+
+
+admin.site.register(DiscountType, DiscountTypeModelAdmin)
+
+
+class DiscountModelAdmin(admin.ModelAdmin):
+    """优惠公式的模型管理器"""
+    list_display = ["id", "name", "discount_type", "condition", "sale"]
+    ordering = ["id"]
+
+
+admin.site.register(Discount, DiscountModelAdmin)
+
+
+class CourseActivityPriceModelAdmin(admin.ModelAdmin):
+    """课程活动价格的模型管理器"""
+    list_display = ["id", "activity", "course", "discount"]
+    ordering = ["id"]
+
+
+admin.site.register(CourseActivityPrice, CourseActivityPriceModelAdmin)

@@ -9,7 +9,7 @@ from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 from stdimage import StdImageField
 from django.utils.safestring import mark_safe  # 站点展示缩略图
-
+from django.utils import timezone as datetime
 # Create your models here.
 
 
@@ -134,11 +134,54 @@ class Course(BaseModel):
     @property
     def discount(self):
         # todo 通过计算获取折扣优惠相关的信息
-        return {
-            "type": choice(["限时优惠", "限时减免"]),  # 优惠类型
-            "expire": random.randint(100000, 1200000),  # 优惠倒计时 636050
-            "price": float(self.price) - random.randint(1, 10) * 10,  # 优惠价格 1488.00
-        }
+        # return {
+        #     "type": choice(["限时优惠", "限时减免"]),  # 优惠类型
+        #     "expire": random.randint(100000, 1200000),  # 优惠倒计时 636050
+        #     "price": float(self.price) - random.randint(1, 10) * 10,  # 优惠价格 1488.00
+        # }
+        """通过计算获取当前课程的折扣优惠相关的信息"""
+        # 当前时间大于开始时间小于活动结束时间
+        now_time = datetime.now()  # 活动_结束时间 > 当前时间 and 活动_开始时间 < 当前时间
+        # 获取当前课程参与的最新活动记录
+        last_activity_log = self.price_list.filter(
+            activity__end_time__gt=now_time,
+            activity__start_time__lt=now_time
+        ).order_by("-id").first()
+
+        type_text = ""  # 优惠类型的默认值
+        price = -1  # 优惠价格
+        expire = 0  # 优惠剩余时间
+
+        if last_activity_log:
+            # 获取优惠类型的提示文本
+            type_text = last_activity_log.discount.discount_type.name
+            # 获取限时活动剩余时间戳[单位:s]
+            expire = last_activity_log.activity.end_time.timestamp() - now_time.timestamp()
+            # 判断当前课程的价格是否满足优惠条件
+            course_price = float(self.price)
+            condition_price = float(last_activity_log.discount.condition)
+            if course_price >= condition_price:
+                # 计算本次课程参与了优惠以后的价格
+                sale = last_activity_log.discount.sale
+                print(f"{type_text}-{sale}")
+                if sale == "0":
+                    # 免费，则最终价格为0
+                    price = 0
+                elif sale[0] == "*":
+                    # 折扣
+                    price = course_price * float(sale[1:])
+                elif sale[0] == "-":
+                    # 减免
+                    price = course_price - float(sale[1:])
+                price = float(f"{price:.2f}")
+        data = {}
+        if type_text:
+            data["type"] = type_text
+        if expire > 0:
+            data["expire"] = expire
+        if price != -1:
+            data["price"] = price
+        return data
 
     def discount_json(self):
         # 必须转成字符串才能保存到es中。所以该方法提供给es使用的。
@@ -284,3 +327,63 @@ class CourseLesson(BaseModel):
     text2.short_description = "课时名称"
     text2.allow_tags = True
     text2.admin_order_field = "order"
+
+
+class Activity(BaseModel):
+    start_time = models.DateTimeField(default=datetime.now(), verbose_name="开始时间")
+    end_time = models.DateTimeField(default=datetime.now(), verbose_name="结束时间")
+    description = RichTextUploadingField(blank=True, null=True, verbose_name="活动介绍")
+    remark = models.TextField(blank=True, null=True, verbose_name="备注信息")
+
+    class Meta:
+        db_table = "fg_activity"
+        verbose_name = "优惠活动"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.name
+
+
+class DiscountType(BaseModel):
+    remark = models.CharField(max_length=250, blank=True, null=True, verbose_name="备注信息")
+
+    class Meta:
+        db_table = "fg_discount_type"
+        verbose_name = "优惠类型"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.name
+
+
+class Discount(BaseModel):
+    discount_type = models.ForeignKey("DiscountType", on_delete=models.CASCADE, related_name='discount_list', db_constraint=False, verbose_name="优惠类型")
+    condition = models.IntegerField(blank=True, default=0, verbose_name="满足优惠的价格条件", help_text="设置优惠的价格条件，如果不填或0则没有优惠门槛")
+    sale = models.TextField(verbose_name="优惠公式", help_text="""
+    0表示免费；<br>
+    *号开头表示折扣价，例如填写*0.82，则表示八二折；<br>
+    -号开头表示减免价，例如填写-100，则表示减免100；<br>
+    """)
+
+    class Meta:
+        db_table = "fg_discount"
+        verbose_name = "优惠公式"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return "价格优惠:%s，优惠条件:%s，优惠公式:%s" % (self.discount_type.name, self.condition, self.sale)
+
+
+class CourseActivityPrice(BaseModel):
+    activity = models.ForeignKey("Activity", on_delete=models.CASCADE, related_name="price_list", db_constraint=False, verbose_name="活动")
+    course = models.ForeignKey("Course", on_delete=models.CASCADE, related_name="price_list", db_constraint=False, verbose_name="课程")
+    discount = models.ForeignKey("Discount", on_delete=models.CASCADE, related_name="price_list", db_constraint=False, verbose_name="优惠")
+
+    class Meta:
+        db_table = "fg_course_activity_price"
+        verbose_name = "课程参与活动的价格表"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return "活动:%s-课程:%s-优惠公式:%s" % (self.activity.name, self.course.name, self.discount.sale)
+
