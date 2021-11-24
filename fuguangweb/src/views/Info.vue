@@ -4,19 +4,46 @@
       <div class="main">
         <div class="course-info">
           <div class="wrap-left">
+            <!-- 课程封面图片/视频 -->
+            <vue3-video-player
+                @play="onPlay($event)"
+                @pause="onPause($event)"
+                :cover="course.info.course_cover"
+                :src="course.info.course_video"
+                v-if="course.info.course_video"
+            ></vue3-video-player>
+            <!--                cover="/src/assets/course-1.png" -->
+            <!--                src="/src/assets/1.mp4">-->
+
+            <img :src="course.info.course_cover" style="width: 100%;" alt="" v-else>
 
           </div>
           <div class="wrap-right">
-            <h3 class="course-name">Linux系统基础5周入门精讲</h3>
-            <p class="data">23475人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总时长：148课时/180小时&nbsp;&nbsp;&nbsp;&nbsp;难度：初级</p>
-            <div class="sale-time">
-              <p class="sale-type">限时免费</p>
-              <p class="expire">距离结束：仅剩 01天 04小时 33分 <span class="second">08</span> 秒</p>
+<!--            <h3 class="course-name">Linux系统基础5周入门精讲</h3>-->
+            <h3 class="course-name">{{ course.info.name }}</h3>
+<!--            <p class="data">23475人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总时长：148课时/180小时&nbsp;&nbsp;&nbsp;&nbsp;难度：初级</p>-->
+            <p class="data">{{ course.info.students }}人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总时长：{{ course.info.pub_lessons }}
+              课时/{{ course.info.lessons }}小时&nbsp;&nbsp;&nbsp;&nbsp;难度：{{ course.info.get_level_display }}</p>
+<!--            <div class="sale-time">-->
+            <div class="sale-time" v-if="course.info.discount.type">
+<!--              <p class="sale-type">限时免费</p>-->
+              <p class="sale-type">{{ course.info.discount.type }}</p>
+<!--              <p class="expire">距离结束：仅剩 01天 04小时 33分 <span class="second">08</span> 秒</p>-->
+              <p class="expire" v-if="course.info.discount.expire > 0">距离结束：仅剩 {{ parseInt(course.info.discount.expire/86400) }}天
+                {{ fil10(parseInt(course.info.discount.expire/3600%24)) }}小时
+                {{ fil10(parseInt(course.info.discount.expire/60%60)) }}分 <span class="second">
+                  {{ fil10(parseInt(course.info.discount.expire%60)) }}</span> 秒</p>
             </div>
-            <p class="course-price">
+            <div class="sale-time" v-if="!course.info.discount.type">
+               <p class="sale-type">课程价格￥{{ parseFloat(course.info.price).toFixed(2) }}</p>
+            </div>
+<!--            <p class="course-price">-->
+            <p class="course-price" v-if="course.info.discount.price">
               <span>活动价</span>
-              <span class="discount">¥0.00</span>
-              <span class="original">¥29.00</span>
+<!--              <span class="discount">¥0.00</span>-->
+              <span class="discount">¥{{ parseFloat(course.info.discount.price).toFixed(2) }}</span>
+<!--              <span class="original">¥29.00</span>-->
+              <span class="original">¥{{ parseFloat(course.info.price).toFixed(2) }}</span>
             </p>
             <div class="buy">
               <div class="buy-btn">
@@ -29,20 +56,26 @@
         </div>
         <div class="course-tab">
           <ul class="tab-list">
-            <li :class="state.tabIndex===1?'active':''" @click="state.tabIndex=1">详情介绍</li>
-            <li :class="state.tabIndex===2?'active':''" @click="state.tabIndex=2">课程章节 <span :class="state.tabIndex!==2?'free':''">(试学)</span></li>
-            <li :class="state.tabIndex===3?'active':''" @click="state.tabIndex=3">用户评论 (42)</li>
-            <li :class="state.tabIndex===4?'active':''" @click="state.tabIndex=4">常见问题</li>
+<!--            <li :class="state.tabIndex===1?'active':''" @click="state.tabIndex=1">详情介绍</li>-->
+            <li :class="course.tabIndex===1?'active':''" @click="course.tabIndex=1">详情介绍</li>
+            <li :class="course.tabIndex===2?'active':''" @click="course.tabIndex=2">课程章节 <span :class="state.tabIndex!==2?'free':''">(试学)</span></li>
+<!--            <li :class="state.tabIndex===2?'active':''" @click="state.tabIndex=2">课程章节 <span :class="state.tabIndex!==2?'free':''">(试学)</span></li>-->
+<!--            <li :class="state.tabIndex===3?'active':''" @click="state.tabIndex=3">用户评论 (42)</li>-->
+            <li :class="course.tabIndex===3?'active':''" @click="course.tabIndex=3">用户评论 (42)</li>
+            <li :class="course.tabIndex===4?'active':''" @click="course.tabIndex=4">常见问题</li>
+<!--            <li :class="state.tabIndex===4?'active':''" @click="state.tabIndex=4">常见问题</li>-->
           </ul>
         </div>
         <div class="course-content">
           <div class="course-tab-list">
-            <div class="tab-item" v-if="state.tabIndex===1">
-              <p><img alt="" src="https://hcdn1.luffycity.com/static/frontend/course/5/21天01_1547098127.6672518.jpeg" width="840"></p>
-              <p><img alt="" src="https://hcdn1.luffycity.com/static/frontend/course/5/21天01_1547098127.6672518.jpeg" width="840"></p>
-              <p><img alt="" src="https://hcdn1.luffycity.com/static/frontend/course/5/21天01_1547098127.6672518.jpeg" width="840"></p>
-            </div>
-            <div class="tab-item" v-if="state.tabIndex===2">
+<!--            <div class="tab-item" v-if="state.tabIndex===1">-->
+            <div class="tab-item" v-if="course.tabIndex===1" v-html="course.info.description"> </div>
+<!--              <p><img alt="" src="https://hcdn1.luffycity.com/static/frontend/course/5/21天01_1547098127.6672518.jpeg" width="840"></p>-->
+<!--              <p><img alt="" src="https://hcdn1.luffycity.com/static/frontend/course/5/21天01_1547098127.6672518.jpeg" width="840"></p>-->
+<!--              <p><img alt="" src="https://hcdn1.luffycity.com/static/frontend/course/5/21天01_1547098127.6672518.jpeg" width="840"></p>-->
+<!--            </div>-->
+<!--            <div class="tab-item" v-if="state.tabIndex===2">-->
+            <div class="tab-item" v-if="course.tabIndex===2">
               <div class="tab-item-title">
                 <p class="chapter">课程章节</p>
                 <p class="chapter-length">共11章 147个课时</p>
@@ -78,10 +111,12 @@
                 </ul>
               </div>
             </div>
-            <div class="tab-item" v-if="state.tabIndex===3">
+<!--            <div class="tab-item" v-if="state.tabIndex===3">-->
+            <div class="tab-item" v-if="course.tabIndex===3">
               用户评论
             </div>
-            <div class="tab-item" v-if="state.tabIndex===4">
+<!--            <div class="tab-item" v-if="state.tabIndex===4">-->
+            <div class="tab-item" v-if="course.tabIndex===4">
               常见问题
             </div>
           </div>
@@ -90,13 +125,18 @@
                <h4 class="side-title"><span>授课老师</span></h4>
                <div class="teacher-content">
                  <div class="cont1">
-                   <img src="../assets/avatar.jpg">
+<!--                   <img src="../assets/avatar.jpg">-->
+                   <img :src="course.info.teacher.avatar">
                    <div class="name">
-                     <p class="teacher-name">李泳谊</p>
-                     <p class="teacher-title">老男孩LInux学科带头人</p>
+<!--                     <p class="teacher-name">李泳谊</p>-->
+                     <p class="teacher-name">{{ course.info.teacher.name }}</p>
+                     <p class="teacher-title">{{ course.info.teacher.get_role_display }},
+                     {{course.info.teacher.title}}</p>
+<!--                     <p class="teacher-title">老男孩LInux学科带头人</p>-->
                    </div>
                  </div>
-                 <p class="narrative" >Linux运维技术专家，老男孩Linux金牌讲师，讲课风趣幽默、深入浅出、声音洪亮到爆炸</p>
+<!--                 <p class="narrative" >Linux运维技术专家，老男孩Linux金牌讲师，讲课风趣幽默、深入浅出、声音洪亮到爆炸</p>-->
+                 <div class="narrative" v-html="course.info.teacher.brief"></div>
                </div>
              </div>
           </div>
@@ -108,17 +148,68 @@
 
 <script setup>
 import {reactive,ref,watch} from "vue"
-import {useRoute} from "vue-router"
+import {useRoute, useRouter} from "vue-router"
 import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
+import course from "../api/course";
+import { ElMessage } from "element-plus";
+import {fil10} from "../utils/func";
 
 let route = useRoute()
+let router = useRouter()
 
 const state = reactive({
-  course_id: route.params.id,
+  // course_id: route.params.id,
   tabIndex: 2,
 })
 
+// 获取地址栏上面的课程IDcourse_id
+course.course_id = route.params.id;
+if(course.course_id > 0){
+  // 获取课程详情信息
+  course.get_course().then(response=>{
+    course.info = response.data;
+    // 针对优惠课程如果有优惠时间，则进行倒计时处理
+    clearInterval(course.timer);
+    course.timer = setInterval(()=>{
+      if(course.info.discount.expire && course.info.discount.expire>0){
+            course.info.discount.expire--
+        }
+    },1000);
+
+  }).catch(error=>{
+    ElMessage.error({
+      message: "无效的课程ID！无法获取课程信息！",
+      duration: 1000,
+      onClose(){
+        router.go(-1)
+      }
+    })
+  })
+}else{
+    ElMessage.error({
+      message: "无效的课程ID！无法获取课程信息！",
+      duration: 1000,
+      onClose(){
+        router.go(-1)  //返回上一页
+      }
+    })
+}
+
+// 播放器开始播放视频的回调函数
+let onPlay = (event)=>{
+    console.log("播放")
+    console.log(event);
+    console.log(event.target.currentTime); // 当前播放的视频时间进度，可以用于跟踪播放视频的视频
+    console.log(event.target.duration); // 当前视频的总时长，可以用于跟踪播放视频的视频
+}
+
+// 播放器暂停播放视频的回调函数
+let onPause = (event)=>{
+    console.log("暂停")
+    console.log(event.target.currentTime); // 当前播放的视频时间进度，可以用于跟踪播放视频的视频
+    console.log(event.target.duration); // 当前视频的总时长，可以用于跟踪播放视频的视频
+}
 </script>
 
 <style scoped>

@@ -54,7 +54,8 @@ class CourseIndexHaystackSerializer(HaystackSerializer):
         # 所以不会提供图片地址左边的域名的
         # 因此在这里手动拼接
         # instance.course_cover = f'//{self.context["request"]._request.META["HTTP_HOST"]}/uploads/{instance.course_cover}'
-        instance.course_cover = f'//{settings.OSS_BUCKET_NAME}.{settings.OSS_ENDPOINT}/uploads/{instance.course_cover}'
+        # instance.course_cover = f'//{settings.OSS_BUCKET_NAME}.{settings.OSS_ENDPOINT}/uploads/{instance.course_cover}'
+        instance.course_cover = f'https://{settings.OSS_BUCKET_NAME}.{settings.OSS_ENDPOINT}/uploads/{instance.course_cover}'
         return super().to_representation(instance)
 
 
