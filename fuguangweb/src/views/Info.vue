@@ -38,7 +38,7 @@
                <p class="sale-type">课程价格￥{{ parseFloat(course.info.price).toFixed(2) }}</p>
             </div>
 <!--            <p class="course-price">-->
-            <p class="course-price" v-if="course.info.discount.price">
+            <p class="course-price" v-if="course.info.discount.price >=0">
               <span>活动价</span>
 <!--              <span class="discount">¥0.00</span>-->
               <span class="discount">¥{{ parseFloat(course.info.discount.price).toFixed(2) }}</span>

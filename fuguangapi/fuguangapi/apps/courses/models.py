@@ -10,6 +10,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 from stdimage import StdImageField
 from django.utils.safestring import mark_safe  # 站点展示缩略图
 from django.utils import timezone as datetime
+from django.utils import timezone
 # Create your models here.
 
 
