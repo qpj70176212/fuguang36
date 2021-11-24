@@ -120,6 +120,7 @@ class CourseLessonModelAdmin(admin.ModelAdmin):
     list_display = ["id", "text", "text2", "lesson_type", "duration", "pub_date", "free_trail"]
     # 分页配置 一页数据量
     list_per_page = 10
+    ordering = ["id"]
 
     def text(self, obj):
         return obj.__str__()
