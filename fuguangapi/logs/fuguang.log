@@ -11975,3 +11975,4 @@ WARNING 2021-11-25 19:03:01,455 basehttp log_message 10217 140172758869760 "GET 
 INFO 2021-11-25 19:03:19,834 basehttp log_message 10217 140172758869760 "OPTIONS /users/login/ HTTP/1.1" 200 0
 INFO 2021-11-25 19:03:20,472 basehttp log_message 10217 140172758869760 "POST /users/login/ HTTP/1.1" 200 359
 INFO 2021-11-25 19:03:29,279 basehttp log_message 10217 140172758869760 "GET /cart/ HTTP/1.1" 200 1296
+INFO 2021-11-25 21:04:07,212 autoreload trigger_reload 10217 140172924580224 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/urls.py changed, reloading.

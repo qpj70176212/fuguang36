@@ -110,3 +110,47 @@ class CartViewSet(ViewSet):
 
         # 3. 返回客户端
         return Response({"errmsg": "OK!", "cart": data})
+
+    def change_select(self, request):
+        """切换单个商品的勾选状态"""
+        # 谁的购物车？user_id
+        # 获取购物车的课程ID与勾选状态
+        user_id = request.user.id
+        course_id = int(request.data.get("course_id", 0))
+        selected = int(bool(request.data.get("selected", True)))
+        redis = get_redis_connection("cart")
+
+        try:
+            Course.objects.get(pk=course_id, is_show=True, is_delete=False)
+        except Course.DoesNotExist:
+            redis.hdel(f"cart_{user_id}", course_id)
+            return Response({"errmsg": "当前商品不存在或已经被下载！"})
+        redis.hset(f"cart_{user_id}", course_id, selected)
+        return Response({"errmsg": "OK"})
+
+    def together_select(self, request):
+        """全选/全不选"""
+        user_id = request.user.id
+        selected = int(bool(request.data.get("selected", True)))
+        redis = get_redis_connection("cart")
+        # 获取购物车中所有商品课程信息
+        cart_hash = redis.hgetall(f"cart_{user_id}")
+        """
+        cart_hash = {
+            # b'商品课程ID': b'勾选状态', 
+            b'2': b'1', 
+            b'4': b'1', 
+            b'5': b'1'
+        }
+        """
+        if len(cart_hash) < 1:
+            return Response({"errmsg": "购物车没有任何商品！"}, status=status.HTTP_204_NO_CONTENT)
+        # 把redis中的购物车课程ID信息转换成普通列表
+        cart_list = [int(course_id.decode()) for course_id in cart_hash]
+        # 批量修改购物车中所有商品课程的勾选状态
+        pipe = redis.pipeline()
+        pipe.multi()
+        for course_id in cart_list:
+            pipe.hset(f"cart_{user_id}", course_id, selected)
+        pipe.execute()
+        return Response({"errmsg": "OK"})
