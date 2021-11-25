@@ -8,6 +8,7 @@ from courses.models import Course
 
 
 class CartViewSet(ViewSet):
+    """购物车"""
     permission_classes = [IsAuthenticated]  # 保证用户必须登录状态才能调用当前视图
 
     def add_cart(self, request):
@@ -65,3 +66,47 @@ class CartViewSet(ViewSet):
             "errmsg": "成功添加商品课程到购物车！",
             "cart_total": cart_total
         }, status=status.HTTP_201_CREATED)
+
+    def list(self, request):
+        """购物车商品列表页"""
+        # 1. 查询购物车中的商品课程ID列表
+        user_id = request.user.id
+        redis = get_redis_connection("cart")
+        cart_hash = redis.hgetall(f"cart_{user_id}")
+        """
+        cart_hash = {
+            # b'商品课程ID': b'勾选状态', 
+            b'2': b'1', 
+            b'4': b'1', 
+            b'5': b'1'
+        }
+        """
+        if len(cart_hash) < 1:
+            return Response({"errmsg": "购物车没有任务商品！"}, status=status.HTTP_204_NO_CONTENT)
+        # 把redis中的购物车信息转换成普通字典
+        cart_dict = {int(course_id.decode()): bool(int(selected.decode())) for course_id, selected in cart_hash.items()}
+        """
+       cart_dict = {
+           # 商品课程ID: 勾选状态,
+           2: True, 
+           4: True, 
+           5: True
+       }
+        """
+        # 2. 从mysql中提取购物车商品对应的商品其他信息
+        course_list = Course.objects.filter(pk__in=cart_dict.keys(), is_delete=False, is_show=True).all()
+        # 把course_list进行遍历，提取课程中的信息组成列表
+        data = []
+        for course in course_list:
+            data.append({
+                "id": course.id,
+                "name": course.name,
+                "course_cover": course.course_cover.url,  # 课程封面图片
+                "price": float(course.price),  # 价格
+                "discount": course.discount,  # 优惠信息
+                "course_type": course.get_course_type_display(),  # 优惠类型
+                "selected": cart_dict[course.id],  # 勾选状态 布尔值
+            })
+
+        # 3. 返回客户端
+        return Response({"errmsg": "OK!", "cart": data})

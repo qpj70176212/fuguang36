@@ -11924,3 +11924,14 @@ INFO 2021-11-25 16:31:39,721 basehttp log_message 8829 140455989544704 "GET /cou
 INFO 2021-11-25 16:31:39,847 basehttp log_message 8829 140455718119168 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
 INFO 2021-11-25 16:31:40,233 basehttp log_message 8829 140455718119168 "GET /courses/hot_word/ HTTP/1.1" 200 49
 INFO 2021-11-25 16:31:40,239 basehttp log_message 8829 140455989544704 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-25 16:52:58,554 autoreload trigger_reload 8829 140456086528384 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py changed, reloading.
+INFO 2021-11-25 16:53:02,094 autoreload run_with_reloader 9835 140412504289664 Watching for file changes with StatReloader
+INFO 2021-11-25 17:14:35,612 autoreload trigger_reload 9835 140412504289664 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/urls.py changed, reloading.
+INFO 2021-11-25 17:14:38,099 autoreload run_with_reloader 10217 140172924580224 Watching for file changes with StatReloader
+INFO 2021-11-25 17:14:53,900 basehttp log_message 10217 140172767262464 "GET /cart/ HTTP/1.1" 200 9792
+INFO 2021-11-25 17:18:13,814 basehttp log_message 10217 140172758869760 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-25 17:18:13,835 basehttp log_message 10217 140172630685440 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-25 17:18:13,935 basehttp log_message 10217 140172622292736 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1811
+INFO 2021-11-25 17:18:14,066 basehttp log_message 10217 140172622292736 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-25 17:18:14,067 basehttp log_message 10217 140172630685440 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-25 17:25:04,325 basehttp log_message 10217 140172758869760 "GET /cart/ HTTP/1.1" 200 9790
