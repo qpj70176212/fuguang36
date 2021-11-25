@@ -21,7 +21,8 @@
       <div class="cart-body" id="cartBody">
         <div class="cart-body-title">
           <div class="item-1 l">
-            <el-checkbox v-model="state.checked">全选</el-checkbox>
+<!--            <el-checkbox v-model="state.checked">全选</el-checkbox>-->
+            <el-checkbox v-model="cart.checked">全选</el-checkbox>
           </div>
           <div class="item-2 l"><span class="course">课程</span></div>
           <div class="item-3 l"><span>金额</span></div>
