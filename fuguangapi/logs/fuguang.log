@@ -11721,3 +11721,7 @@ INFO 2021-11-24 20:53:33,298 basehttp log_message 9535 140573844567808 "GET /cou
 INFO 2021-11-24 20:53:33,377 basehttp log_message 9535 140573852960512 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1760
 INFO 2021-11-24 20:53:38,707 basehttp log_message 9535 140573852960512 "GET /courses/11/ HTTP/1.1" 200 996
 INFO 2021-11-24 20:54:12,798 basehttp log_message 9535 140573852960512 "GET /courses/1/ HTTP/1.1" 200 1859
+INFO 2021-11-24 21:15:38,248 autoreload trigger_reload 9535 140574288232832 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-24 21:15:40,413 autoreload run_with_reloader 10651 140555115319680 Watching for file changes with StatReloader
+INFO 2021-11-24 21:39:27,113 autoreload trigger_reload 10651 140555115319680 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/urls.py changed, reloading.
+INFO 2021-11-24 21:39:29,451 autoreload run_with_reloader 11199 139650472378752 Watching for file changes with StatReloader
