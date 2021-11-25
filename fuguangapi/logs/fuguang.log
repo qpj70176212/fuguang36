@@ -11725,3 +11725,23 @@ INFO 2021-11-24 21:15:38,248 autoreload trigger_reload 9535 140574288232832 /hom
 INFO 2021-11-24 21:15:40,413 autoreload run_with_reloader 10651 140555115319680 Watching for file changes with StatReloader
 INFO 2021-11-24 21:39:27,113 autoreload trigger_reload 10651 140555115319680 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/urls.py changed, reloading.
 INFO 2021-11-24 21:39:29,451 autoreload run_with_reloader 11199 139650472378752 Watching for file changes with StatReloader
+INFO 2021-11-25 14:46:47,177 autoreload run_with_reloader 6404 139744714461568 Watching for file changes with StatReloader
+INFO 2021-11-25 14:48:00,469 autoreload run_with_reloader 6435 139628775969152 Watching for file changes with StatReloader
+WARNING 2021-11-25 14:48:45,029 log log_response 6435 139628687378176 Not Found: /
+WARNING 2021-11-25 14:48:45,032 basehttp log_message 6435 139628687378176 "GET / HTTP/1.1" 404 3318
+WARNING 2021-11-25 14:48:47,514 log log_response 6435 139628687378176 Not Found: /favicon.ico
+WARNING 2021-11-25 14:48:47,516 basehttp log_message 6435 139628687378176 "GET /favicon.ico HTTP/1.1" 404 3369
+INFO 2021-11-25 14:49:06,721 basehttp log_message 6435 139628687378176 "GET /cart HTTP/1.1" 301 0
+WARNING 2021-11-25 14:49:07,237 log log_response 6435 139628687378176 Method Not Allowed: /cart/
+WARNING 2021-11-25 14:49:07,238 basehttp log_message 6435 139628687378176 "GET /cart/ HTTP/1.1" 405 5827
+INFO 2021-11-25 14:49:07,370 basehttp log_message 6435 139628687378176 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,377 basehttp log_message 6435 139628687378176 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,415 basehttp log_message 6435 139628687378176 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,442 basehttp log_message 6435 139628678985472 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,465 basehttp log_message 6435 139628687378176 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,529 basehttp log_message 6435 139628687378176 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,531 basehttp log_message 6435 139628678985472 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,541 basehttp log_message 6435 139628678985472 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,548 basehttp log_message 6435 139628678985472 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,610 basehttp log_message 6435 139628678985472 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-11-25 14:49:07,758 basehttp log_message 6435 139628678985472 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0

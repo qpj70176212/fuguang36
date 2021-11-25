@@ -9,7 +9,7 @@ from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 from stdimage import StdImageField
 from django.utils.safestring import mark_safe  # 站点展示缩略图
-from django.utils import timezone as datetime
+
 from django.utils import timezone
 # Create your models here.
 
@@ -328,6 +328,9 @@ class CourseLesson(BaseModel):
     text2.short_description = "课时名称"
     text2.allow_tags = True
     text2.admin_order_field = "order"
+
+
+from django.utils import timezone as datetime
 
 
 class Activity(BaseModel):

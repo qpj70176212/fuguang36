@@ -2,5 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.CartAPIView.as_view()),
+    path("", views.CartViewSet.as_view({
+        "post": "add_cart",
+    })),
 ]
