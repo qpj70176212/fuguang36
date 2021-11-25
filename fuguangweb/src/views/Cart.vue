@@ -1,94 +1,111 @@
 <template>
   <div class="cart">
     <Header/>
-    <div className="cart-main">
-      <div className="cart-header">
-        <div className="cart-header-warp">
-          <div className="cart-title left">
-            <h1 className="left">我的购物车</h1>
-            <div className="left">
-              共<span>5</span>门，已选择<span>5</span>门
+    <div class="cart-main">
+      <div class="cart-header">
+        <div class="cart-header-warp">
+          <div class="cart-title left">
+            <h1 class="left">我的购物车</h1>
+            <div class="left">
+<!--              共<span>5</span>门，已选择<span>5</span>门-->
+              共<span>{{ cart.course_list.length }}</span>门，已选择<span>{{ cart.selected_course_total }}</span>门
             </div>
           </div>
-          <div className="right">
-            <div className="">
-              <span className="left"><router-link className="myorder-history" to="/myorder">我的订单列表</router-link></span>
+          <div class="right">
+            <div class="">
+              <span class="left"><router-link class="myorder-history" to="/myorder">我的订单列表</router-link></span>
             </div>
           </div>
         </div>
       </div>
-      <div className="cart-body" id="cartBody">
-        <div className="cart-body-title">
-          <div className="item-1 l">
+      <div class="cart-body" id="cartBody">
+        <div class="cart-body-title">
+          <div class="item-1 l">
             <el-checkbox v-model="state.checked">全选</el-checkbox>
           </div>
-          <div className="item-2 l"><span className="course">课程</span></div>
-          <div className="item-3 l"><span>金额</span></div>
-          <div className="item-4 l"><span>操作</span></div>
+          <div class="item-2 l"><span class="course">课程</span></div>
+          <div class="item-3 l"><span>金额</span></div>
+          <div class="item-4 l"><span>操作</span></div>
         </div>
-        <div className="cart-body-table">
-          <div className="item">
-            <div className="item-1">
-              <el-checkbox v-model="state.checked"></el-checkbox>
+        <div class="cart-body-table">
+<!--          <div class="item">-->
+          <div class="item" v-for="course_info in cart.course_list">
+            <div class="item-1">
+              <!-- 商品勾选状态-->
+<!--              <el-checkbox v-model="state.checked"></el-checkbox>-->
+              <el-checkbox v-model="course_info.selected"></el-checkbox>
             </div>
-            <div className="item-2">
-              <a href="" className="img-box l">
-                <img src="/src/assets/course-7.png">
-              </a>
-              <dl className="l has-package">
-                <dt>【实战课 移动端UI设置入门与实战</dt>
-                <p className="package-item">优惠价</p>
+            <div class="item-2">
+              <router-link :to="`/project/${course_info.id}`" class="img-box l">
+                <img :src="course_info.course_cover">
+              </router-link>
+<!--              <a href="" class="img-box l">-->
+<!--                <img src="/src/assets/course-7.png">-->
+<!--              </a>-->
+              <dl class="l has-package">
+                <dt>【{{ course_info.course_type }}】 {{ course_info.name }}</dt>
+                <p class="package-item" v-if="course_info.discount.type">{{ course_info.discount.type }}</p>
+                <!--                <dt>【实战课 移动端UI设置入门与实战</dt>-->
+                <!--                <p class="package-item">优惠价</p>-->
               </dl>
             </div>
 
-            <div className="item-3">
-              <div className="price">
-                <span className="discount-price"><em>￥</em><span>588.00</span></span><br>
-                <span className="original-price"><em>￥</em><span>1988.00</span></span>
+            <div class="item-3">
+<!--              <div class="price">-->
+<!--                <span class="discount-price"><em>￥</em><span>588.00</span></span><br>-->
+<!--                <span class="original-price"><em>￥</em><span>1988.00</span></span>-->
+              <div class="price" v-if="course_info.discount.price>=0">
+                <span
+                    class="discount-price"><em>￥</em><span>{{ course_info.discount.price.toFixed(2) }}</span></span><br>
+                <span class="original-price"><em>￥</em><span>{{ course_info.price.toFixed(2) }}</span></span>
+              </div>
+              <div class="price" v-else>
+                <div class="discount-price"><em>￥</em><span>{{ course_info.price.toFixed(2) }}</span></div>
               </div>
             </div>
-            <div className="item-4">
-                <span className="close">
+            <div class="item-4">
+                <span class="close">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor"
                                                                                         d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></svg>
                 </span>
             </div>
           </div>
-          <div className="item">
-            <div className="item-1">
-              <el-checkbox v-model="state.checked"></el-checkbox>
-            </div>
-            <div className="item-2">
-              <a href="" className="img-box l"><img src="/src/assets/course-1.png"></a>
-              <dl className="l has-package">
-                <dt>【实战课】算法与数据结构</dt>
-                <p className="package-item">限时优惠</p>
-              </dl>
-            </div>
-            <div className="item-3">
-              <div className="price"><em>￥</em><span>299.00</span></div>
-            </div>
-            <div className="item-4">
-                <span className="close">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor"
-                                                                                        d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></svg>
-                </span>
-            </div>
-          </div>
-          <div className="cart-body-bot fixed">
-            <div className=" cart-body-bot-box">
-              <div className="right">
-                <div className="add-coupon-box">
-                  <div className="li-left">
-                    <div className="li-2">
-                      <span className="topdiv w70">总计金额：</span>
-                      <span className="price price-red w100">
+<!--          <div class="item">-->
+<!--            <div class="item-1">-->
+<!--              <el-checkbox v-model="state.checked"></el-checkbox>-->
+<!--            </div>-->
+<!--            <div class="item-2">-->
+<!--              <a href="" class="img-box l"><img src="/src/assets/course-1.png"></a>-->
+<!--              <dl class="l has-package">-->
+<!--                <dt>【实战课】算法与数据结构</dt>-->
+<!--                <p class="package-item">限时优惠</p>-->
+<!--              </dl>-->
+<!--            </div>-->
+<!--            <div class="item-3">-->
+<!--              <div class="price"><em>￥</em><span>299.00</span></div>-->
+<!--            </div>-->
+<!--            <div class="item-4">-->
+<!--                <span class="close">-->
+<!--                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor"-->
+<!--                                                                                        d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></svg>-->
+<!--                </span>-->
+<!--            </div>-->
+<!--          </div>-->
+          <div class="cart-body-bot fixed">
+            <div class=" cart-body-bot-box">
+              <div class="right">
+                <div class="add-coupon-box">
+                  <div class="li-left">
+                    <div class="li-2">
+                      <span class="topdiv w70">总计金额：</span>
+                      <span class="price price-red w100">
                         <em>￥</em>
-                        <span>1751.00</span>
+                        <span>{{cart.total_price.toFixed(2)}}</span>
+<!--                        <span>1751.00</span>-->
                       </span>
                     </div>
                   </div>
-                  <div className="li-3"><span className="btn">去结算</span></div>
+                  <div class="li-3"><span class="btn">去结算</span></div>
                 </div>
               </div>
             </div>
@@ -104,12 +121,44 @@
 import {reactive} from "vue"
 import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
-import {} from "../api/cart"
+import cart from "../api/cart"
 import {ElMessage} from 'element-plus'
 
 let state = reactive({
   checked: false,
 })
+
+const get_cart = () => {
+  // 获取购物车中的商品列表
+  let token = sessionStorage.token || localStorage.token
+  cart.get_course_from_cart(token).then(response=>{
+    cart.course_list = response.data.cart
+    get_cart_total()
+  })
+}
+
+get_cart()
+
+// 计算获取购物车中勾选商品课程的总价格
+const get_cart_total = () => {
+  let sum = 0
+  let select_sum = 0
+  cart.course_list.forEach((course, key)=> {
+    if (course.selected) {
+      // 当前被勾选
+      select_sum += 1
+      // 判断当前商品是否有优惠价格
+      if (course.discount.price >= 0) {
+        sum += course.discount.price
+      } else {
+        sum += course.price
+      }
+    }
+    cart.total_price = sum //  购物车中的商品总价格
+    cart.selected_course_total = select_sum  // 购物车中被勾选商品的数量
+    cart.checked = select_sum === cart.course_list.length  // 购物车中是否全选商品了
+  })
+}
 
 </script>
 
