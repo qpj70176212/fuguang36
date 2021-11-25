@@ -154,3 +154,11 @@ class CartViewSet(ViewSet):
             pipe.hset(f"cart_{user_id}", course_id, selected)
         pipe.execute()
         return Response({"errmsg": "OK"})
+
+    def delete_course(self, request):
+        """从购物车中删除课程"""
+        user_id = request.user.id
+        course_id = int(request.data.get("course_id", 0))
+        redis = get_redis_connection("cart")
+        redis.hdel(f"cart_{user_id}", course_id)
+        return Response(status=status.HTTP_204_NO_CONTENT)

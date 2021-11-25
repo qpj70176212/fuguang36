@@ -12062,3 +12062,5 @@ INFO 2021-11-25 22:13:03,766 basehttp log_message 23562 139710229374720 "PATCH /
 INFO 2021-11-25 22:13:04,941 basehttp log_message 23562 139710229374720 "PATCH /cart/ HTTP/1.1" 200 15
 INFO 2021-11-25 22:13:05,842 basehttp log_message 23562 139710229374720 "PATCH /cart/ HTTP/1.1" 200 15
 INFO 2021-11-25 22:13:06,748 basehttp log_message 23562 139710229374720 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:19:59,022 autoreload trigger_reload 23562 139710317965696 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/urls.py changed, reloading.
+INFO 2021-11-25 22:20:01,220 autoreload run_with_reloader 24128 140238671450496 Watching for file changes with StatReloader
