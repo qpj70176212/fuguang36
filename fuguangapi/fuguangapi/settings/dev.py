@@ -290,9 +290,11 @@ import datetime
 JWT_AUTH = {
     # 设置jwt的有效期 默认300秒
     # 'JWT_EXPIRATION_DELTA': datetime.timedelta(weeks=1),  # 一周有效
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(minutes=1),  # 一周有效
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(minutes=2),  # 2分有效
     # 自定义载荷
-    'JWT_PAYLOAD_HANDLER': 'fuguangapi.utils.authenticate.jwt_payload_handler'
+    'JWT_PAYLOAD_HANDLER': 'fuguangapi.utils.authenticate.jwt_payload_handler',
+    # 自定义响应数据
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'fuguangapi.utils.authenticate.jwt_response_payload_handler'
 }
 
 # CORS 跨域资源共享

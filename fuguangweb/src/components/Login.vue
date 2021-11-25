@@ -97,7 +97,7 @@ const loginhandler = (res)=>{
     let payload_data = JSON.parse(atob(payload)) // 用户信息
     console.log(payload_data)
     store.commit("login", payload_data)
-
+    store.commit("set_cart_total", response.data.cart_total);
     // 成功提示
     ElMessage.success("登录成功！")
     // 关闭登录弹窗，对外发送一个登录成功的信息
