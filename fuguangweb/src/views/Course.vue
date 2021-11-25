@@ -299,6 +299,7 @@ const add_cart = (course_info)=> {
   let token = sessionStorage.token || localStorage.token
   cart.add_course_to_cart(course_info.id, token).then(response=>{
     ElMessage.success(response?.data?.errmsg)
+    store.commit("set_cart_total", response.data.cart_total)
   }).catch(error=>{
     if (error?.response?.status === 401) {
       store.commit("logout")  // 登录注销的处理
