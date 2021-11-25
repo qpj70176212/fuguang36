@@ -50,7 +50,12 @@
                 <button class="buy-now">立即购买</button>
                 <button class="free">免费试学</button>
               </div>
-              <div class="add-cart"><img src="../assets/cart-yellow.svg" alt="">加入购物车</div>
+               <el-popconfirm title="您确认添加当前课程加入购物车吗？" @confirm="add_cart" confirmButtonText="买买买！" cancelButtonText="误操作！">
+                <template #reference>
+                  <div class="add-cart"><img src="../assets/cart-yellow.svg" alt="">加入购物车</div>
+                </template>
+              </el-popconfirm>
+<!--              <div class="add-cart"><img src="../assets/cart-yellow.svg" alt="">加入购物车</div>-->
             </div>
           </div>
         </div>
@@ -165,9 +170,12 @@ import Footer from "../components/Footer.vue"
 import course from "../api/course";
 import { ElMessage } from "element-plus";
 import {fil10} from "../utils/func";
+import cart from "../api/cart";
+import {useStore} from "vuex";
 
 let route = useRoute()
 let router = useRouter()
+const store = useStore()
 
 const state = reactive({
   // course_id: route.params.id,
@@ -205,6 +213,22 @@ if(course.course_id > 0){
         router.go(-1)  //返回上一页
       }
     })
+}
+
+// 添加课程到购物车
+// 详情页中添加商品到购物车，不用传递参数，直接使用course来获取课程信息
+const add_cart = ()=>{
+  let token = sessionStorage.token || localStorage.token;
+  cart.add_course_to_cart(course.course_id, token).then(response=>{
+    ElMessage.success(response?.data?.errmsg)
+  }).catch(error=>{
+    if(error?.response?.status === 401){
+      store.commit("logout");
+      ElMessage.error("您尚未登录或已登录超时，请登录后继续操作！");
+    }else{
+      ElMessage.error(`添加商品到购物车失败:${error?.response?.data?.errmsg}`);
+    }
+  })
 }
 
 // 播放器开始播放视频的回调函数

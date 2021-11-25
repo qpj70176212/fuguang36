@@ -128,7 +128,7 @@
                 <!--                        <span class="origin-price l delete-line">￥488.00</span>-->
                 <span class="origin-price l delete-line" v-if="course_info.discount.price >=0">￥
                           {{ parseFloat(course_info.price).toFixed(2) }}</span>
-                <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
+                <span class="add-shop-cart r" @click.prevent.stop="add_cart(course_info)"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
               </p>
             </router-link>
 <!--            </a>-->
@@ -222,6 +222,11 @@ import Footer from "../components/Footer.vue"
 import course from "../api/course";
 import {watch} from "vue";
 import {fil10} from "../utils/func";
+import cart from "../api/cart";
+import {ElMessage} from "element-plus";
+import {useStore} from "vuex";
+
+const store = useStore()
 
 // 获取课程学习方向
 course.get_course_direction().then(response=>{
@@ -273,6 +278,7 @@ const get_course_list = () => {
 
 get_course_list()
 
+get_hot_word();
 // const get_search_course = () => {
 //   get_course_list()
   //  course.course_list = response.data.results
@@ -287,6 +293,21 @@ get_course_list()
 
 // 给小于10的数字左边补0
 // const fil10 = (num) => num <10?"0" + num:num
+
+// 添加课程到购物车
+const add_cart = (course_info)=> {
+  let token = sessionStorage.token || localStorage.token
+  cart.add_course_to_cart(course_info.id, token).then(response=>{
+    ElMessage.success(response?.data?.errmsg)
+  }).catch(error=>{
+    if (error?.response?.status === 401) {
+      store.commit("logout")  // 登录注销的处理
+      ElMessage.error("您尚未登录或已登录超时，请登陆后继续操作！")
+    } else {
+      ElMessage.error(`添加商品到购物车失败: ${error?.response?.data?.errmsg}`)
+    }
+  })
+}
 
 // 监听切换不同的学习方向
 watch(
