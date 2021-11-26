@@ -12314,3 +12314,5 @@ INFO 2021-11-26 15:27:27,598 basehttp log_message 4582 139866633606912 "OPTIONS 
 INFO 2021-11-26 15:27:28,139 basehttp log_message 4582 139866633606912 "POST /users/login/ HTTP/1.1" 200 359
 INFO 2021-11-26 15:27:38,775 basehttp log_message 4582 139866633606912 "GET /cart/ HTTP/1.1" 200 1252
 INFO 2021-11-26 15:27:52,240 basehttp log_message 4582 139866633606912 "GET /cart/ HTTP/1.1" 200 1252
+INFO 2021-11-26 15:48:06,297 autoreload trigger_reload 4582 139866735796608 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/urls.py changed, reloading.
+INFO 2021-11-26 15:48:08,528 autoreload run_with_reloader 6626 140379372609920 Watching for file changes with StatReloader

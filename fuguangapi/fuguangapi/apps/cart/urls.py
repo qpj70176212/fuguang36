@@ -9,4 +9,7 @@ urlpatterns = [
         "put": "together_select",  # 切换购物车中所有商品的勾选状态[全选/全不选]
         "delete": "delete_course",
     })),
+    path("select/", views.CartViewSet.as_view({
+        "get": "cart_select_list",
+    }))
 ]
