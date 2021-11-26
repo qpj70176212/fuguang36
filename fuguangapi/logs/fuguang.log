@@ -12414,3 +12414,7 @@ INFO 2021-11-26 17:12:24,908 basehttp log_message 8451 140348009989888 "GET /sta
 INFO 2021-11-26 17:12:25,330 basehttp log_message 8451 140348009989888 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
 INFO 2021-11-26 17:12:25,347 basehttp log_message 8451 140348009989888 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
 INFO 2021-11-26 17:12:25,359 basehttp log_message 8451 140348018382592 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+INFO 2021-11-26 17:20:01,345 autoreload trigger_reload 8451 140348106449280 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/views.py changed, reloading.
+INFO 2021-11-26 17:20:02,791 autoreload run_with_reloader 8870 140606488875392 Watching for file changes with StatReloader
+INFO 2021-11-26 18:28:39,533 autoreload trigger_reload 8870 140606488875392 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-11-26 18:28:41,670 autoreload run_with_reloader 9931 140682443723136 Watching for file changes with StatReloader
