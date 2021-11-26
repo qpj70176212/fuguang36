@@ -128,7 +128,15 @@
                 <!--                        <span class="origin-price l delete-line">￥488.00</span>-->
                 <span class="origin-price l delete-line" v-if="course_info.discount.price >=0">￥
                           {{ parseFloat(course_info.price).toFixed(2) }}</span>
-                <span class="add-shop-cart r" @click.prevent.stop="add_cart(course_info)"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
+                <!--                <el-popover title="您确认要把商品加入购物车吗？" trigger="click" @confirm="add_cart(course_info)" confirmButtonText="删除！"-->
+<!--                cancelButtonText="误操作！">-->
+                <!--                  <template #reference>-->
+                <span class="add-shop-cart r" @click.prevent.stop="add_cart(course_info)"><img
+                    class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
+                <!--                    <span class="add-shop-cart r"><img class="icon imv2-shopping-cart"-->
+<!--                src="../assets/cart2.svg">加购物车</span>-->
+                <!--                  </template>-->
+                <!--                </el-popover>-->
               </p>
             </router-link>
 <!--            </a>-->

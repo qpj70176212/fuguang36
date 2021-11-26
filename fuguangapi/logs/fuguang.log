@@ -12064,3 +12064,244 @@ INFO 2021-11-25 22:13:05,842 basehttp log_message 23562 139710229374720 "PATCH /
 INFO 2021-11-25 22:13:06,748 basehttp log_message 23562 139710229374720 "PATCH /cart/ HTTP/1.1" 200 15
 INFO 2021-11-25 22:19:59,022 autoreload trigger_reload 23562 139710317965696 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/urls.py changed, reloading.
 INFO 2021-11-25 22:20:01,220 autoreload run_with_reloader 24128 140238671450496 Watching for file changes with StatReloader
+WARNING 2021-11-25 22:29:59,605 log log_response 24128 140238515730176 Unauthorized: /cart/
+WARNING 2021-11-25 22:29:59,638 basehttp log_message 24128 140238515730176 "GET /cart/ HTTP/1.1" 401 35
+WARNING 2021-11-25 22:29:59,904 log log_response 24128 140238515730176 Unauthorized: /cart/
+WARNING 2021-11-25 22:29:59,905 basehttp log_message 24128 140238515730176 "GET /cart/ HTTP/1.1" 401 38
+WARNING 2021-11-25 22:30:03,456 log log_response 24128 140238515730176 Unauthorized: /cart/
+WARNING 2021-11-25 22:30:03,482 basehttp log_message 24128 140238515730176 "GET /cart/ HTTP/1.1" 401 38
+INFO 2021-11-25 22:30:24,066 basehttp log_message 24128 140238515730176 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-25 22:31:20,989 basehttp log_message 24128 140238515730176 "GET /cart/ HTTP/1.1" 200 1521
+INFO 2021-11-25 22:33:02,531 basehttp log_message 24128 140238515730176 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:33:05,421 basehttp log_message 24128 140238515730176 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:33:08,034 basehttp log_message 24128 140238515730176 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:33:11,056 basehttp log_message 24128 140238515730176 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:33:16,955 basehttp log_message 24128 140238515730176 "OPTIONS /cart/?course_id=2 HTTP/1.1" 200 0
+INFO 2021-11-25 22:33:16,986 basehttp log_message 24128 140238515730176 "DELETE /cart/?course_id=2 HTTP/1.1" 204 0
+INFO 2021-11-25 22:33:19,297 basehttp log_message 24128 140238515730176 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:33:21,375 basehttp log_message 24128 140238515730176 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:33:22,447 basehttp log_message 24128 140238515730176 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:33:28,161 basehttp log_message 24128 140238515730176 "OPTIONS /cart/?course_id=7 HTTP/1.1" 200 0
+INFO 2021-11-25 22:33:28,201 basehttp log_message 24128 140238515730176 "DELETE /cart/?course_id=7 HTTP/1.1" 204 0
+INFO 2021-11-25 22:33:35,434 basehttp log_message 24128 140238515730176 "GET /cart/ HTTP/1.1" 200 1523
+INFO 2021-11-25 22:33:45,988 basehttp log_message 24128 140238515730176 "PUT /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:34:21,322 basehttp log_message 24128 140238515730176 "GET /cart/ HTTP/1.1" 200 1520
+INFO 2021-11-25 22:34:37,096 basehttp log_message 24128 140238515730176 "OPTIONS /cart/?course_id=12 HTTP/1.1" 200 0
+INFO 2021-11-25 22:34:37,346 basehttp log_message 24128 140238515730176 "DELETE /cart/?course_id=12 HTTP/1.1" 204 0
+INFO 2021-11-25 22:34:42,033 basehttp log_message 24128 140238515730176 "OPTIONS /cart/?course_id=15 HTTP/1.1" 200 0
+INFO 2021-11-25 22:34:42,118 basehttp log_message 24128 140238515730176 "DELETE /cart/?course_id=15 HTTP/1.1" 204 0
+INFO 2021-11-25 22:34:46,570 basehttp log_message 24128 140238515730176 "GET /cart/ HTTP/1.1" 200 1522
+INFO 2021-11-25 22:38:25,939 autoreload run_with_reloader 24532 140618542170496 Watching for file changes with StatReloader
+WARNING 2021-11-25 22:38:35,976 log log_response 24532 140618453579520 Unauthorized: /cart/
+WARNING 2021-11-25 22:38:35,982 basehttp log_message 24532 140618453579520 "GET /cart/ HTTP/1.1" 401 35
+INFO 2021-11-25 22:38:55,247 basehttp log_message 24532 140618453579520 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-25 22:39:03,989 basehttp log_message 24532 140618453579520 "GET /cart/ HTTP/1.1" 200 1522
+INFO 2021-11-25 22:39:10,886 basehttp log_message 24532 140618453579520 "PUT /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:39:12,990 basehttp log_message 24532 140618453579520 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:39:23,830 basehttp log_message 24532 140618453579520 "OPTIONS /cart/?course_id=1 HTTP/1.1" 200 0
+INFO 2021-11-25 22:39:23,901 basehttp log_message 24532 140618453579520 "DELETE /cart/?course_id=1 HTTP/1.1" 204 0
+INFO 2021-11-25 22:41:10,694 autoreload trigger_reload 24532 140618542170496 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py changed, reloading.
+INFO 2021-11-25 22:41:12,704 autoreload run_with_reloader 24739 139732816740736 Watching for file changes with StatReloader
+INFO 2021-11-25 22:41:19,703 basehttp log_message 24739 139732661040896 "GET /cart/ HTTP/1.1" 200 1526
+INFO 2021-11-25 22:41:24,043 basehttp log_message 24739 139732661040896 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:41:26,406 basehttp log_message 24739 139732661040896 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:45:59,578 autoreload run_with_reloader 24831 140519826968960 Watching for file changes with StatReloader
+WARNING 2021-11-25 22:46:13,912 log log_response 24831 140519738377984 Unauthorized: /cart/
+WARNING 2021-11-25 22:46:13,914 basehttp log_message 24831 140519738377984 "PATCH /cart/ HTTP/1.1" 401 35
+WARNING 2021-11-25 22:46:18,914 log log_response 24831 140519738377984 Unauthorized: /cart/
+WARNING 2021-11-25 22:46:18,934 basehttp log_message 24831 140519738377984 "GET /cart/ HTTP/1.1" 401 35
+INFO 2021-11-25 22:46:36,573 basehttp log_message 24831 140519738377984 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-25 22:46:42,733 basehttp log_message 24831 140519738377984 "GET /cart/ HTTP/1.1" 200 1524
+ERROR 2021-11-25 22:46:58,016 log log_response 24831 140519738377984 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'getparameter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 163, in delete_course
+    course_id = int(request.getparameter("course_id", 0))
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'getparameter'
+ERROR 2021-11-25 22:46:58,021 basehttp log_message 24831 140519738377984 "DELETE /cart/?course_id=2 HTTP/1.1" 500 112575
+ERROR 2021-11-25 22:47:10,183 log log_response 24831 140519738377984 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'getparameter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 163, in delete_course
+    course_id = int(request.getparameter("course_id", 0))
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'getparameter'
+ERROR 2021-11-25 22:47:10,188 basehttp log_message 24831 140519738377984 "DELETE /cart/?course_id=1 HTTP/1.1" 500 112575
+INFO 2021-11-25 22:47:19,771 basehttp log_message 24831 140519738377984 "PUT /cart/ HTTP/1.1" 200 15
+INFO 2021-11-25 22:49:38,368 autoreload trigger_reload 24831 140519826968960 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py changed, reloading.
+INFO 2021-11-25 22:49:40,433 autoreload run_with_reloader 24956 139724372795776 Watching for file changes with StatReloader
+ERROR 2021-11-25 22:49:45,292 log log_response 24956 139724211615488 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 163, in delete_course
+    course_id = int(request.query_params("course_id", 0))
+TypeError: 'QueryDict' object is not callable
+ERROR 2021-11-25 22:49:45,293 basehttp log_message 24956 139724211615488 "DELETE /cart/?course_id=2 HTTP/1.1" 500 104131
+INFO 2021-11-25 22:49:52,499 basehttp log_message 24956 139724211615488 "GET /cart/ HTTP/1.1" 200 1518
+INFO 2021-11-25 22:49:59,950 basehttp log_message 24956 139724211615488 "OPTIONS /cart/?course_id=3 HTTP/1.1" 200 0
+ERROR 2021-11-25 22:50:00,268 log log_response 24956 139724211615488 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 163, in delete_course
+    course_id = int(request.query_params("course_id", 0))
+TypeError: 'QueryDict' object is not callable
+ERROR 2021-11-25 22:50:00,271 basehttp log_message 24956 139724211615488 "DELETE /cart/?course_id=3 HTTP/1.1" 500 104131
+ERROR 2021-11-25 22:50:03,245 log log_response 24956 139724211615488 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 163, in delete_course
+    course_id = int(request.query_params("course_id", 0))
+TypeError: 'QueryDict' object is not callable
+ERROR 2021-11-25 22:50:03,251 basehttp log_message 24956 139724211615488 "DELETE /cart/?course_id=3 HTTP/1.1" 500 104131
+INFO 2021-11-25 22:50:48,934 autoreload run_with_reloader 25010 140499334156672 Watching for file changes with StatReloader
+INFO 2021-11-25 22:50:57,435 basehttp log_message 25010 140499178403584 "DELETE /cart/?course_id=2 HTTP/1.1" 204 0
+INFO 2021-11-25 22:51:04,414 basehttp log_message 25010 140499178403584 "DELETE /cart/?course_id=1 HTTP/1.1" 204 0
+INFO 2021-11-25 22:51:10,139 basehttp log_message 25010 140499178403584 "GET /cart/ HTTP/1.1" 200 966
+WARNING 2021-11-25 22:51:41,676 log log_response 25010 140499178403584 Unauthorized: /cart/
+WARNING 2021-11-25 22:51:41,685 basehttp log_message 25010 140499178403584 "GET /cart/ HTTP/1.1" 401 35
+INFO 2021-11-25 22:52:13,720 basehttp log_message 25010 140499178403584 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-25 22:52:19,953 basehttp log_message 25010 140499178403584 "GET /cart/ HTTP/1.1" 200 966
+INFO 2021-11-25 22:57:08,141 basehttp log_message 25010 140499032725248 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-25 22:57:08,152 basehttp log_message 25010 140499032725248 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-25 22:57:08,299 basehttp log_message 25010 140499178403584 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-25 22:57:08,413 basehttp log_message 25010 140499049510656 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-25 22:57:08,577 basehttp log_message 25010 140499041117952 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+WARNING 2021-11-25 23:07:29,193 log log_response 25010 140499178403584 Unauthorized: /cart/
+WARNING 2021-11-25 23:07:29,196 basehttp log_message 25010 140499178403584 "POST /cart/ HTTP/1.1" 401 35
+INFO 2021-11-25 23:07:38,155 basehttp log_message 25010 140499178403584 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-25 23:07:38,261 basehttp log_message 25010 140499032725248 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-25 23:07:38,628 basehttp log_message 25010 140499049510656 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-11-25 23:07:42,482 basehttp log_message 25010 140499049510656 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-25 23:07:42,522 basehttp log_message 25010 140499049510656 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-25 23:12:35,472 basehttp log_message 25010 140499049510656 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-25 23:12:36,260 basehttp log_message 25010 140499032725248 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-25 23:12:39,942 basehttp log_message 25010 140499049510656 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-11-25 23:12:42,791 basehttp log_message 25010 140499049510656 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-11-25 23:12:45,673 basehttp log_message 25010 140499049510656 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-25 23:12:47,214 basehttp log_message 25010 140499032725248 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-11-25 23:12:50,959 basehttp log_message 25010 140499032725248 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-26 10:44:42,730 autoreload run_with_reloader 4582 139866735796608 Watching for file changes with StatReloader
+INFO 2021-11-26 10:45:36,231 basehttp log_message 4582 139866406119168 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 10:45:36,252 basehttp log_message 4582 139866396677888 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 10:45:36,294 basehttp log_message 4582 139866633606912 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-26 10:45:36,321 basehttp log_message 4582 139866625214208 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-26 10:45:38,524 basehttp log_message 4582 139866415298304 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-11-26 10:45:51,649 basehttp log_message 4582 139866625214208 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-26 10:45:51,655 basehttp log_message 4582 139866415298304 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-26 10:45:51,719 basehttp log_message 4582 139866633606912 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-11-26 10:45:51,977 basehttp log_message 4582 139866633606912 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 10:45:51,984 basehttp log_message 4582 139866633606912 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 10:53:14,753 basehttp log_message 4582 139866415298304 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-26 10:53:14,760 basehttp log_message 4582 139866633606912 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-26 10:53:14,813 basehttp log_message 4582 139866625214208 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-11-26 10:53:14,840 basehttp log_message 4582 139866625214208 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 10:53:14,862 basehttp log_message 4582 139866625214208 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 10:53:41,566 basehttp log_message 4582 139866625214208 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-26 10:53:42,093 basehttp log_message 4582 139866625214208 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-26 10:53:46,113 basehttp log_message 4582 139866625214208 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-26 10:53:46,132 basehttp log_message 4582 139866625214208 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-26 10:53:51,675 basehttp log_message 4582 139866625214208 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-26 10:53:54,202 basehttp log_message 4582 139866625214208 "GET /cart/ HTTP/1.1" 200 1521
+INFO 2021-11-26 10:54:01,073 basehttp log_message 4582 139866625214208 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 10:54:04,898 basehttp log_message 4582 139866625214208 "PUT /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 10:54:05,904 basehttp log_message 4582 139866625214208 "PUT /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 10:54:06,905 basehttp log_message 4582 139866625214208 "PUT /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 10:54:08,857 basehttp log_message 4582 139866625214208 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 10:54:10,048 basehttp log_message 4582 139866625214208 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 10:54:11,874 basehttp log_message 4582 139866625214208 "PUT /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 10:54:14,018 basehttp log_message 4582 139866625214208 "PUT /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 10:54:20,988 basehttp log_message 4582 139866625214208 "OPTIONS /cart/?course_id=2 HTTP/1.1" 200 0
+INFO 2021-11-26 10:54:21,005 basehttp log_message 4582 139866625214208 "DELETE /cart/?course_id=2 HTTP/1.1" 204 0
+INFO 2021-11-26 10:54:26,345 basehttp log_message 4582 139866625214208 "GET /cart/ HTTP/1.1" 200 1251

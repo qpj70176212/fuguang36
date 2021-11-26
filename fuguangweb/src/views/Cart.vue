@@ -65,10 +65,15 @@
               </div>
             </div>
             <div class="item-4">
+              <el-popconfirm title="您确认要从购物车删除当前课程吗？" @confirm="del_cart(key)" confirmButtonText="删除！"
+                             cancelButtonText="误操作！">
+                <template #reference>
                 <span class="close">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor"
                                                                                         d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></svg>
                 </span>
+                </template>
+              </el-popconfirm>
             </div>
           </div>
 <!--          <div class="item">-->
@@ -124,6 +129,9 @@ import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
 import cart from "../api/cart"
 import {ElMessage} from 'element-plus'
+import {useStore} from "vuex";
+
+const store = useStore()
 
 let state = reactive({
   checked: false,
@@ -207,6 +215,19 @@ watch(
       }
     }
 )
+
+const del_cart = (key) => {
+  // 从购物车中删除商品课程
+  let token = sessionStorage.token || localStorage.token
+  let course = cart.course_list[key]
+  cart.delete_course(course.id, token).then(response => {
+    // 当课程的勾选状态为True时，删除课程以后，把已勾选状态的课程总数-1
+    cart.course_list.splice(key, 1)
+    store.commit("set_cart_total", cart.course_list.length)
+    // 重新计算购物车中商品课程的总价格
+    get_cart_total()
+  })
+}
 
 </script>
 

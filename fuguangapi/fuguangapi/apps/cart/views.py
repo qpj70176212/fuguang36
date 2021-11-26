@@ -117,6 +117,7 @@ class CartViewSet(ViewSet):
         # 获取购物车的课程ID与勾选状态
         user_id = request.user.id
         course_id = int(request.data.get("course_id", 0))
+        # print(f"course_id:{course_id}")
         selected = int(bool(request.data.get("selected", True)))
         redis = get_redis_connection("cart")
 
@@ -158,7 +159,9 @@ class CartViewSet(ViewSet):
     def delete_course(self, request):
         """从购物车中删除课程"""
         user_id = request.user.id
-        course_id = int(request.data.get("course_id", 0))
+        # course_id = int(request.data.get("course_id", 0))
+        course_id = int(request.query_params.get("course_id", 0))
+        print(f"course_id:{course_id}")
         redis = get_redis_connection("cart")
         redis.hdel(f"cart_{user_id}", course_id)
         return Response(status=status.HTTP_204_NO_CONTENT)
