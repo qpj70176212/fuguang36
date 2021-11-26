@@ -12337,3 +12337,80 @@ INFO 2021-11-26 16:24:36,378 basehttp log_message 6626 140379284018944 "GET /nav
 WARNING 2021-11-26 16:24:36,388 basehttp log_message 6626 140379147011840 "GET /cart/select/ HTTP/1.1" 401 35
 INFO 2021-11-26 16:24:58,599 basehttp log_message 6626 140379147011840 "POST /users/login/ HTTP/1.1" 200 359
 INFO 2021-11-26 16:25:05,632 basehttp log_message 6626 140379147011840 "GET /cart/select/ HTTP/1.1" 200 1172
+INFO 2021-11-26 16:29:05,186 autoreload trigger_reload 6626 140379372609920 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-26 16:29:06,798 autoreload run_with_reloader 7491 140234558247296 Watching for file changes with StatReloader
+INFO 2021-11-26 16:31:24,246 autoreload trigger_reload 7491 140234558247296 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/models.py changed, reloading.
+INFO 2021-11-26 16:31:26,167 autoreload run_with_reloader 7544 140620932596096 Watching for file changes with StatReloader
+INFO 2021-11-26 16:53:20,205 autoreload trigger_reload 7544 140620932596096 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/models.py changed, reloading.
+INFO 2021-11-26 16:53:22,096 autoreload run_with_reloader 7986 139676851585408 Watching for file changes with StatReloader
+INFO 2021-11-26 17:11:21,321 autoreload trigger_reload 7986 139676851585408 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/admin.py changed, reloading.
+INFO 2021-11-26 17:11:22,249 autoreload run_with_reloader 8306 140715198865792 Watching for file changes with StatReloader
+INFO 2021-11-26 17:11:26,977 basehttp log_message 8306 140715110274816 "GET /admin/ HTTP/1.1" 200 21540
+INFO 2021-11-26 17:11:27,039 basehttp log_message 8306 140715110274816 "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,061 basehttp log_message 8306 140715110274816 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,096 basehttp log_message 8306 140715110274816 "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,110 basehttp log_message 8306 140715110274816 "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,143 basehttp log_message 8306 140715099522816 "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,203 basehttp log_message 8306 140715099522816 "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,231 basehttp log_message 8306 140715099522816 "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,232 basehttp log_message 8306 140715091130112 "GET /static/admin/simpleui-x/elementui/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,234 basehttp log_message 8306 140715082737408 "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,238 basehttp log_message 8306 140714738448128 "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,242 basehttp log_message 8306 140714730055424 "GET /static/admin/simpleui-x/js/cookie.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,275 basehttp log_message 8306 140715082737408 "GET /static/admin/simpleui-x/js/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,285 basehttp log_message 8306 140714730055424 "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,288 basehttp log_message 8306 140714738448128 "GET /static/admin/simpleui-x/js/menu.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:27,297 basehttp log_message 8306 140715110274816 "GET /admin/ HTTP/1.1" 200 21540
+INFO 2021-11-26 17:11:27,324 basehttp log_message 8306 140715110274816 "GET /static/admin/simpleui-x/theme/theme.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:28,274 basehttp log_message 8306 140714730055424 "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:28,275 basehttp log_message 8306 140715110274816 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:28,275 basehttp log_message 8306 140714738448128 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:28,277 basehttp log_message 8306 140715082737408 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 304 0
+WARNING 2021-11-26 17:11:28,677 log log_response 8306 140715082737408 Not Found: /favicon.ico
+WARNING 2021-11-26 17:11:28,679 basehttp log_message 8306 140715082737408 "GET /favicon.ico HTTP/1.1" 404 3476
+INFO 2021-11-26 17:11:35,586 basehttp log_message 8306 140715082737408 "GET /admin/orders/order/ HTTP/1.1" 200 26041
+INFO 2021-11-26 17:11:35,635 basehttp log_message 8306 140714730055424 "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,637 basehttp log_message 8306 140715110274816 "GET /static/admin/css/base.css?_=2.7 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,641 basehttp log_message 8306 140714730055424 "GET /static/admin/css/changelists.css?_=20180905 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,648 basehttp log_message 8306 140715110274816 "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,656 basehttp log_message 8306 140714738448128 "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,658 basehttp log_message 8306 140715099522816 "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,665 basehttp log_message 8306 140715091130112 "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,666 basehttp log_message 8306 140714730055424 "GET /static/admin/css/responsive.css?_=20180905 HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,674 basehttp log_message 8306 140715091130112 "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,681 basehttp log_message 8306 140715091130112 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,690 basehttp log_message 8306 140715110274816 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,693 basehttp log_message 8306 140715091130112 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,706 basehttp log_message 8306 140714738448128 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,709 basehttp log_message 8306 140714730055424 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,710 basehttp log_message 8306 140715099522816 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,711 basehttp log_message 8306 140715110274816 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,717 basehttp log_message 8306 140714738448128 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,723 basehttp log_message 8306 140715110274816 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,724 basehttp log_message 8306 140714730055424 "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,726 basehttp log_message 8306 140714738448128 "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,733 basehttp log_message 8306 140714738448128 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,783 basehttp log_message 8306 140714738448128 "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:35,912 basehttp log_message 8306 140715082737408 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-26 17:11:36,119 basehttp log_message 8306 140715082737408 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2021-11-26 17:11:36,289 basehttp log_message 8306 140715082737408 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:09,506 autoreload trigger_reload 8306 140715198865792 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/admin.py changed, reloading.
+INFO 2021-11-26 17:12:11,182 autoreload run_with_reloader 8451 140348106449280 Watching for file changes with StatReloader
+INFO 2021-11-26 17:12:12,783 basehttp log_message 8451 140348018382592 "GET /admin/ HTTP/1.1" 200 21540
+INFO 2021-11-26 17:12:13,605 basehttp log_message 8451 140348018382592 "GET /admin/orders/order/ HTTP/1.1" 200 26040
+INFO 2021-11-26 17:12:13,951 basehttp log_message 8451 140348018382592 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-26 17:12:24,696 basehttp log_message 8451 140348018382592 "GET /admin/orders/order/add/ HTTP/1.1" 200 71877
+INFO 2021-11-26 17:12:24,748 basehttp log_message 8451 140348018382592 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-26 17:12:24,756 basehttp log_message 8451 140348009989888 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:24,764 basehttp log_message 8451 140348009989888 "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:24,773 basehttp log_message 8451 140348009989888 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:24,780 basehttp log_message 8451 140348009989888 "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:24,822 basehttp log_message 8451 140348009989888 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:24,830 basehttp log_message 8451 140348009989888 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:24,849 basehttp log_message 8451 140348018382592 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:24,888 basehttp log_message 8451 140348009989888 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:24,897 basehttp log_message 8451 140348009989888 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:24,908 basehttp log_message 8451 140348009989888 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:25,330 basehttp log_message 8451 140348009989888 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:25,347 basehttp log_message 8451 140348009989888 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2021-11-26 17:12:25,359 basehttp log_message 8451 140348018382592 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
