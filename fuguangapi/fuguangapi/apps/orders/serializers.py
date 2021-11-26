@@ -91,7 +91,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 order.link = ""
                 # 找出购物车中的没有被勾选的商品信息
                 cart = {key: value for key, value in cart_hash.items() if value == b'0'}
-                pipe = redis.pipiline()
+                pipe = redis.pipeline()
                 pipe.multi()
                 # 删除原来的购物车
                 pipe.delete(f"cart_{user_id}")

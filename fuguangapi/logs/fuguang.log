@@ -12418,3 +12418,118 @@ INFO 2021-11-26 17:20:01,345 autoreload trigger_reload 8451 140348106449280 /hom
 INFO 2021-11-26 17:20:02,791 autoreload run_with_reloader 8870 140606488875392 Watching for file changes with StatReloader
 INFO 2021-11-26 18:28:39,533 autoreload trigger_reload 8870 140606488875392 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
 INFO 2021-11-26 18:28:41,670 autoreload run_with_reloader 9931 140682443723136 Watching for file changes with StatReloader
+INFO 2021-11-26 18:41:53,562 basehttp log_message 9931 140682354870016 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+WARNING 2021-11-26 18:41:53,580 log log_response 9931 140682354870016 Unauthorized: /cart/select/
+WARNING 2021-11-26 18:41:53,581 basehttp log_message 9931 140682354870016 "GET /cart/select/ HTTP/1.1" 401 35
+WARNING 2021-11-26 18:41:53,704 log log_response 9931 140682354870016 Unauthorized: /cart/select/
+WARNING 2021-11-26 18:41:53,705 basehttp log_message 9931 140682354870016 "GET /cart/select/ HTTP/1.1" 401 38
+WARNING 2021-11-26 18:42:04,623 log log_response 9931 140682354870016 Unauthorized: /cart/select/
+WARNING 2021-11-26 18:42:04,627 basehttp log_message 9931 140682354870016 "GET /cart/select/ HTTP/1.1" 401 38
+INFO 2021-11-26 18:42:09,580 basehttp log_message 9931 140682354870016 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-26 18:42:09,627 basehttp log_message 9931 140682123540224 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 18:42:09,627 basehttp log_message 9931 140682344904448 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-26 18:42:09,759 basehttp log_message 9931 140682354870016 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 18:42:10,665 basehttp log_message 9931 140682336511744 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-11-26 18:42:25,195 basehttp log_message 9931 140682336511744 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-26 18:42:27,946 basehttp log_message 9931 140682336511744 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-26 18:42:32,118 basehttp log_message 9931 140682336511744 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-26 18:42:32,268 basehttp log_message 9931 140682336511744 "GET /cart/ HTTP/1.1" 200 1252
+INFO 2021-11-26 18:42:37,644 basehttp log_message 9931 140682336511744 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 18:42:38,303 basehttp log_message 9931 140682336511744 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 18:42:47,930 basehttp log_message 9931 140682336511744 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 18:42:52,821 basehttp log_message 9931 140682336511744 "GET /cart/select/ HTTP/1.1" 200 969
+INFO 2021-11-26 18:43:02,236 basehttp log_message 9931 140682336511744 "OPTIONS /orders/ HTTP/1.1" 200 0
+WARNING 2021-11-26 18:43:02,239 log log_response 9931 140682336511744 Unauthorized: /orders/
+WARNING 2021-11-26 18:43:02,240 basehttp log_message 9931 140682336511744 "POST /orders/ HTTP/1.1" 401 38
+WARNING 2021-11-26 18:43:07,945 log log_response 9931 140682336511744 Unauthorized: /orders/
+WARNING 2021-11-26 18:43:07,946 basehttp log_message 9931 140682336511744 "POST /orders/ HTTP/1.1" 401 38
+WARNING 2021-11-26 18:43:08,735 log log_response 9931 140682336511744 Unauthorized: /orders/
+WARNING 2021-11-26 18:43:08,736 basehttp log_message 9931 140682336511744 "POST /orders/ HTTP/1.1" 401 38
+WARNING 2021-11-26 18:43:09,220 log log_response 9931 140682336511744 Unauthorized: /orders/
+WARNING 2021-11-26 18:43:09,220 basehttp log_message 9931 140682336511744 "POST /orders/ HTTP/1.1" 401 38
+INFO 2021-11-26 18:43:37,336 basehttp log_message 9931 140682336511744 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-26 18:43:37,418 basehttp log_message 9931 140682354870016 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-26 18:43:37,419 basehttp log_message 9931 140682336511744 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-26 18:43:37,619 basehttp log_message 9931 140682344904448 "GET /cart/select/ HTTP/1.1" 200 967
+WARNING 2021-11-26 18:43:51,442 log log_response 9931 140682344904448 Unauthorized: /orders/
+WARNING 2021-11-26 18:43:51,443 basehttp log_message 9931 140682344904448 "POST /orders/ HTTP/1.1" 401 38
+INFO 2021-11-26 18:44:13,395 autoreload run_with_reloader 10403 140393139126656 Watching for file changes with StatReloader
+INFO 2021-11-26 18:44:18,982 basehttp log_message 10403 140393050535680 "OPTIONS /orders/ HTTP/1.1" 200 0
+WARNING 2021-11-26 18:44:19,008 log log_response 10403 140393050535680 Unauthorized: /orders/
+WARNING 2021-11-26 18:44:19,009 basehttp log_message 10403 140393050535680 "POST /orders/ HTTP/1.1" 401 38
+INFO 2021-11-26 18:45:29,444 basehttp log_message 10403 140393050535680 "OPTIONS /orders/ HTTP/1.1" 200 0
+WARNING 2021-11-26 18:45:29,462 log log_response 10403 140393050535680 Unauthorized: /orders/
+WARNING 2021-11-26 18:45:29,465 basehttp log_message 10403 140393050535680 "POST /orders/ HTTP/1.1" 401 38
+INFO 2021-11-26 18:47:45,897 basehttp log_message 10403 140393040307968 "GET /admin/orders/order/ HTTP/1.1" 200 26040
+INFO 2021-11-26 18:47:46,026 basehttp log_message 10403 140393040307968 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-26 18:47:49,318 basehttp log_message 10403 140393040307968 "GET /admin/ HTTP/1.1" 200 21540
+INFO 2021-11-26 18:47:50,403 basehttp log_message 10403 140393040307968 "GET /admin/orders/order/ HTTP/1.1" 200 26040
+INFO 2021-11-26 18:47:50,750 basehttp log_message 10403 140393040307968 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-26 18:52:15,638 basehttp log_message 10403 140393050535680 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-26 18:52:15,670 basehttp log_message 10403 140393030342400 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-26 18:52:15,672 basehttp log_message 10403 140392817227520 "GET /nav/footer/ HTTP/1.1" 200 386
+WARNING 2021-11-26 18:52:15,834 log log_response 10403 140393030342400 Unauthorized: /cart/select/
+WARNING 2021-11-26 18:52:15,835 basehttp log_message 10403 140393030342400 "GET /cart/select/ HTTP/1.1" 401 35
+INFO 2021-11-26 18:52:33,669 basehttp log_message 10403 140393030342400 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-26 18:52:39,090 basehttp log_message 10403 140393030342400 "GET /cart/select/ HTTP/1.1" 200 967
+ERROR 2021-11-26 18:52:49,056 serializers create 10403 140393030342400 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:52:49,059 log log_response 10403 140393030342400 Bad Request: /orders/
+WARNING 2021-11-26 18:52:49,060 basehttp log_message 10403 140393030342400 "POST /orders/ HTTP/1.1" 400 25
+ERROR 2021-11-26 18:52:52,743 serializers create 10403 140393030342400 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:52:52,746 log log_response 10403 140393030342400 Bad Request: /orders/
+WARNING 2021-11-26 18:52:52,748 basehttp log_message 10403 140393030342400 "POST /orders/ HTTP/1.1" 400 25
+INFO 2021-11-26 18:53:15,984 basehttp log_message 10403 140393030342400 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-26 18:53:16,003 basehttp log_message 10403 140393050535680 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-26 18:53:16,013 basehttp log_message 10403 140392817227520 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-26 18:53:16,323 basehttp log_message 10403 140392817227520 "GET /cart/select/ HTTP/1.1" 200 967
+INFO 2021-11-26 18:53:30,596 basehttp log_message 10403 140392817227520 "OPTIONS /orders/ HTTP/1.1" 200 0
+ERROR 2021-11-26 18:53:30,796 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:53:30,798 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:53:30,799 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+INFO 2021-11-26 18:57:30,164 basehttp log_message 10403 140392817227520 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-26 18:57:30,177 basehttp log_message 10403 140393030342400 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-26 18:57:30,184 basehttp log_message 10403 140393050535680 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-26 18:57:30,836 basehttp log_message 10403 140393050535680 "GET /cart/select/ HTTP/1.1" 200 967
+INFO 2021-11-26 18:57:41,429 basehttp log_message 10403 140393050535680 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-26 18:57:41,456 basehttp log_message 10403 140393030342400 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-26 18:57:41,532 basehttp log_message 10403 140392817227520 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1811
+INFO 2021-11-26 18:57:41,599 basehttp log_message 10403 140392817227520 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 18:57:41,608 basehttp log_message 10403 140392817227520 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 18:57:57,928 basehttp log_message 10403 140392817227520 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-26 18:58:02,041 basehttp log_message 10403 140392817227520 "GET /cart/ HTTP/1.1" 200 1252
+INFO 2021-11-26 18:58:17,938 basehttp log_message 10403 140392817227520 "GET /cart/select/ HTTP/1.1" 200 968
+ERROR 2021-11-26 18:58:41,694 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:58:41,696 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:58:41,696 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+ERROR 2021-11-26 18:58:42,938 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:58:42,940 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:58:42,942 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+ERROR 2021-11-26 18:58:43,269 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:58:43,271 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:58:43,271 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+ERROR 2021-11-26 18:58:43,498 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:58:43,507 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:58:43,510 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+ERROR 2021-11-26 18:58:43,742 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:58:43,744 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:58:43,745 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+ERROR 2021-11-26 18:58:44,093 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:58:44,096 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:58:44,097 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+ERROR 2021-11-26 18:58:44,346 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:58:44,348 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:58:44,348 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+ERROR 2021-11-26 18:58:44,626 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:58:44,628 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:58:44,628 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+INFO 2021-11-26 18:59:07,704 basehttp log_message 10403 140392817227520 "OPTIONS /orders/ HTTP/1.1" 200 0
+ERROR 2021-11-26 18:59:08,130 serializers create 10403 140392817227520 生成订单失败！'Redis' object has no attribute 'pipiline'
+WARNING 2021-11-26 18:59:08,132 log log_response 10403 140392817227520 Bad Request: /orders/
+WARNING 2021-11-26 18:59:08,135 basehttp log_message 10403 140392817227520 "POST /orders/ HTTP/1.1" 400 25
+INFO 2021-11-26 19:02:20,874 autoreload trigger_reload 10403 140393139126656 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-11-26 19:02:22,964 autoreload run_with_reloader 10849 139669546480000 Watching for file changes with StatReloader
+INFO 2021-11-26 19:02:27,585 basehttp log_message 10849 139669383673600 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2021-11-26 19:02:27,776 basehttp log_message 10849 139669383673600 "POST /orders/ HTTP/1.1" 201 61
+INFO 2021-11-26 19:02:35,352 basehttp log_message 10849 139669375280896 "GET /admin/ HTTP/1.1" 200 21540
+INFO 2021-11-26 19:02:36,840 basehttp log_message 10849 139669375280896 "GET /admin/orders/order/ HTTP/1.1" 200 26806
+INFO 2021-11-26 19:02:37,153 basehttp log_message 10849 139669375280896 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
