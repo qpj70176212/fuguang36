@@ -93,6 +93,12 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 cart = {key: value for key, value in cart_hash.items() if value == b'0'}
                 pipe = redis.pipeline()
                 pipe.multi()
+                if cart == {}:
+                    # 删除原来的购物车
+                    pipe.delete(f"cart_{user_id}")
+                    pipe.execute()
+                    return order
+
                 # 删除原来的购物车
                 pipe.delete(f"cart_{user_id}")
                 # 重新把未勾选的商品记录到购物车中

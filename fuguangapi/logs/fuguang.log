@@ -12533,3 +12533,67 @@ INFO 2021-11-26 19:02:27,776 basehttp log_message 10849 139669383673600 "POST /o
 INFO 2021-11-26 19:02:35,352 basehttp log_message 10849 139669375280896 "GET /admin/ HTTP/1.1" 200 21540
 INFO 2021-11-26 19:02:36,840 basehttp log_message 10849 139669375280896 "GET /admin/orders/order/ HTTP/1.1" 200 26806
 INFO 2021-11-26 19:02:37,153 basehttp log_message 10849 139669375280896 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-26 23:29:14,790 autoreload run_with_reloader 3982 139704459813248 Watching for file changes with StatReloader
+INFO 2021-11-26 23:30:51,126 basehttp log_message 3982 139704233142016 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-26 23:30:51,133 basehttp log_message 3982 139704241534720 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-26 23:30:51,678 basehttp log_message 3982 139704241534720 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 23:30:51,685 basehttp log_message 3982 139704241534720 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 23:30:54,223 basehttp log_message 3982 139704357201664 "GET /banner/ HTTP/1.1" 200 666
+INFO 2021-11-26 23:30:54,411 basehttp log_message 3982 139704224749312 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-11-26 23:31:10,791 basehttp log_message 3982 139704224749312 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-26 23:31:11,581 basehttp log_message 3982 139704224749312 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-26 23:31:16,020 basehttp log_message 3982 139704224749312 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-26 23:31:16,041 basehttp log_message 3982 139704224749312 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-26 23:31:17,700 basehttp log_message 3982 139704224749312 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-26 23:31:19,683 basehttp log_message 3982 139704224749312 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-26 23:31:21,310 basehttp log_message 3982 139704224749312 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-26 23:31:26,402 basehttp log_message 3982 139704224749312 "GET /cart/ HTTP/1.1" 200 1311
+INFO 2021-11-26 23:31:40,413 basehttp log_message 3982 139704224749312 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 23:31:43,607 basehttp log_message 3982 139704224749312 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-26 23:31:43,771 basehttp log_message 3982 139704224749312 "GET /cart/select/ HTTP/1.1" 200 1227
+INFO 2021-11-26 23:31:48,716 basehttp log_message 3982 139704224749312 "OPTIONS /orders/ HTTP/1.1" 200 0
+ERROR 2021-11-26 23:31:48,975 serializers create 3982 139704224749312 生成订单失败！'hmset' with 'mapping' of length 0
+WARNING 2021-11-26 23:31:49,013 log log_response 3982 139704224749312 Bad Request: /orders/
+WARNING 2021-11-26 23:31:49,013 basehttp log_message 3982 139704224749312 "POST /orders/ HTTP/1.1" 400 25
+ERROR 2021-11-26 23:31:52,018 serializers create 3982 139704224749312 生成订单失败！'hmset' with 'mapping' of length 0
+WARNING 2021-11-26 23:31:52,020 log log_response 3982 139704224749312 Bad Request: /orders/
+WARNING 2021-11-26 23:31:52,021 basehttp log_message 3982 139704224749312 "POST /orders/ HTTP/1.1" 400 25
+INFO 2021-11-26 23:34:20,482 autoreload trigger_reload 3982 139704459813248 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-11-26 23:34:23,612 autoreload run_with_reloader 4598 140460364194176 Watching for file changes with StatReloader
+INFO 2021-11-26 23:34:25,714 basehttp log_message 4598 140460276127488 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-26 23:34:25,917 basehttp log_message 4598 140460194526976 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-26 23:34:25,932 basehttp log_message 4598 140460186134272 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-26 23:34:27,898 basehttp log_message 4598 140460276127488 "GET /cart/select/ HTTP/1.1" 200 1229
+INFO 2021-11-26 23:34:42,232 basehttp log_message 4598 140460276127488 "POST /orders/ HTTP/1.1" 201 61
+INFO 2021-11-26 23:34:47,740 basehttp log_message 4598 140460276127488 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-11-26 23:34:53,319 basehttp log_message 4598 140460186134272 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-11-26 23:35:07,640 basehttp log_message 4598 140460194526976 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-26 23:35:07,699 basehttp log_message 4598 140460194526976 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 23:35:07,700 basehttp log_message 4598 140460186134272 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-26 23:35:07,724 basehttp log_message 4598 140460186134272 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 23:35:07,779 basehttp log_message 4598 140460276127488 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1811
+INFO 2021-11-26 23:35:09,559 basehttp log_message 4598 140460276127488 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-26 23:35:15,421 basehttp log_message 4598 140460276127488 "GET /courses/4/ HTTP/1.1" 200 893
+INFO 2021-11-26 23:35:19,798 basehttp log_message 4598 140460276127488 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-26 23:35:21,937 basehttp log_message 4598 140460276127488 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-26 23:35:21,942 basehttp log_message 4598 140460186134272 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-26 23:35:21,947 basehttp log_message 4598 140459993200384 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 23:35:21,964 basehttp log_message 4598 140459993200384 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-26 23:35:22,014 basehttp log_message 4598 140460194526976 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-11-26 23:35:23,524 basehttp log_message 4598 140460194526976 "GET /cart/ HTTP/1.1" 200 542
+INFO 2021-11-26 23:35:25,026 basehttp log_message 4598 140460194526976 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 23:35:26,318 basehttp log_message 4598 140460194526976 "GET /cart/select/ HTTP/1.1" 200 240
+INFO 2021-11-26 23:35:29,035 basehttp log_message 4598 140460194526976 "POST /orders/ HTTP/1.1" 201 61
+INFO 2021-11-26 23:35:32,226 basehttp log_message 4598 140460194526976 "GET /cart/select/ HTTP/1.1" 200 240
+INFO 2021-11-26 23:35:35,395 basehttp log_message 4598 140460194526976 "GET /cart/select/ HTTP/1.1" 200 240
+INFO 2021-11-26 23:35:42,591 autoreload trigger_reload 4598 140460364194176 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-11-26 23:35:44,524 autoreload run_with_reloader 4755 140219983503744 Watching for file changes with StatReloader
+INFO 2021-11-26 23:35:46,600 basehttp log_message 4755 140219896223488 "GET /cart/select/ HTTP/1.1" 200 240
+INFO 2021-11-26 23:35:52,970 basehttp log_message 4755 140219896223488 "POST /orders/ HTTP/1.1" 201 61
+INFO 2021-11-26 23:35:56,441 basehttp log_message 4755 140219896223488 "GET /cart/select/ HTTP/1.1" 200 26
+INFO 2021-11-26 23:36:02,529 basehttp log_message 4755 140219896223488 "GET /cart/ HTTP/1.1" 200 313
+INFO 2021-11-26 23:36:04,809 basehttp log_message 4755 140219896223488 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-26 23:36:06,828 basehttp log_message 4755 140219896223488 "GET /cart/select/ HTTP/1.1" 200 296
+INFO 2021-11-26 23:36:09,137 basehttp log_message 4755 140219896223488 "POST /orders/ HTTP/1.1" 201 61
+WARNING 2021-11-26 23:36:13,388 log log_response 4755 140219896223488 Unauthorized: /cart/select/
+WARNING 2021-11-26 23:36:13,389 basehttp log_message 4755 140219896223488 "GET /cart/select/ HTTP/1.1" 401 35
