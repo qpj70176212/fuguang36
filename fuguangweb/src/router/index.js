@@ -55,8 +55,16 @@ const routes = [
       path: '/cart',
       name: "Cart",
       component: ()=> import("../views/Cart.vue"),
+    },
+    {
+        meta: {
+            title: "浮光在线教育-确认订单",
+            keepAlive: true
+        },
+        path: "/order",
+        name: "Order",
+        component: () => import("../views/Order.vue")
     }
-
 ]
 
 // 路由对象实例化
