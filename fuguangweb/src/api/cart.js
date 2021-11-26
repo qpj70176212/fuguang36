@@ -3,6 +3,7 @@ import {reactive} from "vue";
 
 const cart = reactive({
     course_list: [],  // 购物车中的商品列表
+    selected_course_list: [],  // 购物车中的被勾选的商品列表
     total_price: 0,  // 购物车中的商品总价格
     selected_course_total: 0,  // 购物车中被勾选商品的数量
     checked: false,  // 购物车中是否全选商品了
@@ -18,6 +19,7 @@ const cart = reactive({
         })
     },
     get_course_from_cart(token) {
+        // 获取购物车中的商品列表
         return http.get("/cart/", {
             headers: {
                 Authorization: "jwt " + token,
@@ -51,6 +53,14 @@ const cart = reactive({
             params: {
                 course_id,
             },
+            headers: {
+                Authorization: "jwt " + token,
+            }
+        })
+    },
+    get_select(token) {
+        //获取购物车中被勾选的商品列表
+        return http.get("/cart/select/", {
             headers: {
                 Authorization: "jwt " + token,
             }

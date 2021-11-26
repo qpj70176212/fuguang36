@@ -12316,3 +12316,24 @@ INFO 2021-11-26 15:27:38,775 basehttp log_message 4582 139866633606912 "GET /car
 INFO 2021-11-26 15:27:52,240 basehttp log_message 4582 139866633606912 "GET /cart/ HTTP/1.1" 200 1252
 INFO 2021-11-26 15:48:06,297 autoreload trigger_reload 4582 139866735796608 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/urls.py changed, reloading.
 INFO 2021-11-26 15:48:08,528 autoreload run_with_reloader 6626 140379372609920 Watching for file changes with StatReloader
+INFO 2021-11-26 16:15:37,059 basehttp log_message 6626 140379284018944 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+WARNING 2021-11-26 16:15:37,096 log log_response 6626 140379284018944 Unauthorized: /cart/select/
+WARNING 2021-11-26 16:15:37,097 basehttp log_message 6626 140379284018944 "GET /cart/select/ HTTP/1.1" 401 35
+WARNING 2021-11-26 16:15:43,125 log log_response 6626 140379284018944 Unauthorized: /cart/select/
+WARNING 2021-11-26 16:15:43,126 basehttp log_message 6626 140379284018944 "GET /cart/select/ HTTP/1.1" 401 35
+WARNING 2021-11-26 16:15:51,803 log log_response 6626 140379284018944 Unauthorized: /cart/
+WARNING 2021-11-26 16:15:51,803 basehttp log_message 6626 140379284018944 "GET /cart/ HTTP/1.1" 401 35
+INFO 2021-11-26 16:16:12,148 basehttp log_message 6626 140379284018944 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-26 16:16:48,240 basehttp log_message 6626 140379284018944 "GET /cart/ HTTP/1.1" 200 1251
+INFO 2021-11-26 16:19:11,973 basehttp log_message 6626 140379284018944 "GET /cart/select/ HTTP/1.1" 200 1171
+INFO 2021-11-26 16:19:19,552 basehttp log_message 6626 140379284018944 "GET /cart/select/ HTTP/1.1" 200 1172
+INFO 2021-11-26 16:21:41,464 basehttp log_message 6626 140379284018944 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+WARNING 2021-11-26 16:21:41,476 log log_response 6626 140379284018944 Unauthorized: /cart/select/
+WARNING 2021-11-26 16:21:41,477 basehttp log_message 6626 140379284018944 "GET /cart/select/ HTTP/1.1" 401 35
+INFO 2021-11-26 16:24:36,297 basehttp log_message 6626 140379284018944 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+WARNING 2021-11-26 16:24:36,371 log log_response 6626 140379147011840 Unauthorized: /cart/select/
+INFO 2021-11-26 16:24:36,375 basehttp log_message 6626 140379155404544 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-26 16:24:36,378 basehttp log_message 6626 140379284018944 "GET /nav/header/ HTTP/1.1" 200 292
+WARNING 2021-11-26 16:24:36,388 basehttp log_message 6626 140379147011840 "GET /cart/select/ HTTP/1.1" 401 35
+INFO 2021-11-26 16:24:58,599 basehttp log_message 6626 140379147011840 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-26 16:25:05,632 basehttp log_message 6626 140379147011840 "GET /cart/select/ HTTP/1.1" 200 1172
