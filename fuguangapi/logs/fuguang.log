@@ -12777,3 +12777,44 @@ INFO 2021-11-29 16:02:02,121 basehttp log_message 8507 140415486629632 "GET /adm
 INFO 2021-11-29 16:02:02,185 basehttp log_message 8507 140415486629632 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
 INFO 2021-11-29 16:09:34,199 autoreload trigger_reload 8507 140415642632576 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/coupon/admin.py changed, reloading.
 INFO 2021-11-29 16:09:35,611 autoreload run_with_reloader 8884 140049574797696 Watching for file changes with StatReloader
+INFO 2021-11-29 16:31:28,934 autoreload trigger_reload 8884 140049574797696 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/coupon/urls.py changed, reloading.
+INFO 2021-11-29 16:31:30,404 autoreload run_with_reloader 9223 139931518960000 Watching for file changes with StatReloader
+INFO 2021-11-29 16:32:02,178 autoreload trigger_reload 9223 139931518960000 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/coupon/urls.py changed, reloading.
+INFO 2021-11-29 16:32:03,202 autoreload run_with_reloader 9236 139785052537216 Watching for file changes with StatReloader
+INFO 2021-11-29 16:32:18,794 basehttp log_message 9236 139784963684096 "GET /coupon/user HTTP/1.1" 301 0
+INFO 2021-11-29 16:32:18,936 basehttp log_message 9236 139784963684096 "GET /coupon/user/ HTTP/1.1" 200 10232
+INFO 2021-11-29 16:32:19,052 basehttp log_message 9236 139784955291392 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,056 basehttp log_message 9236 139784963684096 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,060 basehttp log_message 9236 139784743024384 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,063 basehttp log_message 9236 139784734631680 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,068 basehttp log_message 9236 139784726238976 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,075 basehttp log_message 9236 139784726238976 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,078 basehttp log_message 9236 139784734631680 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,085 basehttp log_message 9236 139784734631680 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,116 basehttp log_message 9236 139784734631680 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,123 basehttp log_message 9236 139784726238976 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-11-29 16:32:19,229 basehttp log_message 9236 139784734631680 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2021-11-29 16:45:56,219 autoreload trigger_reload 9236 139785052537216 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/coupon/views.py changed, reloading.
+INFO 2021-11-29 16:45:58,269 autoreload run_with_reloader 9643 139795959869824 Watching for file changes with StatReloader
+INFO 2021-11-29 17:01:59,707 autoreload trigger_reload 9643 139795959869824 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/coupon/services.py changed, reloading.
+INFO 2021-11-29 17:02:01,400 autoreload run_with_reloader 9886 140018600518016 Watching for file changes with StatReloader
+INFO 2021-11-29 17:19:48,505 autoreload trigger_reload 9886 140018600518016 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/coupon/services.py changed, reloading.
+INFO 2021-11-29 17:19:50,017 autoreload run_with_reloader 10230 139719274213760 Watching for file changes with StatReloader
+INFO 2021-11-29 17:26:08,087 autoreload trigger_reload 10230 139719274213760 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/coupon/services.py changed, reloading.
+INFO 2021-11-29 17:26:09,923 autoreload run_with_reloader 10312 139964612989312 Watching for file changes with StatReloader
+INFO 2021-11-29 17:26:13,129 basehttp log_message 10312 139964456732416 "GET /coupon/user/ HTTP/1.1" 200 6345
+INFO 2021-11-29 17:26:29,008 basehttp log_message 10312 139964456732416 "GET /coupon/user/ HTTP/1.1" 200 6345
+INFO 2021-11-29 17:27:43,346 basehttp log_message 10312 139964437587712 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-29 17:27:43,377 basehttp log_message 10312 139964448339712 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-29 17:27:45,852 basehttp log_message 10312 139964429195008 "GET /banner/ HTTP/1.1" 200 666
+INFO 2021-11-29 17:28:17,922 basehttp log_message 10312 139964429195008 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-29 17:28:17,936 basehttp log_message 10312 139964448339712 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-29 17:28:18,239 basehttp log_message 10312 139964437587712 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-11-29 17:28:18,301 basehttp log_message 10312 139964437587712 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-29 17:28:18,313 basehttp log_message 10312 139964437587712 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-29 17:28:33,003 basehttp log_message 10312 139964437587712 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-29 17:28:33,656 basehttp log_message 10312 139964437587712 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-29 17:28:58,570 basehttp log_message 10312 139964437587712 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-29 17:28:58,729 basehttp log_message 10312 139964437587712 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-29 17:29:01,741 basehttp log_message 10312 139964437587712 "GET /cart/ HTTP/1.1" 200 256
+INFO 2021-11-29 17:29:15,482 basehttp log_message 10312 139964456732416 "GET /coupon/user/ HTTP/1.1" 200 7357
