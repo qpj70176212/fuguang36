@@ -328,16 +328,20 @@
           <div class="row-bottom">
             <div class="row">
               <div class="goods-total-price-box">
-                <p class="r rw price-num"><em>￥</em><span>1811.00</span></p>
-                <p class="r price-text"><span>共<span>5</span>件商品，</span>商品总金额：</p>
+<!--                <p class="r rw price-num"><em>￥</em><span>1811.00</span></p>-->
+                <p class="r rw price-num"><em>￥</em><span>{{cart.total_price.toFixed(2)}}</span></p>
+                <p class="r price-text"><span>共<span>{{cart.select_course_list?.length}}</span>件商品，</span>商品总金额：</p>
+<!--                <p class="r price-text"><span>共<span>5</span>件商品，</span>商品总金额：</p>-->
               </div>
             </div>
             <div class="coupons-discount-box">
-              <p class="r rw price-num">-<em>￥</em><span>60.00</span></p>
+<!--              <p class="r rw price-num">-<em>￥</em><span>60.00</span></p>-->
+              <p class="r rw price-num">-<em>￥</em><span>{{order.discount_price.toFixed(2)}}</span></p>
               <p class="r price-text">优惠券/积分抵扣：</p>
             </div>
             <div class="pay-price-box clearfix">
-              <p class="r rw price"><em>￥</em><span id="js-pay-price">1751.00</span></p>
+<!--              <p class="r rw price"><em>￥</em><span id="js-pay-price">1751.00</span></p>-->
+              <p class="r rw price"><em>￥</em><span id="js-pay-price">{{ (cart.total_price-order.discount_price).toFixed(2)}}</span></p>
               <p class="r price-text">应付：</p>
             </div>
             <span class="r btn btn-red submit-btn" @click="commit_order">提交订单</span>
@@ -372,6 +376,16 @@ const get_select_course = () => {
   let token = sessionStorage.token || localStorage.token
   cart.get_select(token).then(response => {
     cart.select_course_list = response.data.cart
+    // 计算本次购物的总价格
+    let sum = 0
+    response.data.cart?.forEach((course, key) => {
+      if (course.discount.price > 0) {
+        sum += course.discount.price
+      } else {
+        sum += course.price
+      }
+    })
+    cart.total_price = sum;
   })
 }
 
@@ -380,7 +394,11 @@ get_select_course()
 const commit_order = () => {
   // 生成订单
   let token = sessionStorage.token || localStorage.token
-  order.create_order(token).then(response => {
+  let user_coupon_id = -1;
+  if(order.select !== -1){
+        user_coupon_id = order.coupon_list[order.select].user_coupon_id;
+    }
+  order.create_order(user_coupon_id,token).then(response => {
     console.log(response.data.order_number)  // todo 订单号
     console.log(response.data.link)  // todo 支付链接
     // 成功提示
@@ -404,6 +422,60 @@ watch(
     () => order.pay_type,
     () => {
       console.log(order.pay_type)
+    }
+)
+
+// 监听用户选择的优惠券
+watch(
+    ()=>order.select,
+    ()=>{
+        // 如果没有选择任何的优惠券，则select 为-1，那么不用进行计算优惠券折扣的价格了
+        order.discount_price = 0; // 最终得到的优惠券折扣价格
+        if (order.select === -1) {
+            return // 阻止代码继续往下执行
+        }
+        // 根据下表，获取当前选中的优惠券信息
+        let current_coupon = order.coupon_list[order.select]
+        // 针对折扣优惠券，找到最大优惠的课程
+        let max_discount = -1;
+        for(let course of cart.select_course_list) {  // 循环本次下单的勾选商品
+            // 找到当前优惠券的可用课程
+            if(current_coupon.enable_course === "__all__") { // 如果当前优惠券是通用优惠券
+                if(max_discount !== -1){
+                    if(course.price > max_discount.price){  // 在每次循环中，那当前循环的课程的价格与之前循环中得到的最大优惠课程的价格进行比较
+                        max_discount = course
+                    }
+                }else{
+                    max_discount = course
+                }
+
+            // 判断 当前优惠券如果包含了当前课程， 并 课程的价格 > 当前优惠券的使用门槛
+            }else if((current_coupon.enable_course.indexOf(course.id) > -1) && (course.price >= parseFloat(current_coupon.condition))){
+                // 只允许没有参与其他优惠券活动的课程使用优惠券，基本所有的平台都不存在折上折的。
+                if( course.discount.price === undefined ) {
+                    if(max_discount !== -1){
+                      if(course.price > max_discount.price){
+                        max_discount = course
+                      }
+                    }else{
+                      max_discount = course
+                    }
+                }
+            }
+        }
+
+        if(max_discount !== -1){
+            if(current_coupon.discount === '1') { // 抵扣优惠券[抵扣的价格就是当前优惠券的价格]
+                order.discount_price = parseFloat( Math.abs(current_coupon.sale) )
+            }else if(current_coupon.discount === '2') { // 折扣优惠券]抵扣的价格就是(1-折扣百分比) * 课程原价]
+                order.discount_price = parseFloat(max_discount.price * (1-parseFloat(current_coupon.sale.replace("*",""))) )
+            }
+        }else{
+            order.select = -1
+            order.discount_price = 0
+            ElMessage.error("当前课程商品已经参与了其他优惠活动，无法再次使用当前优惠券！")
+        }
+
     }
 )
 

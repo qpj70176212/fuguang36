@@ -15,7 +15,9 @@ def get_user_coupon_list(user_id):
     coupon_data = []
     # 遍历redis中所有的优惠券数据并转换数据格式
     for coupon_key in coupon_id_list:
-        coupon_item = {}
+
+        # coupon_item = {}
+        coupon_item = {"user_coupon_id": int(coupon_key.split(":")[-1])}
         coupon_hash = redis.hgetall(coupon_key)
         for key, value in coupon_hash.items():
             key = key.decode()

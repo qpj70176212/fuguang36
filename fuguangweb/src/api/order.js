@@ -12,10 +12,11 @@ const order = reactive({
     fixed: true,         // 底部订单总价是否固定浮动
     pay_type: 0,         // 支付方式
     discount_price: 0,   // 本次下单的优惠抵扣价格
-    create_order(token) {
+    create_order(user_coupon_id, token) {
         // 生成订单
         return http.post("/orders/", {
             pay_type: this.pay_type,
+            user_coupon_id: user_coupon_id,
         }, {
             headers: {
                 Authorization: "jwt " + token,
