@@ -421,16 +421,20 @@ const commit_order = () => {
   // 生成订单
   let token = sessionStorage.token || localStorage.token
   let user_coupon_id = -1;
-  if(order.select !== -1){
-        user_coupon_id = order.coupon_list[order.select].user_coupon_id;
-    }
-  order.create_order(user_coupon_id,token).then(response => {
+  if (order.select !== -1) {
+    user_coupon_id = order.coupon_list[order.select].user_coupon_id;
+  }
+  order.create_order(user_coupon_id, token).then(response => {
     console.log(response.data.order_number)  // todo 订单号
     console.log(response.data.link)  // todo 支付链接
     // 成功提示
     ElMessage.success("下单成功！马上跳转到支付页面，请稍后...")
     // 扣除掉被下单的商品数量，更新购物车中的商品数量
     store.commit("set_cart_total", store.state.cart_total - cart.select_course_list.length)
+    // 根据订单号到服务端获取支付链接，并打开支付页面。
+    order.alipay_page_pay(response.data.order_number).then(response => {
+      window.open(response.data.link, "_blank");
+    })
   })
 }
 

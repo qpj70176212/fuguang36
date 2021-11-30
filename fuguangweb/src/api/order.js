@@ -34,6 +34,10 @@ const order = reactive({
                 Authorization: "jwt " + token,
             }
         })
+    },
+    alipay_page_pay(order_number) {
+        // 获取订单的支付宝支付链接信息
+        return http.get(`/payments/alipay/${order_number}`)
     }
 })
 

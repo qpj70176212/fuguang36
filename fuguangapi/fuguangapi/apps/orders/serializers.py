@@ -16,12 +16,12 @@ logger = logging.getLogger("django")
 class OrderModelSerializer(serializers.ModelSerializer):
     """订单序列化器"""
     # 支付链接地址
-    link = serializers.CharField(read_only=True)
+    # link = serializers.CharField(read_only=True)
     user_coupon_id = serializers.IntegerField(write_only=True, default=-1)
 
     class Meta:
         model = Order
-        fields = ["pay_type", "id", "order_number", "link", "user_coupon_id", "credit"]
+        fields = ["pay_type", "id", "order_number", "user_coupon_id", "credit"]
         read_only_fields = ["order_number"]
         extra_kwargs = {
             "pay_type": {"write_only": True},
@@ -31,7 +31,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
         """创建订单"""
         # 本次客户端的HTTP请求对象
         user = self.context["request"].user
-        user_id = self.context["request"].user.id
+        user_id = user.id
         # user_id = self.context["request"].user.id
 
         # 判断用户如果使用了优惠券，则优惠券需要判断验证
@@ -104,12 +104,13 @@ class OrderModelSerializer(serializers.ModelSerializer):
                         real_price=discount_price,
                         discount_name=discount_name,
                     ))
-                    # 统计订单的总结和实付价格
+                    # 统计订单的总价格和实付价格
                     total_price += float(course.price)
                     real_price += float(course.price) if discount_price == 0 else discount_price
 
                     # 在用户使用了优惠券，并且当前课程没有参与其他优惠活动时，找到最佳优惠课程
                     # 优惠券和价格为空时
+                    # if user_coupon and discount_price < 1:
                     if user_coupon and discount_price is None:
                         # 最大优惠价格为None
                         if max_discount_course is None:
@@ -154,11 +155,12 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 OrderDetail.objects.bulk_create(detail_list)
                 # 保存订单的总价格和实付价格
                 order.total_price = total_price
-                order.real_price = real_price
+                order.real_price = float(real_price - total_discount_price)
+                # order.real_price = float(real_price) - float(total_discount_price)
                 order.save()
 
-                # todo 支付链接地址
-                order.link = ""
+                # 支付链接地址
+                # order.link = ""
                 # 找出购物车中的没有被勾选的商品信息
                 cart = {key: value for key, value in cart_hash.items() if value == b'0'}
                 pipe = redis.pipeline()
