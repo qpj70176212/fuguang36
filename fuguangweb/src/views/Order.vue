@@ -24,6 +24,7 @@
               <dl class="l has-package">
                 <dt>【{{ course_info.course_type }}】{{ course_info.name }}</dt>
                 <p class="package-item" v-if="course_info.discount.type">{{ course_info.discount.type }}</p>
+                <p class="package-item" v-if="course_info.credit>0">{{ course_info.credit }}积分抵扣</p>
               </dl>
             </div>
             <div class="item-3">
@@ -157,19 +158,27 @@
             </div>
             <div class="coupon-content code" v-else>
                 <div class="input-box">
-                  <el-input-number placeholder="10积分=1元" v-model="order.credit" :step="1" :min="0" :max="1000"></el-input-number>
-                  <a class="convert-btn">兑换</a>
+<!--                  <el-input-number placeholder="10积分=1元" v-model="order.credit" :step="1" :min="0" :max="1000"></el-input-number>-->
+                  <el-input-number v-model="order.credit" :step="1" :min="0" :max="order.max_use_credit"></el-input-number>
+                  <a class="convert-btn" @click="conver_credit">兑换</a>
+                  <a class="convert-btn" @click="max_conver_credit">最大积分兑换</a>
                 </div>
                 <div class="converted-box">
-                  <p>使用积分:<span class="code-num">200</span></p>
-                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>
-                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>
+                  <p class="course-title" v-for="course in order.credit_course_list">
+                    课程:<span class="c_name">{{course.name}}</span>
+                    <span class="discount-cash">{{course.credit}}积分抵扣：<em>{{ (course.credit/order.credit_to_money).toFixed(2) }}</em>元</span>
                   </p>
-                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>
-                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>
-                  </p>
+
+<!--                  <p>使用积分:<span class="code-num">200</span></p>-->
+<!--                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>-->
+<!--                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>-->
+<!--                  </p>-->
+<!--                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>-->
+<!--                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>-->
+<!--                  </p>-->
                 </div>
-                <p class="error-msg">本次订单最多可以使用1000积分，您当前拥有200积分。(10积分=1元)</p>
+<!--                <p class="error-msg">本次订单最多可以使用1000积分，您当前拥有200积分。(10积分=1元)</p>-->
+                <p class="error-msg">本次订单最多可以使用{{order.max_use_credit}}积分，您当前拥有{{order.has_credit}}积分。({{order.credit_to_money}}积分=1元)</p>
                 <p class="tip">说明：每笔订单只能使用一次积分，并只有在部分允许使用积分兑换的课程中才能使用。</p>
               </div>
           </div>
@@ -376,16 +385,33 @@ const get_select_course = () => {
   let token = sessionStorage.token || localStorage.token
   cart.get_select(token).then(response => {
     cart.select_course_list = response.data.cart
-    // 计算本次购物的总价格
-    let sum = 0
+    let sum = 0  // 计算本次购物的总价格
+    let credit_course_list = []  // 可使用积分抵扣的课程列表
+    let max_use_credit = 0  // 本次下单最多可用抵扣的积分
     response.data.cart?.forEach((course, key) => {
-      if (course.discount.price > 0) {
+      if (course.discount.price >= 0) {
         sum += course.discount.price
       } else {
         sum += course.price
       }
+      if (course.credit > 0) {
+        // 可以使用积分抵扣 把积分累加起来
+        max_use_credit = max_use_credit + course.credit
+        // 当前课程记录到本次下单的课程列表中
+        credit_course_list.push(course)
+      }
     })
     cart.total_price = sum;
+    order.credit_course_list = credit_course_list
+    order.max_use_credit = max_use_credit  // 本次下单最多可以用于抵扣的积分
+    console.log(`order.max_use_credit=${order.max_use_credit}`)
+    // // 本次订单最多可以使用的积分数量
+    // // 如果用户积分不足，则最多只能用完自己的积分
+    // // 如果本次下单的最大抵扣积分数量 > 用户拥有的积分数量
+    // if (order.max_use_credit > order.has_credit) {
+    //   // 则本次下单的最大可用抵扣积分数量为用户拥有的积分数量
+    //   order.max_use_credit = order.has_credit
+    // }
   })
 }
 
@@ -409,13 +435,32 @@ const commit_order = () => {
 }
 
 // 获取本次下单的可用优惠券
-const get_enable_coupon_list = ()=>{
-    let token = sessionStorage.token || localStorage.token;
-    order.get_enable_coupon_list(token).then(response=>{
-        order.coupon_list = response.data
-    })
+const get_enable_coupon_list = () => {
+  let token = sessionStorage.token || localStorage.token;
+  order.get_enable_coupon_list(token).then(response => {
+    order.coupon_list = response.data.coupon_list
+    // 积分相关信息
+    order.credit_to_money = response.data.credit_to_money; // 积分兑换现金的比例
+    order.has_credit = response.data.has_credit; // 用户拥有的积分数量
+    // 本次订单最多可以使用的积分数量
+    // 如果用户积分不足，则最多只能用完自己的积分
+    // 如果本次下单的最大抵扣积分数量 > 用户拥有的积分数量
+    if (order.max_use_credit > order.has_credit) {
+      // 则本次下单的最大可用抵扣积分数量为用户拥有的积分数量
+      order.max_use_credit = order.has_credit
+    }
+  })
 }
 get_enable_coupon_list()
+
+// 积分兑换抵扣
+const conver_credit = ()=>{
+  order.discount_price = parseFloat( (order.credit / order.credit_to_money).toFixed(2) )
+}
+const max_conver_credit = ()=>{
+  order.credit=order.max_use_credit
+  conver_credit();
+}
 
 // 监听用户选择的支付方式
 watch(
@@ -476,6 +521,16 @@ watch(
             ElMessage.error("当前课程商品已经参与了其他优惠活动，无法再次使用当前优惠券！")
         }
 
+    }
+)
+
+// 在切换不同的优惠类型，重置积分和优惠券信息
+watch(
+    ()=>order.discount_type,
+    ()=>{
+        order.select = -1
+        order.credit = 0
+        order.discount_price = 0
     }
 )
 

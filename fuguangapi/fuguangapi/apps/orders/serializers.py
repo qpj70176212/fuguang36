@@ -4,6 +4,8 @@ from django.utils.decorators import method_decorator
 from rest_framework import serializers
 from django_redis import get_redis_connection
 from django.utils.timezone import datetime
+
+import constants
 from .models import Order, OrderDetail
 from courses.models import Course
 from coupon.models import CouponLog
@@ -19,7 +21,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Order
-        fields = ["pay_type", "id", "order_number", "link", "user_coupon_id"]
+        fields = ["pay_type", "id", "order_number", "link", "user_coupon_id", "credit"]
         read_only_fields = ["order_number"]
         extra_kwargs = {
             "pay_type": {"write_only": True},
@@ -28,7 +30,9 @@ class OrderModelSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         """创建订单"""
         # 本次客户端的HTTP请求对象
+        user = self.context["request"].user
         user_id = self.context["request"].user.id
+        # user_id = self.context["request"].user.id
 
         # 判断用户如果使用了优惠券，则优惠券需要判断验证
         user_coupon_id = validated_data.get("user_coupon_id")
@@ -36,6 +40,13 @@ class OrderModelSerializer(serializers.ModelSerializer):
         user_coupon = None
         if user_coupon_id != -1:
             user_coupon = CouponLog.objects.filter(pk=user_coupon_id, user_id=user_id).first()
+
+        # 本次下单时使用的积分数量
+        use_credit = validated_data.get("credit", 0)
+        # 如果本次下单用户使用了抵扣积分，并且抵扣的积分数量 > 用户拥有的积分数量，则报错。
+        if use_credit > 0 and use_credit > user.credit:
+            raise serializers.ValidationError(detail="您拥有的积分不足以抵扣本次下单的积分，请重新下单！")
+
         redis = get_redis_connection("cart")
         # 唯一订单号[基于时间、用户ID、随机数]
         # 基于redis生成分布式唯一订单号
@@ -69,6 +80,9 @@ class OrderModelSerializer(serializers.ModelSerializer):
 
                 total_discount_price = 0  #
                 max_discount_course = None  # 享受最大优惠的课程
+
+                # 本次下单最多可以抵扣的积分
+                max_use_credit = 0
 
                 for course in course_list:
                     # 判断商品课程是否有优惠价格，有就转换数据类型
@@ -105,6 +119,10 @@ class OrderModelSerializer(serializers.ModelSerializer):
                             if course.price >= max_discount_course.price:
                                 max_discount_course = course
 
+                    # 添加每个课程的可用积分
+                    if use_credit > 0:
+                        max_use_credit += course.credit
+
                 # 在用户使用了优惠券以后，根据循环中得到的最佳优惠课程进行计算最终抵扣金额
                 if user_coupon:
                     # 优惠公式
@@ -115,6 +133,22 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     elif user_coupon.coupon.discount == 2:
                         """折扣优惠券"""
                         total_discount_price = float(max_discount_course.price) * (1 - sale)
+
+                # 在用户使用了积分抵扣以后
+                if use_credit > 0:
+                    # 如果本次下单最大可用积分数量 < 用户提交的抵扣数量，则报错
+                    if max_use_credit < use_credit:
+                        raise serializers.ValidationError(detail="本次使用的抵扣积分数额超过了限制！")
+
+                    # 当前订单添加积分抵扣的数量
+                    order.credit = use_credit
+                    total_discount_price = float(use_credit / constants.CREDIT_TO_MONEY)
+
+                    # todo 扣除用户拥有的积分，后续在订单超时未支付或用户取消下单时，则返还订单中对应数量的积分给用户。
+
+                    #  如果订单成功支付，则添加一个积分流水记录。
+                    user.credit = user.credit - use_credit
+                    user.save()
 
                 # 一次性批量添加本次下单的商品记录
                 OrderDetail.objects.bulk_create(detail_list)

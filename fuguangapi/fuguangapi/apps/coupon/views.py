@@ -1,4 +1,5 @@
 import json
+import constants
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
@@ -38,4 +39,10 @@ class CouponListAPIView(APIView):
         coupon_data = get_user_enable_coupon_list(user_id)
 
         # 获取购物车中的勾选商品[与优惠券的适用范围进行比对，找出能用的优惠券]
-        return Response(coupon_data)
+        # return Response(coupon_data)
+        return Response({
+            "errmsg": "OK",
+            'has_credit': request.user.credit,
+            'credit_to_money': constants.CREDIT_TO_MONEY,
+            "coupon_list": coupon_data
+        })

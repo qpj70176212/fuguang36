@@ -46,6 +46,7 @@
               <dl class="l has-package">
                 <dt>【{{ course_info.course_type }}】 {{ course_info.name }}</dt>
                 <p class="package-item" v-if="course_info.discount.type">{{ course_info.discount.type }}</p>
+                <p class="package-item" v-if="course_info.credit>0">{{course_info.credit}}积分抵扣</p>
                 <!--                <dt>【实战课 移动端UI设置入门与实战</dt>-->
                 <!--                <p class="package-item">优惠价</p>-->
               </dl>

@@ -13006,3 +13006,294 @@ INFO 2021-11-29 21:31:17,151 basehttp log_message 4851 139932962113280 "GET /car
 INFO 2021-11-29 21:31:20,958 basehttp log_message 4851 139932987291392 "GET /coupon/user/ HTTP/1.1" 200 2297
 INFO 2021-11-29 21:31:20,986 basehttp log_message 4851 139932962113280 "GET /cart/select/ HTTP/1.1" 200 1022
 INFO 2021-11-29 21:31:30,723 basehttp log_message 4851 139932962113280 "POST /orders/ HTTP/1.1" 201 61
+INFO 2021-11-29 21:40:38,617 basehttp log_message 4851 139932987291392 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:40:38,630 basehttp log_message 4851 139932962113280 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:40:38,680 basehttp log_message 4851 139932970505984 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-29 21:40:38,702 basehttp log_message 4851 139932953720576 "GET /nav/footer/ HTTP/1.1" 200 386
+WARNING 2021-11-29 21:40:38,777 log log_response 4851 139932962113280 Unauthorized: /cart/select/
+WARNING 2021-11-29 21:40:38,777 basehttp log_message 4851 139932962113280 "GET /cart/select/ HTTP/1.1" 401 35
+WARNING 2021-11-29 21:40:38,817 log log_response 4851 139932987291392 Unauthorized: /coupon/user/
+WARNING 2021-11-29 21:40:38,818 basehttp log_message 4851 139932987291392 "GET /coupon/user/ HTTP/1.1" 401 35
+INFO 2021-11-29 21:41:13,446 basehttp log_message 4851 139932987291392 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:41:14,236 basehttp log_message 4851 139932987291392 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-29 21:41:20,941 basehttp log_message 4851 139932970505984 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-11-29 21:41:20,996 basehttp log_message 4851 139933065795328 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-11-29 21:41:21,048 basehttp log_message 4851 139932987291392 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-29 21:41:21,079 basehttp log_message 4851 139932970505984 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-29 21:41:21,130 basehttp log_message 4851 139932978898688 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-29 21:41:21,248 basehttp log_message 4851 139932987291392 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-29 21:41:21,301 basehttp log_message 4851 139932970505984 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-29 21:41:21,327 basehttp log_message 4851 139932962113280 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-29 21:41:21,866 basehttp log_message 4851 139932953720576 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-11-29 21:41:28,655 basehttp log_message 4851 139932953720576 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:41:28,705 basehttp log_message 4851 139932953720576 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-29 21:41:30,294 basehttp log_message 4851 139932953720576 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:41:30,398 basehttp log_message 4851 139932953720576 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-29 21:41:32,177 basehttp log_message 4851 139932953720576 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:41:32,257 basehttp log_message 4851 139932953720576 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-29 21:41:33,574 basehttp log_message 4851 139932953720576 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:41:33,736 basehttp log_message 4851 139932953720576 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-29 21:41:36,303 basehttp log_message 4851 139932962113280 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-11-29 21:41:36,333 basehttp log_message 4851 139932962113280 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-29 21:41:36,653 basehttp log_message 4851 139932953720576 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1699
+INFO 2021-11-29 21:41:38,407 basehttp log_message 4851 139932953720576 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:41:38,463 basehttp log_message 4851 139932953720576 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-29 21:41:40,449 basehttp log_message 4851 139932953720576 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:41:40,556 basehttp log_message 4851 139932962113280 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-29 21:41:40,561 basehttp log_message 4851 139932953720576 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-29 21:41:40,822 basehttp log_message 4851 139932970505984 "GET /cart/ HTTP/1.1" 200 1320
+INFO 2021-11-29 21:41:45,426 basehttp log_message 4851 139932953720576 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:41:45,453 basehttp log_message 4851 139932970505984 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-29 21:41:45,512 basehttp log_message 4851 139932987291392 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-29 21:41:45,530 basehttp log_message 4851 139932962113280 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-29 21:41:46,453 basehttp log_message 4851 139932953720576 "GET /coupon/user/ HTTP/1.1" 200 1896
+INFO 2021-11-29 21:41:46,721 basehttp log_message 4851 139932970505984 "GET /cart/select/ HTTP/1.1" 200 1239
+INFO 2021-11-29 21:54:04,031 basehttp log_message 4851 139932970505984 "GET /admin/ HTTP/1.1" 200 22292
+WARNING 2021-11-29 21:54:07,881 log log_response 4851 139932970505984 Not Found: /favicon.ico
+WARNING 2021-11-29 21:54:07,901 basehttp log_message 4851 139932970505984 "GET /favicon.ico HTTP/1.1" 404 3583
+INFO 2021-11-29 21:54:10,638 basehttp log_message 4851 139932970505984 "GET /admin/coupon/coupon/ HTTP/1.1" 200 31852
+INFO 2021-11-29 21:54:10,949 basehttp log_message 4851 139932970505984 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-29 21:54:19,411 basehttp log_message 4851 139932970505984 "GET /admin/coupon/coupon/5/change/ HTTP/1.1" 200 69634
+INFO 2021-11-29 21:54:19,814 basehttp log_message 4851 139932970505984 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-29 21:55:15,034 basehttp log_message 4851 139932962113280 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-29 21:55:15,086 basehttp log_message 4851 139932987291392 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-29 21:55:15,293 basehttp log_message 4851 139932987291392 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-29 21:55:15,389 basehttp log_message 4851 139932987291392 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-29 21:55:15,445 basehttp log_message 4851 139932953720576 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-11-29 21:55:34,778 basehttp log_message 4851 139932953720576 "GET /courses/0/33/?page=1&size=5&ordering=-id HTTP/1.1" 200 367
+INFO 2021-11-29 21:55:35,474 basehttp log_message 4851 139932953720576 "GET /courses/0/33/?page=1&size=5&ordering=-id HTTP/1.1" 200 367
+INFO 2021-11-29 21:55:38,256 basehttp log_message 4851 139932953720576 "GET /courses/hot_word/ HTTP/1.1" 200 49
+INFO 2021-11-29 21:55:38,327 basehttp log_message 4851 139932953720576 "GET /courses/hot_word/ HTTP/1.1" 200 49
+WARNING 2021-11-29 22:15:26,927 log log_response 4851 139932962113280 Unauthorized: /cart/select/
+WARNING 2021-11-29 22:15:26,930 log log_response 4851 139932953720576 Unauthorized: /coupon/user/
+WARNING 2021-11-29 22:15:26,933 basehttp log_message 4851 139932962113280 "GET /cart/select/ HTTP/1.1" 401 35
+WARNING 2021-11-29 22:15:26,938 basehttp log_message 4851 139932953720576 "GET /coupon/user/ HTTP/1.1" 401 35
+INFO 2021-11-29 22:15:44,772 basehttp log_message 4851 139932953720576 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-29 22:15:51,425 basehttp log_message 4851 139932962113280 "GET /coupon/user/ HTTP/1.1" 200 1896
+INFO 2021-11-29 22:15:51,471 basehttp log_message 4851 139932953720576 "GET /cart/select/ HTTP/1.1" 200 1239
+INFO 2021-11-29 22:15:58,503 basehttp log_message 4851 139932962113280 "GET /coupon/user/ HTTP/1.1" 200 1896
+INFO 2021-11-29 22:15:58,606 basehttp log_message 4851 139932953720576 "GET /cart/select/ HTTP/1.1" 200 1240
+INFO 2021-11-29 22:16:15,358 basehttp log_message 4851 139932962113280 "GET /coupon/user/ HTTP/1.1" 200 1896
+INFO 2021-11-29 22:16:15,480 basehttp log_message 4851 139932953720576 "GET /cart/select/ HTTP/1.1" 200 1240
+INFO 2021-11-29 22:20:47,188 autoreload trigger_reload 4851 139933154648448 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/models.py changed, reloading.
+INFO 2021-11-29 22:20:55,519 autoreload run_with_reloader 6381 140374792900992 Watching for file changes with StatReloader
+INFO 2021-11-29 22:43:58,433 autoreload trigger_reload 6381 140374792900992 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/models.py changed, reloading.
+INFO 2021-11-29 22:44:01,064 autoreload run_with_reloader 6562 140077425058176 Watching for file changes with StatReloader
+INFO 2021-11-29 22:53:55,179 autoreload trigger_reload 6562 140077425058176 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/models.py changed, reloading.
+INFO 2021-11-30 08:37:43,867 autoreload run_with_reloader 3901 140629820506496 Watching for file changes with StatReloader
+INFO 2021-11-30 08:42:24,203 basehttp log_message 3901 140629619230464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:42:24,220 basehttp log_message 3901 140629619230464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:42:24,565 basehttp log_message 3901 140629644408576 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 08:42:24,573 basehttp log_message 3901 140629636015872 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-30 08:42:27,440 basehttp log_message 3901 140629627623168 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1636
+INFO 2021-11-30 08:42:35,061 basehttp log_message 3901 140629636015872 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:42:35,094 basehttp log_message 3901 140629627623168 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1699
+INFO 2021-11-30 08:42:52,944 basehttp log_message 3901 140629627623168 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-30 08:42:54,649 basehttp log_message 3901 140629627623168 "POST /users/login/ HTTP/1.1" 200 359
+INFO 2021-11-30 08:42:59,463 basehttp log_message 3901 140629636015872 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:42:59,482 basehttp log_message 3901 140629627623168 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1636
+INFO 2021-11-30 08:43:04,975 basehttp log_message 3901 140629636015872 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:43:05,002 basehttp log_message 3901 140629627623168 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1699
+INFO 2021-11-30 08:43:06,536 basehttp log_message 3901 140629636015872 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:43:06,603 basehttp log_message 3901 140629627623168 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1760
+INFO 2021-11-30 08:43:07,824 basehttp log_message 3901 140629636015872 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:43:07,863 basehttp log_message 3901 140629627623168 "GET /courses/0/0/?page=4&size=5 HTTP/1.1" 200 1649
+INFO 2021-11-30 08:43:12,068 basehttp log_message 3901 140629636015872 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:43:12,099 basehttp log_message 3901 140629627623168 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1636
+INFO 2021-11-30 08:43:20,318 basehttp log_message 3901 140629627623168 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-30 08:43:20,379 basehttp log_message 3901 140629627623168 "GET /cart/ HTTP/1.1" 200 1148
+INFO 2021-11-30 08:43:41,276 basehttp log_message 3901 140629368317696 "GET /admin/ HTTP/1.1" 200 22292
+WARNING 2021-11-30 08:43:42,920 log log_response 3901 140629368317696 Not Found: /favicon.ico
+WARNING 2021-11-30 08:43:42,924 basehttp log_message 3901 140629368317696 "GET /favicon.ico HTTP/1.1" 404 3583
+INFO 2021-11-30 08:43:47,106 basehttp log_message 3901 140629368317696 "GET /admin/courses/course/ HTTP/1.1" 200 56375
+INFO 2021-11-30 08:43:47,284 basehttp log_message 3901 140629368317696 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 08:43:55,400 basehttp log_message 3901 140629368317696 "GET /admin/courses/activity/ HTTP/1.1" 200 27719
+INFO 2021-11-30 08:43:55,439 basehttp log_message 3901 140629368317696 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 08:44:03,393 basehttp log_message 3901 140629368317696 "GET /admin/courses/activity/1/change/ HTTP/1.1" 200 23474
+INFO 2021-11-30 08:44:03,476 basehttp log_message 3901 140629368317696 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 08:44:03,488 basehttp log_message 3901 140629359924992 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:03,514 basehttp log_message 3901 140629359924992 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,287 basehttp log_message 3901 140629359924992 "GET /static/ckeditor/ckeditor/config.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,344 basehttp log_message 3901 140629359924992 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,365 basehttp log_message 3901 140629359924992 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,430 basehttp log_message 3901 140629359924992 "GET /static/ckeditor/ckeditor/styles.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,466 basehttp log_message 3901 140629359924992 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,471 basehttp log_message 3901 140629368317696 "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,478 basehttp log_message 3901 140629349172992 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,485 basehttp log_message 3901 140629368317696 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,488 basehttp log_message 3901 140629340780288 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:04,562 basehttp log_message 3901 140629368317696 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=cae20318d4 HTTP/1.1" 304 0
+WARNING 2021-11-30 08:44:04,713 log log_response 3901 140629368317696 Not Found: /uploads/ckeditor/2021/07/29/d2c059da6e09b35a.gif
+WARNING 2021-11-30 08:44:04,715 basehttp log_message 3901 140629368317696 "GET /uploads/ckeditor/2021/07/29/d2c059da6e09b35a.gif HTTP/1.1" 404 3297
+INFO 2021-11-30 08:44:04,720 basehttp log_message 3901 140629368317696 "GET /static/ckeditor/ckeditor/contents.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-11-30 08:44:19,558 basehttp log_message 3901 140629368317696 "POST /admin/courses/activity/1/change/ HTTP/1.1" 302 0
+INFO 2021-11-30 08:44:19,684 basehttp log_message 3901 140629368317696 "GET /admin/courses/activity/ HTTP/1.1" 200 27915
+INFO 2021-11-30 08:44:19,879 basehttp log_message 3901 140629368317696 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 08:44:27,839 basehttp log_message 3901 140629619230464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:44:27,844 basehttp log_message 3901 140629636015872 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-30 08:44:27,845 basehttp log_message 3901 140629627623168 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 08:44:27,882 basehttp log_message 3901 140629627623168 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 08:44:27,944 basehttp log_message 3901 140629644408576 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-11-30 08:44:36,416 basehttp log_message 3901 140629644408576 "GET /cart/ HTTP/1.1" 200 1320
+INFO 2021-11-30 08:44:43,953 basehttp log_message 3901 140629644408576 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-30 08:44:45,176 basehttp log_message 3901 140629644408576 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-30 08:44:56,813 basehttp log_message 3901 140629644408576 "PATCH /cart/ HTTP/1.1" 200 15
+INFO 2021-11-30 08:45:00,756 basehttp log_message 3901 140629644408576 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-30 08:45:00,758 basehttp log_message 3901 140629627623168 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-11-30 08:45:00,872 basehttp log_message 3901 140629627623168 "GET /cart/select/ HTTP/1.1" 200 557
+INFO 2021-11-30 08:45:00,879 basehttp log_message 3901 140629644408576 "GET /coupon/user/ HTTP/1.1" 200 1431
+INFO 2021-11-30 08:46:32,575 basehttp log_message 3901 140629619230464 "GET /coupon/user/ HTTP/1.1" 200 1431
+INFO 2021-11-30 08:46:32,621 basehttp log_message 3901 140629636015872 "GET /cart/select/ HTTP/1.1" 200 557
+INFO 2021-11-30 08:46:47,653 basehttp log_message 3901 140629636015872 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2021-11-30 08:46:47,863 basehttp log_message 3901 140629636015872 "POST /orders/ HTTP/1.1" 201 61
+INFO 2021-11-30 08:51:13,857 autoreload trigger_reload 3901 140629820506496 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/admin.py changed, reloading.
+INFO 2021-11-30 08:51:15,712 autoreload run_with_reloader 5658 139896196067712 Watching for file changes with StatReloader
+INFO 2021-11-30 11:22:19,742 autoreload trigger_reload 5658 139896196067712 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/admin.py changed, reloading.
+INFO 2021-11-30 11:22:22,086 autoreload run_with_reloader 6651 139875597480320 Watching for file changes with StatReloader
+INFO 2021-11-30 15:19:36,872 autoreload trigger_reload 6651 139875597480320 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/models.py changed, reloading.
+INFO 2021-11-30 15:19:38,357 autoreload run_with_reloader 7815 140660314001792 Watching for file changes with StatReloader
+INFO 2021-11-30 15:22:09,955 autoreload trigger_reload 7815 140660314001792 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/admin.py changed, reloading.
+INFO 2021-11-30 15:22:12,899 autoreload run_with_reloader 8083 139810356126080 Watching for file changes with StatReloader
+INFO 2021-11-30 15:22:15,584 basehttp log_message 8083 139810267797248 "GET /admin/ HTTP/1.1" 200 22580
+INFO 2021-11-30 15:22:16,309 basehttp log_message 8083 139810267797248 "GET /admin/courses/activity/ HTTP/1.1" 200 27719
+INFO 2021-11-30 15:22:16,424 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:22:20,649 basehttp log_message 8083 139810267797248 "GET /admin/courses/course/ HTTP/1.1" 200 56375
+INFO 2021-11-30 15:22:20,694 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:22:41,107 basehttp log_message 8083 139810267797248 "GET /admin/users/user/ HTTP/1.1" 200 45499
+INFO 2021-11-30 15:22:41,141 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:22:58,388 basehttp log_message 8083 139810267797248 "GET /admin/users/credit/ HTTP/1.1" 200 25354
+INFO 2021-11-30 15:22:58,436 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:23:04,968 basehttp log_message 8083 139810267797248 "GET /admin/users/user/1/change/ HTTP/1.1" 200 58600
+INFO 2021-11-30 15:23:05,032 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:23:05,085 basehttp log_message 8083 139810259404544 "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2021-11-30 15:23:05,089 basehttp log_message 8083 139810267797248 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2021-11-30 15:23:05,677 basehttp log_message 8083 139810267797248 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2021-11-30 15:23:05,693 basehttp log_message 8083 139810267797248 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2021-11-30 15:24:58,793 basehttp log_message 8083 139810267797248 "POST /admin/users/user/1/change/ HTTP/1.1" 302 0
+INFO 2021-11-30 15:24:59,198 basehttp log_message 8083 139810267797248 "GET /admin/users/user/ HTTP/1.1" 200 45651
+INFO 2021-11-30 15:24:59,348 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:25:07,908 basehttp log_message 8083 139810267797248 "GET /admin/users/credit/ HTTP/1.1" 200 25979
+INFO 2021-11-30 15:25:07,981 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:25:55,824 basehttp log_message 8083 139810267797248 "GET /admin/users/user/1/change/ HTTP/1.1" 200 58602
+INFO 2021-11-30 15:25:55,900 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:25:56,231 basehttp log_message 8083 139810267797248 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+INFO 2021-11-30 15:25:56,244 basehttp log_message 8083 139810267797248 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+INFO 2021-11-30 15:26:08,605 basehttp log_message 8083 139810267797248 "POST /admin/users/user/1/change/ HTTP/1.1" 302 0
+INFO 2021-11-30 15:26:08,880 basehttp log_message 8083 139810267797248 "GET /admin/users/user/ HTTP/1.1" 200 45650
+INFO 2021-11-30 15:26:08,941 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:26:20,019 basehttp log_message 8083 139810267797248 "GET /admin/users/credit/ HTTP/1.1" 200 26603
+INFO 2021-11-30 15:26:20,081 basehttp log_message 8083 139810267797248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:27:11,127 autoreload trigger_reload 8083 139810356126080 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/admin.py changed, reloading.
+INFO 2021-11-30 15:27:13,430 autoreload run_with_reloader 8316 139969977016704 Watching for file changes with StatReloader
+INFO 2021-11-30 15:27:21,541 basehttp log_message 8316 139969820755712 "GET /admin/users/credit/ HTTP/1.1" 200 27070
+INFO 2021-11-30 15:27:21,594 basehttp log_message 8316 139969820755712 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:33:26,806 basehttp log_message 8316 139969820755712 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-30 15:33:26,818 basehttp log_message 8316 139969808955136 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+WARNING 2021-11-30 15:33:26,858 log log_response 8316 139969820755712 Unauthorized: /coupon/user/
+WARNING 2021-11-30 15:33:26,859 log log_response 8316 139969808955136 Unauthorized: /cart/select/
+WARNING 2021-11-30 15:33:26,863 basehttp log_message 8316 139969808955136 "GET /cart/select/ HTTP/1.1" 401 35
+WARNING 2021-11-30 15:33:26,864 basehttp log_message 8316 139969820755712 "GET /coupon/user/ HTTP/1.1" 401 35
+INFO 2021-11-30 15:33:46,560 basehttp log_message 8316 139969820755712 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-30 15:33:47,592 basehttp log_message 8316 139969820755712 "POST /users/login/ HTTP/1.1" 200 360
+INFO 2021-11-30 15:33:57,682 basehttp log_message 8316 139969820755712 "GET /cart/select/ HTTP/1.1" 200 26
+INFO 2021-11-30 15:33:57,696 basehttp log_message 8316 139969808955136 "GET /coupon/user/ HTTP/1.1" 200 2
+INFO 2021-11-30 15:34:00,727 basehttp log_message 8316 139969674004224 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 15:34:00,743 basehttp log_message 8316 139969808955136 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 15:34:00,756 basehttp log_message 8316 139969674004224 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 15:34:00,764 basehttp log_message 8316 139969820755712 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-30 15:34:00,835 basehttp log_message 8316 139969682396928 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-11-30 15:34:18,332 basehttp log_message 8316 139969674004224 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 15:34:18,375 basehttp log_message 8316 139969682396928 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1699
+INFO 2021-11-30 15:34:22,413 basehttp log_message 8316 139969674004224 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 15:34:22,468 basehttp log_message 8316 139969682396928 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1760
+INFO 2021-11-30 15:34:27,493 basehttp log_message 8316 139969674004224 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 15:34:27,524 basehttp log_message 8316 139969682396928 "GET /courses/0/0/?page=4&size=5 HTTP/1.1" 200 1649
+INFO 2021-11-30 15:34:31,870 basehttp log_message 8316 139969682396928 "GET /courses/18/ HTTP/1.1" 200 934
+INFO 2021-11-30 15:34:37,945 basehttp log_message 8316 139969682396928 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 15:34:37,984 basehttp log_message 8316 139969808955136 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 15:34:38,019 basehttp log_message 8316 139969808955136 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 15:34:38,022 basehttp log_message 8316 139969674004224 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-30 15:34:38,044 basehttp log_message 8316 139969820755712 "GET /courses/0/0/?page=4&size=5 HTTP/1.1" 200 1649
+INFO 2021-11-30 15:34:40,455 basehttp log_message 8316 139969808955136 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 15:34:40,497 basehttp log_message 8316 139969820755712 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-11-30 15:34:46,231 basehttp log_message 8316 139969820755712 "GET /courses/5/ HTTP/1.1" 200 862
+INFO 2021-11-30 15:35:00,262 basehttp log_message 8316 139969665349376 "GET /admin/courses/course/ HTTP/1.1" 200 56375
+INFO 2021-11-30 15:35:00,313 basehttp log_message 8316 139969665349376 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:35:11,932 basehttp log_message 8316 139969665349376 "GET /admin/courses/course/5/change/ HTTP/1.1" 200 38463
+INFO 2021-11-30 15:35:12,009 basehttp log_message 8316 139969665349376 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:35:12,132 basehttp log_message 8316 139969665349376 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2021-11-30 15:36:06,809 basehttp log_message 8316 139969665349376 "POST /admin/courses/course/5/change/ HTTP/1.1" 302 0
+INFO 2021-11-30 15:36:07,007 basehttp log_message 8316 139969665349376 "GET /admin/courses/course/ HTTP/1.1" 200 56555
+INFO 2021-11-30 15:36:07,072 basehttp log_message 8316 139969665349376 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 15:36:34,190 basehttp log_message 8316 139969820755712 "GET /courses/5/ HTTP/1.1" 200 863
+INFO 2021-11-30 15:50:48,043 autoreload trigger_reload 8316 139969977016704 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py changed, reloading.
+INFO 2021-11-30 15:50:49,600 autoreload run_with_reloader 8778 140203146240384 Watching for file changes with StatReloader
+INFO 2021-11-30 15:50:53,362 basehttp log_message 8778 140203057125120 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2021-11-30 15:50:53,381 log log_response 8778 140203057125120 Unauthorized: /cart/
+WARNING 2021-11-30 15:50:53,382 basehttp log_message 8778 140203057125120 "POST /cart/ HTTP/1.1" 401 35
+INFO 2021-11-30 15:51:13,433 basehttp log_message 8778 140203057125120 "POST /users/login/ HTTP/1.1" 200 360
+INFO 2021-11-30 15:51:21,180 basehttp log_message 8778 140203057125120 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 15:51:23,879 basehttp log_message 8778 140203057125120 "GET /cart/ HTTP/1.1" 200 1026
+INFO 2021-11-30 15:53:54,502 basehttp log_message 8778 140203057125120 "PUT /cart/ HTTP/1.1" 200 15
+INFO 2021-11-30 15:53:58,626 basehttp log_message 8778 140203057125120 "GET /cart/select/ HTTP/1.1" 200 959
+INFO 2021-11-30 15:53:58,692 basehttp log_message 8778 140202928547584 "GET /coupon/user/ HTTP/1.1" 200 1886
+INFO 2021-11-30 15:59:39,652 autoreload trigger_reload 8778 140203146240384 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/constants.py changed, reloading.
+INFO 2021-11-30 15:59:41,166 autoreload run_with_reloader 8979 140645093069184 Watching for file changes with StatReloader
+WARNING 2021-11-30 16:06:55,373 log log_response 8979 140644936795904 Unauthorized: /cart/select/
+WARNING 2021-11-30 16:06:55,374 log log_response 8979 140644928403200 Unauthorized: /coupon/user/
+WARNING 2021-11-30 16:06:55,383 basehttp log_message 8979 140644936795904 "GET /cart/select/ HTTP/1.1" 401 35
+WARNING 2021-11-30 16:06:55,388 basehttp log_message 8979 140644928403200 "GET /coupon/user/ HTTP/1.1" 401 35
+WARNING 2021-11-30 16:06:55,523 log log_response 8979 140644936795904 Unauthorized: /coupon/user/
+WARNING 2021-11-30 16:06:55,531 basehttp log_message 8979 140644936795904 "GET /coupon/user/ HTTP/1.1" 401 38
+WARNING 2021-11-30 16:06:55,526 log log_response 8979 140644928403200 Unauthorized: /cart/select/
+WARNING 2021-11-30 16:06:55,542 basehttp log_message 8979 140644928403200 "GET /cart/select/ HTTP/1.1" 401 38
+INFO 2021-11-30 16:07:46,928 autoreload trigger_reload 8979 140645093069184 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-11-30 16:07:48,201 autoreload run_with_reloader 9119 140381313106304 Watching for file changes with StatReloader
+INFO 2021-11-30 16:08:01,665 basehttp log_message 9119 140381223991040 "POST /users/login/ HTTP/1.1" 200 360
+INFO 2021-11-30 16:08:06,912 basehttp log_message 9119 140381095085824 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:08:06,923 basehttp log_message 9119 140381223991040 "GET /cart/select/ HTTP/1.1" 200 958
+INFO 2021-11-30 16:08:36,717 basehttp log_message 9119 140381223991040 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-30 16:08:36,719 basehttp log_message 9119 140381095085824 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-11-30 16:08:36,759 basehttp log_message 9119 140381095085824 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-30 16:08:36,778 basehttp log_message 9119 140381223991040 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-30 16:08:37,773 basehttp log_message 9119 140380938958592 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:08:37,795 basehttp log_message 9119 140381086693120 "GET /cart/select/ HTTP/1.1" 200 959
+INFO 2021-11-30 16:20:52,559 basehttp log_message 9119 140381086693120 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-11-30 16:20:52,561 basehttp log_message 9119 140381223991040 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-30 16:20:52,719 basehttp log_message 9119 140380938958592 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-30 16:20:52,719 basehttp log_message 9119 140381095085824 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-30 16:20:53,582 basehttp log_message 9119 140381223991040 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:20:53,614 basehttp log_message 9119 140381086693120 "GET /cart/select/ HTTP/1.1" 200 959
+INFO 2021-11-30 16:28:47,010 basehttp log_message 9119 140381095085824 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:28:47,015 basehttp log_message 9119 140381223991040 "GET /cart/select/ HTTP/1.1" 200 958
+WARNING 2021-11-30 16:39:43,420 log log_response 9119 140381223991040 Unauthorized: /cart/select/
+WARNING 2021-11-30 16:39:43,417 log log_response 9119 140381095085824 Unauthorized: /coupon/user/
+WARNING 2021-11-30 16:39:43,422 basehttp log_message 9119 140381223991040 "GET /cart/select/ HTTP/1.1" 401 35
+WARNING 2021-11-30 16:39:43,424 basehttp log_message 9119 140381095085824 "GET /coupon/user/ HTTP/1.1" 401 35
+INFO 2021-11-30 16:39:57,973 basehttp log_message 9119 140381095085824 "POST /users/login/ HTTP/1.1" 200 360
+INFO 2021-11-30 16:40:02,226 basehttp log_message 9119 140381223991040 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:40:02,232 basehttp log_message 9119 140381095085824 "GET /cart/select/ HTTP/1.1" 200 958
+INFO 2021-11-30 16:40:40,573 basehttp log_message 9119 140381223991040 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:40:40,585 basehttp log_message 9119 140381095085824 "GET /cart/select/ HTTP/1.1" 200 959
+INFO 2021-11-30 16:48:49,398 basehttp log_message 9119 140381095085824 "GET /cart/select/ HTTP/1.1" 200 959
+INFO 2021-11-30 16:48:49,431 basehttp log_message 9119 140381223991040 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:52:11,654 basehttp log_message 9119 140381223991040 "GET /cart/select/ HTTP/1.1" 200 958
+INFO 2021-11-30 16:52:11,712 basehttp log_message 9119 140381095085824 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:52:22,034 basehttp log_message 9119 140381095085824 "GET /cart/select/ HTTP/1.1" 200 959
+INFO 2021-11-30 16:52:22,083 basehttp log_message 9119 140381223991040 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:56:12,587 basehttp log_message 9119 140381095085824 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 16:56:12,591 basehttp log_message 9119 140381223991040 "GET /cart/select/ HTTP/1.1" 200 959
+INFO 2021-11-30 17:41:54,073 autoreload trigger_reload 9119 140381313106304 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-11-30 17:41:58,376 autoreload run_with_reloader 19351 140439191331200 Watching for file changes with StatReloader
+INFO 2021-11-30 17:42:09,966 basehttp log_message 19351 140439102215936 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-30 17:42:11,188 basehttp log_message 19351 140439102215936 "POST /users/login/ HTTP/1.1" 200 360
+INFO 2021-11-30 17:42:16,276 basehttp log_message 19351 140439102215936 "GET /cart/select/ HTTP/1.1" 200 958
+INFO 2021-11-30 17:42:16,288 basehttp log_message 19351 140438973626112 "GET /coupon/user/ HTTP/1.1" 200 1953
+INFO 2021-11-30 17:42:35,866 basehttp log_message 19351 140438973626112 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2021-11-30 17:42:36,139 basehttp log_message 19351 140438973626112 "POST /orders/ HTTP/1.1" 201 73
+INFO 2021-11-30 17:43:04,236 basehttp log_message 19351 140439102215936 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-11-30 17:43:04,301 basehttp log_message 19351 140438973626112 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-30 17:43:07,252 basehttp log_message 19351 140438973626112 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-11-30 17:43:07,265 basehttp log_message 19351 140439102215936 "GET /coupon/user/ HTTP/1.1" 200 69
+INFO 2021-11-30 17:43:08,078 basehttp log_message 19351 140438956316416 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-30 17:43:08,083 basehttp log_message 19351 140438964709120 "GET /nav/header/ HTTP/1.1" 200 292

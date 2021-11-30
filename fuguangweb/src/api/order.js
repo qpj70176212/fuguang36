@@ -12,11 +12,15 @@ const order = reactive({
     fixed: true,         // 底部订单总价是否固定浮动
     pay_type: 0,         // 支付方式
     discount_price: 0,   // 本次下单的优惠抵扣价格
+    credit_to_money: 0,  // 积分兑换现金的比例
+    has_credit: 0,  // 用户拥有的积分
+    max_use_credit: 0,  // 本次下单可用最大积分抵扣数量
     create_order(user_coupon_id, token) {
         // 生成订单
         return http.post("/orders/", {
             pay_type: this.pay_type,
             user_coupon_id: user_coupon_id,
+            credit: this.credit,
         }, {
             headers: {
                 Authorization: "jwt " + token,

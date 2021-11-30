@@ -97,7 +97,7 @@ class CourseRetrieveModelSerializer(serializers.ModelSerializer):
         fields = [
             'name', 'course_cover', 'course_video', 'level',
             'get_level_display', 'description', 'pub_date', 'status',
-            'get_status_display', 'students', 'discount', 'lessons', 'pub_lessons',
+            'get_status_display', 'students', 'discount', "credit", 'lessons', 'pub_lessons',
             'price', 'direction', 'direction_name', 'category', 'category_name', 'teacher',
             "chapter_list", "can_free_study",
         ]

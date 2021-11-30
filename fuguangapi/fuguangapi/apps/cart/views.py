@@ -104,6 +104,7 @@ class CartViewSet(ViewSet):
                 "course_cover": course.course_cover.url,  # 课程封面图片
                 "price": float(course.price),  # 价格
                 "discount": course.discount,  # 优惠信息
+                "credit": course.credit,
                 "course_type": course.get_course_type_display(),  # 优惠类型
                 "selected": cart_dict[course.id],  # 勾选状态 布尔值
             })
@@ -193,6 +194,7 @@ class CartViewSet(ViewSet):
                 "name": course.name,
                 "course_cover": course.course_cover.url,
                 "price": float(course.price),
+                "credit": course.credit,
                 "discount": course.discount,
                 "course_type": course.get_course_type_display(),
             })
