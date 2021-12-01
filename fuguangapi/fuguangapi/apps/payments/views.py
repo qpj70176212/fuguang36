@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from django.conf import settings
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -6,6 +6,7 @@ from rest_framework import status
 from orders.models import Order
 from alipay import AliPay
 from alipay.utils import AliPayConfig
+
 from coupon.models import CouponLog
 from datetime import datetime
 from django.db import transaction
@@ -155,6 +156,68 @@ class AlipayAPIViewSet(ViewSet):
             "real_price": float(order.real_price),
             "course_list": serializer.data
         })
+
+    def notify_result(self, request):
+        """支付宝支付结果的异步通知处理"""
+        data = request.data  # 接受来自支付宝平台的异步通知结果
+        alipay = AliPaySDK()
+        success = alipay.check_sign(data)
+        if not success:
+            # 因为是属于异步处理，这个过程无法通过终端调试，因此，需要把支付发送过来的结果，记录到日志中。
+            logger.error(f"[支付宝]>> 异步通知结果验证失败: {data}")
+            return HttpResponse("fail")
+
+        if data["trade_status"] not in ["TRADE_FINISHED", "TRADE_SUCCESS"]:
+            return HttpResponse("fail")
+
+        order_number = data.get("out_trade_no")  # 商家订单号
+        try:
+            order = Order.objects.get(order_number=order_number)
+            if order.order_status > 1:
+                return HttpResponse("fail")
+        except Order.DoesNotExist:
+            return HttpResponse("fail")
+
+        # 如果已经支付完成，则不需要继续往下处理
+        if order.order_status == 1:
+            return HttpResponse("success")
+
+        # 获取当前订单相关的课程信息
+        order_courses = order.order_courses.all()
+        course_list = [item.course for item in order_courses]
+        courses_list = []
+        for course in course_list:
+            courses_list.append(UserCourse(course=course, user=order.user))
+
+        """支付成功"""
+        with transaction.atomic():
+            save_id = transaction.savepoint()
+            try:
+                now_time = datetime.now()
+
+                # 1. 修改订单状态
+                order.order_status = 1
+                order.pay_time = now_time
+                order.save()
+                # 2. 扣除个人积分
+                if order.credit > 0:
+                    Credit.objects.create(operation=1, number=order.credit, user=order.user)
+
+                # 3. 如果有使用了优惠券, 修改优惠券的使用记录
+                coupon_log = CouponLog.objects.filter(order=order).first()
+                if coupon_log:
+                    coupon_log.use_time = now_time
+                    coupon_log.use_status = 1  # 1 表示已使用
+                    coupon_log.save()
+
+                # 4. 用户和课程的关系绑定
+                UserCourse.objects.bulk_create(courses_list)
+
+                return HttpResponse("success")
+            except Exception as e:
+                logger.error(f"订单支付处理同步结果发生未知错误：{e}")
+                transaction.savepoint_rollback(save_id)
+                return HttpResponse("fail")
 
     def query(self,request, order_number):
         """主动查询订单支付的支付结果"""

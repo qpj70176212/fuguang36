@@ -55,10 +55,13 @@ class AliPaySDK(AliPay):
         验证返回的支付结果中的签证信息
         @params data: 支付平台返回的支付结果，字典格式
         """
-        signature = data.pop("sign")
-        # 验证
-        success = self.verify(data, signature)
-        return success
+        try:
+            signature = data.pop("sign")
+            # 验证
+            success = self.verify(data, signature)
+            return success
+        except Exception:
+            return False
 
     def query(self, order_number):
         """

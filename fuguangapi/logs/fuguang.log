@@ -14806,3 +14806,7 @@ INFO 2021-12-01 18:28:19,304 basehttp log_message 13550 139878663808768 "GET /ca
 INFO 2021-12-01 18:28:19,314 basehttp log_message 13550 139878785500928 "GET /coupon/user/ HTTP/1.1" 200 69
 INFO 2021-12-01 18:28:19,390 basehttp handle_error 13550 139878663808768 - Broken pipe from ('127.0.0.1', 33286)
 
+INFO 2021-12-01 19:25:05,015 autoreload trigger_reload 13550 139878970687872 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py changed, reloading.
+INFO 2021-12-01 19:25:07,255 autoreload run_with_reloader 14535 139649260163456 Watching for file changes with StatReloader
+INFO 2021-12-01 19:37:21,817 autoreload trigger_reload 14535 139649260163456 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-01 19:37:23,112 autoreload run_with_reloader 14670 140170541097344 Watching for file changes with StatReloader
