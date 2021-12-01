@@ -7,17 +7,17 @@ from courses.models import Course
 class Order(BaseModel):
     """订单基本信息模型"""
     status_choices = (
-        # 模型对象.<字段名>  获取元组的第一个成员
+        # 模型对象.<字段名>                获取元组的第一个成员
         # 模型对象.get_<字段名>_display()  获取元组的第二个成员
         (0, '未支付'),
         (1, '已支付'),
         (2, '已取消'),
-        (3, '超时取消')
+        (3, '超时取消'),
     )
     pay_choices = (
         (0, '支付宝'),
         (1, '微信'),
-        (2, '余额')
+        (2, '余额'),
     )
     total_price = models.DecimalField(default=0, max_digits=10, decimal_places=2, verbose_name="订单总价")
     real_price = models.DecimalField(default=0, max_digits=10, decimal_places=2, verbose_name="实付金额")
@@ -36,7 +36,7 @@ class Order(BaseModel):
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return "%s，总价: %s，实付: %s" % (self.name, self.total_price, self.real_price)
+        return "%s,总价: %s,实付: %s" % (self.name, self.total_price, self.real_price)
 
 
 class OrderDetail(BaseModel):

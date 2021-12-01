@@ -61,7 +61,7 @@ class Course(BaseModel):
     status_choices = (
         (0, '上线'),
         (1, '下线'),
-        (2, '预上线')
+        (2, '预上线'),
     )
     # course_cover = models.ImageField(upload_to="course/cover", max_length=255, verbose_name="封面图片", blank=True,
     #                                  null=True)
@@ -153,8 +153,8 @@ class Course(BaseModel):
         ).order_by("-id").first()
 
         type_text = ""  # 优惠类型的默认值
-        price = -1  # 优惠价格
-        expire = 0  # 优惠剩余时间
+        price = -1      # 优惠价格
+        expire = 0      # 优惠剩余时间
 
         if last_activity_log:
             # 获取优惠类型的提示文本
@@ -167,7 +167,8 @@ class Course(BaseModel):
             if course_price >= condition_price:
                 # 计算本次课程参与了优惠以后的价格
                 sale = last_activity_log.discount.sale
-                print(f"{type_text}-{sale}")
+                print('111111',sale)
+                print('111111',type(sale))
                 if sale == "0":
                     # 免费，则最终价格为0
                     price = 0
@@ -178,6 +179,7 @@ class Course(BaseModel):
                     # 减免
                     price = course_price - float(sale[1:])
                 price = float(f"{price:.2f}")
+        print(">>>22222>>", price)
         data = {}
         if type_text:
             data["type"] = type_text
@@ -185,6 +187,7 @@ class Course(BaseModel):
             data["expire"] = expire
         if price != -1:
             data["price"] = price
+
         return data
 
     def discount_json(self):
@@ -202,7 +205,7 @@ class Teacher(BaseModel):
     role_choices = (
         (0, '讲师'),
         (1, '导师'),
-        (2, '班主任')
+        (2, '班主任'),
     )
     role = models.SmallIntegerField(choices=role_choices, default=0, verbose_name="讲师身份")
     title = models.CharField(max_length=64, verbose_name="职位、职称")
@@ -300,9 +303,9 @@ class CourseLesson(BaseModel):
     lesson_type_choices = (
         (0, '文档'),
         (1, '练习'),
-        (2, '视频')
+        (2, '视频'),
     )
-    orders = models.SmallIntegerField(default=1, verbose_name="第几节")
+    orders = models.SmallIntegerField(default=1, verbose_name="第几课时")
     lesson_type = models.SmallIntegerField(default=2, choices=lesson_type_choices, verbose_name="课时种类")
     lesson_link = models.CharField(max_length=255, blank=True, help_text="若是video，填视频地址或者视频id，若是文档，填文档地址",
                                    null=True,verbose_name="课程链接")
@@ -330,15 +333,15 @@ class CourseLesson(BaseModel):
 
     text2.short_description = "课时名称"
     text2.allow_tags = True
-    text2.admin_order_field = "order"
+    text2.admin_order_field = "orders"
 
 
 from django.utils import timezone as datetime
 
 
 class Activity(BaseModel):
-    start_time = models.DateTimeField(default=datetime.now(), verbose_name="开始时间")
-    end_time = models.DateTimeField(default=datetime.now(), verbose_name="结束时间")
+    start_time = models.DateTimeField(default=datetime.now, verbose_name="开始时间")
+    end_time = models.DateTimeField(default=datetime.now, verbose_name="结束时间")
     description = RichTextUploadingField(blank=True, null=True, verbose_name="活动介绍")
     remark = models.TextField(blank=True, null=True, verbose_name="备注信息")
 
@@ -365,12 +368,11 @@ class DiscountType(BaseModel):
 
 class Discount(BaseModel):
     discount_type = models.ForeignKey("DiscountType", on_delete=models.CASCADE, related_name='discount_list', db_constraint=False, verbose_name="优惠类型")
-    condition = models.IntegerField(blank=True, default=0, verbose_name="满足优惠的价格条件", help_text="设置优惠的价格条件，如果不填或0则没有优惠门槛")
+    condition = models.IntegerField(blank=True, default=0, verbose_name="满足优惠的价格条件", help_text="设置享受优惠的价格条件,如果不填或0则没有使用门槛")
     sale = models.TextField(verbose_name="优惠公式", help_text="""
     0表示免费；<br>
     *号开头表示折扣价，例如填写*0.82，则表示八二折；<br>
-    -号开头表示减免价，例如填写-100，则表示减免100；<br>
-    """)
+    -号开头表示减免价，例如填写-100，则表示减免100；<br>""")
 
     class Meta:
         db_table = "fg_discount"

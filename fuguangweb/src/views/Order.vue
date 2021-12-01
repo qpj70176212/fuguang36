@@ -427,6 +427,7 @@ const commit_order = () => {
   order.create_order(user_coupon_id, token).then(response => {
     console.log(response.data.order_number)  // todo 订单号
     console.log(response.data.link)  // todo 支付链接
+    console.log(order.credit)
     // 成功提示
     ElMessage.success("下单成功！马上跳转到支付页面，请稍后...")
     // 扣除掉被下单的商品数量，更新购物车中的商品数量

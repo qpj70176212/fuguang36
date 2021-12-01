@@ -64,7 +64,16 @@ const routes = [
         path: "/order",
         name: "Order",
         component: () => import("../views/Order.vue")
-    }
+    },
+    {
+      meta:{
+        title: "浮光在线教育-支付成功",
+        keepAlive: true
+      },
+      path: '/alipay',
+      name: "AliPaySuccess",
+      component: ()=> import("../views/AliPaySuccess.vue"),
+    },
 ]
 
 // 路由对象实例化

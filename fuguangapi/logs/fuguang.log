@@ -13469,3 +13469,1231 @@ INFO 2021-11-30 21:37:50,435 basehttp log_message 24448 140600355198720 "GET /co
 INFO 2021-11-30 21:38:07,419 basehttp log_message 24448 140600355198720 "POST /orders/ HTTP/1.1" 201 63
 INFO 2021-11-30 21:38:07,471 basehttp log_message 24448 140600355198720 "GET /payments/alipay/202111300000000100000035 HTTP/1.1" 301 0
 INFO 2021-11-30 21:38:08,484 basehttp log_message 24448 140600355198720 "GET /payments/alipay/202111300000000100000035/ HTTP/1.1" 200 952
+INFO 2021-11-30 21:52:58,902 basehttp log_message 24448 140600355198720 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-11-30 21:52:58,913 basehttp log_message 24448 140600346543872 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-11-30 22:00:35,254 autoreload trigger_reload 24448 140600540152192 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py changed, reloading.
+INFO 2021-11-30 22:00:37,581 autoreload run_with_reloader 25140 140492651712896 Watching for file changes with StatReloader
+INFO 2021-11-30 22:03:53,150 autoreload trigger_reload 25140 140492651712896 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py changed, reloading.
+INFO 2021-11-30 22:03:55,465 autoreload run_with_reloader 25226 140396527255936 Watching for file changes with StatReloader
+INFO 2021-11-30 22:04:02,802 basehttp log_message 25226 140396324738816 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:04:02,891 basehttp log_message 25226 140396342310656 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-30 22:04:02,945 basehttp log_message 25226 140396350703360 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 22:04:02,958 basehttp log_message 25226 140396324738816 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:04:04,576 basehttp log_message 25226 140396333917952 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-11-30 22:04:12,348 basehttp log_message 25226 140396333917952 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-11-30 22:04:12,459 basehttp log_message 25226 140396333917952 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 22:04:18,870 basehttp log_message 25226 140396333917952 "GET /cart/ HTTP/1.1" 200 256
+INFO 2021-11-30 22:04:25,299 basehttp log_message 25226 140396333917952 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-30 22:04:25,394 basehttp log_message 25226 140396333917952 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-11-30 22:04:25,746 basehttp log_message 25226 140396324738816 "GET /cart/select/ HTTP/1.1" 200 240
+INFO 2021-11-30 22:04:25,814 basehttp log_message 25226 140396333917952 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-11-30 22:06:26,082 autoreload trigger_reload 25226 140396527255936 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-11-30 22:06:29,590 autoreload run_with_reloader 25296 140716123087232 Watching for file changes with StatReloader
+INFO 2021-11-30 22:06:57,051 autoreload trigger_reload 25296 140716123087232 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-11-30 22:06:58,799 autoreload run_with_reloader 25314 140577731957120 Watching for file changes with StatReloader
+INFO 2021-11-30 22:07:51,467 basehttp log_message 25314 140577555420928 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-30 22:07:51,597 basehttp log_message 25314 140577545979648 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+WARNING 2021-11-30 22:07:51,850 log log_response 25314 140577545979648 Unauthorized: /coupon/user/
+WARNING 2021-11-30 22:07:51,874 basehttp log_message 25314 140577545979648 "GET /coupon/user/ HTTP/1.1" 401 35
+WARNING 2021-11-30 22:07:51,842 log log_response 25314 140577528932096 Unauthorized: /cart/select/
+WARNING 2021-11-30 22:07:51,889 basehttp log_message 25314 140577528932096 "GET /cart/select/ HTTP/1.1" 401 35
+INFO 2021-11-30 22:07:51,899 basehttp log_message 25314 140577537324800 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-11-30 22:07:51,908 basehttp log_message 25314 140577555420928 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-11-30 22:12:37,570 autoreload run_with_reloader 26163 140369544417664 Watching for file changes with StatReloader
+INFO 2021-11-30 22:13:34,914 basehttp log_message 25314 140577555420928 "GET /banner/ HTTP/1.1" 200 666
+INFO 2021-11-30 22:13:34,967 basehttp log_message 25314 140577555420928 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:13:34,974 basehttp log_message 25314 140577555420928 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:13:37,223 basehttp log_message 25314 140577528932096 "GET /courses/directions/ HTTP/1.1" 200 409
+ERROR 2021-11-30 22:13:38,839 log log_response 25314 140577545979648 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 170, in discount
+    print(f"{type_text}-{sale}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:13:38,840 log log_response 25314 140577537324800 Internal Server Error: /courses/categories/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py", line 32, in get_queryset
+    print(self.kwargs)  # 获取路由中声明的路径参数
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:13:38,844 basehttp log_message 25314 140577545979648 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 500 157417
+ERROR 2021-11-30 22:13:38,849 basehttp log_message 25314 140577537324800 "GET /courses/categories/0/ HTTP/1.1" 500 112530
+INFO 2021-11-30 22:13:48,619 basehttp log_message 25314 140577537324800 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-30 22:13:49,129 basehttp log_message 25314 140577537324800 "POST /users/login/ HTTP/1.1" 200 362
+INFO 2021-11-30 22:13:56,645 basehttp log_message 25314 140577555420928 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:13:56,684 basehttp log_message 25314 140577537324800 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 22:13:56,698 basehttp log_message 25314 140577272362752 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:13:56,782 log log_response 25314 140577545979648 Internal Server Error: /courses/categories/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py", line 32, in get_queryset
+    print(self.kwargs)  # 获取路由中声明的路径参数
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:13:56,788 basehttp log_message 25314 140577545979648 "GET /courses/categories/0/ HTTP/1.1" 500 112530
+ERROR 2021-11-30 22:13:56,993 log log_response 25314 140577528932096 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 170, in discount
+    print(f"{type_text}-{sale}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:13:56,995 basehttp log_message 25314 140577528932096 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 500 157418
+INFO 2021-11-30 22:14:44,651 basehttp log_message 25314 140577528932096 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 22:14:44,662 basehttp log_message 25314 140577537324800 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:14:44,713 basehttp log_message 25314 140577537324800 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:14:44,787 log log_response 25314 140577545979648 Internal Server Error: /courses/categories/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py", line 32, in get_queryset
+    print(self.kwargs)  # 获取路由中声明的路径参数
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:14:44,803 basehttp log_message 25314 140577545979648 "GET /courses/categories/0/ HTTP/1.1" 500 112530
+ERROR 2021-11-30 22:14:44,912 log log_response 25314 140577272362752 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 170, in discount
+    print(f"{type_text}-{sale}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:14:44,915 basehttp log_message 25314 140577272362752 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 500 157418
+INFO 2021-11-30 22:14:49,706 basehttp log_message 25314 140577537324800 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:14:49,716 basehttp log_message 25314 140577537324800 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:14:49,750 log log_response 25314 140577272362752 Internal Server Error: /courses/categories/4/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py", line 32, in get_queryset
+    print(self.kwargs)  # 获取路由中声明的路径参数
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:14:49,752 basehttp log_message 25314 140577272362752 "GET /courses/categories/4/ HTTP/1.1" 500 112530
+INFO 2021-11-30 22:14:49,805 basehttp log_message 25314 140577545979648 "GET /courses/4/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 367
+INFO 2021-11-30 22:14:49,864 basehttp log_message 25314 140577545979648 "GET /courses/4/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 367
+INFO 2021-11-30 22:14:52,913 basehttp log_message 25314 140577272362752 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:14:52,982 log log_response 25314 140577545979648 Internal Server Error: /courses/categories/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py", line 32, in get_queryset
+    print(self.kwargs)  # 获取路由中声明的路径参数
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:14:52,989 basehttp log_message 25314 140577545979648 "GET /courses/categories/0/ HTTP/1.1" 500 112530
+INFO 2021-11-30 22:14:53,016 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1662
+INFO 2021-11-30 22:15:03,640 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:15:03,776 log log_response 25314 140577537324800 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 170, in discount
+    print(f"{type_text}-{sale}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:15:03,778 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=2&size=5&ordering=-id HTTP/1.1" 500 157759
+INFO 2021-11-30 22:15:04,419 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:15:04,451 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1732
+INFO 2021-11-30 22:15:06,508 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:15:06,623 log log_response 25314 140577537324800 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 170, in discount
+    print(f"{type_text}-{sale}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:15:06,625 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=4&size=5&ordering=-id HTTP/1.1" 500 157788
+INFO 2021-11-30 22:15:07,971 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:15:08,018 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1662
+INFO 2021-11-30 22:15:17,680 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:15:17,826 log log_response 25314 140577537324800 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 170, in discount
+    print(f"{type_text}-{sale}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:15:17,827 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=1&size=5&ordering=-students HTTP/1.1" 500 158034
+INFO 2021-11-30 22:15:19,770 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:15:19,888 log log_response 25314 140577537324800 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 170, in discount
+    print(f"{type_text}-{sale}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:15:19,889 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=1&size=5&ordering=-orders HTTP/1.1" 500 157952
+INFO 2021-11-30 22:15:20,777 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:15:20,817 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1662
+INFO 2021-11-30 22:15:22,936 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:15:23,035 log log_response 25314 140577537324800 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 170, in discount
+    print(f"{type_text}-{sale}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:15:23,037 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=2&size=5&ordering=-id HTTP/1.1" 500 157760
+INFO 2021-11-30 22:15:25,410 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:15:25,505 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1732
+INFO 2021-11-30 22:15:26,732 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+ERROR 2021-11-30 22:15:26,844 log log_response 25314 140577537324800 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 170, in discount
+    print(f"{type_text}-{sale}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:15:26,845 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=4&size=5&ordering=-id HTTP/1.1" 500 157789
+INFO 2021-11-30 22:15:28,186 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:28,201 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:28,202 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=5&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:29,291 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:29,304 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:29,305 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=6&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:30,114 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:30,140 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:30,141 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=7&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:30,731 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:30,742 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:30,742 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=8&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:31,198 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:31,222 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:31,223 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=9&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:31,425 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:31,446 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:31,447 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=10&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:31,704 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:31,721 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:31,722 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=11&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:31,922 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:31,960 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:31,960 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=12&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:32,130 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:32,139 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:32,140 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=13&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:32,356 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:32,368 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:32,368 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=14&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:32,603 basehttp log_message 25314 140577545979648 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-11-30 22:15:32,612 log log_response 25314 140577537324800 Not Found: /courses/0/0/
+WARNING 2021-11-30 22:15:32,613 basehttp log_message 25314 140577537324800 "GET /courses/0/0/?page=15&size=5&ordering=-id HTTP/1.1" 404 28
+INFO 2021-11-30 22:15:41,132 basehttp log_message 25314 140577537324800 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2021-11-30 22:15:41,216 log log_response 25314 140577537324800 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 20, in add_cart
+    print(f"user_id={user_id}, course_id={course_id}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:15:41,217 basehttp log_message 25314 140577537324800 "POST /cart/ HTTP/1.1" 500 105251
+ERROR 2021-11-30 22:15:43,625 log log_response 25314 140577537324800 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 20, in add_cart
+    print(f"user_id={user_id}, course_id={course_id}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:15:43,626 basehttp log_message 25314 140577537324800 "POST /cart/ HTTP/1.1" 500 105251
+ERROR 2021-11-30 22:15:45,590 log log_response 25314 140577537324800 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 20, in add_cart
+    print(f"user_id={user_id}, course_id={course_id}")
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR 2021-11-30 22:15:45,591 basehttp log_message 25314 140577537324800 "POST /cart/ HTTP/1.1" 500 105251
+INFO 2021-11-30 22:16:01,841 autoreload run_with_reloader 26813 140539574862208 Watching for file changes with StatReloader
+INFO 2021-11-30 22:28:44,984 autoreload run_with_reloader 4033 140393174385024 Watching for file changes with StatReloader
+INFO 2021-11-30 22:29:20,302 basehttp log_message 4033 140392971626240 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:29:20,323 basehttp log_message 4033 140392971626240 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 22:29:20,380 basehttp log_message 4033 140392988673792 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-30 22:29:20,381 basehttp log_message 4033 140392997066496 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 22:29:21,263 basehttp log_message 4033 140392980281088 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-11-30 22:29:27,266 basehttp log_message 4033 140392980281088 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2021-11-30 22:29:27,272 log log_response 4033 140392980281088 Unauthorized: /cart/
+WARNING 2021-11-30 22:29:27,273 basehttp log_message 4033 140392980281088 "POST /cart/ HTTP/1.1" 401 38
+INFO 2021-11-30 22:29:41,022 basehttp log_message 4033 140392980281088 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-30 22:29:41,516 basehttp log_message 4033 140392980281088 "POST /users/login/ HTTP/1.1" 200 362
+INFO 2021-11-30 22:29:44,307 basehttp log_message 4033 140392980281088 "POST /cart/ HTTP/1.1" 200 100
+INFO 2021-11-30 22:29:47,263 basehttp log_message 4033 140392980281088 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 22:29:48,956 basehttp log_message 4033 140392980281088 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 22:29:50,009 basehttp log_message 4033 140392980281088 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 22:29:52,778 basehttp log_message 4033 140392980281088 "GET /cart/ HTTP/1.1" 200 1084
+INFO 2021-11-30 22:29:56,033 basehttp log_message 4033 140392980281088 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-11-30 22:29:56,038 basehttp log_message 4033 140392997066496 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-11-30 22:29:56,190 basehttp log_message 4033 140392997066496 "GET /cart/select/ HTTP/1.1" 200 1018
+INFO 2021-11-30 22:29:56,199 basehttp log_message 4033 140392980281088 "GET /coupon/user/ HTTP/1.1" 200 1958
+INFO 2021-11-30 22:30:12,999 basehttp log_message 4033 140392980281088 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2021-11-30 22:30:13,164 basehttp log_message 4033 140392980281088 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-11-30 22:30:13,249 basehttp log_message 4033 140392980281088 "GET /payments/alipay/202111300000000100000036 HTTP/1.1" 301 0
+INFO 2021-11-30 22:30:13,551 basehttp log_message 4033 140392980281088 "GET /payments/alipay/202111300000000100000036/ HTTP/1.1" 200 930
+INFO 2021-11-30 22:31:33,978 autoreload trigger_reload 4033 140393174385024 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-11-30 22:31:35,655 autoreload run_with_reloader 4742 140329489576320 Watching for file changes with StatReloader
+INFO 2021-11-30 23:00:25,629 autoreload trigger_reload 4742 140329489576320 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py changed, reloading.
+INFO 2021-11-30 23:00:27,163 autoreload run_with_reloader 4951 140458553663872 Watching for file changes with StatReloader
+INFO 2021-11-30 23:27:17,574 autoreload trigger_reload 4951 140458553663872 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-11-30 23:27:19,478 autoreload run_with_reloader 5166 140640604250496 Watching for file changes with StatReloader
+INFO 2021-11-30 23:31:35,924 autoreload trigger_reload 5166 140640604250496 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py changed, reloading.
+INFO 2021-11-30 23:31:37,730 autoreload run_with_reloader 5207 140648907305344 Watching for file changes with StatReloader
+INFO 2021-11-30 23:48:05,124 autoreload trigger_reload 5207 140648907305344 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/models.py changed, reloading.
+INFO 2021-11-30 23:48:07,058 autoreload run_with_reloader 5368 139831444775296 Watching for file changes with StatReloader
+WARNING 2021-11-30 23:48:10,514 log log_response 5368 139831326967552 Unauthorized: /coupon/user/
+WARNING 2021-11-30 23:48:10,518 basehttp log_message 5368 139831326967552 "GET /coupon/user/ HTTP/1.1" 401 38
+WARNING 2021-11-30 23:48:10,515 log log_response 5368 139831335360256 Unauthorized: /cart/select/
+WARNING 2021-11-30 23:48:10,526 basehttp log_message 5368 139831335360256 "GET /cart/select/ HTTP/1.1" 401 38
+INFO 2021-11-30 23:48:26,791 basehttp log_message 5368 139831335360256 "POST /users/login/ HTTP/1.1" 200 362
+INFO 2021-11-30 23:48:31,036 basehttp log_message 5368 139831335360256 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 23:48:31,045 basehttp log_message 5368 139831062595328 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 23:48:31,058 basehttp log_message 5368 139831062595328 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 23:48:31,072 basehttp log_message 5368 139831326967552 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-30 23:48:31,145 basehttp log_message 5368 139831070988032 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-11-30 23:48:33,782 basehttp log_message 5368 139831070988032 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 23:48:38,164 basehttp log_message 5368 139831070988032 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 23:48:41,530 basehttp log_message 5368 139831070988032 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 23:48:43,864 basehttp log_message 5368 139831070988032 "GET /cart/ HTTP/1.1" 200 834
+INFO 2021-11-30 23:48:48,824 basehttp log_message 5368 139831326967552 "GET /coupon/user/ HTTP/1.1" 200 1501
+INFO 2021-11-30 23:48:48,827 basehttp log_message 5368 139831070988032 "GET /cart/select/ HTTP/1.1" 200 786
+INFO 2021-11-30 23:48:58,993 basehttp log_message 5368 139831326967552 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-11-30 23:48:59,012 basehttp log_message 5368 139831326967552 "GET /payments/alipay/202111300000000100000037 HTTP/1.1" 301 0
+INFO 2021-11-30 23:48:59,425 basehttp log_message 5368 139831326967552 "GET /payments/alipay/202111300000000100000037/ HTTP/1.1" 200 942
+INFO 2021-11-30 23:53:40,797 autoreload trigger_reload 5368 139831444775296 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py changed, reloading.
+INFO 2021-11-30 23:53:42,250 autoreload run_with_reloader 5641 140606710772096 Watching for file changes with StatReloader
+INFO 2021-11-30 23:53:46,217 basehttp log_message 5641 140606534248192 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-11-30 23:53:46,227 basehttp log_message 5641 140606525855488 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-11-30 23:53:48,879 basehttp log_message 5641 140606525855488 "GET /cart/ HTTP/1.1" 204 43
+INFO 2021-11-30 23:53:50,254 basehttp log_message 5641 140606525855488 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-11-30 23:53:50,254 basehttp log_message 5641 140606507235072 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 23:53:50,289 basehttp log_message 5641 140606507235072 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-11-30 23:53:50,292 basehttp log_message 5641 140606534248192 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-11-30 23:53:50,911 basehttp log_message 5641 140606515627776 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-11-30 23:53:53,306 basehttp log_message 5641 140606515627776 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 23:53:58,951 basehttp log_message 5641 140606515627776 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 23:54:00,086 basehttp log_message 5641 140606515627776 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-11-30 23:54:01,537 basehttp log_message 5641 140606515627776 "GET /cart/ HTTP/1.1" 200 841
+INFO 2021-11-30 23:54:06,929 basehttp log_message 5641 140606507235072 "GET /coupon/user/ HTTP/1.1" 200 1499
+INFO 2021-11-30 23:54:06,933 basehttp log_message 5641 140606515627776 "GET /cart/select/ HTTP/1.1" 200 794
+INFO 2021-11-30 23:54:17,726 basehttp log_message 5641 140606515627776 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-11-30 23:54:17,739 basehttp log_message 5641 140606515627776 "GET /payments/alipay/202111300000000100000038 HTTP/1.1" 301 0
+INFO 2021-11-30 23:54:18,189 basehttp log_message 5641 140606515627776 "GET /payments/alipay/202111300000000100000038/ HTTP/1.1" 200 950
+INFO 2021-11-30 23:54:28,067 autoreload trigger_reload 5641 140606710772096 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py changed, reloading.
+INFO 2021-11-30 23:54:29,467 autoreload run_with_reloader 5861 140368359285120 Watching for file changes with StatReloader
+INFO 2021-11-30 23:55:28,817 basehttp log_message 5861 140368182736640 "GET /admin/ HTTP/1.1" 200 22580
+INFO 2021-11-30 23:55:28,919 basehttp log_message 5861 140368182736640 "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:28,942 basehttp log_message 5861 140368182736640 "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:28,949 basehttp log_message 5861 140368174343936 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:28,960 basehttp log_message 5861 140368154937088 "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:28,965 basehttp log_message 5861 140368163329792 "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:28,966 basehttp log_message 5861 140368146544384 "GET /static/admin/simpleui-x/elementui/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,007 basehttp log_message 5861 140368146544384 "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,019 basehttp log_message 5861 140368146544384 "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,044 basehttp log_message 5861 140368163329792 "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,046 basehttp log_message 5861 140368146544384 "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,056 basehttp log_message 5861 140368163329792 "GET /static/admin/simpleui-x/js/cookie.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,091 basehttp log_message 5861 140368174343936 "GET /static/admin/simpleui-x/js/menu.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,096 basehttp log_message 5861 140368154937088 "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,097 basehttp log_message 5861 140368163329792 "GET /static/admin/simpleui-x/theme/theme.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,114 basehttp log_message 5861 140368163329792 "GET /static/admin/simpleui-x/js/index.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,838 basehttp log_message 5861 140368154937088 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,839 basehttp log_message 5861 140368146544384 "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,839 basehttp log_message 5861 140368163329792 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:29,842 basehttp log_message 5861 140368174343936 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 304 0
+WARNING 2021-11-30 23:55:30,400 log log_response 5861 140368174343936 Not Found: /favicon.ico
+WARNING 2021-11-30 23:55:30,402 basehttp log_message 5861 140368174343936 "GET /favicon.ico HTTP/1.1" 404 3692
+INFO 2021-11-30 23:55:32,694 basehttp log_message 5861 140368174343936 "GET /admin/orders/order/ HTTP/1.1" 200 38292
+INFO 2021-11-30 23:55:32,752 basehttp log_message 5861 140368174343936 "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:32,762 basehttp log_message 5861 140368174343936 "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:32,774 basehttp log_message 5861 140368174343936 "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:32,778 basehttp log_message 5861 140368174343936 "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:32,783 basehttp log_message 5861 140368146544384 "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:32,798 basehttp log_message 5861 140368146544384 "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:32,874 basehttp log_message 5861 140368163329792 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-11-30 23:55:32,906 basehttp log_message 5861 140368146544384 "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:32,909 basehttp log_message 5861 140368163329792 "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:32,914 basehttp log_message 5861 140368163329792 "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 304 0
+INFO 2021-11-30 23:55:46,631 basehttp log_message 5861 140368163329792 "GET /admin/orders/order/38/change/ HTTP/1.1" 200 108863
+INFO 2021-11-30 23:55:46,693 basehttp log_message 5861 140368163329792 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-01 00:00:56,044 autoreload trigger_reload 5861 140368359285120 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-12-01 00:00:57,974 autoreload run_with_reloader 6034 139640572506496 Watching for file changes with StatReloader
+INFO 2021-12-01 00:01:01,279 basehttp log_message 6034 139640392644352 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-01 00:01:01,280 basehttp log_message 6034 139640384251648 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-01 00:01:02,123 basehttp log_message 6034 139640384251648 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 00:01:02,142 basehttp log_message 6034 139640392644352 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 00:01:02,167 basehttp log_message 6034 139640392644352 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:01:02,187 basehttp log_message 6034 139640392644352 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:01:03,757 basehttp log_message 6034 139640375858944 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-01 00:01:05,191 basehttp log_message 6034 139640375858944 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:01:07,891 basehttp log_message 6034 139640375858944 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:01:09,768 basehttp log_message 6034 139640375858944 "GET /cart/ HTTP/1.1" 200 554
+INFO 2021-12-01 00:01:13,025 basehttp log_message 6034 139640375858944 "GET /cart/select/ HTTP/1.1" 200 521
+INFO 2021-12-01 00:01:13,041 basehttp log_message 6034 139640392644352 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:01:38,038 basehttp log_message 6034 139640392644352 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-01 00:01:38,048 basehttp log_message 6034 139640392644352 "GET /payments/alipay/202112010000000100000039 HTTP/1.1" 301 0
+INFO 2021-12-01 00:01:38,409 basehttp log_message 6034 139640392644352 "GET /payments/alipay/202112010000000100000039/ HTTP/1.1" 200 945
+INFO 2021-12-01 00:04:04,106 autoreload trigger_reload 6034 139640572506496 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-12-01 00:04:05,450 autoreload run_with_reloader 6239 140261155701120 Watching for file changes with StatReloader
+INFO 2021-12-01 00:04:07,909 basehttp log_message 6239 140260970755840 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 00:04:07,911 basehttp log_message 6239 140260979148544 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 00:04:07,987 basehttp log_message 6239 140260746983168 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:04:08,006 basehttp log_message 6239 140260979148544 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:04:08,521 basehttp log_message 6239 140260962363136 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1806
+INFO 2021-12-01 00:04:09,086 basehttp log_message 6239 140260962363136 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:04:10,520 basehttp log_message 6239 140260962363136 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:04:11,521 basehttp log_message 6239 140260962363136 "GET /cart/ HTTP/1.1" 200 554
+INFO 2021-12-01 00:04:13,776 basehttp log_message 6239 140260979148544 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:04:13,778 basehttp log_message 6239 140260962363136 "GET /cart/select/ HTTP/1.1" 200 522
+INFO 2021-12-01 00:04:24,493 basehttp log_message 6239 140260962363136 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-01 00:04:24,510 basehttp log_message 6239 140260962363136 "GET /payments/alipay/202112010000000100000040 HTTP/1.1" 301 0
+INFO 2021-12-01 00:04:25,619 basehttp log_message 6239 140260962363136 "GET /payments/alipay/202112010000000100000040/ HTTP/1.1" 200 937
+INFO 2021-12-01 00:09:21,003 autoreload run_with_reloader 6473 139867375559040 Watching for file changes with StatReloader
+INFO 2021-12-01 00:09:27,567 basehttp log_message 6473 139867198990080 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-01 00:09:27,578 basehttp handle_error 6473 139867198990080 - Broken pipe from ('127.0.0.1', 49470)
+
+INFO 2021-12-01 00:09:27,617 basehttp log_message 6473 139867190597376 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-01 00:09:29,482 basehttp log_message 6473 139867190597376 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 00:09:29,519 basehttp log_message 6473 139867198990080 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 00:09:29,530 basehttp log_message 6473 139867190597376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:09:29,546 basehttp log_message 6473 139867190597376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:09:30,097 basehttp log_message 6473 139867180107520 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-01 00:09:33,038 basehttp log_message 6473 139867180107520 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:09:34,196 basehttp log_message 6473 139867180107520 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:09:35,623 basehttp log_message 6473 139867180107520 "GET /cart/ HTTP/1.1" 200 553
+INFO 2021-12-01 00:09:39,117 basehttp log_message 6473 139867190597376 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:09:39,125 basehttp log_message 6473 139867180107520 "GET /cart/select/ HTTP/1.1" 200 521
+INFO 2021-12-01 00:09:50,782 basehttp log_message 6473 139867190597376 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-01 00:09:50,797 basehttp log_message 6473 139867190597376 "GET /payments/alipay/202112010000000100000041 HTTP/1.1" 301 0
+INFO 2021-12-01 00:09:51,162 basehttp log_message 6473 139867190597376 "GET /payments/alipay/202112010000000100000041/ HTTP/1.1" 200 941
+INFO 2021-12-01 00:13:26,389 autoreload trigger_reload 6473 139867375559040 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-12-01 00:13:27,433 autoreload run_with_reloader 6742 140375398134144 Watching for file changes with StatReloader
+INFO 2021-12-01 00:14:13,502 basehttp log_message 6742 140375196153600 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:14:13,516 basehttp log_message 6742 140375196153600 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:14:13,518 basehttp log_message 6742 140375213201152 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 00:14:13,538 basehttp log_message 6742 140375221593856 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 00:14:14,037 basehttp log_message 6742 140375204808448 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1781
+INFO 2021-12-01 00:14:14,747 basehttp log_message 6742 140375204808448 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:14:15,968 basehttp log_message 6742 140375204808448 "POST /cart/ HTTP/1.1" 201 67
+ERROR 2021-12-01 00:14:31,434 log log_response 6742 140375204808448 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 106, in list
+    "discount": course.discount,  # 优惠信息
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 188, in discount
+    print("zhekoujiage",data["price"])
+KeyError: 'price'
+ERROR 2021-12-01 00:14:31,438 basehttp log_message 6742 140375204808448 "GET /cart/ HTTP/1.1" 500 111177
+ERROR 2021-12-01 00:14:40,978 log log_response 6742 140375204808448 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 106, in list
+    "discount": course.discount,  # 优惠信息
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 188, in discount
+    print("zhekoujiage",data["price"])
+KeyError: 'price'
+ERROR 2021-12-01 00:14:40,979 basehttp log_message 6742 140375204808448 "GET /cart/ HTTP/1.1" 500 111177
+INFO 2021-12-01 00:14:59,922 autoreload run_with_reloader 6847 140656660197760 Watching for file changes with StatReloader
+INFO 2021-12-01 00:15:13,398 basehttp log_message 6847 140656483661568 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-12-01 00:15:13,434 basehttp log_message 6847 140656466614016 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 00:15:13,438 basehttp log_message 6847 140656475268864 "GET /nav/header/ HTTP/1.1" 200 292
+ERROR 2021-12-01 00:15:14,930 log log_response 6847 140656483661568 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 106, in list
+    "discount": course.discount,  # 优惠信息
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 188, in discount
+    print("zhekoujiage",data["price"])
+KeyError: 'price'
+ERROR 2021-12-01 00:15:14,935 basehttp log_message 6847 140656483661568 "GET /cart/ HTTP/1.1" 500 111442
+INFO 2021-12-01 00:15:36,490 basehttp log_message 6847 140656483661568 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-12-01 00:15:36,966 basehttp log_message 6847 140656483661568 "POST /users/login/ HTTP/1.1" 200 362
+INFO 2021-12-01 00:17:53,504 autoreload trigger_reload 6847 140656660197760 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-12-01 00:17:55,434 autoreload run_with_reloader 6897 140024631718272 Watching for file changes with StatReloader
+INFO 2021-12-01 00:17:57,328 basehttp log_message 6897 140024455886592 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-12-01 00:17:57,349 basehttp log_message 6897 140024447231744 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 00:17:57,358 basehttp log_message 6897 140024438839040 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 00:17:58,896 basehttp log_message 6897 140024455886592 "GET /cart/ HTTP/1.1" 200 554
+INFO 2021-12-01 00:18:10,242 basehttp log_message 6897 140024455886592 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-12-01 00:18:10,249 basehttp log_message 6897 140024438839040 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-12-01 00:18:10,303 basehttp log_message 6897 140024438839040 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 00:18:10,312 basehttp log_message 6897 140024455886592 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 00:18:10,398 basehttp log_message 6897 140024447231744 "GET /cart/select/ HTTP/1.1" 200 521
+INFO 2021-12-01 00:18:10,422 basehttp log_message 6897 140024182425344 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:19:35,033 autoreload trigger_reload 6897 140024631718272 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-12-01 00:19:36,471 autoreload run_with_reloader 6958 139753794220416 Watching for file changes with StatReloader
+INFO 2021-12-01 00:19:44,234 basehttp log_message 6958 139753605297920 "GET /coupon/user/ HTTP/1.1" 200 1495
+ERROR 2021-12-01 00:19:44,914 log log_response 6958 139753684805376 Internal Server Error: /cart/select/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py", line 198, in cart_select_list
+    "discount": course.discount,
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py", line 188, in discount
+    print(">>>>>",data["price"])
+KeyError: 'price'
+ERROR 2021-12-01 00:19:44,932 basehttp log_message 6958 139753684805376 "GET /cart/select/ HTTP/1.1" 500 110959
+INFO 2021-12-01 00:21:46,076 autoreload run_with_reloader 7033 139945970528640 Watching for file changes with StatReloader
+INFO 2021-12-01 00:21:54,193 basehttp log_message 7033 139945768007424 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:21:54,213 basehttp log_message 7033 139945768007424 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:21:54,225 basehttp log_message 7033 139945785579264 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 00:21:54,226 basehttp log_message 7033 139945793971968 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 00:21:54,674 basehttp log_message 7033 139945777186560 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-01 00:22:01,741 basehttp log_message 7033 139945777186560 "GET /cart/ HTTP/1.1" 200 553
+INFO 2021-12-01 00:22:05,719 basehttp log_message 7033 139945785579264 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:22:05,720 basehttp log_message 7033 139945777186560 "GET /cart/select/ HTTP/1.1" 200 521
+INFO 2021-12-01 00:27:08,279 autoreload trigger_reload 7033 139945970528640 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-12-01 00:27:10,173 autoreload run_with_reloader 7119 139921275675008 Watching for file changes with StatReloader
+INFO 2021-12-01 00:27:36,701 basehttp log_message 7119 139921090635520 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:27:37,415 basehttp log_message 7119 139921099028224 "GET /cart/select/ HTTP/1.1" 200 521
+INFO 2021-12-01 00:27:59,595 autoreload trigger_reload 7119 139921275675008 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-12-01 00:28:00,855 autoreload run_with_reloader 7211 140454157549952 Watching for file changes with StatReloader
+INFO 2021-12-01 00:28:02,384 basehttp log_message 7211 140454041052928 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:28:02,904 basehttp log_message 7211 140454049445632 "GET /cart/select/ HTTP/1.1" 200 521
+INFO 2021-12-01 00:29:07,684 autoreload trigger_reload 7211 140454157549952 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/models.py changed, reloading.
+INFO 2021-12-01 00:29:09,319 autoreload run_with_reloader 7266 140216423129472 Watching for file changes with StatReloader
+INFO 2021-12-01 00:29:24,689 basehttp log_message 7266 140216238044928 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:29:25,119 basehttp log_message 7266 140216246437632 "GET /cart/select/ HTTP/1.1" 200 521
+INFO 2021-12-01 00:31:34,376 basehttp log_message 7266 140216246437632 "GET /cart/ HTTP/1.1" 200 554
+INFO 2021-12-01 00:31:37,612 basehttp log_message 7266 140216246437632 "OPTIONS /cart/?course_id=5 HTTP/1.1" 200 0
+INFO 2021-12-01 00:31:37,634 basehttp log_message 7266 140216246437632 "DELETE /cart/?course_id=5 HTTP/1.1" 204 0
+INFO 2021-12-01 00:31:39,444 basehttp log_message 7266 140216238044928 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:31:39,459 basehttp log_message 7266 140216246437632 "GET /cart/select/ HTTP/1.1" 200 307
+INFO 2021-12-01 00:32:35,584 basehttp log_message 7266 140216246437632 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2021-12-01 00:32:35,663 basehttp log_message 7266 140216246437632 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-01 00:32:35,706 basehttp log_message 7266 140216246437632 "GET /payments/alipay/202112010000000100000042 HTTP/1.1" 301 0
+INFO 2021-12-01 00:32:36,582 basehttp log_message 7266 140216246437632 "GET /payments/alipay/202112010000000100000042/ HTTP/1.1" 200 937
+INFO 2021-12-01 00:40:35,081 autoreload trigger_reload 7266 140216423129472 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-12-01 00:40:36,474 autoreload run_with_reloader 7602 140462918730112 Watching for file changes with StatReloader
+INFO 2021-12-01 00:40:37,921 basehttp log_message 7602 140462742828800 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 00:40:37,945 basehttp log_message 7602 140462734436096 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 00:40:37,981 basehttp log_message 7602 140462717126400 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:40:37,986 basehttp log_message 7602 140462734436096 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:40:38,608 basehttp log_message 7602 140462726043392 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-01 00:40:41,406 basehttp log_message 7602 140462726043392 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:40:42,730 basehttp log_message 7602 140462726043392 "GET /cart/ HTTP/1.1" 200 322
+INFO 2021-12-01 00:40:44,944 basehttp log_message 7602 140462726043392 "GET /cart/select/ HTTP/1.1" 200 306
+INFO 2021-12-01 00:40:44,953 basehttp log_message 7602 140462734436096 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:40:47,167 basehttp log_message 7602 140462734436096 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-01 00:40:47,182 basehttp log_message 7602 140462734436096 "GET /payments/alipay/202112010000000100000043 HTTP/1.1" 301 0
+INFO 2021-12-01 00:40:47,549 basehttp log_message 7602 140462734436096 "GET /payments/alipay/202112010000000100000043/ HTTP/1.1" 200 939
+INFO 2021-12-01 00:41:12,320 basehttp log_message 7602 140462734436096 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 00:41:12,329 basehttp log_message 7602 140462742828800 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:41:12,338 basehttp log_message 7602 140462726043392 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 00:41:12,341 basehttp log_message 7602 140462424061696 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 00:41:12,431 basehttp log_message 7602 140462717126400 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-12-01 00:41:14,198 basehttp log_message 7602 140462717126400 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:41:17,016 basehttp log_message 7602 140462717126400 "GET /courses/1/ HTTP/1.1" 200 1871
+INFO 2021-12-01 00:41:20,201 basehttp log_message 7602 140462717126400 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 00:41:21,188 basehttp log_message 7602 140462717126400 "GET /cart/ HTTP/1.1" 200 553
+INFO 2021-12-01 00:41:22,438 basehttp log_message 7602 140462717126400 "GET /cart/select/ HTTP/1.1" 200 522
+INFO 2021-12-01 00:41:22,446 basehttp log_message 7602 140462424061696 "GET /coupon/user/ HTTP/1.1" 200 1495
+INFO 2021-12-01 00:41:28,133 basehttp log_message 7602 140462424061696 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-01 00:41:28,144 basehttp log_message 7602 140462424061696 "GET /payments/alipay/202112010000000100000044 HTTP/1.1" 301 0
+INFO 2021-12-01 00:41:28,241 basehttp log_message 7602 140462424061696 "GET /payments/alipay/202112010000000100000044/ HTTP/1.1" 200 931
+INFO 2021-12-01 00:44:15,769 autoreload trigger_reload 7602 140462918730112 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-12-01 00:44:17,291 autoreload run_with_reloader 7695 140406616846720 Watching for file changes with StatReloader
+INFO 2021-12-01 08:43:59,308 autoreload run_with_reloader 4049 139725110190464 Watching for file changes with StatReloader
+INFO 2021-12-01 09:07:24,816 autoreload trigger_reload 4049 139725110190464 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/orders/serializers.py changed, reloading.
+INFO 2021-12-01 09:07:26,179 autoreload run_with_reloader 4461 139996207333760 Watching for file changes with StatReloader
+INFO 2021-12-01 09:41:56,419 autoreload trigger_reload 4461 139996207333760 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/models.py changed, reloading.
+INFO 2021-12-01 09:41:58,291 autoreload run_with_reloader 4778 140479166718336 Watching for file changes with StatReloader
+INFO 2021-12-01 10:12:06,145 autoreload trigger_reload 4778 140479166718336 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py changed, reloading.
+INFO 2021-12-01 10:12:07,187 autoreload run_with_reloader 4961 140545910710656 Watching for file changes with StatReloader
+INFO 2021-12-01 14:34:22,902 autoreload trigger_reload 4961 140545910710656 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-01 14:34:24,991 autoreload run_with_reloader 6184 140544283439488 Watching for file changes with StatReloader
+INFO 2021-12-01 14:59:53,731 autoreload trigger_reload 6184 140544283439488 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-01 14:59:55,176 autoreload run_with_reloader 6704 139675501494656 Watching for file changes with StatReloader
+INFO 2021-12-01 15:01:45,258 basehttp log_message 6704 139675324897024 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-12-01 15:01:47,355 basehttp log_message 6704 139675324897024 "POST /users/login/ HTTP/1.1" 200 362
+INFO 2021-12-01 15:01:51,017 basehttp log_message 6704 139675186398976 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 15:01:51,025 basehttp log_message 6704 139675186398976 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 15:01:51,078 basehttp log_message 6704 139675203446528 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 15:01:51,083 basehttp log_message 6704 139675324897024 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 15:01:51,337 basehttp log_message 6704 139675195053824 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-01 15:02:01,278 basehttp log_message 6704 139675195053824 "GET /courses/1/ HTTP/1.1" 200 1870
+INFO 2021-12-01 15:02:05,668 basehttp log_message 6704 139675195053824 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 15:02:05,730 basehttp log_message 6704 139675195053824 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 15:02:05,740 basehttp log_message 6704 139675324897024 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 15:02:05,757 basehttp log_message 6704 139675195053824 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 15:02:05,823 basehttp log_message 6704 139675203446528 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-01 15:02:07,812 basehttp log_message 6704 139675203446528 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-12-01 15:02:07,832 basehttp log_message 6704 139675203446528 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 15:02:09,792 basehttp log_message 6704 139675203446528 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 15:02:14,993 basehttp log_message 6704 139675203446528 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 15:02:16,913 basehttp log_message 6704 139675203446528 "GET /cart/ HTTP/1.1" 200 842
+INFO 2021-12-01 15:02:22,779 basehttp log_message 6704 139675195053824 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-12-01 15:02:22,779 basehttp log_message 6704 139675203446528 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-12-01 15:02:22,896 basehttp log_message 6704 139675203446528 "GET /coupon/user/ HTTP/1.1" 200 1499
+INFO 2021-12-01 15:02:22,908 basehttp log_message 6704 139675195053824 "GET /cart/select/ HTTP/1.1" 200 793
+INFO 2021-12-01 15:02:32,798 basehttp log_message 6704 139675195053824 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2021-12-01 15:02:33,043 basehttp log_message 6704 139675195053824 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-01 15:02:33,054 basehttp log_message 6704 139675195053824 "GET /payments/alipay/202112010000000100000045 HTTP/1.1" 301 0
+INFO 2021-12-01 15:02:33,917 basehttp log_message 6704 139675195053824 "GET /payments/alipay/202112010000000100000045/ HTTP/1.1" 200 936
+INFO 2021-12-01 15:09:40,149 basehttp log_message 6704 139675195053824 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-12-01 15:09:40,160 basehttp log_message 6704 139675324897024 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-12-01 15:09:40,234 basehttp log_message 6704 139675203446528 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 15:09:40,242 basehttp log_message 6704 139675195053824 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 15:09:40,266 basehttp log_message 6704 139675324897024 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-01 15:09:40,270 basehttp handle_error 6704 139675324897024 - Broken pipe from ('127.0.0.1', 57482)
+
+INFO 2021-12-01 15:09:40,279 basehttp log_message 6704 139675186398976 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-01 15:46:45,535 autoreload trigger_reload 6704 139675501494656 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/urls.py changed, reloading.
+INFO 2021-12-01 15:46:47,458 autoreload run_with_reloader 7562 139999235514752 Watching for file changes with StatReloader
+INFO 2021-12-01 15:46:57,136 basehttp log_message 7562 139999058949888 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-12-01 15:46:57,168 basehttp log_message 7562 139999050557184 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-12-01 15:46:57,186 basehttp log_message 7562 139999033771776 "GET /nav/footer/ HTTP/1.1" 200 386
+WARNING 2021-12-01 15:46:57,194 log log_response 7562 139999058949888 Unauthorized: /cart/select/
+WARNING 2021-12-01 15:46:57,196 basehttp log_message 7562 139999058949888 "GET /cart/select/ HTTP/1.1" 401 35
+INFO 2021-12-01 15:46:57,199 basehttp log_message 7562 139999042164480 "GET /nav/header/ HTTP/1.1" 200 292
+WARNING 2021-12-01 15:46:57,201 log log_response 7562 139999050557184 Unauthorized: /coupon/user/
+WARNING 2021-12-01 15:46:57,202 basehttp log_message 7562 139999050557184 "GET /coupon/user/ HTTP/1.1" 401 35
+INFO 2021-12-01 16:04:27,306 autoreload trigger_reload 7562 139999235514752 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/models.py changed, reloading.
+INFO 2021-12-01 16:04:29,919 autoreload run_with_reloader 8042 140199209406848 Watching for file changes with StatReloader
+INFO 2021-12-01 16:30:17,228 autoreload run_with_reloader 8670 140329900278144 Watching for file changes with StatReloader
+INFO 2021-12-01 16:43:51,078 basehttp log_message 8670 140329723471616 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:43:51,081 basehttp log_message 8670 140329715078912 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+WARNING 2021-12-01 16:43:51,139 log log_response 8670 140329723471616 Unauthorized: /coupon/user/
+WARNING 2021-12-01 16:43:51,141 log log_response 8670 140329715078912 Unauthorized: /cart/select/
+WARNING 2021-12-01 16:43:51,159 basehttp log_message 8670 140329715078912 "GET /cart/select/ HTTP/1.1" 401 38
+WARNING 2021-12-01 16:43:51,169 basehttp log_message 8670 140329723471616 "GET /coupon/user/ HTTP/1.1" 401 38
+INFO 2021-12-01 16:43:51,189 basehttp log_message 8670 140329698293504 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 16:43:51,190 basehttp log_message 8670 140329706686208 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 16:44:14,496 basehttp log_message 8670 140329706686208 "POST /users/login/ HTTP/1.1" 200 362
+INFO 2021-12-01 16:44:21,220 basehttp log_message 8670 140329706686208 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 16:44:21,254 basehttp log_message 8670 140329698293504 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 16:44:21,284 basehttp log_message 8670 140329698293504 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 16:44:21,304 basehttp log_message 8670 140329698293504 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 16:44:21,350 basehttp log_message 8670 140329723471616 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-12-01 16:44:23,769 basehttp log_message 8670 140329723471616 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 16:44:26,880 basehttp log_message 8670 140329723471616 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 16:44:28,177 basehttp log_message 8670 140329723471616 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 16:44:29,579 basehttp log_message 8670 140329723471616 "GET /cart/ HTTP/1.1" 200 841
+INFO 2021-12-01 16:44:33,193 basehttp log_message 8670 140329723471616 "GET /cart/select/ HTTP/1.1" 200 793
+INFO 2021-12-01 16:44:33,210 basehttp log_message 8670 140329698293504 "GET /coupon/user/ HTTP/1.1" 200 1499
+INFO 2021-12-01 16:44:40,605 basehttp log_message 8670 140329698293504 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-01 16:44:40,618 basehttp log_message 8670 140329698293504 "GET /payments/alipay/202112010000000100000046 HTTP/1.1" 301 0
+ERROR 2021-12-01 16:44:41,114 log log_response 8670 140329698293504 Internal Server Error: /payments/alipay/202112010000000100000046/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py", line 67, in link
+    alipay = AliPaySDK()
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py", line 16, in __init__
+    alipay_public_key_string = open(self.config["alipay_public_key_pay"]).read()
+KeyError: 'alipay_public_key_pay'
+ERROR 2021-12-01 16:44:41,116 basehttp log_message 8670 140329698293504 "GET /payments/alipay/202112010000000100000046/ HTTP/1.1" 500 111543
+INFO 2021-12-01 16:45:45,782 autoreload run_with_reloader 9724 140296690221440 Watching for file changes with StatReloader
+INFO 2021-12-01 16:46:00,599 basehttp log_message 9724 140296513386240 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:46:00,628 basehttp log_message 9724 140296504993536 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:46:00,976 basehttp log_message 9724 140296496600832 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 16:46:01,009 basehttp log_message 9724 140296488208128 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 16:46:01,040 basehttp log_message 9724 140296513386240 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-01 16:46:01,095 basehttp log_message 9724 140296504993536 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-01 16:46:08,840 basehttp log_message 9724 140296504993536 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 16:46:08,917 basehttp log_message 9724 140296477718272 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-12-01 16:46:08,926 basehttp log_message 9724 140296513386240 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-12-01 16:46:08,928 basehttp log_message 9724 140296488208128 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 16:46:08,933 basehttp log_message 9724 140296504993536 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 16:46:08,972 basehttp log_message 9724 140296469325568 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 16:46:09,701 basehttp log_message 9724 140296504993536 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 16:46:09,717 basehttp log_message 9724 140296469325568 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 16:46:11,951 basehttp log_message 9724 140296496600832 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-01 16:46:14,349 basehttp log_message 9724 140296496600832 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:46:14,386 basehttp log_message 9724 140296496600832 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 16:46:15,968 basehttp log_message 9724 140296496600832 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:46:16,066 basehttp log_message 9724 140296496600832 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 16:46:16,911 basehttp log_message 9724 140296496600832 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:46:16,949 basehttp log_message 9724 140296496600832 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 16:46:18,866 basehttp log_message 9724 140296496600832 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:46:18,920 basehttp log_message 9724 140296504993536 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 16:46:18,925 basehttp log_message 9724 140296496600832 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 16:46:19,210 basehttp log_message 9724 140296469325568 "GET /cart/ HTTP/1.1" 200 841
+INFO 2021-12-01 16:46:21,639 basehttp log_message 9724 140296469325568 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:46:21,649 basehttp log_message 9724 140296496600832 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:46:21,682 basehttp log_message 9724 140296469325568 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 16:46:21,686 basehttp log_message 9724 140296496600832 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 16:46:21,983 basehttp log_message 9724 140296488208128 "GET /coupon/user/ HTTP/1.1" 200 1499
+INFO 2021-12-01 16:46:22,025 basehttp log_message 9724 140296504993536 "GET /cart/select/ HTTP/1.1" 200 793
+INFO 2021-12-01 16:47:02,553 basehttp log_message 9724 140296504993536 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:47:08,212 basehttp log_message 9724 140296488208128 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:47:11,868 basehttp log_message 9724 140296488208128 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-01 16:47:11,902 basehttp log_message 9724 140296504993536 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-01 16:47:12,036 basehttp log_message 9724 140296504993536 "GET /payments/alipay/202112010000000100000047 HTTP/1.1" 301 0
+INFO 2021-12-01 16:47:12,155 basehttp log_message 9724 140296504993536 "GET /payments/alipay/202112010000000100000048 HTTP/1.1" 301 0
+ERROR 2021-12-01 16:47:12,679 log log_response 9724 140296488208128 Internal Server Error: /payments/alipay/202112010000000100000047/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py", line 67, in link
+    alipay = AliPaySDK()
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py", line 16, in __init__
+    alipay_public_key_string = open(self.config["alipay_public_key_pay"]).read()
+KeyError: 'alipay_public_key_pay'
+ERROR 2021-12-01 16:47:12,686 log log_response 9724 140296504993536 Internal Server Error: /payments/alipay/202112010000000100000048/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py", line 67, in link
+    alipay = AliPaySDK()
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py", line 16, in __init__
+    alipay_public_key_string = open(self.config["alipay_public_key_pay"]).read()
+KeyError: 'alipay_public_key_pay'
+ERROR 2021-12-01 16:47:12,697 basehttp log_message 9724 140296488208128 "GET /payments/alipay/202112010000000100000047/ HTTP/1.1" 500 111808
+ERROR 2021-12-01 16:47:12,705 basehttp log_message 9724 140296504993536 "GET /payments/alipay/202112010000000100000048/ HTTP/1.1" 500 111808
+INFO 2021-12-01 16:51:14,614 autoreload trigger_reload 9724 140296690221440 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-01 16:51:16,699 autoreload run_with_reloader 9955 140082959970688 Watching for file changes with StatReloader
+INFO 2021-12-01 16:51:19,140 basehttp log_message 9955 140082757490432 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-12-01 16:51:19,152 basehttp log_message 9955 140082749097728 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-12-01 16:51:19,284 basehttp log_message 9955 140082740705024 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 16:51:19,286 basehttp log_message 9955 140082757490432 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 16:51:19,405 basehttp log_message 9955 140082851079936 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 16:51:19,442 basehttp log_message 9955 140082774275840 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 16:51:19,793 basehttp log_message 9955 140082851079936 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 16:51:19,800 basehttp log_message 9955 140082774275840 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 16:51:23,298 basehttp log_message 9955 140082765883136 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-01 16:51:30,501 basehttp log_message 9955 140082765883136 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 16:51:32,896 basehttp log_message 9955 140082765883136 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 16:51:48,359 basehttp log_message 9955 140082765883136 "GET /cart/ HTTP/1.1" 200 498
+INFO 2021-12-01 16:51:50,369 basehttp log_message 9955 140082765883136 "GET /cart/select/ HTTP/1.1" 200 466
+INFO 2021-12-01 16:51:50,383 basehttp log_message 9955 140082774275840 "GET /coupon/user/ HTTP/1.1" 200 527
+INFO 2021-12-01 16:51:54,941 basehttp log_message 9955 140082774275840 "GET /cart/ HTTP/1.1" 200 498
+INFO 2021-12-01 16:52:10,441 basehttp log_message 9955 140082774275840 "OPTIONS /cart/?course_id=4 HTTP/1.1" 200 0
+INFO 2021-12-01 16:52:10,473 basehttp log_message 9955 140082774275840 "DELETE /cart/?course_id=4 HTTP/1.1" 204 0
+INFO 2021-12-01 16:52:12,410 basehttp log_message 9955 140082774275840 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 16:52:12,483 basehttp log_message 9955 140082774275840 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 16:52:12,503 basehttp log_message 9955 140082765883136 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 16:52:12,505 basehttp log_message 9955 140082774275840 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 16:52:12,577 basehttp log_message 9955 140082851079936 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-01 16:52:14,020 basehttp log_message 9955 140082851079936 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 16:52:15,525 basehttp log_message 9955 140082851079936 "GET /cart/ HTTP/1.1" 200 554
+INFO 2021-12-01 16:52:17,193 basehttp log_message 9955 140082774275840 "GET /coupon/user/ HTTP/1.1" 200 1494
+INFO 2021-12-01 16:52:17,196 basehttp log_message 9955 140082851079936 "GET /cart/select/ HTTP/1.1" 200 521
+INFO 2021-12-01 16:52:26,132 basehttp log_message 9955 140082851079936 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-01 16:52:26,145 basehttp log_message 9955 140082851079936 "GET /payments/alipay/202112010000000100000049 HTTP/1.1" 301 0
+INFO 2021-12-01 16:52:27,441 basehttp log_message 9955 140082851079936 "GET /payments/alipay/202112010000000100000049/ HTTP/1.1" 200 941
+INFO 2021-12-01 16:53:41,266 basehttp log_message 9955 140082851079936 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112010000000100000049&method=alipay.trade.page.pay.return&total_amount=897.00&sign=FlOk%2BMDYWkLdo%2BukUNTvJ3w6P8gT1oH0zkfvFGjGYLraCXnhfCamSKd7VG%2F7zosGPaC5chhOvIj%2FBveGbCDGFX6AazhGBPYMwoX2i3Crs%2F2bqbYtJXG1S5lxNRmyKL9hyBRr%2BvdsNCt2V%2BzuUecPyrSyVpdxuo73YuJq0ID3qMrA%2FHxtkHVDI%2F8NOkFm9vT0Dp59fJIDSEGqK8UZBC5k3EUyt066qQDoA5tSCnak7HbFW3OqqeOv7XFY%2FDZUsvnZMWRFu6dSemHIAF%2BfLP1wJF5Ts6d23jIn17dxJqry4PeosA4E0t0XIb9wy%2B3Cx6ZaEMpHssj%2FPgjWpT6Yi%2BSEVQ%3D%3D&trade_no=2021120122001484150502250810&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-01+16%3A53%3A34 HTTP/1.1" 200 744
+INFO 2021-12-01 16:57:31,437 basehttp log_message 9955 140082851079936 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112010000000100000049&method=alipay.trade.page.pay.return&total_amount=897.00&sign=FlOk%2BMDYWkLdo%2BukUNTvJ3w6P8gT1oH0zkfvFGjGYLraCXnhfCamSKd7VG%2F7zosGPaC5chhOvIj%2FBveGbCDGFX6AazhGBPYMwoX2i3Crs%2F2bqbYtJXG1S5lxNRmyKL9hyBRr%2BvdsNCt2V%2BzuUecPyrSyVpdxuo73YuJq0ID3qMrA%2FHxtkHVDI%2F8NOkFm9vT0Dp59fJIDSEGqK8UZBC5k3EUyt066qQDoA5tSCnak7HbFW3OqqeOv7XFY%2FDZUsvnZMWRFu6dSemHIAF%2BfLP1wJF5Ts6d23jIn17dxJqry4PeosA4E0t0XIb9wy%2B3Cx6ZaEMpHssj%2FPgjWpT6Yi%2BSEVQ%3D%3D&trade_no=2021120122001484150502250810&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-01+16%3A53%3A34 HTTP/1.1" 200 744
+INFO 2021-12-01 16:57:52,687 basehttp log_message 9955 140082851079936 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:57:52,754 basehttp log_message 9955 140082765883136 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-12-01 16:57:52,782 basehttp log_message 9955 140082749097728 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 16:57:52,787 basehttp log_message 9955 140082774275840 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 16:57:53,007 basehttp log_message 9955 140082851079936 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-01 16:57:53,037 basehttp log_message 9955 140082765883136 "GET /coupon/user/ HTTP/1.1" 200 69

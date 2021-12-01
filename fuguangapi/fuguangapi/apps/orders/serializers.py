@@ -21,8 +21,8 @@ class OrderModelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Order
-        fields = ["pay_type", "id", "order_number", "user_coupon_id", "credit"]
-        read_only_fields = ["order_number"]
+        fields = ["id", "pay_type", "order_number", "user_coupon_id", "credit"]
+        read_only_fields = ["order_number",]
         extra_kwargs = {
             "pay_type": {"write_only": True},
         }
@@ -43,9 +43,11 @@ class OrderModelSerializer(serializers.ModelSerializer):
 
         # 本次下单时使用的积分数量
         use_credit = validated_data.get("credit", 0)
+        print(validated_data)  # {'pay_type': 0, 'user_coupon_id': -1, 'credit': 30}
+        print(use_credit)  # 30
         # 如果本次下单用户使用了抵扣积分，并且抵扣的积分数量 > 用户拥有的积分数量，则报错。
         if use_credit > 0 and use_credit > user.credit:
-            raise serializers.ValidationError(detail="您拥有的积分不足以抵扣本次下单的积分，请重新下单！")
+            raise serializers.ValidationError(detail="您拥有的积分不足以抵扣本次下单的积分，请重新下单！", code="credit")
 
         redis = get_redis_connection("cart")
         # 唯一订单号[基于时间、用户ID、随机数]
@@ -76,7 +78,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 course_list = Course.objects.filter(pk__in=course_id_list, is_delete=False, is_show=True).all()
                 detail_list = []  # 订单详情的模型列表[避免出现在循环中执行IO操作]
                 total_price = 0   # 订单总价
-                real_price = 0  # 订单实价
+                real_price = 0    # 订单实价
 
                 total_discount_price = 0  #
                 max_discount_course = None  # 享受最大优惠的课程
@@ -106,12 +108,13 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     ))
                     # 统计订单的总价格和实付价格
                     total_price += float(course.price)
+                    print('discount_price',discount_price)
                     real_price += float(course.price) if discount_price == 0 else discount_price
-
+                    print(f"real_price{real_price}")
                     # 在用户使用了优惠券，并且当前课程没有参与其他优惠活动时，找到最佳优惠课程
                     # 优惠券和价格为空时
-                    # if user_coupon and discount_price < 1:
-                    if user_coupon and discount_price is None:
+                    if user_coupon and discount_price < 1:
+                    # if user_coupon and discount_price is None:
                         # 最大优惠价格为None
                         if max_discount_course is None:
                             max_discount_course = course
@@ -177,14 +180,6 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 if len(cart) > 0:
                     pipe.hmset(f"cart_{user_id}", cart)
                 pipe.execute()
-
-                # # 从购物车中删除掉已经被勾选的商品课程，保留没有勾选的
-                # cart = {key: value for key, value in cart_hash.items() if value == b'0'}
-                # pipe = redis.pipeline()
-                # pipe.multi()
-                # pipe.delete(f"cart_{user_id}")
-                # pipe.hmset(f"cart_{user_id}", cart)
-                # pipe.execute()
 
                 # 如果有使用了优惠券，则把优惠券和当前订单进行绑定
                 if user_coupon:
