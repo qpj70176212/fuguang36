@@ -14697,3 +14697,112 @@ INFO 2021-12-01 16:57:52,782 basehttp log_message 9955 140082749097728 "GET /nav
 INFO 2021-12-01 16:57:52,787 basehttp log_message 9955 140082774275840 "GET /nav/header/ HTTP/1.1" 200 292
 INFO 2021-12-01 16:57:53,007 basehttp log_message 9955 140082851079936 "GET /cart/select/ HTTP/1.1" 204 46
 INFO 2021-12-01 16:57:53,037 basehttp log_message 9955 140082765883136 "GET /coupon/user/ HTTP/1.1" 200 69
+INFO 2021-12-01 17:14:41,101 autoreload trigger_reload 9955 140082959970688 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py changed, reloading.
+INFO 2021-12-01 17:14:47,448 autoreload run_with_reloader 10731 140234008691072 Watching for file changes with StatReloader
+INFO 2021-12-01 17:14:52,351 basehttp log_message 10731 140233798285056 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-12-01 17:14:52,354 basehttp log_message 10731 140233806677760 "GET /courses/hot_word HTTP/1.1" 301 0
+INFO 2021-12-01 17:14:52,446 basehttp log_message 10731 140233798285056 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-01 17:14:52,455 basehttp log_message 10731 140233789892352 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-01 17:14:52,643 basehttp log_message 10731 140233831855872 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 17:14:52,741 basehttp log_message 10731 140233823463168 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 17:14:53,290 basehttp log_message 10731 140233823463168 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 17:14:53,295 basehttp log_message 10731 140233831855872 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 17:14:54,817 basehttp log_message 10731 140233815070464 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-01 17:15:14,382 basehttp log_message 10731 140233815070464 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-12-01 17:15:14,927 basehttp log_message 10731 140233815070464 "POST /users/login/ HTTP/1.1" 200 360
+WARNING 2021-12-01 17:15:21,039 log log_response 10731 140233815070464 Bad Request: /cart/
+WARNING 2021-12-01 17:15:21,040 basehttp log_message 10731 140233815070464 "POST /cart/ HTTP/1.1" 400 83
+WARNING 2021-12-01 17:15:28,827 log log_response 10731 140233815070464 Bad Request: /cart/
+WARNING 2021-12-01 17:15:28,828 basehttp log_message 10731 140233815070464 "POST /cart/ HTTP/1.1" 400 83
+INFO 2021-12-01 17:17:42,023 autoreload trigger_reload 10731 140234008691072 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/cart/views.py changed, reloading.
+INFO 2021-12-01 17:17:43,825 autoreload run_with_reloader 10791 139992927764864 Watching for file changes with StatReloader
+INFO 2021-12-01 17:51:23,108 basehttp log_message 10791 139992750978816 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112010000000100000049&method=alipay.trade.page.pay.return&total_amount=897.00&sign=FlOk%2BMDYWkLdo%2BukUNTvJ3w6P8gT1oH0zkfvFGjGYLraCXnhfCamSKd7VG%2F7zosGPaC5chhOvIj%2FBveGbCDGFX6AazhGBPYMwoX2i3Crs%2F2bqbYtJXG1S5lxNRmyKL9hyBRr%2BvdsNCt2V%2BzuUecPyrSyVpdxuo73YuJq0ID3qMrA%2FHxtkHVDI%2F8NOkFm9vT0Dp59fJIDSEGqK8UZBC5k3EUyt066qQDoA5tSCnak7HbFW3OqqeOv7XFY%2FDZUsvnZMWRFu6dSemHIAF%2BfLP1wJF5Ts6d23jIn17dxJqry4PeosA4E0t0XIb9wy%2B3Cx6ZaEMpHssj%2FPgjWpT6Yi%2BSEVQ%3D%3D&trade_no=2021120122001484150502250810&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-01+16%3A53%3A34 HTTP/1.1" 200 743
+INFO 2021-12-01 17:51:24,232 basehttp log_message 10791 139992750978816 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 17:51:24,304 basehttp log_message 10791 139992593106688 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 17:51:24,633 basehttp log_message 10791 139992512853760 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-01 17:51:26,324 basehttp log_message 10791 139992512853760 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 17:51:26,339 basehttp log_message 10791 139992512853760 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 17:51:34,768 basehttp log_message 10791 139992512853760 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112010000000100000049&method=alipay.trade.page.pay.return&total_amount=897.00&sign=FlOk%2BMDYWkLdo%2BukUNTvJ3w6P8gT1oH0zkfvFGjGYLraCXnhfCamSKd7VG%2F7zosGPaC5chhOvIj%2FBveGbCDGFX6AazhGBPYMwoX2i3Crs%2F2bqbYtJXG1S5lxNRmyKL9hyBRr%2BvdsNCt2V%2BzuUecPyrSyVpdxuo73YuJq0ID3qMrA%2FHxtkHVDI%2F8NOkFm9vT0Dp59fJIDSEGqK8UZBC5k3EUyt066qQDoA5tSCnak7HbFW3OqqeOv7XFY%2FDZUsvnZMWRFu6dSemHIAF%2BfLP1wJF5Ts6d23jIn17dxJqry4PeosA4E0t0XIb9wy%2B3Cx6ZaEMpHssj%2FPgjWpT6Yi%2BSEVQ%3D%3D&trade_no=2021120122001484150502250810&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-01+16%3A53%3A34 HTTP/1.1" 200 744
+INFO 2021-12-01 17:52:21,669 basehttp log_message 10791 139992512853760 "POST /users/login/ HTTP/1.1" 200 360
+INFO 2021-12-01 17:52:27,500 basehttp log_message 10791 139992512853760 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112010000000100000049&method=alipay.trade.page.pay.return&total_amount=897.00&sign=FlOk%2BMDYWkLdo%2BukUNTvJ3w6P8gT1oH0zkfvFGjGYLraCXnhfCamSKd7VG%2F7zosGPaC5chhOvIj%2FBveGbCDGFX6AazhGBPYMwoX2i3Crs%2F2bqbYtJXG1S5lxNRmyKL9hyBRr%2BvdsNCt2V%2BzuUecPyrSyVpdxuo73YuJq0ID3qMrA%2FHxtkHVDI%2F8NOkFm9vT0Dp59fJIDSEGqK8UZBC5k3EUyt066qQDoA5tSCnak7HbFW3OqqeOv7XFY%2FDZUsvnZMWRFu6dSemHIAF%2BfLP1wJF5Ts6d23jIn17dxJqry4PeosA4E0t0XIb9wy%2B3Cx6ZaEMpHssj%2FPgjWpT6Yi%2BSEVQ%3D%3D&trade_no=2021120122001484150502250810&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-01+16%3A53%3A34 HTTP/1.1" 200 742
+INFO 2021-12-01 17:52:35,169 basehttp log_message 10791 139992512853760 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112010000000100000049&method=alipay.trade.page.pay.return&total_amount=897.00&sign=FlOk%2BMDYWkLdo%2BukUNTvJ3w6P8gT1oH0zkfvFGjGYLraCXnhfCamSKd7VG%2F7zosGPaC5chhOvIj%2FBveGbCDGFX6AazhGBPYMwoX2i3Crs%2F2bqbYtJXG1S5lxNRmyKL9hyBRr%2BvdsNCt2V%2BzuUecPyrSyVpdxuo73YuJq0ID3qMrA%2FHxtkHVDI%2F8NOkFm9vT0Dp59fJIDSEGqK8UZBC5k3EUyt066qQDoA5tSCnak7HbFW3OqqeOv7XFY%2FDZUsvnZMWRFu6dSemHIAF%2BfLP1wJF5Ts6d23jIn17dxJqry4PeosA4E0t0XIb9wy%2B3Cx6ZaEMpHssj%2FPgjWpT6Yi%2BSEVQ%3D%3D&trade_no=2021120122001484150502250810&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-01+16%3A53%3A34 HTTP/1.1" 200 744
+INFO 2021-12-01 17:52:45,586 basehttp log_message 10791 139992512853760 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 17:52:45,622 basehttp log_message 10791 139992593106688 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 17:52:45,776 basehttp log_message 10791 139992750978816 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-01 17:52:45,992 basehttp log_message 10791 139992750978816 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 17:52:46,010 basehttp log_message 10791 139992750978816 "GET /courses/hot_word/ HTTP/1.1" 200 2
+WARNING 2021-12-01 17:52:51,921 log log_response 10791 139992750978816 Unauthorized: /cart/
+WARNING 2021-12-01 17:52:51,929 basehttp log_message 10791 139992750978816 "GET /cart/ HTTP/1.1" 401 38
+INFO 2021-12-01 17:52:55,098 basehttp log_message 10791 139992750978816 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 17:52:55,137 basehttp log_message 10791 139992504461056 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 17:52:55,150 basehttp log_message 10791 139992593106688 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 17:52:55,197 basehttp log_message 10791 139992504461056 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 17:52:55,271 basehttp log_message 10791 139992512853760 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+WARNING 2021-12-01 17:53:17,940 log log_response 10791 139992512853760 Unauthorized: /cart/select/
+WARNING 2021-12-01 17:53:17,943 log log_response 10791 139992504461056 Unauthorized: /coupon/user/
+WARNING 2021-12-01 17:53:17,947 basehttp log_message 10791 139992504461056 "GET /coupon/user/ HTTP/1.1" 401 38
+WARNING 2021-12-01 17:53:17,946 basehttp log_message 10791 139992512853760 "GET /cart/select/ HTTP/1.1" 401 38
+WARNING 2021-12-01 17:53:22,388 log log_response 10791 139992512853760 Unauthorized: /coupon/user/
+WARNING 2021-12-01 17:53:22,397 log log_response 10791 139992504461056 Unauthorized: /cart/select/
+WARNING 2021-12-01 17:53:22,406 basehttp log_message 10791 139992512853760 "GET /coupon/user/ HTTP/1.1" 401 38
+WARNING 2021-12-01 17:53:22,407 basehttp log_message 10791 139992504461056 "GET /cart/select/ HTTP/1.1" 401 38
+INFO 2021-12-01 17:53:28,694 basehttp log_message 10791 139992504461056 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 17:53:28,698 basehttp log_message 10791 139992750978816 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 17:53:28,708 basehttp log_message 10791 139992750978816 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 17:53:28,713 basehttp log_message 10791 139992512853760 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 17:53:28,821 basehttp log_message 10791 139992593106688 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+WARNING 2021-12-01 17:53:36,348 log log_response 10791 139992593106688 Unauthorized: /cart/
+WARNING 2021-12-01 17:53:36,349 basehttp log_message 10791 139992593106688 "POST /cart/ HTTP/1.1" 401 38
+INFO 2021-12-01 17:53:50,657 basehttp log_message 10791 139992593106688 "POST /users/login/ HTTP/1.1" 200 360
+WARNING 2021-12-01 17:53:53,599 log log_response 10791 139992593106688 Bad Request: /cart/
+WARNING 2021-12-01 17:53:53,599 basehttp log_message 10791 139992593106688 "POST /cart/ HTTP/1.1" 400 83
+INFO 2021-12-01 17:53:57,035 basehttp log_message 10791 139992593106688 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 17:54:00,197 basehttp log_message 10791 139992593106688 "GET /cart/ HTTP/1.1" 200 267
+INFO 2021-12-01 17:54:12,331 basehttp log_message 10791 139992593106688 "GET /cart/select/ HTTP/1.1" 200 251
+INFO 2021-12-01 17:54:12,352 basehttp log_message 10791 139992512853760 "GET /coupon/user/ HTTP/1.1" 200 527
+INFO 2021-12-01 17:54:15,140 basehttp log_message 10791 139992512853760 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-01 17:54:15,166 basehttp log_message 10791 139992512853760 "GET /payments/alipay/202112010000000100000050 HTTP/1.1" 301 0
+INFO 2021-12-01 17:54:15,379 basehttp log_message 10791 139992512853760 "GET /payments/alipay/202112010000000100000050/ HTTP/1.1" 200 929
+INFO 2021-12-01 17:54:34,738 basehttp log_message 10791 139992512853760 "OPTIONS /payments/alipay/query/202112010000000100000050 HTTP/1.1" 200 0
+WARNING 2021-12-01 17:54:34,795 log log_response 10791 139992512853760 Not Found: /payments/alipay/query/202112010000000100000050
+WARNING 2021-12-01 17:54:34,796 basehttp log_message 10791 139992512853760 "GET /payments/alipay/query/202112010000000100000050 HTTP/1.1" 404 4054
+WARNING 2021-12-01 17:54:36,369 log log_response 10791 139992512853760 Not Found: /payments/alipay/query/202112010000000100000050
+WARNING 2021-12-01 17:54:36,370 basehttp log_message 10791 139992512853760 "GET /payments/alipay/query/202112010000000100000050 HTTP/1.1" 404 4054
+WARNING 2021-12-01 17:54:37,264 log log_response 10791 139992512853760 Not Found: /payments/alipay/query/202112010000000100000050
+WARNING 2021-12-01 17:54:37,265 basehttp log_message 10791 139992512853760 "GET /payments/alipay/query/202112010000000100000050 HTTP/1.1" 404 4054
+WARNING 2021-12-01 17:54:37,950 log log_response 10791 139992512853760 Not Found: /payments/alipay/query/202112010000000100000050
+WARNING 2021-12-01 17:54:37,952 basehttp log_message 10791 139992512853760 "GET /payments/alipay/query/202112010000000100000050 HTTP/1.1" 404 4054
+WARNING 2021-12-01 17:54:38,684 log log_response 10791 139992512853760 Not Found: /payments/alipay/query/202112010000000100000050
+WARNING 2021-12-01 17:54:38,685 basehttp log_message 10791 139992512853760 "GET /payments/alipay/query/202112010000000100000050 HTTP/1.1" 404 4054
+INFO 2021-12-01 18:25:16,853 autoreload trigger_reload 10791 139992927764864 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py changed, reloading.
+INFO 2021-12-01 18:25:23,119 autoreload run_with_reloader 13528 140610600198528 Watching for file changes with StatReloader
+INFO 2021-12-01 18:25:52,372 autoreload trigger_reload 13528 140610600198528 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-12-01 18:25:54,246 autoreload run_with_reloader 13550 139878970687872 Watching for file changes with StatReloader
+WARNING 2021-12-01 18:26:00,402 log log_response 13550 139878785500928 Unauthorized: /coupon/user/
+WARNING 2021-12-01 18:26:00,428 log log_response 13550 139878793893632 Unauthorized: /cart/select/
+WARNING 2021-12-01 18:26:00,447 basehttp log_message 13550 139878793893632 "GET /cart/select/ HTTP/1.1" 401 38
+WARNING 2021-12-01 18:26:00,459 basehttp log_message 13550 139878785500928 "GET /coupon/user/ HTTP/1.1" 401 38
+INFO 2021-12-01 18:26:15,638 basehttp log_message 13550 139878785500928 "POST /users/login/ HTTP/1.1" 200 360
+INFO 2021-12-01 18:26:19,744 basehttp log_message 13550 139878785500928 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-01 18:26:19,789 basehttp log_message 13550 139878793893632 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-01 18:26:19,809 basehttp log_message 13550 139878785500928 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 18:26:19,843 basehttp log_message 13550 139878785500928 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-01 18:26:19,898 basehttp log_message 13550 139878663808768 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-01 18:26:32,808 basehttp log_message 13550 139878663808768 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-01 18:26:34,438 basehttp log_message 13550 139878663808768 "POST /cart/ HTTP/1.1" 201 67
+WARNING 2021-12-01 18:26:36,837 log log_response 13550 139878663808768 Bad Request: /cart/
+WARNING 2021-12-01 18:26:36,838 basehttp log_message 13550 139878663808768 "POST /cart/ HTTP/1.1" 400 83
+INFO 2021-12-01 18:26:38,651 basehttp log_message 13550 139878663808768 "GET /cart/ HTTP/1.1" 200 555
+INFO 2021-12-01 18:26:41,294 basehttp log_message 13550 139878785500928 "GET /coupon/user/ HTTP/1.1" 200 1432
+INFO 2021-12-01 18:26:41,297 basehttp log_message 13550 139878663808768 "GET /cart/select/ HTTP/1.1" 200 523
+INFO 2021-12-01 18:27:00,968 basehttp log_message 13550 139878663808768 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-01 18:27:00,992 basehttp log_message 13550 139878663808768 "GET /payments/alipay/202112010000000100000051 HTTP/1.1" 301 0
+INFO 2021-12-01 18:27:02,032 basehttp log_message 13550 139878663808768 "GET /payments/alipay/202112010000000100000051/ HTTP/1.1" 200 930
+INFO 2021-12-01 18:28:15,480 basehttp log_message 13550 139878663808768 "OPTIONS /payments/alipay/query/202112010000000100000051 HTTP/1.1" 200 0
+INFO 2021-12-01 18:28:15,486 basehttp log_message 13550 139878663808768 "GET /payments/alipay/query/202112010000000100000051 HTTP/1.1" 301 0
+INFO 2021-12-01 18:28:15,540 basehttp log_message 13550 139878663808768 "OPTIONS /payments/alipay/query/202112010000000100000051/ HTTP/1.1" 200 0
+INFO 2021-12-01 18:28:17,243 basehttp log_message 13550 139878663808768 "GET /payments/alipay/query/202112010000000100000051/ HTTP/1.1" 200 37
+INFO 2021-12-01 18:28:19,304 basehttp log_message 13550 139878663808768 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-01 18:28:19,314 basehttp log_message 13550 139878785500928 "GET /coupon/user/ HTTP/1.1" 200 69
+INFO 2021-12-01 18:28:19,390 basehttp handle_error 13550 139878663808768 - Broken pipe from ('127.0.0.1', 33286)
+

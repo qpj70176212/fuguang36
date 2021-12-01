@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from django_redis import get_redis_connection
 from courses.models import Course
+from users.models import UserCourse
 # Create your views here.
 
 
@@ -17,7 +18,7 @@ class CartViewSet(ViewSet):
         user_id = request.user.id
         course_id = request.data.get("course_id", None)
         selected = 1  # 默认商品时勾选状态的
-        print(f"user_id={user_id}, course_id={course_id}")
+        # print(f"user_id={user_id}, course_id={course_id}")
 
         # 2. 验证课程是否允许购买[is_show=True, is_delete=False]
         try:
@@ -27,10 +28,17 @@ class CartViewSet(ViewSet):
         except Course.DoesNotExist:
             return Response({"errmsg": "当前课程不存在！"}, status=status.HTTP_400_BAD_REQUEST)
 
+        try:
+            # 判断用户是否已经购买了
+            UserCourse.objects.get(user_id=user_id, course_id=course_id)
+            return Response({"errmsg": "对不起，您已经购买过当前课程！不需要重新购买了!"}, status=status.HTTP_400_BAD_REQUEST)
+        except:
+            pass
+
         # 3. 获取redis连接
         redis = get_redis_connection("cart")
 
-        # 4. todo 因为我们当前实现是属于虚拟商品的购买，是没有数量的。
+        # 4.  因为我们当前实现是属于虚拟商品的购买，是没有数量的。
         #  所以，针对同一个课程，或者曾经购买过的课程，不让用户再次添加到购物车
         ret = redis.hexists(f"cart_{user_id}", course_id)
         cart_total = redis.hlen(f"cart_{user_id}")
