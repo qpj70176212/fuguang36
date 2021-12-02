@@ -170,7 +170,7 @@ class Course(BaseModel):
 
                 if sale == "0":
                     # 免费，则最终价格为0
-                    price = 0.01
+                    price = 0.0
                 elif sale[0] == "*":
                     # 折扣
                     price = course_price * float(sale[1:])
