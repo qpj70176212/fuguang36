@@ -389,11 +389,11 @@ CELERY_ACCERT_CONTENT = ['json', 'pickle']
 # 设置定时任务的调用列表，需要单独运行SCHEDULE命令才能让celery执行定时任务: celery -A mycelery.main beat，当然worker还是要启动的
 # https://docs.celeryproject.org/en/stable/userguide/periodic-tasks.html
 CELERY_BEAT_SCHEDULE = {
-    "user-add": {  # 定时任务的注册标记符【必须唯一的】
-        "task": "add",  # 定时任务的任务名称
-        "schedule": 10,  # 定时任务的调用时间，10表示每隔10秒调用一次add任务
-        # "schedule": crontab(hour=7, minute=30, day_of_week=1),  # 定时任务的调用时间，每周一早上7点30分调用一次add任务
-    }
+    # "user-add": {  # 定时任务的注册标记符【必须唯一的】
+    #     "task": "add",  # 定时任务的任务名称
+    #     "schedule": 10,  # 定时任务的调用时间，10表示每隔10秒调用一次add任务
+    #     # "schedule": crontab(hour=7, minute=30, day_of_week=1),  # 定时任务的调用时间，每周一早上7点30分调用一次add任务
+    # }
 }
 
 

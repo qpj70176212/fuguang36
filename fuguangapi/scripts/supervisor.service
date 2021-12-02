@@ -1,0 +1,15 @@
+[Unit]
+Description=supervisor
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/home/moluo/anaconda3/envs/fuguang/bin/supervisord -n -c /home/moluo/Desktop/fuguang/fuguangapi/scripts/supervisord.conf
+ExecStop=/home/moluo/anaconda3/envs/fuguang/bin/supervisorctl $OPTIONS shutdown
+ExecReload=/home/moluo/anaconda3/envs/fuguang/bin/supervisorctl $OPTIONS reload
+KillMode=process
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target

@@ -9,6 +9,7 @@ import constants
 from .models import Order, OrderDetail
 from courses.models import Course
 from coupon.models import CouponLog
+from .tasks import order_timeout
 
 logger = logging.getLogger("django")
 
@@ -151,7 +152,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     order.credit = use_credit
                     total_discount_price = float(use_credit / constants.CREDIT_TO_MONEY)
 
-                    # todo 扣除用户拥有的积分，后续在订单超时未支付或用户取消下单时，则返还订单中对应数量的积分给用户。
+                    # 扣除用户拥有的积分，后续在订单超时未支付或用户取消下单时，则返还订单中对应数量的积分给用户。
 
                     #  如果订单成功支付，则添加一个积分流水记录。
                     user.credit = user.credit - use_credit
@@ -192,7 +193,9 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     # 把优惠券从redis中移除
                     redis.delete(f"{user_id}:{user_coupon_id}")
 
-                    # todo 将来订单状态发生改变，再修改优惠券的使用状态，如果订单过期，则再次还原优惠券到redis中
+                # 将来订单状态发生改变，再修改优惠券的使用状态，如果订单过期，则再次还原优惠券到redis中
+                # 调用定时超时取消
+                order_timeout.apply_async(kwargs={"order_id": order.id}, countdown=constants.ORDER_TIMEOUT)
 
                 return order
             except Exception as e:
@@ -219,7 +222,6 @@ class OrderDetailModelSerializer(serializers.ModelSerializer):
 class OrderListModelSerializer(serializers.ModelSerializer):
     """订单列表序列化器"""
     order_courses = OrderDetailModelSerializer(many=True)
-
 
     class Meta:
         model = Order
