@@ -51,7 +51,7 @@ const order = reactive({
     },
     alipay_page_pay(order_number) {
         // 获取订单的支付宝支付链接信息
-        return http.get(`/payments/alipay/${order_number}`)
+        return http.get(`/payments/alipay/${order_number}/`)
     },
     relay_alipay_result(query_string) {
         // 把地址栏中的查询字符串(支付成功以后的同步回调通知)转发给服务端

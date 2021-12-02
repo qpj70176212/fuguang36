@@ -284,7 +284,7 @@ getOrderStatus()
 const getOrderList = () => {
   // 获取订单列表
   let token = sessionStorage.token || localStorage.token
-  console.log('111111',token)
+
   order.get_order_list(token).then(response => {
     order.order_list = response.data.results
     order.count = response.data.count
@@ -296,6 +296,23 @@ getOrderList()
 
 let pay_now = (order_info) => {
   // 订单继续支付
+  order.order_number = order_info.order_number;
+  let token = sessionStorage.token || localStorage.token;
+  if (order.pay_type === 0) {
+    // 发起支付宝支付
+    order.alipay_page_pay(order_info.order_number, token).then(response => {
+      // 新开浏览器窗口，跳转到支付页面
+      window.open(response.data.link, "_blank");
+      // 新建定时器，每隔5秒到服务端查询一次当前订单的支付结果
+      clearInterval(order.timer);
+      order.timer = setInterval(() => {
+        order.query_order(token).then(response => {
+          order_info.order_status = 1;
+          clearInterval(order.timer);
+        })
+      }, 5000);
+    })
+  }
 }
 
 let pay_cancel = (order_info) => {
