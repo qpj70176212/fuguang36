@@ -15,14 +15,20 @@ const order = reactive({
     credit_to_money: 0,    // 积分兑换现金的比例
     has_credit: 0,          // 用户拥有的积分
     max_use_credit: 0,      // 本次下单可用最大积分抵扣数量
-    credit_course_list:[],  // 可使用积分抵扣的课程列表
+    credit_course_list: [],  // 可使用积分抵扣的课程列表
     real_price: 0,          // 付款金额
     pay_time: undefined,    // 付款时间
     is_show: false,         // 是否展示支付成功的内容
     order_number: null,    // 订单号
     loading: false,       // 订单支付时的倒计时背景遮罩层
-    timeout: 0,          // 订单支付超时倒计时
-    timer: 0,           // 订单支付倒计时定时器的标记符
+    timeout: 0,               // 订单支付超时倒计时
+    timer: 0,                 // 订单支付倒计时定时器的标记符
+    order_status: -1,         // 个人中心的默认显示的订单状态选项
+    order_status_choices: [], // 个人中心的订单支付状态选项
+    page: 1,                  // 个人中心的订单列表对应的页码
+    size: 5,                  // 个人中心的订单列表对应的单页数据量
+    order_list: [],           // 个人中心的订单列表
+    count: 0,                 // 个人中心的订单列表的总数据量
     create_order(user_coupon_id, token) {
         // 生成订单
         return http.post("/orders/", {
@@ -35,15 +41,15 @@ const order = reactive({
             }
         })
     },
-    get_enable_coupon_list(token){
+    get_enable_coupon_list(token) {
         // 获取本次下单的可用优惠券列表
-        return http.get("/coupon/user/",{
-            headers:{
+        return http.get("/coupon/user/", {
+            headers: {
                 Authorization: "jwt " + token,
             }
         })
     },
-   alipay_page_pay(order_number){
+    alipay_page_pay(order_number) {
         // 获取订单的支付宝支付链接信息
         return http.get(`/payments/alipay/${order_number}`)
     },
@@ -51,14 +57,38 @@ const order = reactive({
         // 把地址栏中的查询字符串(支付成功以后的同步回调通知)转发给服务端
         return http.get(`/payments/alipay/result/${query_string}`)
     },
-    query_order(token){
+    query_order(token) {
         // 查询订单结果
         return http.get(`/payments/alipay/query/${this.order_number}`, {
             headers: {
-                Authorization: "jwt" + token,
+                Authorization: "jwt " + token,
             }
         })
-    }
+    },
+    get_order_status() {
+        // 获取订单状态选项
+        return http.get("/orders/pay/status/")
+    },
+    get_order_list(token) {
+        // 获取当前登录用户的订单列表[分页显示]
+        return http.get("/orders/list/", {
+            params: {
+                page: this.page,
+                size: this.size,
+                status: this.order_status,
+            },
+            headers: {
+                Authorization: "jwt " + token,
+            }
+        })
+    },
+    // order_cancel(order_id,token){
+    //     return http.put(`/orders/${order_id}/`, {},{
+    //         headers:{
+    //             Authorization: "jwt " + token,
+    //         }
+    //     })
+    // }
 })
 
 export default order;

@@ -97,15 +97,15 @@ const routes = [
                 name: "UserInfo",
                 component: () => import("../components/Info.vue"),
             },
-            {
-                meta: {
-                    title: "我的课程",
-                    keepAlive: true
-                },
-                path: 'course',
-                name: "UserCourse",
-                // component: ()=> import("../components/Course.vue"),
-            },
+            // {
+            //     meta: {
+            //         title: "我的课程",
+            //         keepAlive: true
+            //     },
+            //     path: 'course',
+            //     name: "UserCourse",
+            //     // component: ()=> import("../components/Course.vue"),
+            // },
             {
                 meta: {
                     title: "我的订单",
@@ -116,33 +116,33 @@ const routes = [
                 name: "UserOrder",
                 component: () => import("../components/Order.vue"),
             },
-            {
-                meta: {
-                    title: "我的余额",
-                    keepAlive: true
-                },
-                path: 'balance',
-                name: "UserBalance",
-                // component: ()=> import("../components/Balance.vue"),
-            },
-            {
-                meta: {
-                    title: "我的优惠券",
-                    keepAlive: true
-                },
-                path: 'coupon',
-                name: "UserCoupon",
-                // component: ()=> import("../components/Coupon.vue"),
-            },
-            {
-                meta: {
-                    title: "我的消费记录",
-                    keepAlive: true
-                },
-                path: 'bill',
-                name: "UserBill",
-                // component: ()=> import("../components/Bill.vue"),
-            },
+            // {
+            //     meta: {
+            //         title: "我的余额",
+            //         keepAlive: true
+            //     },
+            //     path: 'balance',
+            //     name: "UserBalance",
+            //     // component: ()=> import("../components/Balance.vue"),
+            // },
+            // {
+            //     meta: {
+            //         title: "我的优惠券",
+            //         keepAlive: true
+            //     },
+            //     path: 'coupon',
+            //     name: "UserCoupon",
+            //     // component: ()=> import("../components/Coupon.vue"),
+            // },
+            // {
+            //     meta: {
+            //         title: "我的消费记录",
+            //         keepAlive: true
+            //     },
+            //     path: 'bill',
+            //     name: "UserBill",
+            //     // component: ()=> import("../components/Bill.vue"),
+            // },
         ]
     }
 ]

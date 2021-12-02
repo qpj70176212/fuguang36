@@ -44,7 +44,7 @@
                 <template #dropdown>
                   <el-dropdown-menu>
                     <el-dropdown-item icon="el-icon-user">学习中心</el-dropdown-item>
-                    <el-dropdown-item icon="el-icon-edit-outline">订单列表</el-dropdown-item>
+                    <el-dropdown-item icon="el-icon-edit-outline"><router-link to="/user/order">订单列表</router-link></el-dropdown-item>
                     <el-dropdown-item icon="el-icon-setting">个人设置</el-dropdown-item>
                     <el-dropdown-item icon="el-icon-position" @click="logout">注销登录</el-dropdown-item>
                   </el-dropdown-menu>

@@ -43,8 +43,8 @@ class OrderModelSerializer(serializers.ModelSerializer):
 
         # 本次下单时使用的积分数量
         use_credit = validated_data.get("credit", 0)
-        print(validated_data)  # {'pay_type': 0, 'user_coupon_id': -1, 'credit': 30}
-        print(use_credit)  # 30
+        # print(validated_data)  # {'pay_type': 0, 'user_coupon_id': -1, 'credit': 30}
+        # print(use_credit)  # 30
         # 如果本次下单用户使用了抵扣积分，并且抵扣的积分数量 > 用户拥有的积分数量，则报错。
         if use_credit > 0 and use_credit > user.credit:
             raise serializers.ValidationError(detail="您拥有的积分不足以抵扣本次下单的积分，请重新下单！", code="credit")
@@ -92,8 +92,8 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     try:
                         discount_price = float(course.discount["price"])
                     except:
-                        discount_price = 0
-                        # discount_price = float(course.price)
+                        # discount_price = 0
+                        discount_price = float(course.price)
                     # 判断商品课程是否有优惠，有就记录优惠类型
                     try:
                         discount_name = course.discount["type"]
@@ -218,6 +218,7 @@ class OrderDetailModelSerializer(serializers.ModelSerializer):
 class OrderListModelSerializer(serializers.ModelSerializer):
     """订单列表序列化器"""
     order_courses = OrderDetailModelSerializer(many=True)
+
 
     class Meta:
         model = Order

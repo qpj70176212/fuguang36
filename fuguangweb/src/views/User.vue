@@ -4,8 +4,8 @@
     <div class="bg-other user-head-info">
       <div class="user-info clearfix">
         <div class="user-pic" data-is-fans="0" data-is-follows="">
-<!--          <div class="user-pic-bg"><img class="img" :src="store.state.user.avatar" alt=""></div>-->
           <div class="user-pic-bg"><img class="img" :src="store.getters.getUserInfo.avatar" alt=""></div>
+          <!--          <div class="user-pic-bg"><img class="img" :src="store.state.user.avatar" alt=""></div>-->
         </div>
         <div class="user-info-right">
           <h3 class="user-name clearfix"><span>{{ store.getters.getUserInfo.username }}</span></h3>
