@@ -22,7 +22,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = ["id", "pay_type", "order_number", "user_coupon_id", "credit"]
-        read_only_fields = ["order_number",]
+        read_only_fields = ["order_number", ]
         extra_kwargs = {
             "pay_type": {"write_only": True},
         }
@@ -73,12 +73,13 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 if len(cart_hash) < 1:
                     raise serializers.ValidationError(detail="购物车没有要下单的商品！")
                 # 提取购物车中所有勾选状态为b'1'的商品
-                course_id_list = [int(course_id.decode()) for course_id, selected in cart_hash.items() if selected == b'1']
+                course_id_list = [int(course_id.decode()) for course_id, selected in cart_hash.items() if
+                                  selected == b'1']
                 # 添加订单与课程的关系
                 course_list = Course.objects.filter(pk__in=course_id_list, is_delete=False, is_show=True).all()
                 detail_list = []  # 订单详情的模型列表[避免出现在循环中执行IO操作]
-                total_price = 0   # 订单总价
-                real_price = 0    # 订单实价
+                total_price = 0  # 订单总价
+                real_price = 0  # 订单实价
 
                 total_discount_price = 0  #
                 max_discount_course = None  # 享受最大优惠的课程
@@ -92,6 +93,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
                         discount_price = float(course.discount["price"])
                     except:
                         discount_price = 0
+                        # discount_price = float(course.price)
                     # 判断商品课程是否有优惠，有就记录优惠类型
                     try:
                         discount_name = course.discount["type"]
@@ -108,13 +110,13 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     ))
                     # 统计订单的总价格和实付价格
                     total_price += float(course.price)
-                    print('discount_price',discount_price)
+
                     real_price += float(course.price) if discount_price == 0 else discount_price
-                    print(f"real_price{real_price}")
+
                     # 在用户使用了优惠券，并且当前课程没有参与其他优惠活动时，找到最佳优惠课程
                     # 优惠券和价格为空时
                     if user_coupon and discount_price < 1:
-                    # if user_coupon and discount_price is None:
+                        # if user_coupon and discount_price is None:
                         # 最大优惠价格为None
                         if max_discount_course is None:
                             max_discount_course = course
@@ -199,3 +201,25 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 logger.error(f"生成订单失败！{e}")
                 # 3. 抛出异常
                 raise serializers.ValidationError(detail="生成订单失败！")
+
+
+class OrderDetailModelSerializer(serializers.ModelSerializer):
+    """订单详情序列化器"""
+    # 通过source修改数据源，可以把需要调用的部分外键字段提取到当前序列化器中
+    course_id = serializers.IntegerField(source="course.id")
+    course_name = serializers.CharField(source="course.name")
+    course_cover = serializers.ImageField(source="course.course_cover")
+
+    class Meta:
+        model = OrderDetail
+        fields = ["id", "price", "real_price", "discount_name", "course_id", "course_name", "course_cover"]
+
+
+class OrderListModelSerializer(serializers.ModelSerializer):
+    """订单列表序列化器"""
+    order_courses = OrderDetailModelSerializer(many=True)
+
+    class Meta:
+        model = Order
+        fields = ["id", "order_number", "total_price", "real_price", "pay_time", "created_time", "credit", "coupon",
+                  "pay_type", "order_status", "order_courses"]

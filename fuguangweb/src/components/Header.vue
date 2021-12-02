@@ -39,7 +39,7 @@
               <router-link to="">我的课堂</router-link>
               <el-dropdown>
                 <span class="el-dropdown-link">
-                  <el-avatar class="avatar" size="50" src="https://fuguangapi.oss-cn-beijing.aliyuncs.com/avatar.jpg"></el-avatar>
+                  <router-link to="/user"><el-avatar class="avatar" size="50" src="https://fuguangapi.oss-cn-beijing.aliyuncs.com/avatar.jpg"></el-avatar></router-link>
                 </span>
                 <template #dropdown>
                   <el-dropdown-menu>

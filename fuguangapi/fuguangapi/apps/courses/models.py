@@ -167,11 +167,10 @@ class Course(BaseModel):
             if course_price >= condition_price:
                 # 计算本次课程参与了优惠以后的价格
                 sale = last_activity_log.discount.sale
-                print('111111',sale)
-                print('111111',type(sale))
+
                 if sale == "0":
                     # 免费，则最终价格为0
-                    price = 0
+                    price = 0.01
                 elif sale[0] == "*":
                     # 折扣
                     price = course_price * float(sale[1:])
@@ -179,7 +178,7 @@ class Course(BaseModel):
                     # 减免
                     price = course_price - float(sale[1:])
                 price = float(f"{price:.2f}")
-        print(">>>22222>>", price)
+
         data = {}
         if type_text:
             data["type"] = type_text

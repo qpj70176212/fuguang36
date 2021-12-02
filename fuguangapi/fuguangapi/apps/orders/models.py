@@ -12,7 +12,7 @@ class Order(BaseModel):
         (0, '未支付'),
         (1, '已支付'),
         (2, '已取消'),
-        (3, '超时取消'),
+        (3, "已超时"),
     )
     pay_choices = (
         (0, '支付宝'),
@@ -34,6 +34,19 @@ class Order(BaseModel):
         db_table = "fg_order"
         verbose_name = "订单记录"
         verbose_name_plural = verbose_name
+
+    def coupon(self):
+        """当前订单关联的优惠券信息"""
+        coupon_related = self.to_coupon.first()
+        if coupon_related:
+            return {
+                "id": coupon_related.coupon.id,
+                "name": coupon_related.coupon.name,
+                "sale": coupon_related.coupon.sale,
+                "discount": coupon_related.coupon.discount,
+                "condition": coupon_related.coupon.condition,
+            }
+        return {}
 
     def __str__(self):
         return "%s,总价: %s,实付: %s" % (self.name, self.total_price, self.real_price)

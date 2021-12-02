@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin  # 密码加密功能
 from django.utils.translation import gettext, gettext_lazy as _
-from .models import User, Credit
+from .models import User, Credit, UserCourse
 # Register your models here.
 
 
@@ -72,3 +72,12 @@ class CreditModelAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Credit, CreditModelAdmin)
+
+
+class UserCourseModelAdmin(admin.ModelAdmin):
+    """用户的课程的模型管理器"""
+    list_display = ["id", "user", "course", "chapter", "lesson", "study_time", "__str__"]
+    ordering = ["id"]
+
+
+admin.site.register(UserCourse, UserCourseModelAdmin)
