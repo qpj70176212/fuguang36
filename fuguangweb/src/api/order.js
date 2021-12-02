@@ -82,13 +82,13 @@ const order = reactive({
             }
         })
     },
-    // order_cancel(order_id,token){
-    //     return http.put(`/orders/${order_id}/`, {},{
-    //         headers:{
-    //             Authorization: "jwt " + token,
-    //         }
-    //     })
-    // }
+    order_cancel(order_id,token){
+        return http.put(`/orders/${order_id}/`, {},{
+            headers:{
+                Authorization: "jwt " + token,
+            }
+        })
+    }
 })
 
 export default order;

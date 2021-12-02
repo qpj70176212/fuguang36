@@ -297,8 +297,13 @@ getOrderList()
 let pay_now = (order_info) => {
   // 订单继续支付
 }
+
 let pay_cancel = (order_info) => {
   // 取消订单
+  let token = sessionStorage.token || localStorage.token;
+  order.order_cancel(order_info.id, token).then(response => {
+    order_info.order_status = 2;
+  })
 }
 
 let evaluate_now = (order_info) => {
