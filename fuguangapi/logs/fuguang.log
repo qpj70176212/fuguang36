@@ -18028,3 +18028,17 @@ INFO 2021-12-03 19:49:54,180 basehttp log_message 13776 139804158097152 "GET /us
 INFO 2021-12-03 19:49:57,871 basehttp log_message 13776 139804158097152 "OPTIONS /users/course/?type=-1&page=2&size=5 HTTP/1.1" 200 0
 INFO 2021-12-03 19:49:57,922 basehttp log_message 13776 139804158097152 "GET /users/course/?type=-1&page=2&size=5 HTTP/1.1" 200 538
 INFO 2021-12-03 19:49:59,568 basehttp log_message 13776 139804158097152 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 2034
+INFO 2021-12-03 20:02:09,464 autoreload trigger_reload 13776 139804343300480 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/settings/dev.py changed, reloading.
+INFO 2021-12-03 20:02:13,484 autoreload run_with_reloader 15666 140266442924416 Watching for file changes with StatReloader
+INFO 2021-12-03 20:02:19,920 basehttp log_message 15666 140266333247232 "GET /admin/ HTTP/1.1" 200 22924
+INFO 2021-12-03 20:02:31,572 basehttp log_message 15666 140266333247232 "GET /admin/courses/courselesson/ HTTP/1.1" 200 28972
+INFO 2021-12-03 20:02:31,647 basehttp log_message 15666 140266333247232 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 20:02:31,773 basehttp log_message 15666 140266249910016 "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2021-12-03 20:02:31,776 basehttp log_message 15666 140266333247232 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2021-12-03 20:02:38,265 basehttp log_message 15666 140266333247232 "GET /admin/courses/courselesson/1/change/ HTTP/1.1" 200 25418
+INFO 2021-12-03 20:02:38,343 basehttp log_message 15666 140266333247232 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 20:02:50,389 basehttp log_message 15666 140266333247232 "POST /admin/courses/courselesson/1/change/ HTTP/1.1" 302 0
+INFO 2021-12-03 20:02:50,532 basehttp log_message 15666 140266333247232 "GET /admin/courses/courselesson/ HTTP/1.1" 200 29291
+INFO 2021-12-03 20:02:50,625 basehttp log_message 15666 140266333247232 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 20:23:22,227 autoreload trigger_reload 15666 140266442924416 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/courses/views.py changed, reloading.
+INFO 2021-12-03 20:23:24,278 autoreload run_with_reloader 16396 139778888225152 Watching for file changes with StatReloader

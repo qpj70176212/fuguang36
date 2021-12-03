@@ -508,3 +508,13 @@ ALIPAY = {
     "return_url": "http://www.fuguang.cn:3000/alipay",  # 同步回调结果通知地址
     "notify_url": "http://api.fuguang.cn:8000/payments/alipay/notify",  # 异步回调结果通知地址
 }
+
+
+# 保利威视频加密服务
+POLYV = {
+    "userId": "94a6178979",
+    "secretkey": "tS6xodA8XH",
+    "writetoken": "76248d64-e90e-476f-97c1-91ebb0f03d82",
+    "readtoken": "bdc106e1-daac-4010-a585-5f768083a153",
+    "tokenUrl": "https://hls.videocc.net/service/v1/token",  # http://hls.videocc.net/service/v1/token
+}

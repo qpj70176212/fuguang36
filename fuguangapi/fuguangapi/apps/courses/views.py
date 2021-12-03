@@ -11,6 +11,10 @@ from django_redis import get_redis_connection
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from datetime import datetime, timedelta
+from rest_framework.viewsets import ViewSet
+from rest_framework.permissions import IsAuthenticated
+from django.conf import settings
+from fuguangapi.libs.polyv import PolyvPlayer
 # Create your views here.
 
 
@@ -130,3 +134,25 @@ class CourseTypeListAPIView(APIView):
         # Object of type DeferredAttribute is not JSON serializable
         # 因为属性重名故改为大写
         return Response(Course.COURSE_TYPE)
+
+
+class PolyvViewSet(ViewSet):
+    """保利威云视频服务相关的API接口"""
+    permission_classes = [IsAuthenticated]
+
+    def token(self, request, vid):
+        """获取视频播放的授权令牌token"""
+        userId = settings.POLYV["userId"]
+        secretkey = settings.POLYV["secretkey"]
+        tokenUrl = settings.POLYV["tokenUrl"]
+        polyv = PolyvPlayer(userId, secretkey, tokenUrl)
+
+        user_ip = request.META.get("REMOTE_ADDR")  # 客户端的IP地址
+        user_id = request.user.id  # 用户ID
+        user_name = request.user.username  # 用户名
+
+        token = polyv.get_video_token(vid, user_ip, user_name)
+
+        return Response({"token": token})
+
+
