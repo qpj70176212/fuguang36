@@ -5,37 +5,55 @@
       <ul>
         <li :class="{action: course.current_course_type===-1}"><a href=""
                                                                   @click.prevent="course.current_course_type=-1">全部<i
-            v-if="course.current_course_type===-1">{{ course.user_count }}</i></a></li>
-        <li :class="{action: course.current_course_type===0}"><a href="" @click.prevent="course.current_course_type=0">免费课<i
-            v-if="course.current_course_type===0">{{ course.user_count }}</i></a></li>
-        <li :class="{action: course.current_course_type===1}"><a href="" @click.prevent="course.current_course_type=1">项目课<i
-            v-if="course.current_course_type===1">{{ course.user_count }}</i></a></li>
-        <li :class="{action: course.current_course_type===2}"><a href="" @click.prevent="course.current_course_type=2">学位课<i
-            v-if="course.current_course_type===2">{{ course.user_count }}</i></a></li>
+            v-if="course.current_course_type===-1">{{ course.user_course_count }}</i></a></li>
+        <li :class="{action: course.current_course_type===type_item[0]}" v-for="type_item in course.course_type">
+          <a href="" @click.prevent="course.current_course_type=type_item[0]">{{ type_item[1] }}<i
+              v-if="course.current_course_type===type_item[0]">{{ course.user_course_count }}</i></a>
+        </li>
+
+<!--        <li :class="{action: course.current_course_type===-1}"><a href=""-->
+<!--                                                                  @click.prevent="course.current_course_type=-1">全部<i-->
+<!--            v-if="course.current_course_type===-1">{{ course.user_count }}</i></a></li>-->
+<!--        <li :class="{action: course.current_course_type===0}"><a href="" @click.prevent="course.current_course_type=0">免费课<i-->
+<!--            v-if="course.current_course_type===0">{{ course.user_count }}</i></a></li>-->
+<!--        <li :class="{action: course.current_course_type===1}"><a href="" @click.prevent="course.current_course_type=1">项目课<i-->
+<!--            v-if="course.current_course_type===1">{{ course.user_count }}</i></a></li>-->
+<!--        <li :class="{action: course.current_course_type===2}"><a href="" @click.prevent="course.current_course_type=2">学位课<i-->
+<!--            v-if="course.current_course_type===2">{{ course.user_count }}</i></a></li>-->
       </ul>
     </div>
     <div class="all-course-main">
       <div class="allcourse-content">
-        <div class="courseitem">
+        <div class="courseitem" v-for="course_info in course.user_course_list">
           <div class="img-box">
-            <a href=""><img alt="3天javascript入门到崩溃"
-                            src="https://fuguang35.oss-cn-beijing.aliyuncs.com/uploads/course/cover/course-9.png"/> </a>
+            <router-link :to="`/project/${course_info.course_id}`"><img :alt="course_info.course_name" :src="course_info.course_cover" /> </router-link>
+<!--            <a href=""><img alt="3天javascript入门到崩溃"-->
+<!--                            src="https://fuguang35.oss-cn-beijing.aliyuncs.com/uploads/course/cover/course-9.png"/> </a>-->
           </div>
           <div class="info-box">
             <div class="title">
-              <span>免费课</span>
-              <a href="" class="hd">3天javascript入门到崩溃</a>
+              <span>{{course_info.get_course_type_display}}</span>
+              <router-link :to="`/project/${course_info.course_id}`" class="hd">{{course_info.course_name}}</router-link>
+<!--              <span>免费课</span>-->
+<!--              <a href="" class="hd">3天javascript入门到崩溃</a>-->
             </div>
             <div class="study-info">
-              <span class="i-left">已学0%</span>
-              <span class="i-mid">用时13分</span>
-              <span class="i-right">学习至7.01 课程回顾</span>
+<!--              <span class="i-left">已学0%</span>-->
+              <span class="i-left">已学{{course_info.progress}}%</span>
+<!--              <span class="i-mid">用时13分</span>-->
+              <span class="i-mid">用时<b v-if="course_info.study_time>=3600">{{parseInt(course_info.study_time/3600)}}小时</b><b>{{parseInt(course_info.study_time/60) % 60}}分</b></span>
+               <span class="i-right" v-if="course_info.chapter_orders">学习至{{course_info.chapter_orders}}.{{fil10(course_info.lesson_orders)}} {{course_info.lesson_name}}</span>
+<!--              <span class="i-right">学习至7.01 课程回顾</span>-->
             </div>
             <div class="catog-points">
-              <span> <a href="">笔记 <i>0</i></a> </span>
-              <span class="i-mid"> <a href="">代码 <i>0</i></a> </span>
-              <span class="i-right"> <a href="">问答 <i>0</i></a> </span>
-              <a href="" class="continute-btn">继续学习</a>
+<!--              <span> <a href="">笔记 <i>0</i></a> </span>-->
+              <span> <a href="">笔记 <i>{{course_info.note}}</i></a> </span>
+              <span class="i-mid"> <a href="">代码 <i>{{course_info.code}}</i></a> </span>
+<!--              <span class="i-mid"> <a href="">代码 <i>0</i></a> </span>-->
+<!--              <span class="i-right"> <a href="">问答 <i>0</i></a> </span>-->
+              <span class="i-right"> <a href="">问答 <i>{{course_info.qa}}</i></a> </span>
+              <router-link to="/user/study" class="continute-btn">继续学习</router-link>
+<!--              <a href="" class="continute-btn">继续学习</a>-->
             </div>
             <div class="share-box clearfix">
               <div class="show-btn">
@@ -48,46 +66,111 @@
             </div>
           </div>
         </div>
-        <div class="courseitem">
-          <div class="img-box">
-            <a href=""><img alt="3天javascript入门到崩溃"
-                            src="https://fuguang35.oss-cn-beijing.aliyuncs.com/uploads/course/cover/course-9.png"/> </a>
-          </div>
-          <div class="info-box">
-            <div class="title">
-              <span>免费课</span>
-              <a href="" class="hd">3天javascript入门到崩溃</a>
-            </div>
-            <div class="study-info">
-              <span class="i-left">已学0%</span>
-              <span class="i-mid">用时13分</span>
-              <span class="i-right">学习至7.01 课程回顾</span>
-            </div>
-            <div class="catog-points">
-              <span> <a href="">笔记 <i>0</i></a> </span>
-              <span class="i-mid"> <a href="">代码 <i>0</i></a> </span>
-              <span class="i-right"> <a href="">问答 <i>0</i></a> </span>
-              <a href="" class="continute-btn">继续学习</a>
-            </div>
-            <div class="share-box clearfix">
-              <div class="show-btn">
-                <i class="el-icon-arrow-down"></i>
-              </div>
-              <div class="share-box-con">
-                <a href="javascript:;" title="删除" class="del"><i class="el-icon-delete"></i></a>
-                <a href="javascript:;" title="置顶课程"><i class="el-icon-top"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
+<!--        <div class="courseitem">-->
+<!--          <div class="img-box">-->
+<!--            <a href=""><img alt="3天javascript入门到崩溃"-->
+<!--                            src="https://fuguang35.oss-cn-beijing.aliyuncs.com/uploads/course/cover/course-9.png"/> </a>-->
+<!--          </div>-->
+<!--          <div class="info-box">-->
+<!--            <div class="title">-->
+<!--              <span>免费课</span>-->
+<!--              <a href="" class="hd">3天javascript入门到崩溃</a>-->
+<!--            </div>-->
+<!--            <div class="study-info">-->
+<!--              <span class="i-left">已学0%</span>-->
+<!--              <span class="i-mid">用时13分</span>-->
+<!--              <span class="i-right">学习至7.01 课程回顾</span>-->
+<!--            </div>-->
+<!--            <div class="catog-points">-->
+<!--              <span> <a href="">笔记 <i>0</i></a> </span>-->
+<!--              <span class="i-mid"> <a href="">代码 <i>0</i></a> </span>-->
+<!--              <span class="i-right"> <a href="">问答 <i>0</i></a> </span>-->
+<!--              <a href="" class="continute-btn">继续学习</a>-->
+<!--            </div>-->
+<!--            <div class="share-box clearfix">-->
+<!--              <div class="show-btn">-->
+<!--                <i class="el-icon-arrow-down"></i>-->
+<!--              </div>-->
+<!--              <div class="share-box-con">-->
+<!--                <a href="javascript:;" title="删除" class="del"><i class="el-icon-delete"></i></a>-->
+<!--                <a href="javascript:;" title="置顶课程"><i class="el-icon-top"></i></a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
       <!-- 分页 -->
+      <div class="page" style="text-align: center;margin-top: 25px;" v-if="course.user_course_count > course.size">
+        <el-pagination
+            background
+            layout="sizes, prev, pager, next, jumper"
+            :total="course.user_course_count"
+            :page-sizes="[5, 10, 15, 20]"
+            :page-size="course.size"
+            @current-change="current_page"
+            @size-change="current_size"
+        ></el-pagination>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import course from "../api/course";
+import {fil10} from "../utils/func";
+import {watch} from "vue";
+
+// 获取课程类型列表
+const get_course_type_list = ()=>{
+    course.get_course_type_list ().then(response=>{
+        course.course_type = response.data
+    })
+}
+get_course_type_list()
+
+// 获取用户的课程列表
+const get_course_list = ()=>{
+  let token = sessionStorage.token || localStorage.token;
+  course.get_user_course_list(course.current_course_type, token).then(response=>{
+    course.user_course_list = response.data.results
+    course.user_course_count = response.data.count
+  })
+}
+get_course_list()
+
+// 切换页码
+let current_page = (page)=>{
+  course.page = page;
+}
+// 切换分页数据量
+let current_size = (size)=>{
+  course.size = size;
+}
+
+// 监听页码
+watch(
+    ()=>course.page,
+    ()=>{
+      get_course_list()
+    }
+)
+
+watch(
+    ()=>course.size,
+    ()=>{
+      course.page = 1
+      get_course_list()
+    }
+)
+
+// 监听课程类型
+watch(
+    ()=>course.current_course_type,
+    ()=>{
+      course.page = 1;
+      get_course_list()
+    }
+)
 </script>
 
 <style scoped>

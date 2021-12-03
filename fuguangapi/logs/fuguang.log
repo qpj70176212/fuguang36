@@ -16944,3 +16944,1087 @@ ValueError: Exception raised in callable attribute "progress"; original exceptio
 ERROR 2021-12-03 17:24:26,868 basehttp log_message 7521 140544304617216 "GET /users/course/ HTTP/1.1" 500 157125
 INFO 2021-12-03 17:31:34,664 basehttp log_message 7521 140544304617216 "GET /users/course/ HTTP/1.1" 200 7649
 INFO 2021-12-03 17:38:23,733 basehttp log_message 7521 140544296224512 "GET /users/course/ HTTP/1.1" 200 7649
+INFO 2021-12-03 17:54:01,412 basehttp log_message 7521 140544296224512 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 17:54:01,420 basehttp log_message 7521 140544304617216 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 17:54:01,435 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 17:54:01,494 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 17:54:01,612 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-03 17:54:16,689 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:54:16,691 basehttp log_message 7521 140544038414080 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 17:54:16,760 basehttp log_message 7521 140544296224512 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 17:54:23,782 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:54:23,829 basehttp log_message 7521 140544296224512 "GET /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 17:54:24,559 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:54:24,577 basehttp log_message 7521 140544296224512 "GET /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 17:54:25,189 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:54:25,211 basehttp log_message 7521 140544296224512 "GET /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 17:54:28,232 basehttp log_message 7521 140544296224512 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 17:55:58,379 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:55:58,667 basehttp log_message 7521 140544296224512 "GET /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 17:55:59,812 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:55:59,852 basehttp log_message 7521 140544296224512 "GET /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 17:56:02,086 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:56:02,123 basehttp log_message 7521 140544296224512 "GET /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 17:56:04,343 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=3&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:56:04,420 basehttp log_message 7521 140544296224512 "GET /users/course/?type=3&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 17:56:07,258 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:56:07,283 basehttp log_message 7521 140544296224512 "GET /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 17:56:08,256 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:56:08,285 basehttp log_message 7521 140544296224512 "GET /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 17:56:09,183 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:56:09,267 basehttp log_message 7521 140544296224512 "GET /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 17:56:10,492 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 17:56:10,575 basehttp log_message 7521 140544296224512 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:05:44,645 basehttp log_message 7521 140544304617216 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 18:05:44,758 basehttp log_message 7521 140544038414080 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:05:51,730 basehttp log_message 7521 140544038414080 "GET /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:05:52,864 basehttp log_message 7521 140544038414080 "GET /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 18:05:53,443 basehttp log_message 7521 140544038414080 "GET /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 18:05:54,416 basehttp log_message 7521 140544038414080 "GET /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:05:55,116 basehttp log_message 7521 140544038414080 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:06:08,607 basehttp log_message 7521 140544038414080 "OPTIONS /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 18:06:08,687 basehttp log_message 7521 140544304617216 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 18:06:09,000 basehttp log_message 7521 140544030021376 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:06:09,126 basehttp log_message 7521 140544038414080 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-03 18:06:09,127 basehttp log_message 7521 140544296224512 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-03 18:07:48,758 basehttp log_message 7521 140544296224512 "OPTIONS /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 18:07:48,831 basehttp log_message 7521 140544038414080 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 18:07:48,846 basehttp log_message 7521 140544296224512 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-03 18:07:48,848 basehttp log_message 7521 140544030021376 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-03 18:07:48,941 basehttp log_message 7521 140544304617216 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:08:01,839 basehttp log_message 7521 140544304617216 "GET /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:08:02,652 basehttp log_message 7521 140544304617216 "GET /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 18:08:04,256 basehttp log_message 7521 140544304617216 "GET /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 18:08:05,189 basehttp log_message 7521 140544304617216 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:08:17,199 basehttp log_message 7521 140544038414080 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:08:17,231 basehttp log_message 7521 140544304617216 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:08:17,262 basehttp log_message 7521 140544038414080 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:08:17,291 basehttp log_message 7521 140544030021376 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:08:17,419 basehttp log_message 7521 140544296224512 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-03 18:08:24,624 basehttp log_message 7521 140544296224512 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-12-03 18:08:24,657 basehttp log_message 7521 140544296224512 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:08:32,232 basehttp log_message 7521 140544296224512 "GET /cart/ HTTP/1.1" 200 267
+INFO 2021-12-03 18:08:38,379 basehttp log_message 7521 140543946389248 "GET /admin/ HTTP/1.1" 200 22924
+INFO 2021-12-03 18:08:38,714 basehttp log_message 7521 140543946389248 "GET /uploads/logo.png HTTP/1.1" 304 0
+INFO 2021-12-03 18:08:48,492 basehttp log_message 7521 140543946389248 "GET /admin/coupon/coupon/ HTTP/1.1" 200 31852
+INFO 2021-12-03 18:08:48,815 basehttp log_message 7521 140543946389248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:08:55,172 basehttp log_message 7521 140543946389248 "GET /admin/coupon/coupon/1/change/ HTTP/1.1" 200 65106
+INFO 2021-12-03 18:08:55,245 basehttp log_message 7521 140543946389248 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:08:55,250 basehttp log_message 7521 140543937996544 "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+INFO 2021-12-03 18:08:55,844 basehttp log_message 7521 140543937996544 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+INFO 2021-12-03 18:09:47,456 basehttp log_message 7521 140544296224512 "OPTIONS /cart/select/ HTTP/1.1" 200 0
+INFO 2021-12-03 18:09:47,482 basehttp log_message 7521 140544296224512 "OPTIONS /coupon/user/ HTTP/1.1" 200 0
+INFO 2021-12-03 18:09:47,521 basehttp log_message 7521 140544030021376 "GET /cart/select/ HTTP/1.1" 200 251
+INFO 2021-12-03 18:09:47,553 basehttp log_message 7521 140544296224512 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:09:57,607 basehttp log_message 7521 140543937996544 "GET /admin/coupon/coupon/ HTTP/1.1" 200 31852
+INFO 2021-12-03 18:09:57,668 basehttp log_message 7521 140543937996544 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:10:05,975 basehttp log_message 7521 140543937996544 "GET /admin/coupon/coupon/5/change/ HTTP/1.1" 200 69634
+INFO 2021-12-03 18:10:06,058 basehttp log_message 7521 140543937996544 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:10:20,505 basehttp log_message 7521 140544296224512 "GET /cart/ HTTP/1.1" 200 267
+INFO 2021-12-03 18:10:24,866 basehttp log_message 7521 140544296224512 "OPTIONS /cart/?course_id=4 HTTP/1.1" 200 0
+INFO 2021-12-03 18:10:24,889 basehttp log_message 7521 140544296224512 "DELETE /cart/?course_id=4 HTTP/1.1" 204 0
+INFO 2021-12-03 18:10:26,701 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:10:26,744 basehttp log_message 7521 140544296224512 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:10:26,757 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:10:26,766 basehttp log_message 7521 140544030021376 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:10:26,828 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-03 18:10:30,053 basehttp log_message 7521 140544030021376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:10:30,094 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1699
+INFO 2021-12-03 18:10:32,857 basehttp log_message 7521 140544030021376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:10:32,932 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 18:10:35,336 basehttp log_message 7521 140544030021376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:10:35,373 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=4&size=5 HTTP/1.1" 200 1649
+INFO 2021-12-03 18:11:00,183 basehttp log_message 7521 140544038414080 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:11:00,202 basehttp log_message 7521 140544038414080 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:11:00,211 basehttp log_message 7521 140544030021376 "GET /courses/0/33/?page=1&size=5&ordering=-id HTTP/1.1" 200 367
+INFO 2021-12-03 18:11:00,244 basehttp log_message 7521 140544030021376 "GET /courses/0/33/?page=1&size=5&ordering=-id HTTP/1.1" 200 367
+INFO 2021-12-03 18:11:00,259 basehttp log_message 7521 140544038414080 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:11:00,276 basehttp log_message 7521 140544030021376 "GET /courses/0/33/?page=1&size=5&ordering=-id HTTP/1.1" 200 367
+INFO 2021-12-03 18:11:04,137 basehttp log_message 7521 140544030021376 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:11:05,884 basehttp log_message 7521 140544030021376 "GET /cart/ HTTP/1.1" 200 267
+INFO 2021-12-03 18:11:08,263 basehttp log_message 7521 140544030021376 "GET /cart/select/ HTTP/1.1" 200 251
+INFO 2021-12-03 18:11:08,273 basehttp log_message 7521 140544038414080 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:11:51,845 basehttp log_message 7521 140543937996544 "GET /admin/coupon/coupon/ HTTP/1.1" 200 31852
+INFO 2021-12-03 18:11:51,910 basehttp log_message 7521 140543937996544 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:12:17,444 basehttp log_message 7521 140544030021376 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:12:17,445 basehttp log_message 7521 140544038414080 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:12:17,453 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:12:17,464 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:12:17,501 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1662
+INFO 2021-12-03 18:12:22,473 basehttp log_message 7521 140544038414080 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:12:25,600 basehttp log_message 7521 140544038414080 "GET /cart/ HTTP/1.1" 200 504
+INFO 2021-12-03 18:12:27,008 basehttp log_message 7521 140544038414080 "GET /cart/select/ HTTP/1.1" 200 472
+INFO 2021-12-03 18:12:27,044 basehttp log_message 7521 140544304617216 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:12:49,163 basehttp log_message 7521 140544038414080 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:12:49,180 basehttp log_message 7521 140544304617216 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:12:49,361 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:12:49,413 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:12:49,415 basehttp log_message 7521 140544030021376 "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1662
+INFO 2021-12-03 18:12:54,039 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:12:54,109 basehttp log_message 7521 140544304617216 "GET /courses/0/0/?page=4&size=5&ordering=-id HTTP/1.1" 200 1824
+WARNING 2021-12-03 18:12:58,799 log log_response 7521 140544304617216 Bad Request: /cart/
+WARNING 2021-12-03 18:12:58,800 basehttp log_message 7521 140544304617216 "POST /cart/ HTTP/1.1" 400 83
+WARNING 2021-12-03 18:13:00,485 log log_response 7521 140544304617216 Bad Request: /cart/
+WARNING 2021-12-03 18:13:00,486 basehttp log_message 7521 140544304617216 "POST /cart/ HTTP/1.1" 400 83
+INFO 2021-12-03 18:13:18,132 basehttp log_message 7521 140544304617216 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:13:20,186 basehttp log_message 7521 140544304617216 "GET /cart/ HTTP/1.1" 200 735
+INFO 2021-12-03 18:13:22,822 basehttp log_message 7521 140544304617216 "GET /cart/select/ HTTP/1.1" 200 687
+INFO 2021-12-03 18:13:22,841 basehttp log_message 7521 140544030021376 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:15:40,722 basehttp log_message 7521 140544304617216 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:15:40,735 basehttp log_message 7521 140544030021376 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:15:40,737 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:15:40,760 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:15:40,787 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=4&size=5&ordering=-id HTTP/1.1" 200 1823
+INFO 2021-12-03 18:18:10,233 basehttp log_message 7521 140544038414080 "GET /cart/ HTTP/1.1" 200 735
+INFO 2021-12-03 18:18:14,458 basehttp log_message 7521 140544038414080 "OPTIONS /cart/?course_id=5 HTTP/1.1" 200 0
+INFO 2021-12-03 18:18:14,479 basehttp log_message 7521 140544038414080 "DELETE /cart/?course_id=5 HTTP/1.1" 204 0
+INFO 2021-12-03 18:18:45,699 basehttp log_message 7521 140544038414080 "GET /users/mobile/18910758199/ HTTP/1.1" 200 15
+INFO 2021-12-03 18:19:00,862 basehttp log_message 7521 140544038414080 "GET /users/sms/18910758199 HTTP/1.1" 200 15
+INFO 2021-12-03 18:20:24,822 basehttp log_message 7521 140544038414080 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-12-03 18:20:25,313 basehttp log_message 7521 140544038414080 "POST /users/login/ HTTP/1.1" 200 362
+INFO 2021-12-03 18:20:28,842 basehttp log_message 7521 140544038414080 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:20:28,895 basehttp log_message 7521 140544038414080 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:20:28,920 basehttp log_message 7521 140544038414080 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:20:28,926 basehttp log_message 7521 140544296224512 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:20:28,977 basehttp log_message 7521 140544030021376 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-12-03 18:20:31,210 basehttp log_message 7521 140544030021376 "GET /cart/ HTTP/1.1" 200 504
+INFO 2021-12-03 18:20:33,268 basehttp log_message 7521 140544030021376 "DELETE /cart/?course_id=4 HTTP/1.1" 204 0
+INFO 2021-12-03 18:20:35,443 basehttp log_message 7521 140544030021376 "OPTIONS /cart/?course_id=19 HTTP/1.1" 200 0
+INFO 2021-12-03 18:20:35,458 basehttp log_message 7521 140544030021376 "DELETE /cart/?course_id=19 HTTP/1.1" 204 0
+INFO 2021-12-03 18:20:43,394 basehttp log_message 7521 140544030021376 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:20:43,426 basehttp log_message 7521 140544296224512 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:20:43,441 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:20:43,485 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:20:43,538 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1811
+INFO 2021-12-03 18:20:58,815 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:20:58,850 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1699
+INFO 2021-12-03 18:21:00,814 basehttp log_message 7521 140544038414080 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:21:03,002 basehttp log_message 7521 140544038414080 "GET /cart/ HTTP/1.1" 200 269
+INFO 2021-12-03 18:21:05,180 basehttp log_message 7521 140544038414080 "GET /cart/select/ HTTP/1.1" 200 253
+INFO 2021-12-03 18:21:05,199 basehttp log_message 7521 140544304617216 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:21:13,038 basehttp log_message 7521 140543937996544 "GET /admin/coupon/coupon/add/ HTTP/1.1" 200 64277
+INFO 2021-12-03 18:21:13,103 basehttp log_message 7521 140543937996544 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:22:53,732 basehttp log_message 7521 140543937996544 "POST /admin/coupon/coupon/add/ HTTP/1.1" 302 0
+INFO 2021-12-03 18:22:53,926 basehttp log_message 7521 140543937996544 "GET /admin/coupon/coupon/ HTTP/1.1" 200 32977
+INFO 2021-12-03 18:22:54,040 basehttp log_message 7521 140543937996544 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:23:05,712 basehttp log_message 7521 140544304617216 "GET /cart/select/ HTTP/1.1" 200 253
+INFO 2021-12-03 18:23:05,729 basehttp log_message 7521 140544038414080 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:23:41,565 basehttp log_message 7521 140544038414080 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:23:41,565 basehttp log_message 7521 140544304617216 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:23:41,607 basehttp log_message 7521 140544304617216 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:23:41,618 basehttp log_message 7521 140544038414080 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:23:41,669 basehttp log_message 7521 140544296224512 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1811
+INFO 2021-12-03 18:23:43,777 basehttp log_message 7521 140544296224512 "POST /cart/ HTTP/1.1" 201 67
+WARNING 2021-12-03 18:23:48,437 log log_response 7521 140544296224512 Bad Request: /cart/
+WARNING 2021-12-03 18:23:48,438 basehttp log_message 7521 140544296224512 "POST /cart/ HTTP/1.1" 400 83
+INFO 2021-12-03 18:23:50,984 basehttp log_message 7521 140544296224512 "GET /cart/ HTTP/1.1" 200 500
+INFO 2021-12-03 18:24:07,857 basehttp log_message 7521 140543937996544 "GET /admin/courses/course/ HTTP/1.1" 200 56375
+INFO 2021-12-03 18:24:07,902 basehttp log_message 7521 140543937996544 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:24:13,530 basehttp log_message 7521 140543937996544 "GET /admin/courses/course/5/change/ HTTP/1.1" 200 38464
+INFO 2021-12-03 18:24:13,583 basehttp log_message 7521 140543946389248 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:13,591 basehttp log_message 7521 140543937996544 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:24:13,608 basehttp log_message 7521 140543937996544 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:13,645 basehttp log_message 7521 140543946389248 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,060 basehttp log_message 7521 140543937996544 "GET /static/ckeditor/ckeditor/config.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,132 basehttp log_message 7521 140543946389248 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,135 basehttp log_message 7521 140543937996544 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,193 basehttp log_message 7521 140543937996544 "GET /static/ckeditor/ckeditor/styles.js?t=L4KA HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,238 basehttp log_message 7521 140543937996544 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,240 basehttp log_message 7521 140543946389248 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,247 basehttp log_message 7521 140543929603840 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,256 basehttp log_message 7521 140543929603840 "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,302 basehttp log_message 7521 140543929603840 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,374 basehttp log_message 7521 140543929603840 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=cae20318d4 HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:14,506 basehttp log_message 7521 140543929603840 "GET /static/ckeditor/ckeditor/contents.css?t=L4KA HTTP/1.1" 304 0
+INFO 2021-12-03 18:24:19,792 basehttp log_message 7521 140544296224512 "DELETE /cart/?course_id=5 HTTP/1.1" 204 0
+INFO 2021-12-03 18:24:21,683 basehttp log_message 7521 140544296224512 "OPTIONS /cart/?course_id=8 HTTP/1.1" 200 0
+INFO 2021-12-03 18:24:21,706 basehttp log_message 7521 140544296224512 "DELETE /cart/?course_id=8 HTTP/1.1" 204 0
+INFO 2021-12-03 18:24:22,998 basehttp log_message 7521 140544296224512 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:24:23,041 basehttp log_message 7521 140544038414080 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:24:23,109 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:24:23,184 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:24:23,186 basehttp log_message 7521 140544304617216 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-12-03 18:24:30,854 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:24:30,893 basehttp log_message 7521 140544304617216 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1699
+INFO 2021-12-03 18:24:39,128 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:24:39,171 basehttp log_message 7521 140544304617216 "GET /courses/0/0/?page=3&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 18:24:48,525 basehttp log_message 7521 140543929603840 "GET /admin/courses/course/ HTTP/1.1" 200 56375
+INFO 2021-12-03 18:24:48,609 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:24:52,654 basehttp log_message 7521 140543929603840 "GET /admin/courses/course/6/change/ HTTP/1.1" 200 38462
+INFO 2021-12-03 18:24:52,709 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:25:08,389 basehttp log_message 7521 140543929603840 "GET /admin/courses/courseactivityprice/ HTTP/1.1" 200 28720
+INFO 2021-12-03 18:25:08,452 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:25:21,259 basehttp log_message 7521 140543929603840 "GET /admin/courses/activity/ HTTP/1.1" 200 27719
+INFO 2021-12-03 18:25:21,316 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:25:24,267 basehttp log_message 7521 140543929603840 "GET /admin/courses/discounttype/ HTTP/1.1" 200 28591
+INFO 2021-12-03 18:25:24,326 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:25:31,362 basehttp log_message 7521 140543929603840 "GET /admin/courses/courseactivityprice/add/ HTTP/1.1" 200 23265
+INFO 2021-12-03 18:25:31,424 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:25:37,834 basehttp log_message 7521 140543929603840 "GET /admin/courses/courseactivityprice/ HTTP/1.1" 200 28720
+INFO 2021-12-03 18:25:37,892 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:25:54,092 basehttp log_message 7521 140543929603840 "GET /admin/courses/courseactivityprice/3/change/ HTTP/1.1" 200 23906
+INFO 2021-12-03 18:25:54,159 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:26:10,618 basehttp log_message 7521 140543929603840 "GET /admin/courses/courseactivityprice/ HTTP/1.1" 200 28720
+INFO 2021-12-03 18:26:10,674 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:26:12,093 basehttp log_message 7521 140543929603840 "GET /admin/courses/courseactivityprice/add/ HTTP/1.1" 200 23265
+INFO 2021-12-03 18:26:12,198 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:27:20,430 basehttp log_message 7521 140543929603840 "POST /admin/courses/courseactivityprice/add/ HTTP/1.1" 302 0
+INFO 2021-12-03 18:27:20,610 basehttp log_message 7521 140543929603840 "GET /admin/courses/courseactivityprice/ HTTP/1.1" 200 29727
+INFO 2021-12-03 18:27:20,741 basehttp log_message 7521 140543929603840 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-03 18:27:31,028 basehttp log_message 7521 140544296224512 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:27:31,044 basehttp log_message 7521 140544030021376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:27:31,052 basehttp log_message 7521 140544304617216 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:27:31,092 basehttp log_message 7521 140544030021376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:27:31,173 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-03 18:27:33,584 basehttp log_message 7521 140544030021376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:27:33,620 basehttp log_message 7521 140544038414080 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 18:27:35,398 basehttp log_message 7521 140544038414080 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:27:37,883 basehttp log_message 7521 140544038414080 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 18:27:39,705 basehttp log_message 7521 140544038414080 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 18:27:39,707 basehttp log_message 7521 140544030021376 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 18:28:04,547 basehttp log_message 7521 140544030021376 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2021-12-03 18:28:04,622 basehttp log_message 7521 140544030021376 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 18:28:05,073 basehttp log_message 7521 140544030021376 "GET /payments/alipay/202112030000000100000069/ HTTP/1.1" 200 943
+INFO 2021-12-03 18:28:15,924 basehttp log_message 7521 140544030021376 "OPTIONS /payments/alipay/query/202112030000000100000069 HTTP/1.1" 200 0
+INFO 2021-12-03 18:28:15,929 basehttp log_message 7521 140544030021376 "GET /payments/alipay/query/202112030000000100000069 HTTP/1.1" 301 0
+INFO 2021-12-03 18:28:15,935 basehttp log_message 7521 140544030021376 "OPTIONS /payments/alipay/query/202112030000000100000069/ HTTP/1.1" 200 0
+WARNING 2021-12-03 18:28:15,939 log log_response 7521 140544030021376 Unauthorized: /payments/alipay/query/202112030000000100000069/
+WARNING 2021-12-03 18:28:15,940 basehttp log_message 7521 140544030021376 "GET /payments/alipay/query/202112030000000100000069/ HTTP/1.1" 401 38
+WARNING 2021-12-03 18:28:16,786 log log_response 7521 140544030021376 Unauthorized: /payments/alipay/query/202112030000000100000069/
+WARNING 2021-12-03 18:28:16,787 basehttp log_message 7521 140544030021376 "GET /payments/alipay/query/202112030000000100000069/ HTTP/1.1" 401 38
+WARNING 2021-12-03 18:28:17,571 log log_response 7521 140544030021376 Unauthorized: /payments/alipay/query/202112030000000100000069/
+WARNING 2021-12-03 18:28:17,571 basehttp log_message 7521 140544030021376 "GET /payments/alipay/query/202112030000000100000069/ HTTP/1.1" 401 38
+WARNING 2021-12-03 18:28:18,046 log log_response 7521 140544030021376 Unauthorized: /payments/alipay/query/202112030000000100000069/
+WARNING 2021-12-03 18:28:18,047 basehttp log_message 7521 140544030021376 "GET /payments/alipay/query/202112030000000100000069/ HTTP/1.1" 401 38
+WARNING 2021-12-03 18:28:18,407 log log_response 7521 140544030021376 Unauthorized: /payments/alipay/query/202112030000000100000069/
+WARNING 2021-12-03 18:28:18,408 basehttp log_message 7521 140544030021376 "GET /payments/alipay/query/202112030000000100000069/ HTTP/1.1" 401 38
+WARNING 2021-12-03 18:28:20,412 log log_response 7521 140544030021376 Unauthorized: /payments/alipay/query/202112030000000100000069/
+WARNING 2021-12-03 18:28:20,412 basehttp log_message 7521 140544030021376 "GET /payments/alipay/query/202112030000000100000069/ HTTP/1.1" 401 38
+INFO 2021-12-03 18:28:22,999 basehttp log_message 7521 140544030021376 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 18:28:23,014 basehttp log_message 7521 140544038414080 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:28:28,075 basehttp log_message 7521 140544030021376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:28:28,085 basehttp log_message 7521 140544304617216 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:28:28,117 basehttp log_message 7521 140544038414080 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:28:28,119 basehttp log_message 7521 140544030021376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:28:28,180 basehttp log_message 7521 140544296224512 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-12-03 18:28:30,372 basehttp log_message 7521 140544030021376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:28:30,412 basehttp log_message 7521 140544296224512 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 18:28:31,984 basehttp log_message 7521 140544296224512 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:28:33,197 basehttp log_message 7521 140544296224512 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 18:28:34,755 basehttp log_message 7521 140544030021376 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 18:28:34,760 basehttp log_message 7521 140544296224512 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 18:28:39,849 basehttp log_message 7521 140544030021376 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 18:28:40,018 basehttp log_message 7521 140544030021376 "GET /payments/alipay/202112030000000100000070/ HTTP/1.1" 200 931
+INFO 2021-12-03 18:29:46,810 basehttp log_message 7521 140544030021376 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 18:29:46,817 basehttp log_message 7521 140544296224512 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:29:48,987 basehttp log_message 7521 140544296224512 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:29:49,019 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:29:49,024 basehttp log_message 7521 140544038414080 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:29:49,027 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:29:49,084 basehttp log_message 7521 140544304617216 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-03 18:29:51,066 basehttp log_message 7521 140544304617216 "GET /courses/1/ HTTP/1.1" 200 2003
+WARNING 2021-12-03 18:29:54,671 log log_response 7521 140544304617216 Bad Request: /cart/
+WARNING 2021-12-03 18:29:54,672 basehttp log_message 7521 140544304617216 "POST /cart/ HTTP/1.1" 400 83
+INFO 2021-12-03 18:32:10,716 basehttp log_message 7521 140544304617216 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 18:32:10,796 basehttp log_message 7521 140544296224512 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:38:19,741 basehttp log_message 7521 140544038414080 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 18:38:19,861 basehttp log_message 7521 140544296224512 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:38:25,225 basehttp log_message 7521 140544296224512 "GET /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:38:26,004 basehttp log_message 7521 140544296224512 "GET /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 18:38:26,739 basehttp log_message 7521 140544296224512 "GET /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 18:38:28,375 basehttp log_message 7521 140544296224512 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 18:39:11,066 basehttp log_message 7521 140544296224512 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:39:11,152 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:39:11,191 basehttp log_message 7521 140544038414080 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:39:11,198 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:39:11,305 basehttp log_message 7521 140544304617216 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-03 18:39:17,258 basehttp log_message 7521 140544304617216 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:39:18,837 basehttp log_message 7521 140544296224512 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:39:18,871 basehttp log_message 7521 140544304617216 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1758
+INFO 2021-12-03 18:39:19,895 basehttp log_message 7521 140544304617216 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:39:23,750 basehttp log_message 7521 140544304617216 "GET /cart/ HTTP/1.1" 200 547
+INFO 2021-12-03 18:39:32,108 basehttp log_message 7521 140544304617216 "GET /cart/select/ HTTP/1.1" 200 515
+INFO 2021-12-03 18:39:32,159 basehttp log_message 7521 140544296224512 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 18:40:44,228 basehttp log_message 7521 140544296224512 "POST /orders/ HTTP/1.1" 201 63
+INFO 2021-12-03 18:40:44,407 basehttp log_message 7521 140544296224512 "GET /payments/alipay/202112030000000100000071/ HTTP/1.1" 200 944
+INFO 2021-12-03 18:42:06,764 autoreload trigger_reload 7521 140544414294400 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/constants.py changed, reloading.
+INFO 2021-12-03 18:42:09,856 autoreload run_with_reloader 10282 140365690372480 Watching for file changes with StatReloader
+INFO 2021-12-03 18:42:15,210 basehttp log_message 10282 140365580695296 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 18:42:15,213 basehttp handle_error 10282 140365580695296 - Broken pipe from ('127.0.0.1', 52372)
+
+INFO 2021-12-03 18:42:15,226 basehttp log_message 10282 140365503919872 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:42:23,862 basehttp log_message 10282 140365503919872 "GET /orders/pay/status/ HTTP/1.1" 200 65
+INFO 2021-12-03 18:42:23,881 basehttp log_message 10282 140365580695296 "OPTIONS /orders/list/?page=1&size=5&status=-1 HTTP/1.1" 200 0
+INFO 2021-12-03 18:42:24,950 basehttp log_message 10282 140365580695296 "GET /orders/list/?page=1&size=5&status=-1 HTTP/1.1" 200 2656
+INFO 2021-12-03 18:42:37,942 basehttp log_message 10282 140365580695296 "OPTIONS /orders/list/?page=1&size=5&status=0 HTTP/1.1" 200 0
+INFO 2021-12-03 18:42:38,046 basehttp log_message 10282 140365580695296 "GET /orders/list/?page=1&size=5&status=0 HTTP/1.1" 200 3137
+INFO 2021-12-03 18:42:41,454 basehttp log_message 10282 140365580695296 "GET /payments/alipay/202112020000000100000066/ HTTP/1.1" 200 943
+INFO 2021-12-03 18:42:46,737 basehttp log_message 10282 140365580695296 "OPTIONS /payments/alipay/query/202112020000000100000066 HTTP/1.1" 200 0
+INFO 2021-12-03 18:42:46,742 basehttp log_message 10282 140365580695296 "GET /payments/alipay/query/202112020000000100000066 HTTP/1.1" 301 0
+INFO 2021-12-03 18:42:46,795 basehttp log_message 10282 140365580695296 "OPTIONS /payments/alipay/query/202112020000000100000066/ HTTP/1.1" 200 0
+WARNING 2021-12-03 18:42:47,704 log log_response 10282 140365580695296 Bad Request: /payments/alipay/query/202112020000000100000066/
+WARNING 2021-12-03 18:42:47,705 basehttp log_message 10282 140365580695296 "GET /payments/alipay/query/202112020000000100000066/ HTTP/1.1" 400 37
+INFO 2021-12-03 18:42:50,531 basehttp log_message 10282 140365580695296 "OPTIONS /orders/66/ HTTP/1.1" 200 0
+INFO 2021-12-03 18:42:50,565 basehttp log_message 10282 140365580695296 "PUT /orders/66/ HTTP/1.1" 200 36
+WARNING 2021-12-03 18:42:51,492 log log_response 10282 140365580695296 Bad Request: /payments/alipay/query/202112020000000100000066/
+WARNING 2021-12-03 18:42:51,495 basehttp log_message 10282 140365580695296 "GET /payments/alipay/query/202112020000000100000066/ HTTP/1.1" 400 40
+WARNING 2021-12-03 18:42:56,492 log log_response 10282 140365580695296 Bad Request: /payments/alipay/query/202112020000000100000066/
+WARNING 2021-12-03 18:42:56,492 basehttp log_message 10282 140365580695296 "GET /payments/alipay/query/202112020000000100000066/ HTTP/1.1" 400 40
+INFO 2021-12-03 18:43:00,877 basehttp log_message 10282 140365270714112 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:43:00,880 basehttp log_message 10282 140365503919872 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:43:00,899 basehttp log_message 10282 140365580695296 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:43:00,912 basehttp log_message 10282 140365270714112 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:43:00,963 basehttp log_message 10282 140365279106816 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+WARNING 2021-12-03 18:43:01,493 log log_response 10282 140365279106816 Bad Request: /payments/alipay/query/202112020000000100000066/
+WARNING 2021-12-03 18:43:01,494 basehttp log_message 10282 140365279106816 "GET /payments/alipay/query/202112020000000100000066/ HTTP/1.1" 400 40
+INFO 2021-12-03 18:43:02,977 basehttp log_message 10282 140365279106816 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:43:04,806 basehttp log_message 10282 140365270714112 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:43:04,861 basehttp log_message 10282 140365279106816 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 18:43:06,113 basehttp log_message 10282 140365279106816 "POST /cart/ HTTP/1.1" 201 67
+WARNING 2021-12-03 18:43:06,513 log log_response 10282 140365279106816 Bad Request: /payments/alipay/query/202112020000000100000066/
+WARNING 2021-12-03 18:43:06,517 basehttp log_message 10282 140365279106816 "GET /payments/alipay/query/202112020000000100000066/ HTTP/1.1" 400 40
+INFO 2021-12-03 18:43:07,862 basehttp log_message 10282 140365279106816 "GET /cart/ HTTP/1.1" 200 547
+INFO 2021-12-03 18:43:09,657 basehttp log_message 10282 140365279106816 "GET /cart/select/ HTTP/1.1" 200 514
+INFO 2021-12-03 18:43:09,683 basehttp log_message 10282 140365270714112 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 18:43:11,005 basehttp log_message 10282 140365270714112 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 18:43:11,163 basehttp log_message 10282 140365270714112 "GET /payments/alipay/202112030000000100000072/ HTTP/1.1" 200 933
+INFO 2021-12-03 18:43:22,989 basehttp log_message 10282 140365270714112 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 18:43:23,014 basehttp log_message 10282 140365279106816 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:43:24,539 basehttp log_message 10282 140365279106816 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:43:24,563 basehttp log_message 10282 140365580695296 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:43:24,592 basehttp log_message 10282 140365279106816 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:43:24,618 basehttp log_message 10282 140365279106816 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:43:24,725 basehttp log_message 10282 140365503919872 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-03 18:43:27,494 basehttp log_message 10282 140365279106816 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:43:27,555 basehttp log_message 10282 140365503919872 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 18:43:28,402 basehttp log_message 10282 140365503919872 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:43:29,635 basehttp log_message 10282 140365503919872 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 18:43:30,692 basehttp log_message 10282 140365279106816 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 18:43:30,698 basehttp log_message 10282 140365503919872 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 18:43:31,950 basehttp log_message 10282 140365503919872 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 18:43:32,289 basehttp log_message 10282 140365503919872 "GET /payments/alipay/202112030000000100000073/ HTTP/1.1" 200 937
+INFO 2021-12-03 18:43:42,487 basehttp log_message 10282 140365503919872 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 18:43:42,506 basehttp log_message 10282 140365279106816 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:43:44,468 basehttp log_message 10282 140365279106816 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:43:44,492 basehttp log_message 10282 140365503919872 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:43:44,495 basehttp log_message 10282 140365580695296 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:43:44,517 basehttp log_message 10282 140365503919872 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:43:44,581 basehttp log_message 10282 140365262321408 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-03 18:43:46,645 basehttp log_message 10282 140365262321408 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:43:49,568 basehttp log_message 10282 140365262321408 "GET /cart/ HTTP/1.1" 200 256
+INFO 2021-12-03 18:43:51,021 basehttp log_message 10282 140365262321408 "GET /cart/select/ HTTP/1.1" 200 240
+INFO 2021-12-03 18:43:51,029 basehttp log_message 10282 140365503919872 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:43:52,295 basehttp log_message 10282 140365503919872 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 18:43:52,452 basehttp log_message 10282 140365503919872 "GET /payments/alipay/202112030000000100000074/ HTTP/1.1" 200 943
+INFO 2021-12-03 18:45:59,797 autoreload run_with_reloader 10871 139891239526784 Watching for file changes with StatReloader
+INFO 2021-12-03 18:46:16,976 basehttp log_message 10871 139891129849600 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 18:46:16,994 basehttp log_message 10871 139891121456896 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:46:19,206 basehttp log_message 10871 139891121456896 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:46:19,242 basehttp log_message 10871 139891129849600 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:46:19,318 basehttp log_message 10871 139891121456896 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:46:19,344 basehttp log_message 10871 139891121456896 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:46:20,164 basehttp log_message 10871 139890909771520 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1811
+INFO 2021-12-03 18:46:23,169 basehttp log_message 10871 139891121456896 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:46:23,203 basehttp log_message 10871 139890909771520 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1760
+INFO 2021-12-03 18:46:24,477 basehttp log_message 10871 139890909771520 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:46:26,621 basehttp log_message 10871 139890909771520 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:46:29,333 basehttp log_message 10871 139890909771520 "GET /cart/ HTTP/1.1" 200 552
+INFO 2021-12-03 18:46:30,818 basehttp log_message 10871 139890909771520 "GET /cart/select/ HTTP/1.1" 200 521
+INFO 2021-12-03 18:46:30,821 basehttp log_message 10871 139891121456896 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 18:46:32,150 basehttp log_message 10871 139891121456896 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 18:46:32,473 basehttp log_message 10871 139891121456896 "GET /payments/alipay/202112030000000100000075/ HTTP/1.1" 200 939
+INFO 2021-12-03 18:46:45,616 basehttp log_message 10871 139891121456896 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 18:46:45,649 basehttp log_message 10871 139890909771520 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:46:47,236 basehttp log_message 10871 139890750486272 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:46:47,246 basehttp log_message 10871 139890909771520 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:46:47,256 basehttp log_message 10871 139891129849600 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:46:47,263 basehttp log_message 10871 139890742093568 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:46:47,302 basehttp log_message 10871 139891121456896 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-03 18:46:50,306 basehttp log_message 10871 139890742093568 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:46:50,353 basehttp log_message 10871 139891121456896 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 18:46:51,304 basehttp log_message 10871 139891121456896 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:46:53,307 basehttp log_message 10871 139891121456896 "GET /cart/ HTTP/1.1" 200 315
+INFO 2021-12-03 18:46:54,652 basehttp log_message 10871 139890742093568 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 18:46:54,662 basehttp log_message 10871 139891121456896 "GET /cart/select/ HTTP/1.1" 200 300
+INFO 2021-12-03 18:46:55,902 basehttp log_message 10871 139891121456896 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 18:46:56,061 basehttp log_message 10871 139891121456896 "GET /payments/alipay/202112030000000100000076/ HTTP/1.1" 200 941
+INFO 2021-12-03 18:47:14,410 basehttp log_message 10871 139891121456896 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 18:47:14,432 basehttp log_message 10871 139890742093568 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:47:15,963 basehttp log_message 10871 139890742093568 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:47:15,980 basehttp log_message 10871 139891129849600 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:47:16,029 basehttp log_message 10871 139891129849600 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:47:16,054 basehttp log_message 10871 139890742093568 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:47:16,096 basehttp log_message 10871 139890909771520 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1811
+INFO 2021-12-03 18:47:17,762 basehttp log_message 10871 139890742093568 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:47:17,808 basehttp log_message 10871 139890909771520 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 18:47:19,155 basehttp log_message 10871 139890909771520 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:47:20,029 basehttp log_message 10871 139890909771520 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:47:21,223 basehttp log_message 10871 139890909771520 "GET /cart/ HTTP/1.1" 200 546
+INFO 2021-12-03 18:47:22,676 basehttp log_message 10871 139890909771520 "GET /cart/select/ HTTP/1.1" 200 513
+INFO 2021-12-03 18:47:22,681 basehttp log_message 10871 139890742093568 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 18:47:24,048 basehttp log_message 10871 139890742093568 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 18:47:24,389 basehttp log_message 10871 139890742093568 "GET /payments/alipay/202112030000000100000077/ HTTP/1.1" 200 947
+INFO 2021-12-03 18:48:12,363 basehttp log_message 10871 139890742093568 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 18:48:12,369 basehttp log_message 10871 139890909771520 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 18:59:04,395 basehttp log_message 10871 139890909771520 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 18:59:04,397 basehttp log_message 10871 139891129849600 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 18:59:04,433 basehttp log_message 10871 139891129849600 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:59:04,436 basehttp log_message 10871 139890909771520 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:59:04,484 basehttp log_message 10871 139890750486272 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-03 18:59:37,411 basehttp log_message 10871 139890909771520 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 18:59:37,438 basehttp log_message 10871 139890750486272 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1760
+INFO 2021-12-03 18:59:52,032 basehttp log_message 10871 139890750486272 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:59:53,788 basehttp log_message 10871 139890750486272 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 18:59:56,803 basehttp log_message 10871 139890750486272 "GET /cart/ HTTP/1.1" 200 547
+INFO 2021-12-03 19:00:00,441 basehttp log_message 10871 139890750486272 "GET /cart/select/ HTTP/1.1" 200 514
+INFO 2021-12-03 19:00:00,442 basehttp log_message 10871 139890909771520 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:00:02,552 basehttp log_message 10871 139890909771520 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:00:02,885 basehttp log_message 10871 139890909771520 "GET /payments/alipay/202112030000000100000078/ HTTP/1.1" 200 949
+INFO 2021-12-03 19:00:12,231 basehttp log_message 10871 139890909771520 "GET /cart/ HTTP/1.1" 204 43
+INFO 2021-12-03 19:00:23,024 basehttp log_message 10871 139890750486272 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:00:23,048 basehttp log_message 10871 139890742093568 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:00:23,069 basehttp log_message 10871 139890742093568 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:00:23,072 basehttp log_message 10871 139891129849600 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:00:23,114 basehttp log_message 10871 139890909771520 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1760
+INFO 2021-12-03 19:00:25,930 basehttp log_message 10871 139890909771520 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:00:27,529 basehttp log_message 10871 139890909771520 "GET /cart/ HTTP/1.1" 200 315
+INFO 2021-12-03 19:00:34,024 basehttp log_message 10871 139890909771520 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 19:00:34,026 basehttp log_message 10871 139890742093568 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:00:47,631 basehttp log_message 10871 139890742093568 "OPTIONS /payments/alipay/query/202112030000000100000078 HTTP/1.1" 200 0
+INFO 2021-12-03 19:00:47,634 basehttp log_message 10871 139890742093568 "GET /payments/alipay/query/202112030000000100000078 HTTP/1.1" 301 0
+INFO 2021-12-03 19:00:47,637 basehttp log_message 10871 139890742093568 "OPTIONS /payments/alipay/query/202112030000000100000078/ HTTP/1.1" 200 0
+WARNING 2021-12-03 19:00:47,643 log log_response 10871 139890742093568 Unauthorized: /payments/alipay/query/202112030000000100000078/
+WARNING 2021-12-03 19:00:47,643 basehttp log_message 10871 139890742093568 "GET /payments/alipay/query/202112030000000100000078/ HTTP/1.1" 401 38
+INFO 2021-12-03 19:00:53,007 basehttp log_message 10871 139890742093568 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:00:55,613 basehttp log_message 10871 139890742093568 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:00:55,634 basehttp log_message 10871 139890750486272 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:00:55,675 basehttp log_message 10871 139890909771520 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:00:55,681 basehttp log_message 10871 139890750486272 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:00:55,726 basehttp log_message 10871 139891129849600 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 19:00:58,647 basehttp log_message 10871 139891129849600 "POST /cart/ HTTP/1.1" 200 100
+INFO 2021-12-03 19:01:00,023 basehttp log_message 10871 139891129849600 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:01:01,645 basehttp log_message 10871 139891129849600 "GET /cart/select/ HTTP/1.1" 200 300
+INFO 2021-12-03 19:01:01,650 basehttp log_message 10871 139890750486272 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:01:06,474 basehttp log_message 10871 139890750486272 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 19:01:06,507 basehttp log_message 10871 139891129849600 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:01:09,316 basehttp log_message 10871 139891129849600 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:01:09,521 basehttp log_message 10871 139891129849600 "GET /payments/alipay/202112030000000100000079/ HTTP/1.1" 200 943
+INFO 2021-12-03 19:03:42,385 autoreload trigger_reload 10871 139891239526784 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-03 19:03:43,972 autoreload run_with_reloader 12011 140211941081472 Watching for file changes with StatReloader
+WARNING 2021-12-03 19:09:47,454 log log_response 12011 140211757512448 Bad Request: /payments/alipay/result/
+WARNING 2021-12-03 19:09:47,457 basehttp log_message 12011 140211757512448 "GET /payments/alipay/result/ HTTP/1.1" 400 43
+INFO 2021-12-03 19:10:53,371 autoreload trigger_reload 12011 140211941081472 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-03 19:10:55,055 autoreload run_with_reloader 12249 140097239806336 Watching for file changes with StatReloader
+INFO 2021-12-03 19:11:00,767 basehttp log_message 12249 140097062942464 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:11:00,797 basehttp log_message 12249 140097037502208 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:11:00,815 basehttp log_message 12249 140097054549760 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:11:00,821 basehttp log_message 12249 140097037502208 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:11:01,812 basehttp log_message 12249 140097046157056 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-12-03 19:11:03,407 basehttp log_message 12249 140097037502208 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:11:03,457 basehttp log_message 12249 140097046157056 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1760
+INFO 2021-12-03 19:11:04,441 basehttp log_message 12249 140097046157056 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:11:05,970 basehttp log_message 12249 140097046157056 "GET /cart/ HTTP/1.1" 200 315
+INFO 2021-12-03 19:11:07,726 basehttp log_message 12249 140097046157056 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 19:11:07,748 basehttp log_message 12249 140097037502208 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:11:09,760 basehttp log_message 12249 140097037502208 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:11:10,064 basehttp log_message 12249 140097037502208 "GET /payments/alipay/202112030000000100000080/ HTTP/1.1" 200 92
+WARNING 2021-12-03 19:11:11,122 log log_response 12249 140097037502208 Bad Request: /payments/alipay/result/
+WARNING 2021-12-03 19:11:11,125 basehttp log_message 12249 140097037502208 "GET /payments/alipay/result/ HTTP/1.1" 400 43
+INFO 2021-12-03 19:11:25,122 basehttp log_message 12249 140097037502208 "OPTIONS /payments/alipay/query/202112030000000100000080 HTTP/1.1" 200 0
+INFO 2021-12-03 19:11:25,126 basehttp log_message 12249 140097037502208 "GET /payments/alipay/query/202112030000000100000080 HTTP/1.1" 301 0
+INFO 2021-12-03 19:11:25,177 basehttp log_message 12249 140097037502208 "OPTIONS /payments/alipay/query/202112030000000100000080/ HTTP/1.1" 200 0
+WARNING 2021-12-03 19:11:25,184 log log_response 12249 140097037502208 Unauthorized: /payments/alipay/query/202112030000000100000080/
+WARNING 2021-12-03 19:11:25,186 basehttp log_message 12249 140097037502208 "GET /payments/alipay/query/202112030000000100000080/ HTTP/1.1" 401 38
+WARNING 2021-12-03 19:11:26,239 log log_response 12249 140097037502208 Unauthorized: /payments/alipay/query/202112030000000100000080/
+WARNING 2021-12-03 19:11:26,239 basehttp log_message 12249 140097037502208 "GET /payments/alipay/query/202112030000000100000080/ HTTP/1.1" 401 38
+INFO 2021-12-03 19:11:38,440 basehttp log_message 12249 140097037502208 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:11:38,445 basehttp log_message 12249 140097046157056 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:16:19,720 basehttp log_message 12249 140097046157056 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:16:19,731 basehttp log_message 12249 140097054549760 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:17:12,663 basehttp log_message 12249 140097054549760 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:17:12,668 basehttp handle_error 12249 140097054549760 - Broken pipe from ('127.0.0.1', 54790)
+
+INFO 2021-12-03 19:17:12,733 basehttp log_message 12249 140097046157056 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:17:16,834 basehttp log_message 12249 140097046157056 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:17:16,953 basehttp log_message 12249 140097054549760 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:17:18,594 basehttp log_message 12249 140097054549760 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:17:18,610 basehttp log_message 12249 140097046157056 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:17:18,700 basehttp log_message 12249 140097046157056 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:17:18,719 basehttp log_message 12249 140097046157056 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:17:18,765 basehttp log_message 12249 140097062942464 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-12-03 19:17:21,226 basehttp log_message 12249 140097046157056 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:17:21,276 basehttp log_message 12249 140097062942464 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1760
+INFO 2021-12-03 19:17:23,053 basehttp log_message 12249 140097062942464 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:17:24,732 basehttp log_message 12249 140097062942464 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:17:26,124 basehttp log_message 12249 140097062942464 "GET /cart/select/ HTTP/1.1" 200 300
+INFO 2021-12-03 19:17:26,125 basehttp log_message 12249 140097046157056 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:17:27,486 basehttp log_message 12249 140097046157056 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:17:27,624 basehttp log_message 12249 140097046157056 "GET /payments/alipay/202112030000000100000081/ HTTP/1.1" 200 92
+WARNING 2021-12-03 19:17:28,741 log log_response 12249 140097046157056 Bad Request: /payments/alipay/result/
+WARNING 2021-12-03 19:17:28,742 basehttp log_message 12249 140097046157056 "GET /payments/alipay/result/ HTTP/1.1" 400 43
+INFO 2021-12-03 19:18:32,757 basehttp log_message 12249 140097046157056 "GET /orders/pay/status/ HTTP/1.1" 200 65
+INFO 2021-12-03 19:18:32,886 basehttp log_message 12249 140097046157056 "GET /orders/list/?page=1&size=5&status=-1 HTTP/1.1" 200 2884
+INFO 2021-12-03 19:18:36,972 basehttp log_message 12249 140097046157056 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 19:18:37,045 basehttp log_message 12249 140097062942464 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 897
+INFO 2021-12-03 19:18:41,329 basehttp log_message 12249 140097062942464 "GET /orders/pay/status/ HTTP/1.1" 200 65
+INFO 2021-12-03 19:18:41,471 basehttp log_message 12249 140097046157056 "GET /orders/list/?page=1&size=5&status=-1 HTTP/1.1" 200 2884
+INFO 2021-12-03 19:18:44,358 basehttp log_message 12249 140097046157056 "GET /payments/alipay/202112030000000100000081/ HTTP/1.1" 200 92
+WARNING 2021-12-03 19:18:45,580 log log_response 12249 140097046157056 Bad Request: /payments/alipay/result/
+WARNING 2021-12-03 19:18:45,583 basehttp log_message 12249 140097046157056 "GET /payments/alipay/result/ HTTP/1.1" 400 43
+INFO 2021-12-03 19:18:50,196 basehttp log_message 12249 140097046157056 "OPTIONS /payments/alipay/query/202112030000000100000081 HTTP/1.1" 200 0
+INFO 2021-12-03 19:18:50,202 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081 HTTP/1.1" 301 0
+INFO 2021-12-03 19:18:50,215 basehttp log_message 12249 140097046157056 "OPTIONS /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 200 0
+WARNING 2021-12-03 19:18:50,836 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:18:50,837 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:18:55,674 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:18:55,674 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:00,831 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:00,833 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:05,621 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:05,623 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:10,592 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:10,593 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:15,664 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:15,667 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:20,626 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:20,629 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:25,621 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:25,622 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:30,696 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:30,698 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:35,776 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:35,778 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:40,594 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:40,596 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:45,586 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:45,588 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:50,721 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:50,724 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:19:55,649 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:19:55,653 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:00,539 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:00,540 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:05,629 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:05,631 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:10,710 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:10,711 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:15,557 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:15,558 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:20,558 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:20,558 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:25,599 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:25,600 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:30,772 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:30,774 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:35,556 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:35,559 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:40,571 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:40,573 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:45,554 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:45,555 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:50,573 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:50,575 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:20:55,537 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:20:55,537 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:00,590 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:00,591 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:06,026 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:06,027 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:10,581 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:10,582 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:15,624 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:15,627 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:20,547 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:20,548 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:25,776 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:25,779 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:30,563 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:30,564 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:35,575 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:35,576 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:40,558 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:40,559 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:45,969 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:45,971 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:21:50,572 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:50,573 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:21:55,217 basehttp log_message 12249 140097046157056 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:21:55,230 basehttp log_message 12249 140097062942464 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:21:55,287 basehttp log_message 12249 140097062942464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:21:55,314 basehttp log_message 12249 140097062942464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:21:55,359 basehttp log_message 12249 140097054549760 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+WARNING 2021-12-03 19:21:55,787 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:21:55,788 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:21:57,894 basehttp log_message 12249 140097054549760 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:21:57,964 basehttp log_message 12249 140097046157056 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1758
+INFO 2021-12-03 19:21:58,911 basehttp log_message 12249 140097046157056 "POST /cart/ HTTP/1.1" 201 67
+WARNING 2021-12-03 19:22:00,576 log log_response 12249 140097046157056 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:00,577 basehttp log_message 12249 140097046157056 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:22:00,641 basehttp log_message 12249 140097054549760 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:22:02,157 basehttp log_message 12249 140097046157056 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:22:02,168 basehttp log_message 12249 140097054549760 "GET /cart/select/ HTTP/1.1" 200 300
+INFO 2021-12-03 19:22:04,110 basehttp log_message 12249 140097054549760 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:22:04,257 basehttp log_message 12249 140097054549760 "GET /payments/alipay/202112030000000100000082/ HTTP/1.1" 200 92
+WARNING 2021-12-03 19:22:06,133 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:06,134 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:10,607 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:10,608 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:15,634 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:15,636 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:20,851 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:20,852 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:25,725 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:25,726 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:30,611 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:30,613 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:35,698 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:35,699 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:40,573 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:40,576 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:45,577 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:45,578 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:50,662 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:50,663 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:22:55,546 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:22:55,550 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:23:00,901 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:23:00,901 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:23:05,547 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:23:05,548 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:23:10,601 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:23:10,603 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:23:15,632 log log_response 12249 140097054549760 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:23:15,633 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:23:18,704 basehttp log_message 12249 140097054549760 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:23:18,740 basehttp log_message 12249 140097046157056 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:23:18,794 basehttp log_message 12249 140097046157056 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:23:18,801 basehttp log_message 12249 140097054549760 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:23:18,881 basehttp log_message 12249 140097062942464 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+WARNING 2021-12-03 19:23:19,775 log log_response 12249 140097062942464 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:23:19,778 basehttp log_message 12249 140097062942464 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:23:20,523 basehttp log_message 12249 140097054549760 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:23:20,573 basehttp log_message 12249 140097062942464 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1760
+INFO 2021-12-03 19:23:21,731 basehttp log_message 12249 140097062942464 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:23:23,245 basehttp log_message 12249 140097062942464 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:23:24,707 basehttp log_message 12249 140097046157056 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:23:24,715 basehttp log_message 12249 140097054549760 "GET /cart/select/ HTTP/1.1" 200 300
+WARNING 2021-12-03 19:23:24,772 log log_response 12249 140097062942464 Bad Request: /payments/alipay/query/202112030000000100000081/
+WARNING 2021-12-03 19:23:24,773 basehttp log_message 12249 140097062942464 "GET /payments/alipay/query/202112030000000100000081/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:23:25,754 basehttp log_message 12249 140097062942464 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:23:25,892 basehttp log_message 12249 140097062942464 "GET /payments/alipay/202112030000000100000083/ HTTP/1.1" 200 92
+INFO 2021-12-03 19:24:39,014 basehttp log_message 12249 140097062942464 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:24:39,027 basehttp log_message 12249 140097054549760 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:24:40,532 basehttp log_message 12249 140097054549760 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:24:40,560 basehttp log_message 12249 140097046157056 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:24:40,567 basehttp log_message 12249 140097054549760 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:24:40,618 basehttp log_message 12249 140097054549760 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:24:40,700 basehttp log_message 12249 140097062942464 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1811
+INFO 2021-12-03 19:24:42,798 basehttp log_message 12249 140097054549760 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:24:42,852 basehttp log_message 12249 140097062942464 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1760
+INFO 2021-12-03 19:24:44,125 basehttp log_message 12249 140097062942464 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:24:45,498 basehttp log_message 12249 140097062942464 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:24:47,300 basehttp log_message 12249 140097062942464 "GET /cart/select/ HTTP/1.1" 200 300
+INFO 2021-12-03 19:24:47,316 basehttp log_message 12249 140097054549760 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:24:50,130 basehttp log_message 12249 140097054549760 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:24:50,297 basehttp log_message 12249 140097054549760 "GET /payments/alipay/202112030000000100000084/ HTTP/1.1" 200 92
+INFO 2021-12-03 19:26:08,801 basehttp log_message 12249 140097062942464 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:26:08,801 basehttp log_message 12249 140097054549760 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:26:10,181 basehttp log_message 12249 140097062942464 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:26:10,224 basehttp log_message 12249 140097046157056 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:26:10,308 basehttp log_message 12249 140097062942464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:26:10,312 basehttp log_message 12249 140097046157056 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:26:10,460 basehttp log_message 12249 140097054549760 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-03 19:26:12,024 basehttp log_message 12249 140097062942464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:26:12,077 basehttp log_message 12249 140097054549760 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 19:26:13,118 basehttp log_message 12249 140097054549760 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:26:14,217 basehttp log_message 12249 140097054549760 "GET /cart/ HTTP/1.1" 200 315
+INFO 2021-12-03 19:26:15,570 basehttp log_message 12249 140097062942464 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:26:15,585 basehttp log_message 12249 140097054549760 "GET /cart/select/ HTTP/1.1" 200 300
+INFO 2021-12-03 19:26:16,702 basehttp log_message 12249 140097054549760 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:26:16,941 basehttp log_message 12249 140097054549760 "GET /payments/alipay/202112030000000100000085/ HTTP/1.1" 200 92
+INFO 2021-12-03 19:26:27,821 basehttp log_message 12249 140097054549760 "OPTIONS /payments/alipay/query/202112030000000100000085 HTTP/1.1" 200 0
+INFO 2021-12-03 19:26:27,825 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000085 HTTP/1.1" 301 0
+INFO 2021-12-03 19:26:27,828 basehttp log_message 12249 140097054549760 "OPTIONS /payments/alipay/query/202112030000000100000085/ HTTP/1.1" 200 0
+WARNING 2021-12-03 19:26:27,837 log log_response 12249 140097054549760 Unauthorized: /payments/alipay/query/202112030000000100000085/
+WARNING 2021-12-03 19:26:27,838 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000085/ HTTP/1.1" 401 38
+WARNING 2021-12-03 19:26:29,208 log log_response 12249 140097054549760 Unauthorized: /payments/alipay/query/202112030000000100000085/
+WARNING 2021-12-03 19:26:29,208 basehttp log_message 12249 140097054549760 "GET /payments/alipay/query/202112030000000100000085/ HTTP/1.1" 401 38
+WARNING 2021-12-03 19:26:59,051 log log_response 12249 140097054549760 Bad Request: /payments/alipay/result/
+WARNING 2021-12-03 19:26:59,052 basehttp log_message 12249 140097054549760 "GET /payments/alipay/result/ HTTP/1.1" 400 43
+INFO 2021-12-03 19:27:02,209 basehttp log_message 12249 140097054549760 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:27:02,213 basehttp handle_error 12249 140097054549760 - Broken pipe from ('127.0.0.1', 56284)
+
+INFO 2021-12-03 19:27:02,225 basehttp log_message 12249 140097062942464 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:27:04,017 basehttp log_message 12249 140097062942464 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:27:04,082 basehttp log_message 12249 140097062942464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:27:04,093 basehttp log_message 12249 140097046157056 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:27:04,101 basehttp log_message 12249 140097062942464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:27:04,152 basehttp log_message 12249 140097054549760 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-03 19:27:06,480 basehttp log_message 12249 140097062942464 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:27:06,515 basehttp log_message 12249 140097054549760 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 19:27:07,476 basehttp log_message 12249 140097054549760 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:27:08,794 basehttp log_message 12249 140097054549760 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:27:10,234 basehttp log_message 12249 140097054549760 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 19:27:10,251 basehttp log_message 12249 140097062942464 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:27:11,651 basehttp log_message 12249 140097062942464 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:27:11,820 basehttp log_message 12249 140097062942464 "GET /payments/alipay/202112030000000100000086/ HTTP/1.1" 200 92
+WARNING 2021-12-03 19:27:12,971 log log_response 12249 140097062942464 Bad Request: /payments/alipay/result/
+WARNING 2021-12-03 19:27:12,973 basehttp log_message 12249 140097062942464 "GET /payments/alipay/result/ HTTP/1.1" 400 43
+INFO 2021-12-03 19:28:20,786 autoreload trigger_reload 12249 140097239806336 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-03 19:28:25,580 autoreload run_with_reloader 13102 139835437420928 Watching for file changes with StatReloader
+INFO 2021-12-03 19:28:28,218 basehttp log_message 13102 139835234391808 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:28:28,249 basehttp log_message 13102 139835260618496 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:28:28,253 basehttp log_message 13102 139835234391808 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:28:28,256 basehttp log_message 13102 139835252225792 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:28:29,019 basehttp log_message 13102 139835243833088 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-03 19:28:31,562 basehttp log_message 13102 139835252225792 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:28:31,649 basehttp log_message 13102 139835243833088 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1760
+INFO 2021-12-03 19:28:32,748 basehttp log_message 13102 139835243833088 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:28:33,893 basehttp log_message 13102 139835243833088 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:28:35,361 basehttp log_message 13102 139835252225792 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:28:35,371 basehttp log_message 13102 139835243833088 "GET /cart/select/ HTTP/1.1" 200 300
+INFO 2021-12-03 19:28:36,931 basehttp log_message 13102 139835243833088 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:28:37,967 basehttp log_message 13102 139835243833088 "GET /payments/alipay/202112030000000100000087/ HTTP/1.1" 200 935
+INFO 2021-12-03 19:34:22,852 autoreload trigger_reload 13102 139835437420928 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-03 19:34:24,563 autoreload run_with_reloader 13312 140542942491008 Watching for file changes with StatReloader
+INFO 2021-12-03 19:34:27,622 basehttp log_message 13312 140542832813824 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:34:27,626 basehttp handle_error 13312 140542832813824 - Broken pipe from ('127.0.0.1', 57016)
+
+INFO 2021-12-03 19:34:27,628 basehttp log_message 13312 140542824421120 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:34:29,121 basehttp log_message 13312 140542824421120 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:34:29,148 basehttp log_message 13312 140542832813824 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:34:29,225 basehttp log_message 13312 140542832813824 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:34:29,251 basehttp log_message 13312 140542832813824 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:34:29,770 basehttp log_message 13312 140542814193408 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-03 19:34:31,572 basehttp log_message 13312 140542832813824 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:34:31,617 basehttp log_message 13312 140542814193408 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1760
+INFO 2021-12-03 19:34:32,671 basehttp log_message 13312 140542814193408 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:34:34,552 basehttp log_message 13312 140542814193408 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:34:35,812 basehttp log_message 13312 140542832813824 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:34:35,813 basehttp log_message 13312 140542814193408 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 19:34:37,292 basehttp log_message 13312 140542814193408 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:34:38,336 basehttp log_message 13312 140542814193408 "GET /payments/alipay/202112030000000100000088/ HTTP/1.1" 200 935
+INFO 2021-12-03 19:38:11,509 autoreload trigger_reload 13312 140542942491008 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-03 19:38:13,057 autoreload run_with_reloader 13440 140179365835136 Watching for file changes with StatReloader
+INFO 2021-12-03 19:38:19,359 basehttp log_message 13440 140179163084544 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:38:19,418 basehttp log_message 13440 140179163084544 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:38:19,428 basehttp log_message 13440 140179189049088 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:38:19,435 basehttp log_message 13440 140179180656384 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:38:20,015 basehttp log_message 13440 140179172001536 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1808
+INFO 2021-12-03 19:38:21,505 basehttp log_message 13440 140179163084544 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:38:21,567 basehttp log_message 13440 140179172001536 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 19:38:22,580 basehttp log_message 13440 140179172001536 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:38:23,673 basehttp log_message 13440 140179172001536 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:38:25,131 basehttp log_message 13440 140179163084544 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:38:25,134 basehttp log_message 13440 140179172001536 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 19:38:26,885 basehttp log_message 13440 140179172001536 "POST /orders/ HTTP/1.1" 201 62
+ERROR 2021-12-03 19:38:27,460 log log_response 13440 140179172001536 Internal Server Error: /payments/alipay/202112030000000100000089/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/payments/views.py", line 70, in link
+    link = alipay.page_pay(order_number, order.real_price, order.name)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py", line 38, in page_pay
+    order_string = self.client_api(
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/alipay/__init__.py", line 209, in client_api
+    return self.sign_data(data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/alipay/__init__.py", line 171, in sign_data
+    ordered_items = self._ordered_data(data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/alipay/__init__.py", line 136, in _ordered_data
+    data[k] = json.dumps(v, separators=(',', ':'))
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Decimal is not JSON serializable
+ERROR 2021-12-03 19:38:27,462 basehttp log_message 13440 140179172001536 "GET /payments/alipay/202112030000000100000089/ HTTP/1.1" 500 144769
+INFO 2021-12-03 19:40:22,324 autoreload run_with_reloader 13598 140432657781120 Watching for file changes with StatReloader
+INFO 2021-12-03 19:40:30,913 basehttp log_message 13598 140432478566144 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-03 19:40:30,925 basehttp log_message 13598 140432470173440 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-03 19:40:32,396 basehttp log_message 13598 140432470173440 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:40:32,406 basehttp log_message 13598 140432478566144 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:40:32,408 basehttp log_message 13598 140432453388032 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:40:32,450 basehttp log_message 13598 140432453388032 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:40:36,455 basehttp log_message 13598 140432478566144 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:40:36,497 basehttp log_message 13598 140432453388032 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:40:36,503 basehttp log_message 13598 140432478566144 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:40:36,524 basehttp log_message 13598 140432478566144 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:40:39,699 basehttp log_message 13598 140432470173440 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1809
+INFO 2021-12-03 19:40:42,715 basehttp log_message 13598 140432478566144 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:40:42,769 basehttp log_message 13598 140432470173440 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+INFO 2021-12-03 19:40:43,738 basehttp log_message 13598 140432470173440 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:40:45,194 basehttp log_message 13598 140432470173440 "GET /cart/ HTTP/1.1" 200 316
+INFO 2021-12-03 19:40:46,631 basehttp log_message 13598 140432470173440 "GET /cart/select/ HTTP/1.1" 200 299
+INFO 2021-12-03 19:40:46,643 basehttp log_message 13598 140432478566144 "GET /coupon/user/ HTTP/1.1" 200 974
+INFO 2021-12-03 19:40:47,890 basehttp log_message 13598 140432478566144 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:40:48,691 basehttp log_message 13598 140432478566144 "GET /payments/alipay/202112030000000100000090/ HTTP/1.1" 200 925
+ERROR 2021-12-03 19:40:54,355 log log_response 13598 140432461780736 Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fb8eb6ecc40>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='fuguangonline.oss-cn-beijing.aliyuncs.com', port=443): Max retries exceeded with url: /?acl= (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb8eb6ecc40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/http.py", line 43, in do_request
+    return Response(self.session.request(req.method, req.url,
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='fuguangonline.oss-cn-beijing.aliyuncs.com', port=443): Max retries exceeded with url: /?acl= (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb8eb6ecc40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/fields.py", line 1561, in to_representation
+    url = value.url
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/db/models/fields/files.py", line 64, in url
+    return self.storage.url(self.name)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/utils/functional.py", line 246, in inner
+    self._setup()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/files/storage.py", line 371, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django_oss_storage/backends.py", line 234, in __init__
+    super(OssMediaStorage, self).__init__()
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django_oss_storage/backends.py", line 72, in __init__
+    self.bucket_acl = self.bucket.get_bucket_acl().acl
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 1601, in get_bucket_acl
+    resp = self.__do_bucket('GET', params={Bucket.ACL: ''})
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 2532, in __do_bucket
+    return self._do(method, self.bucket_name, '', **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/api.py", line 227, in _do
+    resp = self.session.do_request(req, timeout=self.timeout)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/oss2/http.py", line 51, in do_request
+    raise RequestError(e)
+oss2.exceptions.RequestError: {'status': -2, 'x-oss-request-id': '', 'details': "RequestError: HTTPSConnectionPool(host='fuguangonline.oss-cn-beijing.aliyuncs.com', port=443): Max retries exceeded with url: /?acl= (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb8eb6ecc40>: Failed to establish a new connection: [Errno 111] Connection refused'))"}
+INFO 2021-12-03 19:43:06,489 autoreload run_with_reloader 13728 140591549051264 Watching for file changes with StatReloader
+INFO 2021-12-03 19:43:32,775 autoreload trigger_reload 13728 140591549051264 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/utils/alipaysdk.py changed, reloading.
+INFO 2021-12-03 19:43:34,229 autoreload run_with_reloader 13776 139804343300480 Watching for file changes with StatReloader
+INFO 2021-12-03 19:43:37,407 basehttp log_message 13776 139804166489856 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:43:37,410 basehttp handle_error 13776 139804166489856 - Broken pipe from ('127.0.0.1', 58600)
+
+INFO 2021-12-03 19:43:37,414 basehttp log_message 13776 139804158097152 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:43:41,789 basehttp log_message 13776 139804158097152 "GET /orders/pay/status/ HTTP/1.1" 200 65
+INFO 2021-12-03 19:43:42,442 basehttp log_message 13776 139804158097152 "GET /orders/list/?page=1&size=5&status=-1 HTTP/1.1" 200 2428
+INFO 2021-12-03 19:43:44,866 basehttp log_message 13776 139804158097152 "OPTIONS /orders/90/ HTTP/1.1" 200 0
+INFO 2021-12-03 19:43:44,909 basehttp log_message 13776 139804158097152 "PUT /orders/90/ HTTP/1.1" 200 36
+INFO 2021-12-03 19:43:46,445 basehttp log_message 13776 139804158097152 "OPTIONS /orders/89/ HTTP/1.1" 200 0
+INFO 2021-12-03 19:43:46,471 basehttp log_message 13776 139804158097152 "PUT /orders/89/ HTTP/1.1" 200 36
+INFO 2021-12-03 19:43:47,959 basehttp log_message 13776 139804158097152 "OPTIONS /orders/88/ HTTP/1.1" 200 0
+INFO 2021-12-03 19:43:47,999 basehttp log_message 13776 139804158097152 "PUT /orders/88/ HTTP/1.1" 200 36
+INFO 2021-12-03 19:43:53,180 basehttp log_message 13776 139804158097152 "OPTIONS /orders/list/?page=2&size=5&status=-1 HTTP/1.1" 200 0
+INFO 2021-12-03 19:43:53,300 basehttp log_message 13776 139804158097152 "GET /orders/list/?page=2&size=5&status=-1 HTTP/1.1" 200 2482
+INFO 2021-12-03 19:43:57,357 basehttp log_message 13776 139804158097152 "GET /orders/list/?page=1&size=5&status=0 HTTP/1.1" 200 3369
+INFO 2021-12-03 19:43:57,512 basehttp log_message 13776 139804158097152 "GET /orders/list/?page=1&size=5&status=0 HTTP/1.1" 200 3369
+INFO 2021-12-03 19:44:01,806 basehttp log_message 13776 139804158097152 "GET /payments/alipay/202112020000000100000065/ HTTP/1.1" 200 937
+INFO 2021-12-03 19:44:07,195 basehttp log_message 13776 139804158097152 "OPTIONS /payments/alipay/query/202112020000000100000065 HTTP/1.1" 200 0
+INFO 2021-12-03 19:44:07,198 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000065 HTTP/1.1" 301 0
+INFO 2021-12-03 19:44:07,201 basehttp log_message 13776 139804158097152 "OPTIONS /payments/alipay/query/202112020000000100000065/ HTTP/1.1" 200 0
+WARNING 2021-12-03 19:44:07,588 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000065/
+WARNING 2021-12-03 19:44:07,589 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000065/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:44:12,528 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000065/
+WARNING 2021-12-03 19:44:12,528 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000065/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:44:17,726 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000065/
+WARNING 2021-12-03 19:44:17,726 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000065/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:44:22,791 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000065/
+WARNING 2021-12-03 19:44:22,792 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000065/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:44:27,702 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000065/
+WARNING 2021-12-03 19:44:27,702 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000065/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:44:32,732 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000065/
+WARNING 2021-12-03 19:44:32,733 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000065/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:44:37,752 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000065/ HTTP/1.1" 200 37
+INFO 2021-12-03 19:44:47,065 basehttp log_message 13776 139804158097152 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112020000000100000065&method=alipay.trade.page.pay.return&total_amount=400.00&sign=LgpR3AcrZJz0ThFh17RHc85aSfgbJIt%2Brmi7JHKryGi0x7ux2SzlGo9G%2BIIYlww%2FkpdU04RRu%2Bhz9Hsm2SAVYCrJcL0Rd0mDGDAbrem%2BW2po2YciDXPKVTxyNXbbU%2Bv9DmwsrconJlORsOjl9AbUBMWsTTwe0sXogNysxIspLfMiAvvjfWKMQoS8SVAu177JJHGwrrrtlvLIt%2FeBPDRILJbhBcx32VwnQTx5F5Y6UqAVQog%2BtQZmb4KaoX%2F%2B0H0sA37rlM%2Bg%2FoDXt2MW2tv7kv9WyePMW5QiUMrFp1YQ32jH6NkF85Z3NM7OkhTVrSyvqgB5okxO3rJSOvrhW2gJAA%3D%3D&trade_no=2021120322001484150502257496&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-03+19%3A44%3A42 HTTP/1.1" 200 430
+INFO 2021-12-03 19:44:55,361 basehttp log_message 13776 139804158097152 "GET /orders/pay/status/ HTTP/1.1" 200 65
+INFO 2021-12-03 19:44:55,495 basehttp log_message 13776 139804166489856 "GET /orders/list/?page=1&size=5&status=-1 HTTP/1.1" 200 2428
+INFO 2021-12-03 19:44:58,277 basehttp log_message 13776 139804166489856 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 19:44:58,338 basehttp log_message 13776 139804158097152 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 1269
+INFO 2021-12-03 19:45:16,676 basehttp log_message 13776 139804158097152 "GET /payments/alipay/202112020000000100000063/ HTTP/1.1" 200 960
+INFO 2021-12-03 19:45:21,704 basehttp log_message 13776 139804158097152 "OPTIONS /payments/alipay/query/202112020000000100000063 HTTP/1.1" 200 0
+INFO 2021-12-03 19:45:21,718 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000063 HTTP/1.1" 301 0
+INFO 2021-12-03 19:45:21,724 basehttp log_message 13776 139804158097152 "OPTIONS /payments/alipay/query/202112020000000100000063/ HTTP/1.1" 200 0
+WARNING 2021-12-03 19:45:22,348 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000063/
+WARNING 2021-12-03 19:45:22,348 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000063/ HTTP/1.1" 400 37
+WARNING 2021-12-03 19:45:27,082 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000063/
+WARNING 2021-12-03 19:45:27,085 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000063/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:45:28,509 basehttp log_message 13776 139804158097152 "OPTIONS /orders/59/ HTTP/1.1" 200 0
+INFO 2021-12-03 19:45:28,537 basehttp log_message 13776 139804158097152 "PUT /orders/59/ HTTP/1.1" 200 36
+INFO 2021-12-03 19:45:30,707 basehttp log_message 13776 139804158097152 "OPTIONS /orders/61/ HTTP/1.1" 200 0
+INFO 2021-12-03 19:45:30,738 basehttp log_message 13776 139804158097152 "PUT /orders/61/ HTTP/1.1" 200 36
+WARNING 2021-12-03 19:45:32,102 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000063/
+WARNING 2021-12-03 19:45:32,103 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000063/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:45:33,493 basehttp log_message 13776 139804158097152 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:45:33,525 basehttp log_message 13776 139803924031232 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:45:33,539 basehttp log_message 13776 139804158097152 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:45:33,542 basehttp log_message 13776 139804166489856 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:45:33,647 basehttp log_message 13776 139803932423936 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-03 19:45:36,680 basehttp log_message 13776 139804158097152 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:45:36,763 basehttp log_message 13776 139803932423936 "GET /courses/0/0/?page=2&size=5 HTTP/1.1" 200 1759
+WARNING 2021-12-03 19:45:37,329 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000063/
+WARNING 2021-12-03 19:45:37,331 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000063/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:45:40,200 basehttp log_message 13776 139804158097152 "POST /cart/ HTTP/1.1" 201 67
+WARNING 2021-12-03 19:45:42,165 log log_response 13776 139804158097152 Bad Request: /payments/alipay/query/202112020000000100000063/
+WARNING 2021-12-03 19:45:42,166 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112020000000100000063/ HTTP/1.1" 400 37
+INFO 2021-12-03 19:45:42,210 basehttp log_message 13776 139803932423936 "GET /cart/ HTTP/1.1" 200 269
+INFO 2021-12-03 19:45:43,553 basehttp log_message 13776 139803932423936 "GET /cart/select/ HTTP/1.1" 200 253
+INFO 2021-12-03 19:45:43,564 basehttp log_message 13776 139804158097152 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:45:45,369 basehttp log_message 13776 139804158097152 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:45:46,406 basehttp log_message 13776 139804158097152 "GET /payments/alipay/202112030000000100000091/ HTTP/1.1" 200 939
+INFO 2021-12-03 19:46:18,030 basehttp log_message 13776 139804158097152 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 19:46:18,112 basehttp log_message 13776 139803932423936 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 1269
+INFO 2021-12-03 19:46:24,907 basehttp log_message 13776 139803932423936 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112030000000100000091&method=alipay.trade.page.pay.return&total_amount=500.00&sign=QFOfS8ipZbGMcFPM%2FlM%2FtjdjbW2O%2BGVEPLzXy7kAiOlqOtti90jLPOYzhH5f2DVLhRQEReUePT25wpYVZk3WYsWS4DPoGa0P4J%2Bqh9Tk4%2BCXUHujillZnqY8qhLuQ4S1XCmo7k7tRmPOrSvRuU5a57yLSIQ8bcqTl%2FBvn5lNe8VTliWoQISUYwKbIzgFpX8nfxWdsCJHYYyFGG1RJiMeiw0jfv526iWYFBOX1wqIKs8ItlUO1IndwRp2ERHjc3WC4lA2i9X6osdrddsbmLEZo673%2BBH3%2BIiWpU5JOTAzOeuDu3tOf9VCR2HYhu2ljvGvBaRUgm8i1waftwEELUL%2Fbw%3D%3D&trade_no=2021120322001484150502258397&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-03+19%3A46%3A20 HTTP/1.1" 200 386
+INFO 2021-12-03 19:46:27,815 basehttp log_message 13776 139803932423936 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 19:46:27,899 basehttp log_message 13776 139804158097152 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 1654
+INFO 2021-12-03 19:46:37,223 basehttp log_message 13776 139804158097152 "OPTIONS /payments/alipay/query/202112030000000100000091 HTTP/1.1" 200 0
+INFO 2021-12-03 19:46:37,228 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112030000000100000091 HTTP/1.1" 301 0
+INFO 2021-12-03 19:46:37,287 basehttp log_message 13776 139804158097152 "OPTIONS /payments/alipay/query/202112030000000100000091/ HTTP/1.1" 200 0
+WARNING 2021-12-03 19:46:37,296 log log_response 13776 139804158097152 Unauthorized: /payments/alipay/query/202112030000000100000091/
+WARNING 2021-12-03 19:46:37,298 basehttp log_message 13776 139804158097152 "GET /payments/alipay/query/202112030000000100000091/ HTTP/1.1" 401 38
+INFO 2021-12-03 19:46:39,117 basehttp log_message 13776 139804158097152 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:46:39,118 basehttp log_message 13776 139803932423936 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:46:40,898 basehttp log_message 13776 139803932423936 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:46:40,899 basehttp log_message 13776 139804158097152 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:46:40,935 basehttp log_message 13776 139804166489856 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:46:40,940 basehttp log_message 13776 139803913541376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:46:40,992 basehttp log_message 13776 139803924031232 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+WARNING 2021-12-03 19:46:48,539 log log_response 13776 139803924031232 Bad Request: /cart/
+WARNING 2021-12-03 19:46:48,541 basehttp log_message 13776 139803924031232 "POST /cart/ HTTP/1.1" 400 83
+WARNING 2021-12-03 19:46:49,682 log log_response 13776 139803924031232 Bad Request: /cart/
+WARNING 2021-12-03 19:46:49,683 basehttp log_message 13776 139803924031232 "POST /cart/ HTTP/1.1" 400 83
+WARNING 2021-12-03 19:46:50,707 log log_response 13776 139803924031232 Bad Request: /cart/
+WARNING 2021-12-03 19:46:50,708 basehttp log_message 13776 139803924031232 "POST /cart/ HTTP/1.1" 400 83
+INFO 2021-12-03 19:46:51,837 basehttp log_message 13776 139803924031232 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:46:54,036 basehttp log_message 13776 139803924031232 "GET /cart/ HTTP/1.1" 200 267
+INFO 2021-12-03 19:46:55,369 basehttp log_message 13776 139803924031232 "GET /cart/select/ HTTP/1.1" 200 251
+INFO 2021-12-03 19:46:55,372 basehttp log_message 13776 139803913541376 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:46:56,591 basehttp log_message 13776 139803913541376 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:46:56,741 basehttp log_message 13776 139803913541376 "GET /payments/alipay/202112030000000100000092/ HTTP/1.1" 200 939
+INFO 2021-12-03 19:47:35,795 basehttp log_message 13776 139803913541376 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 19:47:35,926 basehttp log_message 13776 139803924031232 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 1654
+INFO 2021-12-03 19:47:54,381 basehttp log_message 13776 139803924031232 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:47:54,391 basehttp log_message 13776 139803913541376 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:47:56,778 basehttp log_message 13776 139803913541376 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:47:56,838 basehttp log_message 13776 139804166489856 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:47:56,939 basehttp log_message 13776 139804166489856 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:47:56,977 basehttp log_message 13776 139803913541376 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:47:56,997 basehttp log_message 13776 139803932423936 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1810
+INFO 2021-12-03 19:47:58,967 basehttp log_message 13776 139803932423936 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:48:01,414 basehttp log_message 13776 139803932423936 "GET /cart/ HTTP/1.1" 200 267
+INFO 2021-12-03 19:48:03,059 basehttp log_message 13776 139803932423936 "GET /cart/select/ HTTP/1.1" 200 251
+INFO 2021-12-03 19:48:03,061 basehttp log_message 13776 139803913541376 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:48:04,026 basehttp log_message 13776 139803913541376 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:48:04,182 basehttp log_message 13776 139803913541376 "GET /payments/alipay/202112030000000100000093/ HTTP/1.1" 200 935
+INFO 2021-12-03 19:48:40,671 basehttp log_message 13776 139803913541376 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112030000000100000093&method=alipay.trade.page.pay.return&total_amount=998.00&sign=IbRB7Gsjx0a1IEQnr9gY7LMv4f33FHslmy9UlOAcLxSCV%2BagZdF4pdz82kFgc2f0N%2FmEPHW3ES5WEvJLKwv5d9IVCMydU%2B8VQVS8jschDIXhMqH1BmREVz1iEOiqTqJMareLj6MhIl7sZo56HlDaz%2FCFHhns0NlXc4Mr6NcCanoT4E236t3ZhGOCQW%2Bq9mcNg7XiMiXrTvp7juuLRzQk1uI8jcsho1UVIlCWU7LPoYBcCbRDu7ctMdR62VjT2V6ZMU0%2Fiq7C8a1nwMl%2Bq10tRUS2DC4cik%2BpWvgXvf445Oqk%2FAIazwI81d7kWgIzt409rRZmNNT%2FjMOqCOMv0NQaOA%3D%3D&trade_no=2021120322001484150502258398&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-03+19%3A48%3A36 HTTP/1.1" 200 385
+INFO 2021-12-03 19:48:45,061 basehttp log_message 13776 139803913541376 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 19:48:45,249 basehttp log_message 13776 139803932423936 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 2037
+INFO 2021-12-03 19:48:50,945 basehttp log_message 13776 139803932423936 "GET /users/course/?type=0&page=1&size=5 HTTP/1.1" 200 2037
+INFO 2021-12-03 19:48:51,491 basehttp log_message 13776 139803932423936 "GET /users/course/?type=1&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 19:48:52,143 basehttp log_message 13776 139803932423936 "GET /users/course/?type=2&page=1&size=5 HTTP/1.1" 200 52
+INFO 2021-12-03 19:48:53,310 basehttp log_message 13776 139803932423936 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 2037
+INFO 2021-12-03 19:48:55,458 basehttp log_message 13776 139803932423936 "OPTIONS /payments/alipay/query/202112030000000100000093 HTTP/1.1" 200 0
+INFO 2021-12-03 19:48:55,461 basehttp log_message 13776 139803932423936 "GET /payments/alipay/query/202112030000000100000093 HTTP/1.1" 301 0
+INFO 2021-12-03 19:48:55,464 basehttp log_message 13776 139803932423936 "OPTIONS /payments/alipay/query/202112030000000100000093/ HTTP/1.1" 200 0
+WARNING 2021-12-03 19:48:55,468 log log_response 13776 139803932423936 Unauthorized: /payments/alipay/query/202112030000000100000093/
+WARNING 2021-12-03 19:48:55,469 basehttp log_message 13776 139803932423936 "GET /payments/alipay/query/202112030000000100000093/ HTTP/1.1" 401 38
+INFO 2021-12-03 19:48:58,460 basehttp log_message 13776 139803932423936 "GET /cart/select/ HTTP/1.1" 204 46
+INFO 2021-12-03 19:48:58,479 basehttp log_message 13776 139803913541376 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:48:59,826 basehttp log_message 13776 139803913541376 "GET /courses/directions/ HTTP/1.1" 200 409
+INFO 2021-12-03 19:48:59,837 basehttp log_message 13776 139803932423936 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:48:59,863 basehttp log_message 13776 139804166489856 "GET /courses/categories/0/ HTTP/1.1" 200 1942
+INFO 2021-12-03 19:48:59,885 basehttp log_message 13776 139803932423936 "GET /courses/hot_word/ HTTP/1.1" 200 2
+INFO 2021-12-03 19:48:59,964 basehttp log_message 13776 139804158097152 "GET /courses/0/0/?page=1&size=5 HTTP/1.1" 200 1811
+WARNING 2021-12-03 19:49:01,720 log log_response 13776 139804158097152 Bad Request: /cart/
+WARNING 2021-12-03 19:49:01,721 basehttp log_message 13776 139804158097152 "POST /cart/ HTTP/1.1" 400 83
+INFO 2021-12-03 19:49:03,205 basehttp log_message 13776 139804158097152 "POST /cart/ HTTP/1.1" 201 67
+INFO 2021-12-03 19:49:05,233 basehttp log_message 13776 139804158097152 "GET /cart/ HTTP/1.1" 200 256
+INFO 2021-12-03 19:49:06,617 basehttp log_message 13776 139804158097152 "GET /cart/select/ HTTP/1.1" 200 240
+INFO 2021-12-03 19:49:06,647 basehttp log_message 13776 139803932423936 "GET /coupon/user/ HTTP/1.1" 200 70
+INFO 2021-12-03 19:49:07,695 basehttp log_message 13776 139803932423936 "POST /orders/ HTTP/1.1" 201 62
+INFO 2021-12-03 19:49:07,936 basehttp log_message 13776 139803932423936 "GET /payments/alipay/202112030000000100000094/ HTTP/1.1" 200 937
+INFO 2021-12-03 19:49:52,255 basehttp log_message 13776 139803932423936 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=202112030000000100000094&method=alipay.trade.page.pay.return&total_amount=100.00&sign=oTVvIyRrecMO%2BxmPDh36umptfOiFQavSFzeLmtjXXzLAOsnTJCmU6a2y51%2B%2BEUkS0n4MS%2F1LeamdRbilKuET5aGK8GkHWqQcojGGZIGdzPPNISDf8WmbTUtQemBuEV01p2msgW%2F%2BXKrntZ2YKnsEheZb8pXSPgRIpgaituC3%2BEAjrnujDlEHgaSUdJN0EqlhEYQYA8dkmU9i72vl9MOTxtZ9kfelsp7%2BqiCm0r4QCOpj0vP8E6has3T%2FXsBV6RKt2iZ2x8b648FNZsH22y2Tooa2mnSDv%2BYSC6ajfwvfGyek1hopG%2Fi0ZXSsvyUxF%2BypMp8jzxiNKPDXAMrN3bCpZQ%3D%3D&trade_no=2021120322001484150502257383&auth_app_id=2021000118657978&version=1.0&app_id=2021000118657978&sign_type=RSA2&seller_id=2088621957205795&timestamp=2021-12-03+19%3A49%3A46 HTTP/1.1" 200 373
+INFO 2021-12-03 19:49:54,052 basehttp log_message 13776 139803932423936 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 19:49:54,180 basehttp log_message 13776 139804158097152 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 2034
+INFO 2021-12-03 19:49:57,871 basehttp log_message 13776 139804158097152 "OPTIONS /users/course/?type=-1&page=2&size=5 HTTP/1.1" 200 0
+INFO 2021-12-03 19:49:57,922 basehttp log_message 13776 139804158097152 "GET /users/course/?type=-1&page=2&size=5 HTTP/1.1" 200 538
+INFO 2021-12-03 19:49:59,568 basehttp log_message 13776 139804158097152 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 2034

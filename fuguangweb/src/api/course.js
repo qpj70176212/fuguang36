@@ -28,6 +28,7 @@ const course = reactive({
     course_type: [],  // 课程类型列表
     current_course_type: -1,  // 当前显示的课程类型，默认为-1，表示全部
     user_count: 0,    // 用户中心的课程列表总数
+    user_course_list:[], // 用户中心的课程列表
     // 获取学习方向信息
     get_course_direction(){
         return http.get("/courses/directions/")
@@ -90,7 +91,24 @@ const course = reactive({
     get_hot_word(){
         // 课程热搜关键字
         return http.get("/courses/hot_word")
-    }
+    },
+     get_course_type_list(token){
+        // 获取课程类型
+        return http.get("/courses/type/")
+    },
+    get_user_course_list(type, token){
+        // 获取用户的课程列表
+        return http.get("/users/course/", {
+            params: {
+                type: type,
+                page: this.page,
+                size: this.size,
+            },
+            headers:{
+                Authorization: "jwt " + token,
+            }
+        })
+    },
 })
 
 export default course;

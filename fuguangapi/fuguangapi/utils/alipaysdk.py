@@ -47,6 +47,9 @@ class AliPaySDK(AliPay):
             notify_url=self.config["notify_url"]  # 可选，不填则使用采用全局默认notify_url，必须填写服务端的路径
         )
 
+        # todo  如果价格是0返回成功页面
+        # if float(real_price) == 0:
+        #     return "http://www.fuguang.cn:3000/alipay"
         # 拼接完整的支付链接
         return f"{self.config['gateway']}?{order_string}"
 

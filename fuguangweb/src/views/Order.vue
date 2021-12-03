@@ -466,7 +466,12 @@ const commit_order = () => {
     store.commit("set_cart_total", store.state.cart_total - cart.select_course_list.length)
     // 根据订单号到服务端获取支付链接，并打开支付页面。
     order.alipay_page_pay(response.data.order_number).then(response => {
-      window.open(response.data.link, "_blank");
+      // if (order.real_price === 0) {
+      //   window.open("http://www.fuguang.cn:3000/alipay");
+      // }else {
+         window.open(response.data.link, "_blank");
+      // }
+
     })
   })
 }

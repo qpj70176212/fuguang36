@@ -111,9 +111,9 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     # 统计订单的总价格和实付价格
                     total_price += float(course.price)
                     if discount_name:
-                        real_price = discount_price
+                        real_price = float(discount_price)
                     else:
-                        real_price = course.price
+                        real_price = float(course.price)
 
                     # 在用户使用了优惠券，并且当前课程没有参与其他优惠活动时，找到最佳优惠课程
                     # 优惠券和价格为空时

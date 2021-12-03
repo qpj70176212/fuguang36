@@ -37,16 +37,21 @@ import {useRouter} from "vue-router";
 const router = useRouter()
 
 let query_string = location.search  // 获取查询字符串的支付结果参数
+ // if (order.real_price === 0) {
+ //   ElMessage.success("支付成功")
+ // }else {
 order.relay_alipay_result(query_string).then(response=>{
   order.is_show = true
   order.course_list = response.data.course_list
   order.real_price = response.data.real_price
   order.pay_time = response.data.pay_time
+
 }).catch(error=> {
   ElMessage.error(error.response.data.errmsg)
   router.push("/")
   console.log(error)
 })
+   // }
 
 </script>
 <style scoped>
