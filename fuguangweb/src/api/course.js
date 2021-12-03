@@ -24,17 +24,19 @@ const course = reactive({
         }
     },
     tabIndex: 1,      // 课程详情页中默认展示的课程信息的选项卡
+    chapter_list:[],  // 当前课程的章节列表
+    course_type: [],  // 课程类型列表
+    current_course_type: -1,  // 当前显示的课程类型，默认为-1，表示全部
+    user_count: 0,    // 用户中心的课程列表总数
     // 获取学习方向信息
     get_course_direction(){
         return http.get("/courses/directions/")
     },
     // 获取课程分类信息
     get_course_category () {
-      // return http.get('/courses/categories/',)
         return http.get(`/courses/categories/${this.current_direction}/`)
     },
     // 获取课程列表信息
-    // get_course_list (direction, category, ordering, page) {
     get_course_list () {
         let params = {
             page: this.page,
@@ -42,16 +44,20 @@ const course = reactive({
         }
         if (this.ordering) {
             params.ordering = this.ordering
-            // params["ordering"] = ordering
+
         }
         return http.get(`/courses/${this.current_direction}/${this.current_category}/`, {
-        // return http.get(`/courses/${direction}/${category}/`, {
+
             params,  // params:params的简写
         })
     },
     // 获取课程详情
     get_course() {
         return http.get(`/courses/${this.course_id}`)
+    },
+     // 获取当前课程的章节信息
+    get_course_chapters(){
+        return http.get(`/courses/${this.course_id}/chapters/`)
     },
     // 课程相关的优惠活动倒计时
     start_timer() {

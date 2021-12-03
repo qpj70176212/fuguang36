@@ -47,7 +47,7 @@ class CourseCategory(BaseModel):
 
 
 class Course(BaseModel):
-    course_type = (
+    COURSE_TYPE = (
         # (0, '付费购买'),
         (0, '实战课程'),
         (1, '会员专享'),
@@ -73,7 +73,7 @@ class Course(BaseModel):
                                      null=True)
     course_video = models.FileField(upload_to="course/video", max_length=255, verbose_name="封面视频", blank=True,
                                     null=True)
-    course_type = models.SmallIntegerField(choices=course_type, default=0, verbose_name="付费类型")
+    course_type = models.SmallIntegerField(choices=COURSE_TYPE, default=0, verbose_name="付费类型")
     # choices提供了一个get_字段_display用于获取选项对应的文本
     # course.level获取的是字段值，
     # course.get_level_display 获取的是字段值在选项中对应的文本

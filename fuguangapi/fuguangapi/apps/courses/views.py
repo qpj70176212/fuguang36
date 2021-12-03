@@ -1,4 +1,4 @@
-import constants
+import constants, json
 from drf_haystack.viewsets import HaystackViewSet
 from drf_haystack.filters import HaystackFilter
 from rest_framework.generics import ListAPIView, RetrieveAPIView
@@ -121,3 +121,12 @@ class CourseRetrieveAPIView(RetrieveAPIView):
     """课程详情信息"""
     queryset = Course.objects.filter(is_delete=False, is_show=True).all()
     serializer_class = CourseRetrieveModelSerializer
+
+
+class CourseTypeListAPIView(APIView):
+    """课程类型"""
+
+    def get(self, request):
+        # Object of type DeferredAttribute is not JSON serializable
+        # 因为属性重名故改为大写
+        return Response(Course.COURSE_TYPE)

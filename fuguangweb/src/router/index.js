@@ -97,15 +97,15 @@ const routes = [
                 name: "UserInfo",
                 component: () => import("../components/Info.vue"),
             },
-            // {
-            //     meta: {
-            //         title: "我的课程",
-            //         keepAlive: true
-            //     },
-            //     path: 'course',
-            //     name: "UserCourse",
-            //     // component: ()=> import("../components/Course.vue"),
-            // },
+            {
+                meta: {
+                    title: "我的课程",
+                    keepAlive: true
+                },
+                path: 'course',
+                name: "UserCourse",
+                component: ()=> import("../components/Course.vue"),
+            },
             {
                 meta: {
                     title: "我的订单",
