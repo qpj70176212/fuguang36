@@ -4,15 +4,18 @@ from rest_framework_jwt.views import ObtainJSONWebToken
 from fuguangapi.utils.tencentcloudapi import TencentCloudAPI, TencentCloudSDKException
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
 from django.conf import settings
 from rest_framework.views import APIView
-from .models import User
-from rest_framework.generics import CreateAPIView
-from .serializers import UserRegisterModelSerializer
+from .models import User, UserCourse
+from rest_framework.generics import CreateAPIView, ListAPIView
+from .serializers import UserRegisterModelSerializer, UserCourseModelSerializer
 from fuguangapi.utils.ronglianyunapi import send_sms
 from django_redis import get_redis_connection
 # from mycelery.sms.tasks import send_sms
 from .tasks import send_sms
+from courses.paginations import CourseListPageNumberPagination
+from courses.models import Course
 # Create your views here.
 
 
@@ -101,3 +104,19 @@ class SMSAPIView(APIView):
         pipe.execute()  # 提交事务，同时把暂存在pipeline的数据一次性提交给redis
 
         return Response({"errmsg": "OK"}, status=status.HTTP_200_OK)
+
+
+class CourseListAPIView(ListAPIView):
+    """当前用户的课程列表信息"""
+    permission_classes = [IsAuthenticated]
+    serializer_class = UserCourseModelSerializer
+    pagination_class = CourseListPageNumberPagination
+
+    def get_queryset(self):
+        user = self.request.user
+        query = UserCourse.objects.filter(user=user)
+        course_type = int(self.request.query_params.get("type", -1))
+        course_type_list = [item[0] for item in Course.COURSE_TYPE]
+        if course_type in course_type_list:
+            query = query.filter(course__course_type=course_type)
+        return query.order_by("-id").all()
