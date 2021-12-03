@@ -99,7 +99,7 @@ const routes = [
             },
             {
                 meta: {
-                    title: "我的课程",
+                    title: "浮光在线教育-我的课程",
                     keepAlive: true
                 },
                 path: 'course',
@@ -108,7 +108,7 @@ const routes = [
             },
             {
                 meta: {
-                    title: "我的订单",
+                    title: "浮光在线教育-我的订单",
                     keepAlive: true,
                     authorization: true,
                 },
@@ -144,7 +144,18 @@ const routes = [
             //     // component: ()=> import("../components/Bill.vue"),
             // },
         ]
-    }
+    },
+    {
+      meta:{
+        title: "个人中心-学习中心",
+        keepAlive: true,
+        authorization: true
+      },
+      // path: '/user/study/',
+      path: '/user/study/:course',
+      name: "Study",
+      component: ()=> import("../views/Study.vue"),
+    },
 ]
 
 // 路由对象实例化

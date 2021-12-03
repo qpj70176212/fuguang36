@@ -151,8 +151,6 @@ class PolyvViewSet(ViewSet):
         user_id = request.user.id  # 用户ID
         user_name = request.user.username  # 用户名
 
-        token = polyv.get_video_token(vid, user_ip, user_name)
+        token = polyv.get_video_token(vid, user_ip, user_id, user_name)
 
         return Response({"token": token})
-
-

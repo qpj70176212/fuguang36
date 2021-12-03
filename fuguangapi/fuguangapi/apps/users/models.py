@@ -4,6 +4,7 @@ from stdimage import StdImageField
 from django.utils.safestring import mark_safe
 from models import BaseModel
 from courses.models import Course, CourseChapter, CourseLesson
+from ckeditor_uploader.fields import RichTextUploadingField  # 支持上传文件
 
 
 # Create your models here.
@@ -17,7 +18,9 @@ class User(AbstractUser):
     avatar = StdImageField(variations={
         'thumb_400x400': (400, 400),
         'thumb_50x50': (50, 50, True)
-    }, delete_orphans=True, upload_to="avatar/%Y", blank=True, null=True, default="http://api.fuguang.cn:8000/uploads/avatar/2021/avatar.thumb_800x800_lUbXFXP.thumb_50x50.jpg", verbose_name="个人头像")
+    }, delete_orphans=True, upload_to="avatar/%Y", blank=True, null=True,
+        default="http://api.fuguang.cn:8000/uploads/avatar/2021/avatar.thumb_800x800_lUbXFXP.thumb_50x50.jpg",
+        verbose_name="个人头像")
 
     class Meta:
         db_table = "fg_users"
@@ -53,7 +56,8 @@ class Credit(BaseModel):
     operation = models.SmallIntegerField(choices=opera_choices, default=1, verbose_name="积分操作类型")
     number = models.IntegerField(default=0, verbose_name="积分数量",
                                  help_text="如果是扣除积分则需要设置积分为负数，如果消费10积分，则填写-10，<br>如果是添加积分则需要设置积分为正数，如果获得10积分，则填写10。")
-    user = models.ForeignKey(User, related_name="user_credits", on_delete=models.CASCADE, db_constraint=False, verbose_name="用户")
+    user = models.ForeignKey(User, related_name="user_credits", on_delete=models.CASCADE, db_constraint=False,
+                             verbose_name="用户")
     remark = models.CharField(max_length=500, null=True, blank=True, verbose_name="备注信息")
 
     class Meta:
@@ -73,7 +77,7 @@ class Credit(BaseModel):
 
 
 class UserCourse(BaseModel):
-    """用户的课程"""
+    """用户的课程 用户课程购买记录"""
     user = models.ForeignKey(User, related_name="user_courses", on_delete=models.CASCADE, verbose_name="用户",
                              db_constraint=False)
     course = models.ForeignKey(Course, related_name="course_users", on_delete=models.CASCADE, verbose_name="课程名称",
@@ -125,13 +129,81 @@ class UserCourse(BaseModel):
 
     def note(self):
         """笔记数量"""
-        return 0
+        return 10
 
     def qa(self):
         """问答数量"""
-        return 0
+        return 10
 
     def code(self):
         """代码数量"""
-        return 0
+        return 10
 
+
+class StudyProgress(models.Model):
+    """课时进度记录"""
+    user = models.ForeignKey(User, related_name='to_progress', on_delete=models.CASCADE, verbose_name="用户",
+                             db_constraint=False)
+    lesson = models.ForeignKey(CourseLesson, related_name="to_progress", on_delete=models.DO_NOTHING, null=True,
+                               blank=True, verbose_name="课时信息", db_constraint=False)
+    study_time = models.IntegerField(default=0, verbose_name="学习时长")
+
+    class Meta:
+        db_table = 'fg_study_progress'
+        verbose_name = '课时进度记录'
+        verbose_name_plural = verbose_name
+
+
+class StudyCode(models.Model):
+    """代码记录"""
+    user = models.ForeignKey(User, related_name='to_code', on_delete=models.CASCADE, verbose_name="用户",
+                             db_constraint=False)
+    course = models.ForeignKey(Course, related_name='to_code', on_delete=models.CASCADE, verbose_name="课程名称",
+                               db_constraint=False)
+    chapter = models.ForeignKey(CourseChapter, related_name="to_code", on_delete=models.DO_NOTHING, null=True,
+                                blank=True, verbose_name="章节信息", db_constraint=False)
+    lesson = models.ForeignKey(CourseLesson, related_name="to_code", on_delete=models.DO_NOTHING, null=True, blank=True,
+                               verbose_name="课时信息", db_constraint=False)
+    code = RichTextUploadingField(default="", blank="", verbose_name="练习代码")
+
+    class Meta:
+        db_table = 'fg_study_code'
+        verbose_name = '代码记录'
+        verbose_name_plural = verbose_name
+
+
+class StudyQA(models.Model):
+    """问答记录"""
+    user = models.ForeignKey(User, related_name='to_qa', on_delete=models.CASCADE, verbose_name="用户",
+                             db_constraint=False)
+    course = models.ForeignKey(Course, related_name='to_qa', on_delete=models.CASCADE, verbose_name="课程名称",
+                               db_constraint=False)
+    chapter = models.ForeignKey(CourseChapter, related_name="to_qa", on_delete=models.DO_NOTHING, null=True, blank=True,
+                                verbose_name="章节信息", db_constraint=False)
+    lesson = models.ForeignKey(CourseLesson, related_name="to_qa", on_delete=models.DO_NOTHING, null=True, blank=True,
+                               verbose_name="课时信息", db_constraint=False)
+    question = RichTextUploadingField(default="", blank="", verbose_name="问题")
+    answer = RichTextUploadingField(default="", blank="", verbose_name="回答")
+
+    class Meta:
+        db_table = 'fg_study_qa'
+        verbose_name = '问答记录'
+        verbose_name_plural = verbose_name
+
+
+class StudyNote(BaseModel):
+    """学习笔记"""
+    user = models.ForeignKey(User, related_name='to_note', on_delete=models.CASCADE, verbose_name="用户",
+                             db_constraint=False)
+    course = models.ForeignKey(Course, related_name='to_note', on_delete=models.CASCADE, verbose_name="课程名称",
+                               db_constraint=False)
+    chapter = models.ForeignKey(CourseChapter, related_name="to_note", on_delete=models.DO_NOTHING, null=True,
+                                blank=True, verbose_name="章节信息", db_constraint=False)
+    lesson = models.ForeignKey(CourseLesson, related_name="to_note", on_delete=models.DO_NOTHING, null=True, blank=True,
+                               verbose_name="课时信息", db_constraint=False)
+    content = RichTextUploadingField(default="", blank="", verbose_name="笔记内容")
+
+    class Meta:
+        db_table = 'fg_study_note'
+        verbose_name = '学习笔记'
+        verbose_name_plural = verbose_name
