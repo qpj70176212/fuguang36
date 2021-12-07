@@ -53,8 +53,8 @@
 <!--              <span class="i-right"> <a href="">问答 <i>0</i></a> </span>-->
               <span class="i-right"> <a href="">问答 <i>{{course_info.qa}}</i></a> </span>
 <!--              <router-link to="/user/study" class="continute-btn">继续学习</router-link>-->
-              <a href="" class="continute-btn">继续学习</a>
-<!--              <router-link :to="`/user/study/${course_info.course_id}`" class="continute-btn">继续学习</router-link>-->
+<!--              <a href="" class="continute-btn">继续学习</a>-->
+              <router-link :to="`/user/study/${course_info.course_id}`" class="continute-btn">继续学习</router-link>
             </div>
             <div class="share-box clearfix">
               <div class="show-btn">

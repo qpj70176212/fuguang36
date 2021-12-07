@@ -5,4 +5,6 @@ export default {
     captcha_app_id: "2071744404",
     // 订单超时时间[单位：秒]
     order_timeout: 15 * 60,
+    // 视频更新进度的时间阀值
+    seed_time: 5,
 }

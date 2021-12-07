@@ -2,15 +2,17 @@
   <div class="player">
     <div id="player"></div>
     <div class="chapter-list">
-<!--      <h2>3天django基础</h2>-->
-      <h2>{{course.course_info.name}}</h2>
+      <!--      <h2>3天django基础</h2>-->
+      <h2>{{ course.course_info.name }}</h2>
       <el-tree
+          v-if="course.current_lesson"
           highlight-current
           class="filter-tree"
           :data="course.lesson_list"
           default-expand-all
           node-key="id"
           @node-click="node_click"
+          :current-node-key="`lesson-`+course.current_lesson"
       >
       </el-tree>
     </div>
@@ -23,6 +25,7 @@ import http from "../utils/http"
 import course from "../api/course";
 import "../utils/player"
 import {useRoute} from "vue-router";
+import settings from "../settings";
 
 const route = useRoute()
 
@@ -72,6 +75,7 @@ const node_click = (data) => {
     }
     // 重置视频播放时间
     course.current_time = response.data;
+    console.log(console.current_time)
     // 重置当前播放的课时ID
     course.current_lesson = data.lesson.id
     // 新建一个播放器
@@ -107,6 +111,7 @@ let polyv = (vid) => {
   // 设置播放进度
   course.player.on('s2j_onPlayerInitOver', (e) => {
     course.player.j2s_seekVideo(course.current_time);
+    // course.player.j2s_seekVideo(30);
   });
 
   // 设置自动播放，但是谷歌浏览器会拦截自动播放
@@ -119,9 +124,9 @@ let polyv = (vid) => {
   let video = document.querySelector(".pv-video")
   // 监听是否是否播放中
   video.ontimeupdate = () => {
-    // todo 每隔几秒，发送一次ajax到服务端更新学习进度和课时进度
+    // todo 每隔几秒，发送一次ajax到服务端更新学习进度和课时进度 同步后台
     let time = parseInt(video.currentTime)
-    if (time % 5 === 0) {
+    if (time % settings.seed_time === 0) {
       if (course.current_time < time) {
         // 监听当前课时的播放时间
         course.current_time = time;
@@ -165,6 +170,11 @@ watch(
     () => course.current_time,
     () => {
       console.log(course.current_time);
+      let token = sessionStorage.token || localStorage.token
+      let lesson = course.current_lesson
+      course.update_user_study_progress(lesson, settings.seed_time, token).then(response => {
+        console.log(response.data)
+      })
     }
 )
 

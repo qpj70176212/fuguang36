@@ -18,6 +18,8 @@ from courses.paginations import CourseListPageNumberPagination
 from courses.models import Course, CourseLesson
 import constants
 from django.db import transaction
+import logging
+logger = logging.getLogger("django")
 # Create your views here.
 
 
@@ -167,6 +169,7 @@ class StudyLessonAPIView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
+        # http://api.fuguang.cn:8000/users/lesson/?lesson=1
         lesson_id = int(request.query_params.get("lesson"))
         user = request.user
 
@@ -197,7 +200,9 @@ class StudyProgressAPIView(APIView):
             lesson_id = int(request.data.get("lesson"))
             user = request.user
 
-            # 判断本次更新学习时间是否超出阈值
+            # todo 判断当前课时是否免费或者当前课时所属的课程是否被用户购买了
+
+            # 判断本次更新学习时间是否超出阈值，当超过阈值，则表示用户已经违规快进了
             if study_time > constants.MAV_SEEK_TIME:
                 raise Exception
 
@@ -215,7 +220,8 @@ class StudyProgressAPIView(APIView):
 
                 if progress is None:
                     """新增一条用户与课时的学习记录"""
-                    StudyProgress.objects.create(
+                    # StudyProgress.objects.create(
+                    progress = StudyProgress(
                         user=user,
                         lesson=lesson,
                         study_time=study_time
@@ -223,7 +229,8 @@ class StudyProgressAPIView(APIView):
                 else:
                     """直接更新现有的学习时间"""
                     progress.study_time = int(progress.study_time) + int(study_time)
-                    progress.save()
+                    # progress.save()
+                progress.save()
 
                 # 3. 记录课程学习的总进度
                 user_course = UserCourse.objects.get(user=user, course=lesson.course)
@@ -241,5 +248,6 @@ class StudyProgressAPIView(APIView):
 
             except Exception as e:
                 print(f"error={e}")
+                logger.error(f"更新课时进度失败！:{e}")
                 transaction.savepoint_rollback(save_id)
                 return Response({"error": "当前课时学习进度丢失！"})

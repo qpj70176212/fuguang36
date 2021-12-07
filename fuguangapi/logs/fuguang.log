@@ -18621,3 +18621,317 @@ INFO 2021-12-03 23:35:20,110 basehttp log_message 5301 140380058150656 "OPTIONS 
 INFO 2021-12-03 23:35:21,433 basehttp log_message 5301 140380058150656 "GET /users/lesson/?lesson=3 HTTP/1.1" 200 1
 INFO 2021-12-03 23:35:24,696 basehttp log_message 5301 140380058150656 "OPTIONS /courses/polyv/token/94a61789794ec3dfc274a6a7a3e076c9_9/ HTTP/1.1" 200 0
 INFO 2021-12-03 23:35:25,567 basehttp log_message 5301 140380058150656 "GET /courses/polyv/token/94a61789794ec3dfc274a6a7a3e076c9_9/ HTTP/1.1" 200 51
+INFO 2021-12-03 23:40:02,012 basehttp log_message 5301 140380058150656 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-03 23:40:02,186 basehttp log_message 5301 140380066543360 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 2052
+INFO 2021-12-03 23:40:07,558 basehttp log_message 5301 140380066543360 "GET /courses/2 HTTP/1.1" 301 0
+INFO 2021-12-03 23:40:07,643 basehttp log_message 5301 140380066543360 "GET /courses/2/ HTTP/1.1" 200 933
+INFO 2021-12-03 23:40:07,655 basehttp log_message 5301 140380066543360 "OPTIONS /users/course/2 HTTP/1.1" 200 0
+INFO 2021-12-03 23:40:07,660 basehttp log_message 5301 140380066543360 "GET /users/course/2 HTTP/1.1" 301 0
+INFO 2021-12-03 23:40:07,665 basehttp log_message 5301 140380066543360 "OPTIONS /users/course/2/ HTTP/1.1" 200 0
+INFO 2021-12-03 23:40:07,761 basehttp log_message 5301 140380066543360 "GET /users/course/2/ HTTP/1.1" 200 484
+INFO 2021-12-03 23:40:08,251 basehttp log_message 5301 140380066543360 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 00:03:13,602 autoreload run_with_reloader 7966 140001585320320 Watching for file changes with StatReloader
+WARNING 2021-12-04 00:03:18,141 log log_response 7966 140001408517888 Not Found: /
+WARNING 2021-12-04 00:03:18,142 basehttp log_message 7966 140001408517888 "GET / HTTP/1.1" 404 3641
+WARNING 2021-12-04 00:03:18,748 log log_response 7966 140001408517888 Not Found: /favicon.ico
+WARNING 2021-12-04 00:03:18,753 basehttp log_message 7966 140001408517888 "GET /favicon.ico HTTP/1.1" 404 3692
+ERROR 2021-12-04 00:03:38,629 log log_response 7966 140001408517888 Internal Server Error: /users/lesson/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 170, in get
+    lesson_id = int(request.query_params.get("lesson"))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR 2021-12-04 00:03:38,632 basehttp log_message 7966 140001408517888 "GET /users/lesson/ HTTP/1.1" 500 105006
+ERROR 2021-12-04 00:04:46,118 log log_response 7966 140001408517888 Internal Server Error: /users/lesson/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 170, in get
+    lesson_id = int(request.query_params.get("lesson"))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR 2021-12-04 00:04:46,120 basehttp log_message 7966 140001408517888 "GET /users/lesson/ HTTP/1.1" 500 105143
+INFO 2021-12-04 00:14:34,176 basehttp log_message 7966 140001408517888 "GET /courses/1/ HTTP/1.1" 200 2443
+INFO 2021-12-04 00:14:34,406 basehttp log_message 7966 140001408517888 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-04 00:14:34,412 basehttp log_message 7966 140001408517888 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 00:14:34,489 basehttp log_message 7966 140001408517888 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-04 00:14:34,534 basehttp log_message 7966 140001408517888 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 00:14:34,931 basehttp log_message 7966 140001408517888 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 00:14:35,262 basehttp log_message 7966 140001408517888 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 00:15:24,533 basehttp log_message 7966 140001408517888 "GET /courses/1 HTTP/1.1" 301 0
+INFO 2021-12-04 00:15:25,467 basehttp log_message 7966 140001408517888 "GET /courses/1/ HTTP/1.1" 200 2443
+INFO 2021-12-04 00:15:26,302 basehttp log_message 7966 140001408517888 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-04 00:15:26,343 basehttp log_message 7966 140001408517888 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 00:15:26,381 basehttp log_message 7966 140001408517888 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-04 00:15:26,616 basehttp log_message 7966 140001408517888 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 00:15:27,128 basehttp log_message 7966 140001408517888 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 00:15:27,602 basehttp log_message 7966 140001408517888 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 00:17:59,852 basehttp log_message 7966 140001400125184 "GET /users/course/ HTTP/1.1" 200 11329
+INFO 2021-12-04 00:18:04,691 basehttp log_message 7966 140001400125184 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 00:18:04,881 basehttp log_message 7966 140001400125184 "GET /users/course/1/ HTTP/1.1" 200 6614
+INFO 2021-12-04 14:00:05,992 autoreload run_with_reloader 3352 140601039663488 Watching for file changes with StatReloader
+INFO 2021-12-04 14:31:21,470 basehttp log_message 3352 140600854705920 "GET /courses/1/ HTTP/1.1" 200 2757
+INFO 2021-12-04 14:31:21,554 basehttp log_message 3352 140600854705920 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-04 14:31:21,566 basehttp log_message 3352 140600854705920 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 14:31:21,573 basehttp log_message 3352 140600854705920 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-04 14:31:21,823 basehttp log_message 3352 140600854705920 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 14:31:23,041 basehttp log_message 3352 140600854705920 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 14:31:23,222 basehttp log_message 3352 140600854705920 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 14:31:32,971 basehttp log_message 3352 140600854705920 "OPTIONS /users/lesson/?lesson=2 HTTP/1.1" 200 0
+INFO 2021-12-04 14:31:33,025 basehttp log_message 3352 140600854705920 "GET /users/lesson/?lesson=2 HTTP/1.1" 200 1
+INFO 2021-12-04 14:31:33,338 basehttp log_message 3352 140600854705920 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 14:31:37,133 basehttp log_message 3352 140600854705920 "OPTIONS /users/lesson/?lesson=3 HTTP/1.1" 200 0
+INFO 2021-12-04 14:31:37,161 basehttp log_message 3352 140600854705920 "GET /users/lesson/?lesson=3 HTTP/1.1" 200 1
+INFO 2021-12-04 14:31:37,344 basehttp log_message 3352 140600854705920 "OPTIONS /courses/polyv/token/94a617897925c936f4cf1f0cf3d11fb6_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 14:31:37,516 basehttp log_message 3352 140600854705920 "GET /courses/polyv/token/94a617897925c936f4cf1f0cf3d11fb6_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 14:52:48,572 basehttp log_message 3352 140600854705920 "GET /admin/ HTTP/1.1" 200 22924
+INFO 2021-12-04 14:52:48,707 basehttp log_message 3352 140600798660352 "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,708 basehttp log_message 3352 140600586270464 "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,716 basehttp log_message 3352 140600854705920 "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 232541
+INFO 2021-12-04 14:52:48,745 basehttp log_message 3352 140600586270464 "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,889 basehttp log_message 3352 140600854705920 "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,892 basehttp log_message 3352 140600807053056 "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO 2021-12-04 14:52:48,899 basehttp log_message 3352 140600586270464 "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,904 basehttp log_message 3352 140600577877760 "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,914 basehttp log_message 3352 140600807053056 "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,917 basehttp log_message 3352 140600586270464 "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,925 basehttp log_message 3352 140600798660352 "GET /static/admin/simpleui-x/elementui/index.js?_=2021.11.5 HTTP/1.1" 200 567853
+INFO 2021-12-04 14:52:48,950 basehttp log_message 3352 140600586270464 "GET /static/admin/simpleui-x/js/cookie.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,958 basehttp log_message 3352 140600577877760 "GET /static/admin/simpleui-x/theme/theme.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,962 basehttp log_message 3352 140600807053056 "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,964 basehttp log_message 3352 140600854705920 "GET /static/admin/simpleui-x/js/menu.js?_=2021.11.5 HTTP/1.1" 304 0
+INFO 2021-12-04 14:52:48,967 basehttp log_message 3352 140600569485056 "GET /static/admin/simpleui-x/js/index.js?_=2021.11.5 HTTP/1.1" 304 0
+ERROR 2021-12-04 14:53:11,480 log log_response 3352 140600586270464 Internal Server Error: /users/lesson/
+Traceback (most recent call last):
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/anaconda3/envs/fuguang/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py", line 170, in get
+    lesson_id = int(request.query_params.get("lesson"))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR 2021-12-04 14:53:11,482 basehttp log_message 3352 140600586270464 "GET /users/lesson/?lession_id=1 HTTP/1.1" 500 105453
+WARNING 2021-12-04 14:53:11,966 log log_response 3352 140600586270464 Not Found: /favicon.ico
+WARNING 2021-12-04 14:53:11,967 basehttp log_message 3352 140600586270464 "GET /favicon.ico HTTP/1.1" 404 3692
+INFO 2021-12-04 14:53:49,627 basehttp log_message 3352 140600586270464 "GET /users/lesson/?lesson=1 HTTP/1.1" 200 5611
+INFO 2021-12-04 14:54:44,729 autoreload trigger_reload 3352 140601039663488 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py changed, reloading.
+INFO 2021-12-04 14:54:46,647 autoreload run_with_reloader 6159 139655297089920 Watching for file changes with StatReloader
+INFO 2021-12-04 14:54:55,610 basehttp log_message 6159 139655120000768 "GET /users/lesson/?lesson=2 HTTP/1.1" 200 5611
+INFO 2021-12-04 14:54:59,862 basehttp log_message 6159 139655120000768 "GET /users/lesson/?lesson=3 HTTP/1.1" 200 5611
+INFO 2021-12-04 14:55:04,112 basehttp log_message 6159 139655120000768 "GET /users/lesson/?lesson=4 HTTP/1.1" 200 5611
+INFO 2021-12-04 14:55:57,183 basehttp log_message 6159 139655111608064 "GET /courses/1/ HTTP/1.1" 200 2756
+INFO 2021-12-04 14:55:57,349 basehttp log_message 6159 139655111608064 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 14:55:57,728 basehttp log_message 6159 139655111608064 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 15:04:31,899 basehttp log_message 6159 139655111608064 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-04 15:04:31,918 basehttp log_message 6159 139655111608064 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:04:31,930 basehttp log_message 6159 139655120000768 "GET /courses/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:04:31,958 basehttp log_message 6159 139655120000768 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:04:32,272 basehttp log_message 6159 139655120000768 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 15:04:32,297 basehttp log_message 6159 139655111608064 "GET /courses/1/ HTTP/1.1" 200 2756
+INFO 2021-12-04 15:04:33,127 basehttp log_message 6159 139655111608064 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:04:33,599 basehttp log_message 6159 139655111608064 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 15:05:40,609 basehttp log_message 6159 139655111608064 "GET /courses/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:05:40,791 basehttp log_message 6159 139655111608064 "GET /courses/1/ HTTP/1.1" 200 2756
+INFO 2021-12-04 15:05:40,932 basehttp log_message 6159 139655111608064 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-04 15:05:40,941 basehttp log_message 6159 139655111608064 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:05:41,005 basehttp log_message 6159 139655111608064 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:05:41,063 basehttp log_message 6159 139655111608064 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 15:05:41,297 basehttp log_message 6159 139655111608064 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:05:41,557 basehttp log_message 6159 139655111608064 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 15:07:27,405 basehttp log_message 6159 139655111608064 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-04 15:07:27,437 basehttp log_message 6159 139655120000768 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:07:27,444 basehttp log_message 6159 139655111608064 "GET /courses/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:07:27,851 basehttp log_message 6159 139655120000768 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:07:28,161 basehttp log_message 6159 139655120000768 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 15:07:28,186 basehttp log_message 6159 139655111608064 "GET /courses/1/ HTTP/1.1" 200 2757
+INFO 2021-12-04 15:07:28,535 basehttp log_message 6159 139655120000768 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:07:28,757 basehttp log_message 6159 139655120000768 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 15:07:43,489 basehttp log_message 6159 139655120000768 "GET /courses/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:07:43,493 basehttp log_message 6159 139655111608064 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-04 15:07:43,506 basehttp log_message 6159 139655120000768 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:07:43,615 basehttp log_message 6159 139655111608064 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:07:44,025 basehttp log_message 6159 139655111608064 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 15:07:44,034 basehttp log_message 6159 139655120000768 "GET /courses/1/ HTTP/1.1" 200 2757
+INFO 2021-12-04 15:07:44,306 basehttp log_message 6159 139655111608064 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:07:44,528 basehttp log_message 6159 139655111608064 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 15:17:32,420 basehttp log_message 6159 139655111608064 "GET /courses/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:17:32,426 basehttp log_message 6159 139655120000768 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-04 15:17:32,463 basehttp log_message 6159 139655120000768 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:17:32,474 basehttp log_message 6159 139655120000768 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:17:32,670 basehttp log_message 6159 139655120000768 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 15:17:32,777 basehttp log_message 6159 139655111608064 "GET /courses/1/ HTTP/1.1" 200 2757
+INFO 2021-12-04 15:17:32,936 basehttp log_message 6159 139655111608064 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:17:33,158 basehttp log_message 6159 139655111608064 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 15:18:11,115 basehttp log_message 6159 139655120000768 "GET /courses/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:18:11,117 basehttp log_message 6159 139655111608064 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-04 15:18:11,128 basehttp log_message 6159 139655120000768 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-04 15:18:11,182 basehttp log_message 6159 139655120000768 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:18:11,254 basehttp log_message 6159 139655111608064 "GET /courses/1/ HTTP/1.1" 200 2757
+INFO 2021-12-04 15:18:11,258 basehttp log_message 6159 139655120000768 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-04 15:18:11,366 basehttp log_message 6159 139655120000768 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-04 15:18:11,612 basehttp log_message 6159 139655120000768 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-04 21:07:14,241 autoreload run_with_reloader 4133 139967190167936 Watching for file changes with StatReloader
+WARNING 2021-12-04 21:07:35,012 log log_response 4133 139967011485440 Not Found: /
+WARNING 2021-12-04 21:07:35,019 basehttp log_message 4133 139967011485440 "GET / HTTP/1.1" 404 3641
+WARNING 2021-12-04 21:07:36,951 log log_response 4133 139967011485440 Not Found: /favicon.ico
+WARNING 2021-12-04 21:07:36,952 basehttp log_message 4133 139967011485440 "GET /favicon.ico HTTP/1.1" 404 3692
+INFO 2021-12-04 21:07:58,251 basehttp log_message 4133 139967011485440 "GET /users/course/ HTTP/1.1" 200 11329
+INFO 2021-12-04 21:07:58,506 basehttp log_message 4133 139967011485440 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,529 basehttp log_message 4133 139967011485440 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,600 basehttp log_message 4133 139967011485440 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,607 basehttp log_message 4133 139967011485440 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,633 basehttp log_message 4133 139967011485440 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,639 basehttp log_message 4133 139967003092736 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,724 basehttp log_message 4133 139967011485440 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,748 basehttp log_message 4133 139967011485440 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,754 basehttp log_message 4133 139967011485440 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,762 basehttp log_message 4133 139967003092736 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-12-04 21:07:58,823 basehttp log_message 4133 139967011485440 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2021-12-04 21:08:18,976 basehttp log_message 4133 139967011485440 "GET /users/course/?page=2 HTTP/1.1" 200 7569
+INFO 2021-12-07 14:35:37,073 autoreload run_with_reloader 4754 139725521535360 Watching for file changes with StatReloader
+INFO 2021-12-07 14:36:49,550 basehttp log_message 4754 139725335295744 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2021-12-07 14:36:49,560 basehttp log_message 4754 139725326903040 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2021-12-07 14:36:54,270 basehttp log_message 4754 139725343688448 "GET /banner/ HTTP/1.1" 200 666
+INFO 2021-12-07 14:45:01,875 basehttp log_message 4754 139725343688448 "GET /courses/type/ HTTP/1.1" 200 58
+INFO 2021-12-07 14:45:01,878 basehttp log_message 4754 139725335295744 "OPTIONS /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 0
+INFO 2021-12-07 14:45:02,149 basehttp log_message 4754 139725335295744 "GET /users/course/?type=-1&page=1&size=5 HTTP/1.1" 200 2052
+INFO 2021-12-07 14:45:07,914 basehttp log_message 4754 139725335295744 "OPTIONS /users/course/?type=-1&page=2&size=5 HTTP/1.1" 200 0
+INFO 2021-12-07 14:45:07,968 basehttp log_message 4754 139725335295744 "GET /users/course/?type=-1&page=2&size=5 HTTP/1.1" 200 544
+INFO 2021-12-07 14:45:17,706 basehttp log_message 4754 139725335295744 "GET /courses/1/ HTTP/1.1" 200 2757
+INFO 2021-12-07 14:45:17,763 basehttp log_message 4754 139725335295744 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-07 14:45:17,835 basehttp log_message 4754 139725335295744 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-07 14:45:17,871 basehttp log_message 4754 139725335295744 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-07 14:45:18,355 basehttp log_message 4754 139725335295744 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 14:45:18,574 basehttp log_message 4754 139725335295744 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 14:59:31,117 autoreload trigger_reload 4754 139725521535360 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py changed, reloading.
+INFO 2021-12-07 14:59:32,596 autoreload run_with_reloader 5923 140433972269440 Watching for file changes with StatReloader
+INFO 2021-12-07 15:04:38,927 basehttp log_message 5923 140433786803968 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-07 15:04:39,008 basehttp log_message 5923 140433795196672 "GET /courses/1/ HTTP/1.1" 200 2755
+INFO 2021-12-07 15:04:39,432 basehttp log_message 5923 140433795196672 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:13:41,451 basehttp log_message 5923 140433795196672 "GET /courses/1/ HTTP/1.1" 200 2757
+INFO 2021-12-07 15:13:41,505 basehttp log_message 5923 140433795196672 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-07 15:13:41,834 basehttp log_message 5923 140433795196672 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:14:29,578 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:14:29,602 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 60
+INFO 2021-12-07 15:14:34,570 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:14:34,595 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 60
+INFO 2021-12-07 15:14:39,571 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:14:39,591 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 60
+INFO 2021-12-07 15:14:44,576 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:14:44,625 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 60
+INFO 2021-12-07 15:14:49,564 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:14:49,584 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 60
+INFO 2021-12-07 15:14:51,683 basehttp log_message 5923 140433795196672 "OPTIONS /users/lesson/?lesson=1 HTTP/1.1" 200 0
+INFO 2021-12-07 15:14:51,723 basehttp log_message 5923 140433795196672 "GET /users/lesson/?lesson=1 HTTP/1.1" 200 1
+INFO 2021-12-07 15:14:51,817 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:14:51,936 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:14:52,005 basehttp log_message 5923 140433795196672 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:14:52,742 basehttp log_message 5923 140433795196672 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:15:01,047 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:15:01,133 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:15:03,689 basehttp log_message 5923 140433795196672 "GET /courses/1 HTTP/1.1" 301 0
+INFO 2021-12-07 15:15:03,791 basehttp log_message 5923 140433795196672 "GET /courses/1/ HTTP/1.1" 200 2756
+INFO 2021-12-07 15:15:03,808 basehttp log_message 5923 140433795196672 "OPTIONS /users/course/1 HTTP/1.1" 200 0
+INFO 2021-12-07 15:15:03,861 basehttp log_message 5923 140433795196672 "GET /users/course/1 HTTP/1.1" 301 0
+INFO 2021-12-07 15:15:03,865 basehttp log_message 5923 140433795196672 "OPTIONS /users/course/1/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:15:03,931 basehttp log_message 5923 140433795196672 "GET /users/course/1/ HTTP/1.1" 200 506
+INFO 2021-12-07 15:15:04,093 basehttp log_message 5923 140433795196672 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:15:04,290 basehttp log_message 5923 140433795196672 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:15:36,417 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:15:36,437 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 60
+INFO 2021-12-07 15:16:23,636 basehttp log_message 5923 140433795196672 "OPTIONS /users/lesson/?lesson=2 HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:23,672 basehttp log_message 5923 140433795196672 "GET /users/lesson/?lesson=2 HTTP/1.1" 200 1
+INFO 2021-12-07 15:16:23,770 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:23,850 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:16:24,011 basehttp log_message 5923 140433795196672 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:24,363 basehttp log_message 5923 140433795196672 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:16:29,806 basehttp log_message 5923 140433795196672 "OPTIONS /users/lesson/?lesson=3 HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:29,854 basehttp log_message 5923 140433795196672 "GET /users/lesson/?lesson=3 HTTP/1.1" 200 1
+INFO 2021-12-07 15:16:30,067 basehttp log_message 5923 140433795196672 "OPTIONS /courses/polyv/token/94a617897925c936f4cf1f0cf3d11fb6_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:31,231 basehttp log_message 5923 140433795196672 "GET /courses/polyv/token/94a617897925c936f4cf1f0cf3d11fb6_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:16:39,293 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:39,352 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:16:39,408 basehttp log_message 5923 140433795196672 "OPTIONS /users/lesson/?lesson=4 HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:39,451 basehttp log_message 5923 140433795196672 "GET /users/lesson/?lesson=4 HTTP/1.1" 200 1
+INFO 2021-12-07 15:16:39,544 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:39,650 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:16:39,920 basehttp log_message 5923 140433795196672 "OPTIONS /courses/polyv/token/94a6178979817ee155903e2d607250c8_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:40,106 basehttp log_message 5923 140433795196672 "GET /courses/polyv/token/94a6178979817ee155903e2d607250c8_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:16:49,781 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:49,850 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:16:54,683 basehttp log_message 5923 140433795196672 "OPTIONS /users/lesson/?lesson=3 HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:54,711 basehttp log_message 5923 140433795196672 "GET /users/lesson/?lesson=3 HTTP/1.1" 200 1
+INFO 2021-12-07 15:16:54,808 basehttp log_message 5923 140433795196672 "OPTIONS /courses/polyv/token/94a617897925c936f4cf1f0cf3d11fb6_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:16:55,020 basehttp log_message 5923 140433795196672 "GET /courses/polyv/token/94a617897925c936f4cf1f0cf3d11fb6_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:17:03,465 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:03,539 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:17:07,716 basehttp log_message 5923 140433795196672 "OPTIONS /users/lesson/?lesson=4 HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:07,747 basehttp log_message 5923 140433795196672 "GET /users/lesson/?lesson=4 HTTP/1.1" 200 2
+INFO 2021-12-07 15:17:08,029 basehttp log_message 5923 140433795196672 "OPTIONS /courses/polyv/token/94a6178979817ee155903e2d607250c8_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:08,445 basehttp log_message 5923 140433795196672 "GET /courses/polyv/token/94a6178979817ee155903e2d607250c8_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:17:18,257 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:18,323 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:17:23,258 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:23,327 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:17:28,259 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:28,631 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:17:29,875 basehttp log_message 5923 140433795196672 "OPTIONS /users/lesson/?lesson=2 HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:29,904 basehttp log_message 5923 140433795196672 "GET /users/lesson/?lesson=2 HTTP/1.1" 200 1
+INFO 2021-12-07 15:17:29,959 basehttp log_message 5923 140433795196672 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:30,018 basehttp log_message 5923 140433786803968 "OPTIONS /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:30,094 basehttp log_message 5923 140433795196672 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:17:30,236 basehttp log_message 5923 140433786803968 "GET /courses/polyv/token/94a61789796d49a018b42e8bc0a22997_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:17:38,963 basehttp log_message 5923 140433786803968 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:39,107 basehttp log_message 5923 140433786803968 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:17:43,963 basehttp log_message 5923 140433786803968 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:44,033 basehttp log_message 5923 140433786803968 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:17:47,296 basehttp log_message 5923 140433786803968 "OPTIONS /users/lesson/?lesson=4 HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:47,321 basehttp log_message 5923 140433786803968 "GET /users/lesson/?lesson=4 HTTP/1.1" 200 2
+INFO 2021-12-07 15:17:47,385 basehttp log_message 5923 140433786803968 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:47,476 basehttp log_message 5923 140433786803968 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:17:47,537 basehttp log_message 5923 140433786803968 "OPTIONS /courses/polyv/token/94a6178979817ee155903e2d607250c8_9/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:48,197 basehttp log_message 5923 140433786803968 "GET /courses/polyv/token/94a6178979817ee155903e2d607250c8_9/ HTTP/1.1" 200 51
+INFO 2021-12-07 15:17:59,318 basehttp log_message 5923 140433786803968 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:17:59,371 basehttp log_message 5923 140433786803968 "POST /users/progress/ HTTP/1.1" 200 47
+INFO 2021-12-07 15:18:04,322 basehttp log_message 5923 140433786803968 "OPTIONS /users/progress/ HTTP/1.1" 200 0
+INFO 2021-12-07 15:18:04,391 basehttp log_message 5923 140433786803968 "POST /users/progress/ HTTP/1.1" 200 47
