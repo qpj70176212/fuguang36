@@ -170,11 +170,17 @@ class StudyLessonAPIView(APIView):
 
     def get(self, request):
         # http://api.fuguang.cn:8000/users/lesson/?lesson=1
-        lesson_id = int(request.query_params.get("lesson"))
+        lesson_id = int(request.query_params.get("lesson", 0))
         user = request.user
 
         # 查找课时
-        lesson = CourseLesson.objects.get(pk=lesson_id)
+        try:
+            lesson = CourseLesson.objects.get(pk=lesson_id)
+
+        except CourseLesson.DoesNotExist:
+            return Response({
+                "detail": "没有购买当前课时"
+            }, status=status.HTTP_404_NOT_FOUND)
 
         progress = StudyProgress.objects.filter(user=user, lesson=lesson).first()
 

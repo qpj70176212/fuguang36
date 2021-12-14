@@ -19828,3 +19828,7 @@ INFO 2021-12-14 16:05:32,815 basehttp log_message 5223 140184386451200 "GET /adm
 INFO 2021-12-14 16:05:32,939 basehttp log_message 5223 140184386451200 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
 INFO 2021-12-14 16:05:35,411 basehttp log_message 5223 140184386451200 "GET /admin/coupon/couponlog/ HTTP/1.1" 200 30378
 INFO 2021-12-14 16:05:35,515 basehttp log_message 5223 140184386451200 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2021-12-14 16:11:37,732 autoreload trigger_reload 5223 140184511046016 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py changed, reloading.
+INFO 2021-12-14 16:11:39,780 autoreload run_with_reloader 5824 140532882772352 Watching for file changes with StatReloader
+INFO 2021-12-14 16:13:16,428 autoreload trigger_reload 5824 140532882772352 /home/moluo/Desktop/fuguang/fuguangapi/fuguangapi/apps/users/views.py changed, reloading.
+INFO 2021-12-14 16:13:17,481 autoreload run_with_reloader 5885 139709001175424 Watching for file changes with StatReloader
