@@ -104,20 +104,38 @@ WSGI_APPLICATION = 'fuguangapi.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
+    'default': {  # master主库
+        # 'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'dj_db_conn_pool.backends.mysql',
         'NAME': 'fuguang',
         'USER': 'fuguang_user',
         'PASSWORD': 'fuguang',
-        'HOST': '127.0.0.1',
+        # 'HOST': '127.0.0.1',
+        'HOST': '192.168.182.129',
         'PORT': '3306',
-        'POOL_OPTIONS': {      # 连接池的配置信息
-            'POOL_SIZE': 10,    # 连接池默认创建的链接对象的数量
+        'POOL_OPTIONS': {  # 连接池的配置信息
+            'POOL_SIZE': 10,  # 连接池默认创建的链接对象的数量
             'MAX_OVERFLOW': 10  # 连接池默认创建的链接对象的最大数量
         }
-    }
+    },
+    'read1': {  # slave01从库
+        # 'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'dj_db_conn_pool.backends.mysql',
+        'NAME': 'fuguang',
+        'USER': 'fuguang_user',
+        'PASSWORD': 'fuguang',
+        'HOST': '192.168.182.130',
+        'PORT': 3306,
+        'POOL_OPTIONS': {  # 连接池的配置信息
+            'POOL_SIZE': 10,  # 连接池默认创建的链接对象的数量
+            'MAX_OVERFLOW': 10  # 连接池默认创建的链接对象的最大数量
+        },
+    },
 
 }
+
+# db自动数据库路由
+DATABASE_ROUTERS = ["fuguangapi.db_router.Router"]
 
 # 设置redis缓存
 CACHES = {
