@@ -1,8 +1,9 @@
-<script setup>
+<script>
 // const token = sessionStorage.token || localStorage.token
 // const payload = token.split(".")[1]
 // const user_data = JSON.parse(atob(payload))
 // console.log(user_data)
+
 </script>
 
 <template>

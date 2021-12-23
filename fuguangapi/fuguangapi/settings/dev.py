@@ -110,8 +110,8 @@ DATABASES = {
         'NAME': 'fuguang',
         'USER': 'fuguang_user',
         'PASSWORD': 'fuguang',
-        # 'HOST': '127.0.0.1',
-        'HOST': '192.168.182.129',
+        'HOST': '127.0.0.1',
+        # 'HOST': '192.168.182.129',
         'PORT': '3306',
         'POOL_OPTIONS': {  # 连接池的配置信息
             'POOL_SIZE': 10,  # 连接池默认创建的链接对象的数量
@@ -135,7 +135,7 @@ DATABASES = {
 }
 
 # db自动数据库路由
-DATABASE_ROUTERS = ["fuguangapi.db_router.Router"]
+# DATABASE_ROUTERS = ["fuguangapi.db_router.Router"]
 
 # 设置redis缓存
 CACHES = {
@@ -536,3 +536,6 @@ POLYV = {
     "readtoken": "bdc106e1-daac-4010-a585-5f768083a153",
     "tokenUrl": "https://hls.videocc.net/service/v1/token",  # http://hls.videocc.net/service/v1/token
 }
+
+# 收集到的静态文件存储目录
+STATIC_ROOT = BASE_DIR.parent / 'static'
